@@ -204,8 +204,6 @@ async function loadFeed() {
     const r = await fetch('data/feed.json?t=' + Date.now());
     const data = await r.json();
     allItems = data.items || [];
-    // 초기 로드 시 셔플
-    allItems = shuffle(allItems);
     buildGenreFilter();
     applyFilters();
   } catch(e) {
