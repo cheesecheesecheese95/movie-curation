@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>무비픽 — 오늘 뭐 볼까?</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --bg:#0D0D0D;--surface:#1A1A1A;--surface2:#242424;--surface3:#2E2E2E;
+  --text:#F0F0F0;--text2:#999;--text3:#666;
+  --accent:#E50914;--accent2:#FF6B6B;
+  --green:#2ECC71;--gold:#F1C40F;--naver:#2DB400;--watcha:#FF0558;
+  --radius:14px;--shadow:0 4px 20px rgba(0,0,0,0.4);
+  --max-w:480px;
+}
+html,body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+.app{max-width:var(--max-w);margin:0 auto;min-height:100vh;position:relative;}
+
+/* Header */
+.header{position:sticky;top:0;z-index:100;background:rgba(13,13,13,0.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);padding:14px 16px 0;}
+.brand{display:flex;align-items:center;gap:8px;margin-bottom:14px;}
+.brand-icon{font-size:24px;}
+.brand-name{font-size:18px;font-weight:900;letter-spacing:-0.03em;}
+.brand-name em{font-style:normal;color:var(--accent);}
+
+/* Tabs */
+.tabs{display:flex;gap:0;border-bottom:2px solid var(--surface2);}
+.tab{flex:1;padding:12px 0;text-align:center;font-size:14px;font-weight:700;color:var(--text3);cursor:pointer;border:none;background:none;font-family:inherit;position:relative;transition:color 0.2s;}
+.tab.active{color:var(--text);}
+.tab.active::after{content:'';position:absolute;bottom:-2px;left:20%;width:60%;height:2px;background:var(--accent);border-radius:2px;}
+
+/* Feed */
+.feed{padding:0 16px 100px;}
+.filter-row{display:flex;gap:6px;overflow-x:auto;padding:12px 0 6px;-webkit-overflow-scrolling:touch;}
+.filter-row::-webkit-scrollbar{display:none;}
+.chip{padding:7px 14px;border-radius:20px;font-size:12px;font-weight:600;white-space:nowrap;cursor:pointer;border:1px solid var(--surface2);background:var(--surface);color:var(--text2);transition:all 0.15s;flex-shrink:0;}
+.chip.active{background:var(--text);color:var(--bg);border-color:var(--text);}
+.chip.accent{border-color:var(--accent);color:var(--accent);}
+.chip.accent.active{background:var(--accent);color:#fff;border-color:var(--accent);}
+
+/* Sort bar */
+.sort-bar{display:flex;align-items:center;justify-content:space-between;padding:6px 0 12px;}
+.sort-bar .count{font-size:12px;color:var(--text3);}
+.sort-btns{display:flex;gap:4px;}
+.sort-btn{padding:5px 10px;border-radius:8px;font-size:11px;font-weight:600;cursor:pointer;border:1px solid var(--surface2);background:var(--surface);color:var(--text3);font-family:inherit;transition:all 0.15s;}
+.sort-btn.active{background:var(--surface3);color:var(--text);border-color:var(--text3);}
+
+/* Card */
+.card{background:var(--surface);border-radius:var(--radius);overflow:hidden;margin-bottom:14px;box-shadow:var(--shadow);cursor:pointer;transition:transform 0.15s;position:relative;}
+.card:active{transform:scale(0.98);}
+.card.watched{opacity:0.55;}
+.card.watched::after{content:'✓ 시청함';position:absolute;top:8px;right:8px;background:rgba(0,0,0,0.75);color:var(--green);font-size:10px;font-weight:700;padding:3px 8px;border-radius:4px;z-index:2;}
+.card-thumb{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;background:#000;}
+.card-thumb img{width:100%;height:100%;object-fit:cover;}
+.card-duration{position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,0.8);color:#fff;font-size:11px;font-weight:700;padding:2px 6px;border-radius:4px;}
+.card-spoiler{position:absolute;top:8px;left:8px;background:var(--accent);color:#fff;font-size:10px;font-weight:700;padding:3px 8px;border-radius:4px;}
+.card-body{padding:12px 14px;}
+.card-movie-row{display:flex;gap:10px;margin-bottom:8px;}
+.card-poster{width:44px;height:66px;border-radius:6px;overflow:hidden;flex-shrink:0;background:var(--surface2);}
+.card-poster img{width:100%;height:100%;object-fit:cover;}
+.card-movie-info{flex:1;min-width:0;}
+.card-movie-title{font-size:15px;font-weight:800;line-height:1.3;margin-bottom:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.card-movie-meta{font-size:11px;color:var(--text2);display:flex;gap:6px;flex-wrap:wrap;align-items:center;}
+.card-movie-meta .rating{color:var(--gold);font-weight:700;}
+.card-ratings{display:flex;gap:8px;margin-top:4px;font-size:10px;font-weight:600;}
+.card-ratings .rt{padding:2px 6px;border-radius:4px;}
+.rt-tmdb{background:rgba(1,210,119,0.15);color:#01D277;}
+.card-video-title{font-size:12px;color:var(--text2);line-height:1.5;margin-bottom:6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+.card-stats{display:flex;gap:10px;font-size:11px;color:var(--text3);margin-top:4px;}
+
+/* Player Overlay */
+.player-overlay{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.95);z-index:500;display:none;flex-direction:column;}
+.player-overlay.active{display:flex;}
+.player-header{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;flex-shrink:0;}
+.player-close{background:none;border:none;color:#fff;font-size:24px;cursor:pointer;padding:4px;}
+.player-frame{display:flex;align-items:center;justify-content:center;}
+.player-frame iframe{width:100%;max-width:var(--max-w);aspect-ratio:16/9;border:none;border-radius:8px;}
+.player-info{padding:16px;overflow-y:auto;flex:1;}
+.player-movie-title{font-size:18px;font-weight:900;margin-bottom:4px;}
+.player-movie-meta{font-size:12px;color:var(--text2);margin-bottom:8px;}
+.player-watched-btn{padding:8px 16px;border-radius:10px;font-size:13px;font-weight:700;cursor:pointer;border:1px solid var(--green);background:transparent;color:var(--green);font-family:inherit;margin-bottom:14px;transition:all 0.15s;}
+.player-watched-btn.done{background:var(--green);color:#000;border-color:var(--green);}
+.player-next-label{font-size:13px;font-weight:700;color:var(--text2);margin-bottom:10px;}
+.player-next-list{display:flex;flex-direction:column;gap:8px;}
+.player-next-item{display:flex;gap:10px;padding:10px;background:var(--surface);border-radius:10px;cursor:pointer;}
+.player-next-item img{width:120px;height:68px;object-fit:cover;border-radius:6px;flex-shrink:0;}
+.player-next-item .pn-info{flex:1;min-width:0;}
+.player-next-item .pn-title{font-size:12px;font-weight:600;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+.player-next-item .pn-ch{font-size:11px;color:var(--text3);margin-top:3px;}
+
+/* Search */
+.search-wrap{padding:16px;display:none;}
+.search-wrap.active{display:block;}
+.search-input{width:100%;padding:12px 16px;border-radius:12px;border:1.5px solid var(--surface2);background:var(--surface);color:var(--text);font-size:15px;font-family:inherit;outline:none;}
+.search-input:focus{border-color:var(--accent);}
+.search-input::placeholder{color:var(--text3);}
+.search-results{padding:0 16px 100px;}
+.search-empty{text-align:center;padding:60px 0;color:var(--text3);font-size:14px;}
+
+.loading{text-align:center;padding:60px 0;color:var(--text3);}
+.loading-spinner{display:inline-block;width:24px;height:24px;border:3px solid var(--surface2);border-top-color:var(--accent);border-radius:50%;animation:spin 0.8s linear infinite;margin-bottom:10px;}
+@keyframes spin{to{transform:rotate(360deg);}}
+</style>
+</head>
+<body>
+<div class="app">
+
+  <div class="header">
+    <div class="brand">
+      <span class="brand-icon">🎬</span>
+      <span class="brand-name">무비<em>픽</em></span>
+    </div>
+    <div class="tabs">
+      <button class="tab active" onclick="switchTab('feed')">오늘 뭐볼까</button>
+      <button class="tab" onclick="switchTab('search')">영화 찾아줘</button>
+    </div>
+  </div>
+
+  <div id="tab-feed">
+    <div class="feed">
+      <div class="filter-row" id="genre-filter"></div>
+      <div class="filter-row" id="extra-filter"></div>
+      <div class="sort-bar">
+        <span class="count" id="feed-count"></span>
+        <div class="sort-btns">
+          <button class="sort-btn" onclick="setSort(this,'shuffle')">🔀 셔플</button>
+          <button class="sort-btn active" onclick="setSort(this,'latest')">최신순</button>
+          <button class="sort-btn" onclick="setSort(this,'views')">조회수순</button>
+          <button class="sort-btn" onclick="setSort(this,'rating')">평점순</button>
+        </div>
+      </div>
+      <div id="feed-list">
+        <div class="loading"><div class="loading-spinner"></div><div>영상을 불러오는 중...</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="tab-search" style="display:none;">
+    <div class="search-wrap active">
+      <input class="search-input" type="search" placeholder="영화 제목을 검색하세요..." id="searchInput" autocomplete="off">
+    </div>
+    <div class="search-results" id="search-results">
+      <div class="search-empty">🔍 영화 제목으로 요약 영상을 찾아보세요</div>
+    </div>
+  </div>
+
+  <div class="player-overlay" id="player-overlay">
+    <div class="player-header">
+      <button class="player-close" onclick="closePlayer()">✕</button>
+      <span style="font-size:12px;color:var(--text3);" id="player-channel"></span>
+    </div>
+    <div class="player-frame">
+      <iframe id="player-iframe" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class="player-info">
+      <div class="player-movie-title" id="player-title"></div>
+      <div class="player-movie-meta" id="player-meta"></div>
+      <button class="player-watched-btn" id="player-watched" onclick="toggleWatched()">👁 시청 완료</button>
+      <div class="player-next-label">다음 추천</div>
+      <div class="player-next-list" id="player-next"></div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+let allItems = [];
+let filteredItems = [];
+let currentGenre = '전체';
+let spoilerFilter = 'all';
+let sortMode = 'latest';
+let currentPlayerVideoId = null;
+
+// 시청 기록 (localStorage)
+function getWatched() { try { return JSON.parse(localStorage.getItem('mp_watched') || '{}'); } catch { return {}; } }
+function setWatchedId(vid) { const w = getWatched(); w[vid] = Date.now(); localStorage.setItem('mp_watched', JSON.stringify(w)); }
+function removeWatchedId(vid) { const w = getWatched(); delete w[vid]; localStorage.setItem('mp_watched', JSON.stringify(w)); }
+function isWatched(vid) { return !!getWatched()[vid]; }
+
+// 장르 매핑 (TV영화 제거, 카테고리 정리)
+const GENRE_MAP = {
+  '전체': '전체',
+  '액션': '액션', 'SF': 'SF', '스릴러': '스릴러', '공포': '공포',
+  '코미디': '코미디', '드라마': '드라마', '로맨스': '로맨스',
+  '애니메이션': '애니메이션', '범죄': '범죄', '판타지': '판타지',
+  '미스터리': '미스터리', '모험': '모험', '전쟁': '전쟁', '다큐멘터리': '다큐멘터리',
+};
+const HIDDEN_GENRES = new Set(['TV 영화', '음악', '역사', '가족', '서부']);
+
+function normalizeGenres(genres) {
+  return (genres || []).filter(g => !HIDDEN_GENRES.has(g));
+}
+
+// 셔플
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
+  return a;
+}
+
+async function loadFeed() {
+  try {
+    const r = await fetch('data/feed.json?t=' + Date.now());
+    const data = await r.json();
+    allItems = data.items || [];
+    // 초기 로드 시 셔플
+    allItems = shuffle(allItems);
+    buildGenreFilter();
+    applyFilters();
+  } catch(e) {
+    document.getElementById('feed-list').innerHTML =
+      '<div class="loading">피드 데이터가 아직 없습니다.<br>파이프라인을 먼저 실행하세요.</div>';
+  }
+}
+
+function buildGenreFilter() {
+  const genreCounts = {};
+  allItems.forEach(i => normalizeGenres(i.movie.genres).forEach(g => {
+    if (GENRE_MAP[g] !== undefined || !HIDDEN_GENRES.has(g)) genreCounts[g] = (genreCounts[g]||0) + 1;
+  }));
+  // 개수순 정렬, 상위 12개만
+  const sorted = Object.entries(genreCounts).sort((a,b) => b[1] - a[1]).slice(0, 12).map(e => e[0]);
+
+  const el = document.getElementById('genre-filter');
+  el.innerHTML = `<div class="chip active" onclick="filterGenre(this,'전체')" data-type="genre">전체</div>`
+    + sorted.map(g => `<div class="chip" onclick="filterGenre(this,'${g}')" data-type="genre">${g}</div>`).join('');
+
+  const extra = document.getElementById('extra-filter');
+  extra.innerHTML =
+    `<div class="chip accent" onclick="toggleSpoiler(this,'spoiler')" data-type="spoiler">🔴 결말포함</div>`
+    + `<div class="chip" onclick="toggleSpoiler(this,'nospoiler')" data-type="spoiler">결말없음</div>`
+    + `<span style="width:1px;height:20px;background:var(--surface2);flex-shrink:0;margin:0 2px;"></span>`
+    + `<div class="chip" onclick="toggleWatchedFilter(this)" data-type="watched" id="chip-watched">🙈 안 본 것만</div>`;
+}
+
+let watchedFilter = false;
+function toggleWatchedFilter(el) {
+  watchedFilter = !watchedFilter;
+  el.classList.toggle('active', watchedFilter);
+  applyFilters();
+}
+
+function filterGenre(el, genre) {
+  document.querySelectorAll('.chip[data-type="genre"]').forEach(c => c.classList.remove('active'));
+  el.classList.add('active');
+  currentGenre = genre;
+  applyFilters();
+}
+
+function toggleSpoiler(el, mode) {
+  const wasActive = el.classList.contains('active');
+  document.querySelectorAll('.chip[data-type="spoiler"]').forEach(c => c.classList.remove('active'));
+  spoilerFilter = wasActive ? 'all' : mode;
+  if (!wasActive) el.classList.add('active');
+  applyFilters();
+}
+
+function setSort(el, mode) {
+  document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+  el.classList.add('active');
+  sortMode = mode;
+  applyFilters();
+}
+
+function applyFilters() {
+  let items = [...allItems];
+  // 장르
+  if (currentGenre !== '전체') items = items.filter(i => normalizeGenres(i.movie.genres).includes(currentGenre));
+  // 결말
+  if (spoilerFilter === 'spoiler') items = items.filter(i => i.video.has_spoiler);
+  else if (spoilerFilter === 'nospoiler') items = items.filter(i => !i.video.has_spoiler);
+  // 시청 필터
+  if (watchedFilter) items = items.filter(i => !isWatched(i.video.id));
+  // 정렬
+  if (sortMode === 'latest') items.sort((a,b) => (b.video.published_at||'').localeCompare(a.video.published_at||''));
+  else if (sortMode === 'views') items.sort((a,b) => (b.video.view_count||0) - (a.video.view_count||0));
+  else if (sortMode === 'rating') items.sort((a,b) => (b.movie.vote_average||0) - (a.movie.vote_average||0));
+  else if (sortMode === 'shuffle') items = shuffle(items);
+
+  filteredItems = items;
+  document.getElementById('feed-count').textContent = `${items.length}개 영상`;
+  renderFeed(items);
+}
+
+function renderFeed(items) {
+  const el = document.getElementById('feed-list');
+  if (!items.length) { el.innerHTML = '<div class="loading">조건에 맞는 영상이 없습니다.</div>'; return; }
+  el.innerHTML = items.slice(0, 60).map((item, idx) => renderCard(item, idx)).join('');
+}
+
+function renderCard(item, idx) {
+  const v = item.video, m = item.movie;
+  const thumb = `https://img.youtube.com/vi/${v.id}/mqdefault.jpg`;
+  const rating = m.vote_average ? m.vote_average.toFixed(1) : '';
+  const genres = normalizeGenres(m.genres).slice(0,2).join(' · ');
+  const views = v.view_count > 10000 ? `${Math.round(v.view_count/10000)}만회` : v.view_count > 1000 ? `${Math.round(v.view_count/1000)}천회` : `${v.view_count||0}회`;
+  const watched = isWatched(v.id) ? ' watched' : '';
+  return `<div class="card${watched}" onclick="openPlayer(${idx})">
+    <div class="card-thumb">
+      <img src="${thumb}" alt="" loading="lazy">
+      ${v.duration_label ? `<span class="card-duration">${v.duration_label}</span>` : ''}
+      ${v.has_spoiler ? '<span class="card-spoiler">결말 포함</span>' : ''}
+    </div>
+    <div class="card-body">
+      <div class="card-movie-row">
+        ${m.poster_url ? `<div class="card-poster"><img src="${m.poster_url}" alt="" loading="lazy"></div>` : ''}
+        <div class="card-movie-info">
+          <div class="card-movie-title">${m.title_ko || m.title_en || '제목 미상'}</div>
+          <div class="card-movie-meta">
+            ${rating ? `<span class="rating">⭐ ${rating}</span>` : ''}
+            ${m.year ? `<span>${m.year}</span>` : ''}
+            ${genres ? `<span>${genres}</span>` : ''}
+          </div>
+          <div class="card-ratings">
+            ${rating ? `<span class="rt rt-tmdb">TMDB ${rating}</span>` : ''}
+          </div>
+        </div>
+      </div>
+      <div class="card-video-title">${v.title}</div>
+      <div class="card-stats">
+        <span>${v.channel}</span>
+        <span>조회수 ${views}</span>
+      </div>
+    </div>
+  </div>`;
+}
+
+function openPlayer(idx) {
+  const item = filteredItems[idx];
+  if (!item) return;
+  const v = item.video, m = item.movie;
+  currentPlayerVideoId = v.id;
+
+  document.getElementById('player-iframe').src = `${v.embed_url}?autoplay=1`;
+  document.getElementById('player-title').textContent = m.title_ko || m.title_en || '';
+  document.getElementById('player-channel').textContent = v.channel;
+  const genres = normalizeGenres(m.genres).join(' · ');
+  document.getElementById('player-meta').textContent =
+    `${m.year||''} · ${genres} · ${m.director||''} · TMDB ⭐${(m.vote_average||0).toFixed(1)}`;
+
+  // 시청 버튼 상태
+  const wb = document.getElementById('player-watched');
+  if (isWatched(v.id)) { wb.textContent = '✓ 시청 완료'; wb.classList.add('done'); }
+  else { wb.textContent = '👁 시청 완료'; wb.classList.remove('done'); }
+
+  // 다음 추천 (같은 장르 우선, 셔플)
+  const sameGenre = filteredItems.filter((fi, i) => i !== idx && normalizeGenres(fi.movie.genres).some(g => normalizeGenres(m.genres).includes(g)));
+  const nextItems = shuffle(sameGenre).slice(0, 5);
+  document.getElementById('player-next').innerHTML = nextItems.map(ni => {
+    const nv = ni.video, nm = ni.movie;
+    const nidx = filteredItems.indexOf(ni);
+    const thumb = `https://img.youtube.com/vi/${nv.id}/mqdefault.jpg`;
+    return `<div class="player-next-item" onclick="openPlayer(${nidx})">
+      <img src="${thumb}" alt="" loading="lazy">
+      <div class="pn-info">
+        <div class="pn-title">${nm.title_ko||nm.title_en||''} — ${nv.title}</div>
+        <div class="pn-ch">${nv.channel} · ${nv.duration_label||''}</div>
+      </div>
+    </div>`;
+  }).join('');
+
+  document.getElementById('player-overlay').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function toggleWatched() {
+  if (!currentPlayerVideoId) return;
+  const wb = document.getElementById('player-watched');
+  if (isWatched(currentPlayerVideoId)) {
+    removeWatchedId(currentPlayerVideoId);
+    wb.textContent = '👁 시청 완료';
+    wb.classList.remove('done');
+  } else {
+    setWatchedId(currentPlayerVideoId);
+    wb.textContent = '✓ 시청 완료';
+    wb.classList.add('done');
+  }
+}
+
+function closePlayer() {
+  document.getElementById('player-overlay').classList.remove('active');
+  document.getElementById('player-iframe').src = '';
+  document.body.style.overflow = '';
+  currentPlayerVideoId = null;
+  applyFilters(); // 시청 상태 반영
+}
+
+function switchTab(tab) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  if (tab === 'feed') {
+    document.querySelectorAll('.tab')[0].classList.add('active');
+    document.getElementById('tab-feed').style.display = '';
+    document.getElementById('tab-search').style.display = 'none';
+  } else {
+    document.querySelectorAll('.tab')[1].classList.add('active');
+    document.getElementById('tab-feed').style.display = 'none';
+    document.getElementById('tab-search').style.display = '';
+    document.getElementById('searchInput').focus();
+  }
+}
+
+// Search
+document.addEventListener('DOMContentLoaded', () => {
+  const input = document.getElementById('searchInput');
+  let debounce;
+  input.addEventListener('input', () => {
+    clearTimeout(debounce);
+    debounce = setTimeout(() => {
+      const q = input.value.trim().toLowerCase();
+      const el = document.getElementById('search-results');
+      if (!q) { el.innerHTML = '<div class="search-empty">🔍 영화 제목으로 요약 영상을 찾아보세요</div>'; return; }
+      const results = allItems.filter(i =>
+        (i.movie.title_ko||'').toLowerCase().includes(q) ||
+        (i.movie.title_en||'').toLowerCase().includes(q)
+      );
+      if (!results.length) { el.innerHTML = '<div class="search-empty">검색 결과가 없습니다</div>'; return; }
+      const grouped = {};
+      results.forEach(i => {
+        const key = i.movie.tmdb_id;
+        if (!grouped[key]) grouped[key] = { movie: i.movie, videos: [] };
+        grouped[key].videos.push(i.video);
+      });
+      el.innerHTML = Object.values(grouped).map(g => {
+        const m = g.movie;
+        const genres = normalizeGenres(m.genres).slice(0,3).join(' · ');
+        return `<div style="background:var(--surface);border-radius:var(--radius);padding:14px;margin-bottom:10px;">
+          <div style="display:flex;gap:10px;margin-bottom:10px;">
+            ${m.poster_url ? `<img src="${m.poster_url}" style="width:60px;border-radius:8px;">` : ''}
+            <div>
+              <div style="font-size:16px;font-weight:800;">${m.title_ko||m.title_en}</div>
+              <div style="font-size:12px;color:var(--text2);margin-top:2px;">${m.year||''} · ${genres} · TMDB ⭐${(m.vote_average||0).toFixed(1)}</div>
+              <div style="font-size:11px;color:var(--text3);margin-top:2px;">${m.director||''}</div>
+            </div>
+          </div>
+          <div style="font-size:12px;font-weight:700;color:var(--text2);margin-bottom:6px;">요약 영상 ${g.videos.length}개</div>
+          ${g.videos.map(v => {
+            const vidx = allItems.findIndex(i => i.video.id === v.id);
+            const w = isWatched(v.id);
+            return `<div onclick="switchTab('feed');setTimeout(()=>openPlayer(${vidx}),100)" style="display:flex;gap:8px;padding:8px;background:var(--surface2);border-radius:8px;margin-bottom:4px;cursor:pointer;${w?'opacity:0.5':''}">
+              <img src="https://img.youtube.com/vi/${v.id}/default.jpg" style="width:80px;height:45px;object-fit:cover;border-radius:4px;">
+              <div style="flex:1;min-width:0;">
+                <div style="font-size:12px;line-height:1.4;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${w?'✓ ':''} ${v.title}</div>
+                <div style="font-size:11px;color:var(--text3);margin-top:2px;">${v.channel} · ${v.duration_label||''}</div>
+              </div>
+            </div>`;
+          }).join('')}
+        </div>`;
+      }).join('');
+    }, 300);
+  });
+
+  loadFeed();
+});
+</script>
+</body>
+</html>
