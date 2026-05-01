@@ -127,15 +127,19 @@ html,body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:var(--b
       <span class="brand-name">Don't <em>Watch It All</em></span>
     </div>
     <div class="tabs">
-      <button class="tab active" onclick="switchTab('feed')">오늘 뭐볼까</button>
+      <button class="tab active" onclick="switchTab('today')">🎲 오늘 이거 어때</button>
+      <button class="tab" onclick="switchTab('feed')">오늘 뭐볼까</button>
       <button class="tab" onclick="switchTab('search')">영화 찾아줘</button>
     </div>
   </div>
 
-  <div id="tab-feed">
+  <!-- Today's picks tab -->
+  <div id="tab-today">
+    <div class="feed" id="today-feed"></div>
+  </div>
+
+  <div id="tab-feed" style="display:none;">
     <div class="feed">
-      <!-- Daily pick -->
-      <div class="daily-pick" id="daily-pick" style="display:none;"></div>
       <!-- Filters -->
       <div class="filter-row" id="genre-filter"></div>
       <div class="filter-row" id="extra-filter"></div>
@@ -143,8 +147,8 @@ html,body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:var(--b
       <div class="sort-bar">
         <span class="count" id="feed-count"></span>
         <div class="sort-btns">
-          <button class="sort-btn" onclick="setSort(this,'shuffle')">🔀</button>
-          <button class="sort-btn active" onclick="setSort(this,'latest')">최신순</button>
+          <button class="sort-btn active" onclick="setSort(this,'shuffle')">🔀</button>
+          <button class="sort-btn" onclick="setSort(this,'latest')">최신순</button>
           <button class="sort-btn" onclick="setSort(this,'views')">조회수</button>
           <button class="sort-btn" onclick="setSort(this,'rating')">평점</button>
         </div>
@@ -195,7 +199,8 @@ html,body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:var(--b
 
 <script>
 let allItems=[], filteredItems=[], displayedCount=0;
-let currentGenre='전체', spoilerFilter='all', sortMode='latest', durFilter='all';
+let currentGenre='전체', spoilerFilter='all', sortMode='shuffle', durFilter='all';
+let todayPicks=[];
 let currentPlayerVideoId=null, currentPlayerItem=null;
 const PAGE_SIZE=20;
 
@@ -249,29 +254,47 @@ function buildFilters(){
 }
 
 function renderDailyPick(){
+  // 날짜 기반 시드로 매일 다른 5편 선택
   const seed=new Date().toDateString();
   let hash=0;for(let i=0;i<seed.length;i++)hash=seed.charCodeAt(i)+(hash<<5)-hash;
-  const highRated=allItems.filter(i=>(i.movie.vote_average||0)>=7&&(i.video.view_count||0)>10000);
-  if(!highRated.length)return;
-  const pick=highRated[Math.abs(hash)%highRated.length];
-  const m=pick.movie,v=pick.video;
-  const ratings=[];
-  if(m.vote_average)ratings.push(`<span class="rt rt-tmdb">TMDB ${m.vote_average.toFixed(1)}</span>`);
-  if(m.imdb_rating)ratings.push(`<span class="rt rt-imdb">IMDb ${m.imdb_rating}</span>`);
-  if(m.rotten_tomatoes)ratings.push(`<span class="rt rt-rotten">🍅 ${m.rotten_tomatoes}%</span>`);
-  const idx=allItems.indexOf(pick);
-  const el=document.getElementById('daily-pick');
-  el.style.display='';
-  el.innerHTML=`<div class="dp-label">🎲 오늘 이거 어때?</div>
-    <div class="dp-content">
-      ${m.poster_url?`<div class="dp-poster"><img src="${m.poster_url}"></div>`:''}
-      <div class="dp-info">
-        <div class="dp-title">${m.title_ko||m.title_en}</div>
-        <div class="dp-meta">${m.year||''} · ${cleanGenres(m.genres).slice(0,2).join(' · ')} · ${m.director||''}</div>
-        <div class="dp-ratings">${ratings.join('')}</div>
-        <button class="dp-btn" onclick="openPlayer(${idx})">▶ 요약 보기 · ${v.duration_label||''}</button>
-      </div>
-    </div>`;
+  const pool=allItems.filter(i=>(i.movie.vote_average||0)>=6.5&&(i.video.view_count||0)>5000);
+  if(!pool.length)return;
+  // 시드 기반 셔플
+  const seeded=[...pool];
+  for(let i=seeded.length-1;i>0;i--){const j=Math.abs((hash*31+i*17)%(i+1));[seeded[i],seeded[j]]=[seeded[j],seeded[i]];}
+  // 같은 영화 중복 제거, 5편 선택
+  const seen=new Set();
+  todayPicks=[];
+  for(const item of seeded){
+    if(todayPicks.length>=5)break;
+    if(seen.has(item.movie.tmdb_id))continue;
+    seen.add(item.movie.tmdb_id);
+    todayPicks.push(item);
+  }
+  const el=document.getElementById('today-feed');
+  el.innerHTML=`<div style="padding:16px 0 8px;"><div class="section-label">🎲 오늘의 추천 5편</div><div style="font-size:12px;color:var(--text3);margin-bottom:12px;">매일 새로운 영화를 추천해드려요</div></div>`+
+    todayPicks.map((item,i)=>{
+      const m=item.movie,v=item.video;
+      const ratings=[];
+      if(m.vote_average)ratings.push(`<span class="rt rt-tmdb">TMDB ${m.vote_average.toFixed(1)}</span>`);
+      if(m.imdb_rating)ratings.push(`<span class="rt rt-imdb">IMDb ${m.imdb_rating}</span>`);
+      if(m.rotten_tomatoes)ratings.push(`<span class="rt rt-rotten">🍅 ${m.rotten_tomatoes}%</span>`);
+      const ott=(m.watch_providers||[]).slice(0,3).map(p=>`<span class="ott-tag">${p.name}</span>`).join('');
+      const idx=allItems.indexOf(item);
+      return `<div class="daily-pick" style="display:block;margin-bottom:12px;" onclick="openPlayer(${idx})">
+        <div class="dp-label">#${i+1}</div>
+        <div class="dp-content">
+          ${m.poster_url?`<div class="dp-poster"><img src="${m.poster_url}"></div>`:''}
+          <div class="dp-info">
+            <div class="dp-title">${m.title_ko||m.title_en}</div>
+            <div class="dp-meta">${m.year||''} · ${cleanGenres(m.genres).slice(0,2).join(' · ')} · ${m.director||''}</div>
+            <div class="dp-ratings">${ratings.join('')}</div>
+            ${ott?`<div style="margin-top:4px;">${ott}</div>`:''}
+            <div style="margin-top:6px;font-size:11px;color:var(--text3);">▶ ${v.channel} · ${v.duration_label||''}</div>
+          </div>
+        </div>
+      </div>`;
+    }).join('');
 }
 
 function renderGems(){
@@ -461,8 +484,12 @@ function shareVideo(){
 
 function switchTab(tab){
   document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
-  if(tab==='feed'){document.querySelectorAll('.tab')[0].classList.add('active');document.getElementById('tab-feed').style.display='';document.getElementById('tab-search').style.display='none';}
-  else{document.querySelectorAll('.tab')[1].classList.add('active');document.getElementById('tab-feed').style.display='none';document.getElementById('tab-search').style.display='';document.getElementById('searchInput').focus();}
+  document.getElementById('tab-today').style.display='none';
+  document.getElementById('tab-feed').style.display='none';
+  document.getElementById('tab-search').style.display='none';
+  if(tab==='today'){document.querySelectorAll('.tab')[0].classList.add('active');document.getElementById('tab-today').style.display='';}
+  else if(tab==='feed'){document.querySelectorAll('.tab')[1].classList.add('active');document.getElementById('tab-feed').style.display='';applyFilters();}
+  else{document.querySelectorAll('.tab')[2].classList.add('active');document.getElementById('tab-search').style.display='';document.getElementById('searchInput').focus();}
 }
 
 document.addEventListener('DOMContentLoaded',()=>{
