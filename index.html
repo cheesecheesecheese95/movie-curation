@@ -228,6 +228,7 @@ async function loadFeed(){
     const r=await fetch('data/feed.json',{cache:'no-store'});
     const data=await r.json();
     allItems=data.items||[];
+    console.log('Feed loaded:',allItems.length,'items');
     buildFilters();
     renderDailyPick();
     renderGems();
@@ -333,14 +334,16 @@ function applyFilters(){
   else if(sortMode==='views')items.sort((a,b)=>(b.video.view_count||0)-(a.video.view_count||0));
   else if(sortMode==='rating')items.sort((a,b)=>(b.movie.vote_average||0)-(a.movie.vote_average||0));
   else{
-    // Fisher-Yates 셔플 — 매 호출 시 완전히 새로운 순서
     for(let i=items.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[items[i],items[j]]=[items[j],items[i]];}
   }
 
   filteredItems=items;
   displayedCount=0;
-  document.getElementById('feed-count').textContent=`${items.length}개 영상`;
-  document.getElementById('feed-list').innerHTML='';
+  const countEl=document.getElementById('feed-count');
+  const listEl=document.getElementById('feed-list');
+  if(countEl)countEl.textContent=items.length+'개 영상';
+  if(listEl)listEl.innerHTML='';
+  console.log('applyFilters:',items.length,'items, first:',items[0]?.movie?.title_ko,'sort:',sortMode);
   loadMore();
 }
 
