@@ -1,5 +1,5 @@
 {
-  "total": 866,
+  "total": 766,
   "items": [
     {
       "video": {
@@ -294,42 +294,6 @@
     },
     {
       "video": {
-        "id": "vr5F8hoDxw8",
-        "title": "컬트 영화 역사상 가장 기괴한 결말을 가진 문제작 (해괴망측 주의, 기괴함 주의)",
-        "url": "https://www.youtube.com/watch?v=vr5F8hoDxw8",
-        "embed_url": "https://www.youtube.com/embed/vr5F8hoDxw8",
-        "channel": "기무리뷰",
-        "channel_id": "UCSaWpMhJ-wm1ekEbEvZ6AhQ",
-        "published_at": "2026-04-25T14:14:11Z",
-        "view_count": 122625,
-        "duration_sec": 1102,
-        "duration_label": "18분",
-        "has_spoiler": true,
-        "match_confidence": 0.98
-      },
-      "movie": {
-        "tmdb_id": 16307,
-        "title_ko": "위커맨",
-        "title_en": "The Wicker Man",
-        "year": 1973,
-        "genres": [
-          "공포"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/wwtrXRL8SiOWxhwLEvw7iBgYh0g.jpg",
-        "vote_average": 7.337,
-        "vote_count": 1614,
-        "overview": "스코틀랜드의 경찰 닐 하위는 어느 날 ‘서머아일’이라는 한 외딴 섬에서 한 소녀가 실종되었다는 신고를 받고 그 섬으로 가게 된다. 그곳은 고대 드루이드 신앙을 믿는 주민들이 모여 사는 폐쇄적인 공동체로 주민들은 외지인인 닐에게 경계심을 품는다. 그럼에도 닐은 소녀를 꼭 찾겠다는 마음으로 섬 이곳저곳을 돌아다니다 섬의 특이한 풍습들을 마주하게 되고, 독실한 기독교 신자로서 본인의 세계관, 종교관과 맞지 않는 마을 풍습에 크게 불편함을 느낀다. 게다가 마침 그 해는 섬에 흉년이 찾아온 터라 닐은 소녀가 인신공양의 희생 제물이 될 지도 모른다는 것을 확신하고 소녀를 구하기 위해 분투하는데..",
-        "director": "Robin Hardy",
-        "runtime": 93,
-        "imdb_rating": "7.5",
-        "rotten_tomatoes": "92",
-        "metacritic": "87",
-        "watch_providers": [],
-        "naver_rating": null
-      }
-    },
-    {
-      "video": {
         "id": "G2q7b3ihs5o",
         "title": "작전 한방에 대역전, 폭탄 한방에 10,000명 사망! 독일 대참패 전투 Top 2 [영화리뷰 결말포함]",
         "url": "https://www.youtube.com/watch?v=G2q7b3ihs5o",
@@ -504,53 +468,6 @@
         "metacritic": "N/A",
         "watch_providers": [],
         "naver_rating": "9.67"
-      }
-    },
-    {
-      "video": {
-        "id": "d4ZpZrVd-oI",
-        "title": "≪태양계 목성≫에서 발견된 \"충격적인 진실\"을 마주한 남자",
-        "url": "https://www.youtube.com/watch?v=d4ZpZrVd-oI",
-        "embed_url": "https://www.youtube.com/embed/d4ZpZrVd-oI",
-        "channel": "기무리뷰",
-        "channel_id": "UCSaWpMhJ-wm1ekEbEvZ6AhQ",
-        "published_at": "2026-04-21T09:00:00Z",
-        "view_count": 54330,
-        "duration_sec": 1007,
-        "duration_label": "16분",
-        "has_spoiler": true,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 636706,
-        "title_ko": "우주인",
-        "title_en": "Spaceman",
-        "year": 2024,
-        "genres": [
-          "SF",
-          "모험",
-          "드라마"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/pQyVnn14GDyJQEcVdQRTGsYxIJD.jpg",
-        "vote_average": 6.706,
-        "vote_count": 1029,
-        "overview": "홀로 연구 탐사를 떠난 지 6개월째인 외로운 우주 비행사. 우주선에서 발견한 수수께끼의 생명체에게 도움을 받으며 금이 간 자신의 결혼 생활을 돌아본다.",
-        "director": "Johan Renck",
-        "runtime": 108,
-        "imdb_rating": "5.7",
-        "rotten_tomatoes": "50",
-        "metacritic": "55",
-        "watch_providers": [
-          {
-            "name": "Netflix",
-            "type": "subscription"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "type": "subscription"
-          }
-        ],
-        "naver_rating": "6.2"
       }
     },
     {
@@ -876,61 +793,6 @@
           }
         ],
         "naver_rating": null
-      }
-    },
-    {
-      "video": {
-        "id": "MCUjynX0NYU",
-        "title": "중력이 파괴되어 지구에 추락하기 시작한 달 (지구멸망)",
-        "url": "https://www.youtube.com/watch?v=MCUjynX0NYU",
-        "embed_url": "https://www.youtube.com/embed/MCUjynX0NYU",
-        "channel": "기무리뷰",
-        "channel_id": "UCSaWpMhJ-wm1ekEbEvZ6AhQ",
-        "published_at": "2026-04-18T11:04:34Z",
-        "view_count": 107486,
-        "duration_sec": 1149,
-        "duration_label": "19분",
-        "has_spoiler": true,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 406759,
-        "title_ko": "문폴",
-        "title_en": "Moonfall",
-        "year": 2022,
-        "genres": [
-          "SF",
-          "모험",
-          "액션"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/2xmJCxrt5t2dFhvwvmxZ5Cy577j.jpg",
-        "vote_average": 6.251,
-        "vote_count": 3544,
-        "overview": "궤도를 이탈한 달이 지구를 향해 떨어지기 시작하면서 지구의 중력과 모든 물리적인 법칙이 붕괴된다. 거대한 해일과 지진, 화산폭발, 쓰나미와 이상기후까지 상상조차 불가능했던 모든 재난으로 전 세계는 공포와 혼란에 빠진다. 달과 충돌까지 남은 시간은 단 30일. NASA 연구원 파울러, 전직 우주 비행사 브라이언, 그리고 우주 덕후 KC는 달을 막을 방법을 찾기 위해 마지막 우주선에 오른다.",
-        "director": "Roland Emmerich",
-        "runtime": 131,
-        "imdb_rating": "5.2",
-        "rotten_tomatoes": "35",
-        "metacritic": "41",
-        "watch_providers": [
-          {
-            "name": "Watcha",
-            "type": "subscription"
-          },
-          {
-            "name": "TVING",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "rent"
-          },
-          {
-            "name": "Google Play Movies",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": "5.58"
       }
     },
     {
@@ -1276,44 +1138,6 @@
     },
     {
       "video": {
-        "id": "QVq4PoFpA4M",
-        "title": "《서기 2270년》〃우주정거장〃으로 쫓겨난 인간들 (지구멸망)",
-        "url": "https://www.youtube.com/watch?v=QVq4PoFpA4M",
-        "embed_url": "https://www.youtube.com/embed/QVq4PoFpA4M",
-        "channel": "기무리뷰",
-        "channel_id": "UCSaWpMhJ-wm1ekEbEvZ6AhQ",
-        "published_at": "2026-04-13T09:00:00Z",
-        "view_count": 242306,
-        "duration_sec": 1418,
-        "duration_label": "23분",
-        "has_spoiler": true,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 34069,
-        "title_ko": "카르고",
-        "title_en": "Cargo",
-        "year": 2009,
-        "genres": [
-          "스릴러",
-          "미스터리",
-          "SF"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/avg2K7ttnWSF7Zy5LuJ3d8J8Lrj.jpg",
-        "vote_average": 5.916,
-        "vote_count": 431,
-        "overview": "밀폐된 우주선 이곳에 다른 누군가 있다!  유토피아로 가는 마지막 우주선,  누군가 우리의 목숨을 노린다!  지구 종말 이후, 인류의 마지막 희망은 새로운 행성 ‘레아’로 떠나는 것.  레아로 갈 차비를 마련하기 위해 의사 ‘라우라’는 우주선 카산드라호에 지원한다.  함께 탑승한 선원들은 모두 동면 상태에 들어가고,  라우라만이 우주선을 지키며 깨어 있길 4개월 째.  어느 날, 화물칸 근처에서 괴상한 소리와 함께 누군가의 침입 흔적이 발견된다.  두려움에 라우라는 다급히 함장 라크르와를 깨우고 화물칸 곳곳을 탐색한다.  아무도 없다고 안심하려던 찰나, 함장이 갑자기 추락하여 목숨을 잃는 사고가 발생하고,  라우라와 선원들은 큰 충격과 공포에 휩싸이게 되는데…!  탈출구도, 도망칠 곳도 없다!  남은 방법은 단 하나, 놈과의 정면 승부 뿐…!",
-        "director": "Ivan Engler, Ralph Etter",
-        "runtime": 120,
-        "imdb_rating": "6.1",
-        "rotten_tomatoes": "60",
-        "metacritic": "N/A",
-        "watch_providers": [],
-        "naver_rating": null
-      }
-    },
-    {
-      "video": {
         "id": "W6-daEcbq5Y",
         "title": "몰입감 200%...하필이면 고문 전문가의 가족들을 건드린 조직의 최후 [영화리뷰/결말포함]",
         "url": "https://www.youtube.com/watch?v=W6-daEcbq5Y",
@@ -1520,52 +1344,6 @@
     },
     {
       "video": {
-        "id": "o7Vaqr5OQ1Y",
-        "title": "(실화주의) 눈속에 고립되어 끔찍한 선택을 할수밖에 없었던 인간들 ",
-        "url": "https://www.youtube.com/watch?v=o7Vaqr5OQ1Y",
-        "embed_url": "https://www.youtube.com/embed/o7Vaqr5OQ1Y",
-        "channel": "기무리뷰",
-        "channel_id": "UCSaWpMhJ-wm1ekEbEvZ6AhQ",
-        "published_at": "2026-04-10T09:00:00Z",
-        "view_count": 45144,
-        "duration_sec": 1328,
-        "duration_label": "22분",
-        "has_spoiler": true,
-        "match_confidence": 0.88
-      },
-      "movie": {
-        "tmdb_id": 906126,
-        "title_ko": "안데스 설원의 생존자들",
-        "title_en": "Society of the Snow",
-        "year": 2023,
-        "genres": [
-          "드라마",
-          "역사"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/m0t0X7PaAwnBO02R0XJcXNTuS1t.jpg",
-        "vote_average": 7.975,
-        "vote_count": 3470,
-        "overview": "1972년 10월 13일, 럭비팀을 칠레로 데려가기 위해 전세기를 띄운 우루과이 공군 571편이 안데스 산맥의 빙하와 충돌합니다.",
-        "director": "J. A. Bayona",
-        "runtime": 144,
-        "imdb_rating": "7.8",
-        "rotten_tomatoes": "90",
-        "metacritic": "72",
-        "watch_providers": [
-          {
-            "name": "Netflix",
-            "type": "subscription"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "type": "subscription"
-          }
-        ],
-        "naver_rating": null
-      }
-    },
-    {
-      "video": {
         "id": "73ycSj1FMJU",
         "title": "공개 이틀만에 \"23개국 1위\" 트럼프가 중동에 지상군을 투입하지 못하는 이유. 전설의 저격수를 건드려버린 미군의 역대급 최후...[결말포함/몰아보기]",
         "url": "https://www.youtube.com/watch?v=73ycSj1FMJU",
@@ -1647,48 +1425,6 @@
           }
         ],
         "naver_rating": null
-      }
-    },
-    {
-      "video": {
-        "id": "2xt1qytErHc",
-        "title": "〃북극〃 한가운데에 홀로 『3달』 넘게 고립된 남자....ㅎㄷㄷ  (식량 떨어짐, 물 떨어짐)",
-        "url": "https://www.youtube.com/watch?v=2xt1qytErHc",
-        "embed_url": "https://www.youtube.com/embed/2xt1qytErHc",
-        "channel": "기무리뷰",
-        "channel_id": "UCSaWpMhJ-wm1ekEbEvZ6AhQ",
-        "published_at": "2026-04-07T09:30:00Z",
-        "view_count": 266383,
-        "duration_sec": 1035,
-        "duration_label": "17분",
-        "has_spoiler": true,
-        "match_confidence": 0.98
-      },
-      "movie": {
-        "tmdb_id": 453755,
-        "title_ko": "아틱",
-        "title_en": "Arctic",
-        "year": 2018,
-        "genres": [
-          "드라마",
-          "모험"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/gITpN15v2AkBycLWtPN7i52g36n.jpg",
-        "vote_average": 6.533,
-        "vote_count": 1374,
-        "overview": "비행기 추락 사고 이후, 북극에 조난된 오버가드는 언젠가는 구조될 날이 올 것을 믿고 기다린다. 그는 매일 정해진 시간에 무전을 치고, 북극의 지형을 조사하고, 송어를 잡고, 죽은 동료의 무덤에 가서 인사를 한다. 그러던 어느 날, 추락한 헬기 속 생존자를 발견한다. 심각한 부상으로 인해 이대로 구조를 기다릴 수는 없고, 자칫 이동하면 함께 위험해질 수 있는 상황… 하지만 홀로 지내면서 잊고 있었던 생명의 온기. 그녀를 살리기 위해, 지도 한 장에 의지한 채 임시 기지를 찾아가기로 결심한다.",
-        "director": "Joe Penna",
-        "runtime": 98,
-        "imdb_rating": "6.8",
-        "rotten_tomatoes": "91",
-        "metacritic": "71",
-        "watch_providers": [
-          {
-            "name": "Google Play Movies",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": "8.91"
       }
     },
     {
@@ -2129,53 +1865,6 @@
     },
     {
       "video": {
-        "id": "jbBASALFkDA",
-        "title": "장애를 가져야만 ≪국가대표≫가 될수 있는 미래사회...ㅎㄷㄷ",
-        "url": "https://www.youtube.com/watch?v=jbBASALFkDA",
-        "embed_url": "https://www.youtube.com/embed/jbBASALFkDA",
-        "channel": "기무리뷰",
-        "channel_id": "UCSaWpMhJ-wm1ekEbEvZ6AhQ",
-        "published_at": "2026-03-28T09:00:00Z",
-        "view_count": 91504,
-        "duration_sec": 1305,
-        "duration_label": "21분",
-        "has_spoiler": true,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 1025463,
-        "title_ko": "바이오닉",
-        "title_en": "Bionic",
-        "year": 2024,
-        "genres": [
-          "SF",
-          "액션",
-          "모험"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/rkXhWkJlCG9nuBnTMeW7xg3GhCu.jpg",
-        "vote_average": 5.939,
-        "vote_count": 171,
-        "overview": "로봇 보철물의 발전으로 스포츠 혁명이 일어난 미래의 디스토피아 세계. 멀리뛰기 종목에서 라이벌 관계인 두 자매가 과도한 경쟁심으로 인해 불길한 상황으로 내몰린다.",
-        "director": "Afonso Poyart",
-        "runtime": 110,
-        "imdb_rating": "4.3",
-        "rotten_tomatoes": null,
-        "metacritic": "N/A",
-        "watch_providers": [
-          {
-            "name": "Netflix",
-            "type": "subscription"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "type": "subscription"
-          }
-        ],
-        "naver_rating": null
-      }
-    },
-    {
-      "video": {
         "id": "KI-U1natSVU",
         "title": "신에게 빙의 된 여자, 그녀의 곁에 있으면 모두 죽는다 (영화리뷰/결말포함)",
         "url": "https://www.youtube.com/watch?v=KI-U1natSVU",
@@ -2327,56 +2016,6 @@
           },
           {
             "name": "wavve",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": null
-      }
-    },
-    {
-      "video": {
-        "id": "X6DkLWrh3GY",
-        "title": "제작비의 20배 넘는 수익을 올린... 상상도 못한 연출과 결말의 신선한 공포스릴러 [영화리뷰/결말포함]",
-        "url": "https://www.youtube.com/watch?v=X6DkLWrh3GY",
-        "embed_url": "https://www.youtube.com/embed/X6DkLWrh3GY",
-        "channel": "쿠쿠무비",
-        "channel_id": "UCpg-LxPY9HrVFWSZ6NnDnZA",
-        "published_at": "2026-03-26T09:00:00Z",
-        "view_count": 10645,
-        "duration_sec": 900,
-        "duration_label": "15분",
-        "has_spoiler": true,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 1008042,
-        "title_ko": "톡 투 미",
-        "title_en": "Talk to Me",
-        "year": 2023,
-        "genres": [
-          "공포",
-          "판타지"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/bYxNkZpRAygeo1Kbo79KJOn2Qjr.jpg",
-        "vote_average": 7.135,
-        "vote_count": 3681,
-        "overview": "SNS에서 핫한 빙의 챌린지에 중독된 미아와 친구들. 위험한 게임을 이어가던 중 친구 라일리가 미아의 죽은 엄마에게 빙의되자 미아는 이성을 잃고 마의 90초를 넘기고 마는데...",
-        "director": "Michael Philippou, Danny Philippou",
-        "runtime": 95,
-        "imdb_rating": null,
-        "rotten_tomatoes": null,
-        "metacritic": "N/A",
-        "watch_providers": [
-          {
-            "name": "wavve",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "rent"
-          },
-          {
-            "name": "Google Play Movies",
             "type": "rent"
           }
         ],
@@ -3808,7 +3447,7 @@
         "rotten_tomatoes": "88",
         "metacritic": "82",
         "watch_providers": [],
-        "naver_rating": null
+        "naver_rating": "8.00"
       }
     },
     {
@@ -4106,64 +3745,6 @@
         "metacritic": "N/A",
         "watch_providers": [],
         "naver_rating": "7.98"
-      }
-    },
-    {
-      "video": {
-        "id": "h-iVmvDC820",
-        "title": "죽음을 각오한 사랑을 꿈꾸는 이들에게ㅣ 결말포함 ㅣ 미드나잇 선  (2018)",
-        "url": "https://www.youtube.com/watch?v=h-iVmvDC820",
-        "embed_url": "https://www.youtube.com/embed/h-iVmvDC820",
-        "channel": "영파리: 영화를 파헤치는 리뷰",
-        "channel_id": "UC4E0wCkC6iyczDEIXmD30Og",
-        "published_at": "2026-02-19T10:11:07Z",
-        "view_count": 1652,
-        "duration_sec": 784,
-        "duration_label": "13분",
-        "has_spoiler": true,
-        "match_confidence": 0.9
-      },
-      "movie": {
-        "tmdb_id": 419478,
-        "title_ko": "미드나잇 선",
-        "title_en": "Midnight Sun",
-        "year": 2018,
-        "genres": [
-          "로맨스",
-          "드라마"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/ySMudfcxhOncsjBfwpjFhg6dx6h.jpg",
-        "vote_average": 7.806,
-        "vote_count": 3538,
-        "overview": "XP(색소성건피증)라는 희귀병으로 태양을 피해야만 하는 케이티. 오직 밤에만 외출이 허락된 그녀에게는 어머니가 남겨준 기타와 창문 너머로 10년째 짝사랑해온 ‘찰리’가 세상의 빛이다. 어느 날 작은 기차역에서 한밤의 버스킹을 하던 ‘케이티’의 앞에 ‘찰리’가 나타나고, 두 사람은 매일 밤마다 모두가 부러워하는 완벽한 데이트를 이어간다.  처음으로 함께 여행을 떠난 날, 꿈 같은 시간을 보내던 ‘케이티’는 그만 지켜야만 하는 규칙을 어기게 되고 결국 피할 수 없는 선택을 해야만 하는데… 너에게 하고 싶은 진짜 사랑 고백, 태양이 뜬 뒤에도 내 곁에 있어줄래?",
-        "director": "Scott Speer",
-        "runtime": 91,
-        "imdb_rating": "6.6",
-        "rotten_tomatoes": "21",
-        "metacritic": "38",
-        "watch_providers": [
-          {
-            "name": "Netflix",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "subscription"
-          },
-          {
-            "name": "Watcha",
-            "type": "subscription"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "type": "subscription"
-          },
-          {
-            "name": "TVING",
-            "type": "subscription"
-          }
-        ],
-        "naver_rating": "7.5"
       }
     },
     {
@@ -5793,43 +5374,6 @@
     },
     {
       "video": {
-        "id": "wrH9wAqMnv4",
-        "title": "\"세상 모든 게 날 공격한다?\" 평범한 지하실이 헬모드로 변했다!! [SF생존최신작][영화리뷰/결말포함][국내미개봉]",
-        "url": "https://www.youtube.com/watch?v=wrH9wAqMnv4",
-        "embed_url": "https://www.youtube.com/embed/wrH9wAqMnv4",
-        "channel": "드라마헌터 DramaHunter",
-        "channel_id": "UCN9YKvsCV74682b4jeJcIvQ",
-        "published_at": "2026-01-24T12:14:43Z",
-        "view_count": 78786,
-        "duration_sec": 812,
-        "duration_label": "13분",
-        "has_spoiler": true,
-        "match_confidence": 0.75
-      },
-      "movie": {
-        "tmdb_id": 30180,
-        "title_ko": "하이프!",
-        "title_en": "Hype!",
-        "year": 1996,
-        "genres": [
-          "다큐멘터리",
-          "음악"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/vfR9veCwZMZXfpCF5QlnaLFoSr1.jpg",
-        "vote_average": 7.465,
-        "vote_count": 57,
-        "overview": "미국 북서부 연안 시애틀. 최고의 기타리스트 지미 헨드릭스가 태어난 이곳에서 그런지록이 시작된다. 보잘것없는 지하실에서의 작지만 폭발적인 움직임은 어느새 하나의 문화로 불타오른다.",
-        "director": "Doug Pray",
-        "runtime": 84,
-        "imdb_rating": "7.5",
-        "rotten_tomatoes": "93",
-        "metacritic": "N/A",
-        "watch_providers": [],
-        "naver_rating": "9.48"
-      }
-    },
-    {
-      "video": {
         "id": "J9oPKXbiG14",
         "title": "100% 조선족 조폭 실화지만 중국에서 상영이 금지된 영화 ㄷㄷ",
         "url": "https://www.youtube.com/watch?v=J9oPKXbiG14",
@@ -6858,50 +6402,6 @@
     },
     {
       "video": {
-        "id": "YCByiOVYXQI",
-        "title": "와... 하필이면 전 세계 '1위' 킬러를 잘못 건드려 조직이 해체 돼버리는 통쾌한 액션영화..ㄷㄷ (결말포함)",
-        "url": "https://www.youtube.com/watch?v=YCByiOVYXQI",
-        "embed_url": "https://www.youtube.com/embed/YCByiOVYXQI",
-        "channel": "안보면쏜다",
-        "channel_id": "UC6I_9-U8yQeZ7DfMhnlsbfQ",
-        "published_at": "2026-01-09T12:01:10Z",
-        "view_count": 148695,
-        "duration_sec": 1142,
-        "duration_label": "19분",
-        "has_spoiler": true,
-        "match_confidence": 0.75
-      },
-      "movie": {
-        "tmdb_id": 820530,
-        "title_ko": "안기고 싶은 남자 1위에게 협박당하고 있습니다 - 스페인 편",
-        "title_en": "DAKAICHI - I'm being harassed by the sexiest man of the year - the Movie: Spain Arc",
-        "year": 2021,
-        "genres": [
-          "애니메이션",
-          "드라마",
-          "코미디",
-          "로맨스"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/2i4pJnGqpJqxmWTZbUcDWfKw7zB.jpg",
-        "vote_average": 7.1,
-        "vote_count": 24,
-        "overview": "당신은, 오렌지의 한 조각.  플라멩코 요소를 넣은 2인극 '피의 혼례'에 같이 출연하게 된 아즈마야와 타카토.\r 곧바로 타카토는 공연 연습에 들어갔지만, 플라멩코를 연습하던 중 아즈마야와의 재능의 차이를 실감하고 말았다.\r 이에 타카토는 '정열'에 대해 배우기 위해 아즈마야의 고향인 스페인으로 향했다.  한편, 아즈마야는 과거에 타카토에게 일방적으로\r 이별을 통보받은 적이 있는 게 마음에 걸린 상황이었는데.",
-        "director": "Naoyuki Tatsuwa",
-        "runtime": 78,
-        "imdb_rating": null,
-        "rotten_tomatoes": null,
-        "metacritic": null,
-        "watch_providers": [
-          {
-            "name": "Crunchyroll",
-            "type": "subscription"
-          }
-        ],
-        "naver_rating": null
-      }
-    },
-    {
-      "video": {
         "id": "f0zXeRyvTIk",
         "title": "\"역대급 다크함..💥\" ≪듄: 파트3≫의 모든 것",
         "url": "https://www.youtube.com/watch?v=f0zXeRyvTIk",
@@ -7619,57 +7119,6 @@
           }
         ],
         "naver_rating": "8.08"
-      }
-    },
-    {
-      "video": {
-        "id": "qwNipRM0NmQ",
-        "title": "🔥와…. 100만년 동안 지하에 숨어있던 외계인이 깨어나면 벌어지는 일 [결말포함]",
-        "url": "https://www.youtube.com/watch?v=qwNipRM0NmQ",
-        "embed_url": "https://www.youtube.com/embed/qwNipRM0NmQ",
-        "channel": "킥샷 Kickshot",
-        "channel_id": "UC_b3A51qnTML1OoTDPqURCQ",
-        "published_at": "2025-12-27T01:30:33Z",
-        "view_count": 139945,
-        "duration_sec": 1136,
-        "duration_label": "18분",
-        "has_spoiler": true,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 74,
-        "title_ko": "우주전쟁",
-        "title_en": "War of the Worlds",
-        "year": 2005,
-        "genres": [
-          "모험",
-          "스릴러",
-          "SF"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/kVfs7m8hfBC6nUrJBcuoTg1NLeA.jpg",
-        "vote_average": 6.536,
-        "vote_count": 9112,
-        "overview": "레이 페리어는 이혼한 항만 근로자로 아무런 희망 없이 매일을 살아간다. 그러던 어느 주말, 그의 전 부인은 아들 로비와 어린 딸 레이첼과 주말을 보내라고 레이에게 맡긴다. 그리곤 얼마 안 있어 강력한 번개가 내리친다. 잠시 후, 레이는 그의 집 근처에 있는 교차로에서 그들의 삶을 영원히 바꾸어버릴 엄청난 사건을 목격하게 된다. 커다랗고 다리가 셋 달린 정체 불명의 괴물이 땅속 깊은 곳에서 나타나 사람들이 미처 반응도 하기 전에 모든 것을 재로 만들었다. 평범했던 하루가 갑자기 외부의 알 수 없는 침략자들의 첫 번째 지구 공격으로 그들 인생에서 가장 엄청난 사건이 일어난 날이 되어버린 것이다. 레이는 그의 아이들을 이 무자비한 새로운 적들로부터 보호하기 위해 급히 피난을 떠나, 파괴되고 황폐해진 도시를 가로지르는 여정에 오른다. 거기서 그들은 침략자들을 피하기 위해 필사적으로 도망치는 피난민들을 만나 합류하게 된다. 그러나 그들이 어디로 가든지 안전한 곳은 없고, 피난처도 없다. 단지",
-        "director": "Steven Spielberg",
-        "runtime": 117,
-        "imdb_rating": "6.6",
-        "rotten_tomatoes": "76",
-        "metacritic": "73",
-        "watch_providers": [
-          {
-            "name": "Watcha",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "rent"
-          },
-          {
-            "name": "Google Play Movies",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": "8.8"
       }
     },
     {
@@ -8968,52 +8417,6 @@
           }
         ],
         "naver_rating": null
-      }
-    },
-    {
-      "video": {
-        "id": "fexHCUMi1uk",
-        "title": "≪각성한 AI≫에게 100만명 넘게 제거 당한 인류",
-        "url": "https://www.youtube.com/watch?v=fexHCUMi1uk",
-        "embed_url": "https://www.youtube.com/embed/fexHCUMi1uk",
-        "channel": "기무리뷰",
-        "channel_id": "UCSaWpMhJ-wm1ekEbEvZ6AhQ",
-        "published_at": "2025-12-17T09:00:00Z",
-        "view_count": 94221,
-        "duration_sec": 1585,
-        "duration_label": "26분",
-        "has_spoiler": true,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 614933,
-        "title_ko": "아틀라스",
-        "title_en": "Atlas",
-        "year": 2024,
-        "genres": [
-          "SF",
-          "액션"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/4kiTWS2p1dCIKZI0pQwDfRdhWm6.jpg",
-        "vote_average": 6.666,
-        "vote_count": 1543,
-        "overview": "AI를 극도로 불신하는 탁월한 대테러 분석가. 로봇 반역자를 체포하러 나선 임무가 틀어지면서, AI에 의지할 수밖에 없는 상황을 맞닥뜨린다.",
-        "director": "Brad Peyton",
-        "runtime": 118,
-        "imdb_rating": "5.6",
-        "rotten_tomatoes": "17",
-        "metacritic": "37",
-        "watch_providers": [
-          {
-            "name": "Netflix",
-            "type": "subscription"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "type": "subscription"
-          }
-        ],
-        "naver_rating": "5.6"
       }
     },
     {
@@ -10672,43 +10075,6 @@
     },
     {
       "video": {
-        "id": "imzWTwOIVXg",
-        "title": "모두가 용의자다! 안전가옥에 갇힌 \"최정예 요원들의 생존게임\"!! [영화리뷰/결말포함][25년11월신작액션][국내미개봉]",
-        "url": "https://www.youtube.com/watch?v=imzWTwOIVXg",
-        "embed_url": "https://www.youtube.com/embed/imzWTwOIVXg",
-        "channel": "드라마헌터 DramaHunter",
-        "channel_id": "UCN9YKvsCV74682b4jeJcIvQ",
-        "published_at": "2025-11-11T11:15:48Z",
-        "view_count": 65268,
-        "duration_sec": 852,
-        "duration_label": "14분",
-        "has_spoiler": true,
-        "match_confidence": 0.8
-      },
-      "movie": {
-        "tmdb_id": 1522923,
-        "title_ko": "세이프 하우스",
-        "title_en": "Safe House",
-        "year": 2025,
-        "genres": [
-          "액션",
-          "스릴러"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/k616WeRV8tC0bKOKqLv2dkS3S5J.jpg",
-        "vote_average": 6.524,
-        "vote_count": 62,
-        "overview": "부통령의 차량이 테러를 당한 후, 안전 가옥에 모인 각기 다른 특수대원 6명이 오히려 갇히게 되고 서로를 의심하고 안가를 공격하는 테러리스들과 대결하며 범인을 찾는 이야기",
-        "director": "Jamie Marshall",
-        "runtime": 91,
-        "imdb_rating": "5.2",
-        "rotten_tomatoes": null,
-        "metacritic": "N/A",
-        "watch_providers": [],
-        "naver_rating": null
-      }
-    },
-    {
-      "video": {
         "id": "OtPoNAOBxRk",
         "title": "영화《프랑켄슈타인》후기 스포有 리뷰 (결말포함 내용요약 및 해석)",
         "url": "https://www.youtube.com/watch?v=OtPoNAOBxRk",
@@ -11019,53 +10385,6 @@
           }
         ],
         "naver_rating": "8.06"
-      }
-    },
-    {
-      "video": {
-        "id": "BojYY02xiLU",
-        "title": "[프랑켄슈타인] 결말까지 한번에 몰아보기!💥놀랍다!😱기예르모델토로 역대급 프랑켄슈타인💥광기의 오스카아이작 💥2m에 가까운 장신의 꽃미남 제이콥엘로디💥원작의 힘 + 천재감독의 역작",
-        "url": "https://www.youtube.com/watch?v=BojYY02xiLU",
-        "embed_url": "https://www.youtube.com/embed/BojYY02xiLU",
-        "channel": "씬랩 SCENE LAB",
-        "channel_id": "UCcrb4vW24Rr0kM-WTMhtspA",
-        "published_at": "2025-11-06T12:57:11Z",
-        "view_count": 2199,
-        "duration_sec": 570,
-        "duration_label": "9분",
-        "has_spoiler": true,
-        "match_confidence": 0.92
-      },
-      "movie": {
-        "tmdb_id": 1062722,
-        "title_ko": "프랑켄슈타인",
-        "title_en": "Frankenstein",
-        "year": 2025,
-        "genres": [
-          "드라마",
-          "판타지",
-          "공포"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/vSMWJkBTEfa7kFxHizSz4uJNVlf.jpg",
-        "vote_average": 7.645,
-        "vote_count": 3356,
-        "overview": "과학자 빅터 프랑켄슈타인과 그의 손에서 탄생한 괴물이 펼치는 이야기. 고전이 된 메리 셸리의 소설을 오스카 수상 감독 기예르모 델토로가 영화화했다.",
-        "director": "Guillermo del Toro",
-        "runtime": 150,
-        "imdb_rating": "7.4",
-        "rotten_tomatoes": "85",
-        "metacritic": "78",
-        "watch_providers": [
-          {
-            "name": "Netflix",
-            "type": "subscription"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "type": "subscription"
-          }
-        ],
-        "naver_rating": null
       }
     },
     {
@@ -11566,61 +10885,6 @@
     },
     {
       "video": {
-        "id": "71CYDTLbUJk",
-        "title": "날 살린 건 그 남자의 거짓말이었다 [영화리뷰/결말포함]",
-        "url": "https://www.youtube.com/watch?v=71CYDTLbUJk",
-        "embed_url": "https://www.youtube.com/embed/71CYDTLbUJk",
-        "channel": "따쓸",
-        "channel_id": "UCUUwWmivezjfcgypGYfiy1A",
-        "published_at": "2025-10-25T05:00:07Z",
-        "view_count": 20597,
-        "duration_sec": 654,
-        "duration_label": "10분",
-        "has_spoiler": true,
-        "match_confidence": 0.98
-      },
-      "movie": {
-        "tmdb_id": 377263,
-        "title_ko": "프란츠",
-        "title_en": "Frantz",
-        "year": 2016,
-        "genres": [
-          "역사",
-          "드라마",
-          "로맨스"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/5TdXwZcS8QurmyUGWs5R8xUotcs.jpg",
-        "vote_average": 7.341,
-        "vote_count": 732,
-        "overview": "1차 세계대전 직후 독일의 작은 마을, 전쟁으로 약혼자 프란츠를 잃고 슬픔에 빠진 안나.  그녀에게 자신을 프란츠의 친구라 소개하는 프랑스 남자 아드리앵이 찾아온다.  안나는 아드리앵에게 마음을 열기 시작하지만,  비밀을 간직한 아드리앵은 돌연 편지 한 통을 남기고 자신의 고향 프랑스로 돌아가는데…",
-        "director": "François Ozon",
-        "runtime": 113,
-        "imdb_rating": "7.5",
-        "rotten_tomatoes": "91",
-        "metacritic": "73",
-        "watch_providers": [
-          {
-            "name": "Watcha",
-            "type": "subscription"
-          },
-          {
-            "name": "TVING",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "rent"
-          },
-          {
-            "name": "Google Play Movies",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": null
-      }
-    },
-    {
-      "video": {
         "id": "w8O9sx4jJfc",
         "title": "첫눈에 반한 남자를 위해, 순결을 주고 인생을 걸었던 여인의 사랑 (결말포함)",
         "url": "https://www.youtube.com/watch?v=w8O9sx4jJfc",
@@ -11667,49 +10931,6 @@
           }
         ],
         "naver_rating": null
-      }
-    },
-    {
-      "video": {
-        "id": "LO1tK-gTMn8",
-        "title": "《가디언즈 오브 갤럭시》 제작진의 또 다른 SF 걸작..!🔥평점 9.6을 자랑하는 역대급 띵작 SF 재난 영화 한방에 몰아보기",
-        "url": "https://www.youtube.com/watch?v=LO1tK-gTMn8",
-        "embed_url": "https://www.youtube.com/embed/LO1tK-gTMn8",
-        "channel": "기묘한 무비",
-        "channel_id": "UCGso5ZptdjRCXBMiFqDlZRA",
-        "published_at": "2025-10-18T01:30:27Z",
-        "view_count": 89907,
-        "duration_sec": 1083,
-        "duration_label": "18분",
-        "has_spoiler": true,
-        "match_confidence": 0.9
-      },
-      "movie": {
-        "tmdb_id": 574982,
-        "title_ko": "블랙아웃: 인베이젼 어스",
-        "title_en": "The Blackout",
-        "year": 2019,
-        "genres": [
-          "스릴러",
-          "SF",
-          "액션"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/bUSvv2v1kmXUFTEymh4DqWOB0qw.jpg",
-        "vote_average": 6.495,
-        "vote_count": 569,
-        "overview": "가까운 미래, 어느 날 평화로웠던 어느 거대 도시는 갑자기 전 세계와의 통신이 두절되는 초유의 사태를 겪는다. 도시 밖으로 한 걸음만 나가도 전기를 비롯한 일체의 시설이 작동하지 않고, 심지어 전 세계 인류의 생사조차 불분명한 상황. 사태의 원인을 규명하고 생존자를 찾고자 탐색에 나선 특수부대는 그곳에서 충격적인 장면을 목격하는데... 꺼지지 않은 단 1%의 인류는 생존의 실마리를 찾을 수 있을 것인가!",
-        "director": "Egor Baranov",
-        "runtime": 127,
-        "imdb_rating": "6.0",
-        "rotten_tomatoes": "57",
-        "metacritic": "N/A",
-        "watch_providers": [
-          {
-            "name": "Google Play Movies",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": "9.00"
       }
     },
     {
@@ -12004,49 +11225,6 @@
     },
     {
       "video": {
-        "id": "fCDyS1jy0sE",
-        "title": "[스토리 요약]🔥어제 합격한 초보 변호사가 거대 보험회사를 상대하다 #영화요약 #영화리뷰 #무비리뷰 #결말포함",
-        "url": "https://www.youtube.com/watch?v=fCDyS1jy0sE",
-        "embed_url": "https://www.youtube.com/embed/fCDyS1jy0sE",
-        "channel": "락무비 : ROCK MOVIE",
-        "channel_id": "UCcIm1aZJLs5dNp6dbtJq3NA",
-        "published_at": "2025-10-09T04:15:05Z",
-        "view_count": 5149,
-        "duration_sec": 599,
-        "duration_label": "9분",
-        "has_spoiler": true,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 11975,
-        "title_ko": "레인메이커",
-        "title_en": "The Rainmaker",
-        "year": 1997,
-        "genres": [
-          "드라마",
-          "범죄",
-          "스릴러"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/twLGHXPjQtS8UyVGp5GXmhJiTM7.jpg",
-        "vote_average": 7.02,
-        "vote_count": 1470,
-        "overview": "법대를 갓 졸업한, 아직 변호사 자격증도 없는 신출내기 변호사 루디 이야기",
-        "director": "Francis Ford Coppola",
-        "runtime": 135,
-        "imdb_rating": "7.2",
-        "rotten_tomatoes": "82",
-        "metacritic": "72",
-        "watch_providers": [
-          {
-            "name": "wavve",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": null
-      }
-    },
-    {
-      "video": {
         "id": "F3bq8VR6Fow",
         "title": "지구 멸망급 위험도를 가진 바이러스가 퍼진 뒤 지구의 모습과 좀비들을 디테일하게 표현한 팬 메이드 단편영화 ㄷㄷ",
         "url": "https://www.youtube.com/watch?v=F3bq8VR6Fow",
@@ -12211,49 +11389,6 @@
           }
         ],
         "naver_rating": "7.44"
-      }
-    },
-    {
-      "video": {
-        "id": "EW2r8m-d8sY",
-        "title": "제작비만 2800억, \"행성을 입으로 씹어먹는다\"는 우주적인 불멸자가 등장하다!! [SF액션]영화리뷰/결말포함][2025년최신작]",
-        "url": "https://www.youtube.com/watch?v=EW2r8m-d8sY",
-        "embed_url": "https://www.youtube.com/embed/EW2r8m-d8sY",
-        "channel": "드라마헌터 DramaHunter",
-        "channel_id": "UCN9YKvsCV74682b4jeJcIvQ",
-        "published_at": "2025-09-28T04:44:49Z",
-        "view_count": 341467,
-        "duration_sec": 1161,
-        "duration_label": "19분",
-        "has_spoiler": true,
-        "match_confidence": 0.85
-      },
-      "movie": {
-        "tmdb_id": 617126,
-        "title_ko": "판타스틱 4: 새로운 출발",
-        "title_en": "The Fantastic 4: First Steps",
-        "year": 2025,
-        "genres": [
-          "SF",
-          "모험",
-          "액션"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/vXvcMeUL6dGr9iBhNOMG3SPRHGA.jpg",
-        "vote_average": 6.958,
-        "vote_count": 3238,
-        "overview": "1960년대, 전 세계적인 관심 속 우주로 떠난 4명의 엘리트 우주비행사 ‘리드 리처드’, ‘수잔 스톰’, ‘조니 스톰’, ‘벤 그림’은 예기치 못한 사고로 우주 방사능에 노출되면서 초인적인 능력을 갖게 된다. 신체를 자유자재로 변형할 수 있게 된 ‘리드 리처드’(미스터 판타스틱)부터 온몸이 투명해지고, 강력한 방어막을 형성하는 ‘수잔 스톰’(인비저블 우먼), 온몸으로 뜨거운 화염을 내뿜으며 비행 능력까지 지닌 ‘조니 스톰’(휴먼 토치), 그리고 바위 같은 엄청난 피지컬과 압도적 파워를 갖춘 ‘벤 그림’(씽)까지 ‘판타스틱4’라는 새로운 슈퍼 히어로 팀이 된 4명의 멤버들. 인생에 완전히 새로운 국면을 맞이하게 되면서 혼란과 갈등에 휩싸인 이들 앞에 행성 파괴자 ‘갤럭투스’의 위협을 전달하는 미스터리한 전령 ‘실버서퍼’가 등장해 지구 파괴를 예고하고 ‘판타스틱 4’는 세상을 구하기 위해 다 함께 힘을 모으게 되는데…",
-        "director": "Matt Shakman",
-        "runtime": 114,
-        "imdb_rating": null,
-        "rotten_tomatoes": null,
-        "metacritic": null,
-        "watch_providers": [
-          {
-            "name": "Disney Plus",
-            "type": "subscription"
-          }
-        ],
-        "naver_rating": "7.58"
       }
     },
     {
@@ -14380,61 +13515,6 @@
     },
     {
       "video": {
-        "id": "jyY9kYpBG-Q",
-        "title": "〃은퇴한 레전드 특수요원〃을 건드린 『보이스피싱 조직』의 최후",
-        "url": "https://www.youtube.com/watch?v=jyY9kYpBG-Q",
-        "embed_url": "https://www.youtube.com/embed/jyY9kYpBG-Q",
-        "channel": "기무리뷰",
-        "channel_id": "UCSaWpMhJ-wm1ekEbEvZ6AhQ",
-        "published_at": "2025-07-30T14:23:03Z",
-        "view_count": 360698,
-        "duration_sec": 1024,
-        "duration_label": "17분",
-        "has_spoiler": true,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 866398,
-        "title_ko": "비키퍼",
-        "title_en": "The Beekeeper",
-        "year": 2024,
-        "genres": [
-          "액션",
-          "범죄",
-          "스릴러"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/ekHemOB84SoKi6fqG0ciwvKWM2i.jpg",
-        "vote_average": 7.239,
-        "vote_count": 4140,
-        "overview": "법 위에 있는 비밀 기관 '비키퍼' 그곳의 전설로 남은 탑티어 에이전트 '애덤 클레이'는 기관의 눈을 피해 자취를 감추고 양봉가로 살아간다. 그러던 어느 날, 거대 보이스 피싱 조직으로부터 유일한 친구 '엘로이즈'를 잃게 된 그는 피의 복수를 위해 잠재웠던 진짜 모습을 드러내기 시작하는데....",
-        "director": "David Ayer",
-        "runtime": 106,
-        "imdb_rating": "6.3",
-        "rotten_tomatoes": "71",
-        "metacritic": "53",
-        "watch_providers": [
-          {
-            "name": "wavve",
-            "type": "subscription"
-          },
-          {
-            "name": "Watcha",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "rent"
-          },
-          {
-            "name": "Google Play Movies",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": "7.57"
-      }
-    },
-    {
-      "video": {
         "id": "sofV1EAetWA",
         "title": "😲이 영화 보고 당장 유럽 가고 싶어졌습니다✈️🇮🇹[영화리뷰/결말포함]",
         "url": "https://www.youtube.com/watch?v=sofV1EAetWA",
@@ -15219,54 +14299,6 @@
     },
     {
       "video": {
-        "id": "z_Qdr4qBaMc",
-        "title": "로봇 SF액션 마니아라면 무조건 봐야할 숨겨진 보석같은 띵작+감동 한스푼!! [영화리뷰/결말포함][국내미개봉]",
-        "url": "https://www.youtube.com/watch?v=z_Qdr4qBaMc",
-        "embed_url": "https://www.youtube.com/embed/z_Qdr4qBaMc",
-        "channel": "시네마헌터",
-        "channel_id": "UC_RPr05YH1TBlQwxW2C7TVQ",
-        "published_at": "2025-06-25T11:57:37Z",
-        "view_count": 196192,
-        "duration_sec": 846,
-        "duration_label": "14분",
-        "has_spoiler": true,
-        "match_confidence": 0.9
-      },
-      "movie": {
-        "tmdb_id": 1436,
-        "title_ko": "무사",
-        "title_en": "The Warrior",
-        "year": 2001,
-        "genres": [
-          "역사",
-          "드라마",
-          "액션",
-          "전쟁"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/ufwFltSgo9KuGRquCnbpdNj7Psk.jpg",
-        "vote_average": 7.035,
-        "vote_count": 143,
-        "overview": "명나라에 사신으로 갔다 간첩으로 몰려 사막에 고립된 고려의 무사들. 뜨거운 사막을 지나 다다른 곳은 허름한 객잔. 그곳에서 원기병에게 납치당한 명나라의 공주 부용과 마주치게 된다. 부용만 구한다면 명나라에 명분도 세우고, 고려로 돌아갈 수도 있다.  사신단을 이끄는 용호군의 장수 최정은 독단적으로 부용을 구출할 것을 결정한다. 결국 부용은 구출하지만 고려무사들의 희생 또한 크다. 최정의 독단적인 행동과 힘든 여정에 고려무사들의 불만은 점점 쌓여만 간다. 게다가 이지헌부사가 고된 여정을 견디지 못하고 죽게 되자 악화된 이지헌의 호위무사 여솔과 최정의 갈등은 부용을 사이에 두고 더욱 깊어져만 간다.  고려로 가는 배를 주겠다는 부용의 제안으로 천신만고끝에 해안토성에 도착하지만 토성은 원기병의 공격으로 이미 폐허 상태이다. 부용을 뒤쫓는 원기병은 어느새 토성까지 이르렀다. 원기병은 부용을 내준다면 목숨만을 살려주겠다고 말한다. 이들은 이제 선택의 기로에 서 있다. 부용을 내줄 것인가, 목",
-        "director": "Kim Sung-soo",
-        "runtime": 158,
-        "imdb_rating": "7.1",
-        "rotten_tomatoes": null,
-        "metacritic": "N/A",
-        "watch_providers": [
-          {
-            "name": "wavve",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": "9.16"
-      }
-    },
-    {
-      "video": {
         "id": "Bi7Jc9_Ajys",
         "title": "'전국구 조폭'이 재개발 구역 주민을 쫓아내러 왔는데, '신급 무당' 아빠가 주민이면 벌어지는 일...ㄷㄷ",
         "url": "https://www.youtube.com/watch?v=Bi7Jc9_Ajys",
@@ -15336,57 +14368,6 @@
         "rotten_tomatoes": null,
         "metacritic": null,
         "watch_providers": [],
-        "naver_rating": null
-      }
-    },
-    {
-      "video": {
-        "id": "TlsmUiVhunM",
-        "title": "〃태양의 폭발〃로 인해 《껍데기》가 박살 난 지구",
-        "url": "https://www.youtube.com/watch?v=TlsmUiVhunM",
-        "embed_url": "https://www.youtube.com/embed/TlsmUiVhunM",
-        "channel": "기무리뷰",
-        "channel_id": "UCSaWpMhJ-wm1ekEbEvZ6AhQ",
-        "published_at": "2025-06-17T13:00:11Z",
-        "view_count": 346440,
-        "duration_sec": 1307,
-        "duration_label": "21분",
-        "has_spoiler": true,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 14161,
-        "title_ko": "2012",
-        "title_en": "2012",
-        "year": 2009,
-        "genres": [
-          "액션",
-          "모험",
-          "SF"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/kdyhLTaforuBk0CjnACiMXuj7zd.jpg",
-        "vote_average": 5.873,
-        "vote_count": 12673,
-        "overview": "고대 마야 문명에서부터 끊임없이 회자되어 온 인류 멸망. 2012년, 저명한 과학자들은 오랜 연구 끝에 실제로 멸망의 시기가 다가오고 있음을 감지하고 각국 정부에 이 사실을 알린다. 그리고 곧 고대인들의 예언대로 전세계 곳곳에서는 지진, 화산 폭발, 거대한 해일 등 각종 자연 재해들이 발생해 그 누구도 막을 수 없는 최후의 순간이 도래한다. 한편, 이혼 후 가족과 떨어져 살던 소설가 잭슨 커티스(존 쿠삭)는 인류 멸망에 대비해 진행되어 왔던 정부의 비밀 계획을 알아차리고 가족과 함께 살아남기 위한 필사의 사투를 벌이는데…",
-        "director": "Roland Emmerich",
-        "runtime": 158,
-        "imdb_rating": "5.9",
-        "rotten_tomatoes": "40",
-        "metacritic": "49",
-        "watch_providers": [
-          {
-            "name": "Watcha",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "rent"
-          },
-          {
-            "name": "Google Play Movies",
-            "type": "rent"
-          }
-        ],
         "naver_rating": null
       }
     },
@@ -15508,49 +14489,6 @@
     },
     {
       "video": {
-        "id": "IE-c6Odke78",
-        "title": "외계 생명체와 정신부터 육체까지 융합된 초인류의 등장",
-        "url": "https://www.youtube.com/watch?v=IE-c6Odke78",
-        "embed_url": "https://www.youtube.com/embed/IE-c6Odke78",
-        "channel": "기무리뷰",
-        "channel_id": "UCSaWpMhJ-wm1ekEbEvZ6AhQ",
-        "published_at": "2025-06-15T03:00:16Z",
-        "view_count": 367278,
-        "duration_sec": 1075,
-        "duration_label": "17분",
-        "has_spoiler": true,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 271404,
-        "title_ko": "스카이라인 2",
-        "title_en": "Beyond Skyline",
-        "year": 2017,
-        "genres": [
-          "액션",
-          "SF",
-          "모험"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/m6L0Pi4TaJjFZB8CJQYdOigiJfC.jpg",
-        "vote_average": 5.296,
-        "vote_count": 1091,
-        "overview": "형사 출신인 마크는 오랜만에 옛 직장을 방문한다.  속 썩이는 아들 트렌트가 폭행 혐의로 구치소에 수감된 것. 옛 동료들과 조우한 마크는 무거운 발걸음으로 트렌트와 함께 집으로 향한다. 마크와 트렌트가 날 선 대화를 나누던 중, 갑자기 엄청난 섬광이 온 도심을 삼켜 버리고 빛에 노출된 사람들이 모두 급속도로 상공으로 빨려 들어가 사라지는 기이한 현상이 시작된다. 정체를 알 수 없는 그들의 무자비한 공격에 순식간에 초토화된 도심, 더 이상 숨을 곳도 도망칠 곳도 없는 상황… 남은 건 처절한 저항뿐이다!",
-        "director": "Liam O'Donnell",
-        "runtime": 107,
-        "imdb_rating": "5.3",
-        "rotten_tomatoes": "70",
-        "metacritic": "46",
-        "watch_providers": [
-          {
-            "name": "Watcha",
-            "type": "subscription"
-          }
-        ],
-        "naver_rating": null
-      }
-    },
-    {
-      "video": {
         "id": "IEB654JRS4A",
         "title": "과연 어땠을까..? 여러분이 몰랐던 《광장》 결말 해석 포함 총정리 리뷰💥(스포주의)",
         "url": "https://www.youtube.com/watch?v=IEB654JRS4A",
@@ -15630,57 +14568,6 @@
           }
         ],
         "naver_rating": "7.83"
-      }
-    },
-    {
-      "video": {
-        "id": "oZojt2SY2lo",
-        "title": "중3 왕따가 자기가 순간이동 능력자였다는 사실을 알게 된 날 벌어진 일 ㄷㄷ",
-        "url": "https://www.youtube.com/watch?v=oZojt2SY2lo",
-        "embed_url": "https://www.youtube.com/embed/oZojt2SY2lo",
-        "channel": "기무리뷰",
-        "channel_id": "UCSaWpMhJ-wm1ekEbEvZ6AhQ",
-        "published_at": "2025-06-01T15:46:27Z",
-        "view_count": 748958,
-        "duration_sec": 1423,
-        "duration_label": "23분",
-        "has_spoiler": true,
-        "match_confidence": 0.98
-      },
-      "movie": {
-        "tmdb_id": 8247,
-        "title_ko": "점퍼",
-        "title_en": "Jumper",
-        "year": 2008,
-        "genres": [
-          "액션",
-          "모험",
-          "SF"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/yI6QrilmP6AsvOLH3lQBiNFTaGk.jpg",
-        "vote_average": 6.158,
-        "vote_count": 6194,
-        "overview": "데이빗 라이스(헤이든 크리스텐슨)는 뉴욕, 도쿄, 로마, 이집트의 스핑크스 등 원하는 곳은 순식간에 이동할 수 있는 능력의 소유자, 일명 점퍼이다. 그는 눈 깜박할 사이에 전 세계 어디든 갈 수 있고 순식간에 몇 억을 손안에 쥘 수도 있다. 17세 때 자신의 능력을 처음 자각한 데이빗은 뉴욕, 도쿄, 로마, 이집트 등 원하는 곳으로 점핑하며 화려한 메트로폴리탄의 삶을 누린다. 하지만 ‘점퍼’를 처단하기 위해 비밀리에 조직된 ‘팔라딘’들에게 추적당하기 시작하면서 곧 위험에 처하게 된다. 데이빗은 다른 점퍼들과 동맹을 맺으며 수 천 년 동안 진행된 ‘점퍼’와 ‘팔라딘’과의 전쟁에 직면하게 된다. 그러던 중 그는 서서히 자신의 과거와 가족의 비밀에 대한 진실을 알아가게 되는데..",
-        "director": "Doug Liman",
-        "runtime": 88,
-        "imdb_rating": "6.1",
-        "rotten_tomatoes": "15",
-        "metacritic": "35",
-        "watch_providers": [
-          {
-            "name": "Disney Plus",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "subscription"
-          },
-          {
-            "name": "Watcha",
-            "type": "subscription"
-          }
-        ],
-        "naver_rating": null
       }
     },
     {
@@ -15872,152 +14759,6 @@
     },
     {
       "video": {
-        "id": "8fROBc2jNe4",
-        "title": "30년 후의 나를 죽여야 폐기되지 않고 살 수 있는 자들… 이게 영화냐 악몽이냐 ㄷㄷㄷ",
-        "url": "https://www.youtube.com/watch?v=8fROBc2jNe4",
-        "embed_url": "https://www.youtube.com/embed/8fROBc2jNe4",
-        "channel": "기무리뷰",
-        "channel_id": "UCSaWpMhJ-wm1ekEbEvZ6AhQ",
-        "published_at": "2025-05-22T03:00:13Z",
-        "view_count": 382564,
-        "duration_sec": 1282,
-        "duration_label": "21분",
-        "has_spoiler": true,
-        "match_confidence": 0.98
-      },
-      "movie": {
-        "tmdb_id": 59967,
-        "title_ko": "루퍼",
-        "title_en": "Looper",
-        "year": 2012,
-        "genres": [
-          "액션",
-          "스릴러",
-          "SF"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/7MPHCBEek4qbsuauUvrVViOgQ5J.jpg",
-        "vote_average": 6.906,
-        "vote_count": 10832,
-        "overview": "암흑의 도시로 변해버린 2074년 캔자스. 시간여행은 불법으로 규정돼 거대 범죄 조직들 사이에서 비밀리에 이용된다. 완벽한 증거 소멸과 시체 처리를 위해 미래의 조직들은 제거 대상들을 비밀리에 2044년에 활동하고 있는 루퍼라는 킬러들에게 보낸다. 어느 날 시궁창 같은 도시에서 완벽한 임무수행으로 최고의 자리를 지켜내고 있는 킬러 조의 앞에 새로운 타겟이 등장한다. 그는 바로 레인메이커에 의해 살해 당한 아내를 다시 살려내고자 과거로 돌아온 30년 후의 바로 자신임을 알게 되는데...",
-        "director": "Rian Johnson",
-        "runtime": 118,
-        "imdb_rating": "7.4",
-        "rotten_tomatoes": "93",
-        "metacritic": "84",
-        "watch_providers": [
-          {
-            "name": "wavve",
-            "type": "subscription"
-          },
-          {
-            "name": "Watcha",
-            "type": "subscription"
-          },
-          {
-            "name": "TVING",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "rent"
-          },
-          {
-            "name": "Google Play Movies",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": null
-      }
-    },
-    {
-      "video": {
-        "id": "kdgkql4evGo",
-        "title": "서기 2517년, 지구 멸망 후 과학으로 천국 만든다고 하더니 열려버린 지옥의 문 ㄷㄷㄷ",
-        "url": "https://www.youtube.com/watch?v=kdgkql4evGo",
-        "embed_url": "https://www.youtube.com/embed/kdgkql4evGo",
-        "channel": "기무리뷰",
-        "channel_id": "UCSaWpMhJ-wm1ekEbEvZ6AhQ",
-        "published_at": "2025-05-19T14:17:18Z",
-        "view_count": 377700,
-        "duration_sec": 1496,
-        "duration_label": "24분",
-        "has_spoiler": true,
-        "match_confidence": 0.98
-      },
-      "movie": {
-        "tmdb_id": 16320,
-        "title_ko": "세레니티",
-        "title_en": "Serenity",
-        "year": 2005,
-        "genres": [
-          "SF",
-          "액션",
-          "모험",
-          "스릴러"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/4sqUOaPFoP2W81mq1UYqZqf5WzA.jpg",
-        "vote_average": 7.36,
-        "vote_count": 3838,
-        "overview": "지금으로부터 500년후의 미래. 은하계 내전의 참전군인 출신인 말콤 레이놀즈 선장은 자신의 우주선 세레니티 호와 충성심에 가득찬 부하들을 데리고 돈되는 일이라면 무엇이든 하는 해결사로서 생활한다. 어느날 레이놀즈 일행은 젊은 의사 사이먼과 그의 여동생 리버를 탑승객으로 태우게 되는데, 둘은 우주연합으로부터 도망치는 중이다. 세레니티 일행들은 곧 초능력을 가진 리버가 엄청난 비밀을 가지고 있으며, 따라서 이 둘을 탑승시킨 것이 위험천만한 일임을 깨닫게 되는데...",
-        "director": "Joss Whedon",
-        "runtime": 119,
-        "imdb_rating": "7.8",
-        "rotten_tomatoes": "82",
-        "metacritic": "74",
-        "watch_providers": [
-          {
-            "name": "wavve",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": null
-      }
-    },
-    {
-      "video": {
-        "id": "czShBpRr220",
-        "title": "20년이나 날아와 시원하게 지구 때려부수러 온 남미 사이즈 외계함선 ㄷㄷㄷ",
-        "url": "https://www.youtube.com/watch?v=czShBpRr220",
-        "embed_url": "https://www.youtube.com/embed/czShBpRr220",
-        "channel": "기무리뷰",
-        "channel_id": "UCSaWpMhJ-wm1ekEbEvZ6AhQ",
-        "published_at": "2025-05-15T17:17:37Z",
-        "view_count": 666298,
-        "duration_sec": 1389,
-        "duration_label": "23분",
-        "has_spoiler": true,
-        "match_confidence": 0.98
-      },
-      "movie": {
-        "tmdb_id": 47933,
-        "title_ko": "인디펜던스 데이: 리써전스",
-        "title_en": "Independence Day: Resurgence",
-        "year": 2016,
-        "genres": [
-          "액션",
-          "모험",
-          "SF"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/zlLPunUrHGj3eEEE7C8GXF39jkb.jpg",
-        "vote_average": 5.356,
-        "vote_count": 6419,
-        "overview": "20년 전 최악의 우주 전쟁을 치른 지구. 재건을 위해 힘쓴 전세계는 다시 한번 있을 외계의 침공에 대비한다.  반드시 살아남아야 한다.  마침내 돌아온 그날!  상상을 초월하는 그들의 공격에 앞에  인류 최후의 전쟁이 시작된다.",
-        "director": "Roland Emmerich",
-        "runtime": 120,
-        "imdb_rating": "5.2",
-        "rotten_tomatoes": "28",
-        "metacritic": "32",
-        "watch_providers": [
-          {
-            "name": "Disney Plus",
-            "type": "subscription"
-          }
-        ],
-        "naver_rating": "7.34"
-      }
-    },
-    {
-      "video": {
         "id": "UBsI2caTJos",
         "title": "2234037 양민석 택시운전사 5분요약",
         "url": "https://www.youtube.com/watch?v=UBsI2caTJos",
@@ -16073,49 +14814,6 @@
           }
         ],
         "naver_rating": "9.28"
-      }
-    },
-    {
-      "video": {
-        "id": "UqISJ_PNUlU",
-        "title": "해상,육상,공중전까지 담아낸 전투씬으로 \"15분 순삭\"시키는 리얼리티 200% 전쟁액션!! [영화리뷰/결말포함]",
-        "url": "https://www.youtube.com/watch?v=UqISJ_PNUlU",
-        "embed_url": "https://www.youtube.com/embed/UqISJ_PNUlU",
-        "channel": "시네마헌터",
-        "channel_id": "UC_RPr05YH1TBlQwxW2C7TVQ",
-        "published_at": "2025-05-09T11:49:47Z",
-        "view_count": 828327,
-        "duration_sec": 896,
-        "duration_label": "14분",
-        "has_spoiler": true,
-        "match_confidence": 0.85
-      },
-      "movie": {
-        "tmdb_id": 991610,
-        "title_ko": "인베이젼",
-        "title_en": "Invasion",
-        "year": 2024,
-        "genres": [
-          "액션",
-          "드라마",
-          "스릴러"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/osPKnn1Q1BoZ88kLcksR7iPJKVg.jpg",
-        "vote_average": 5.383,
-        "vote_count": 30,
-        "overview": "아무런 경고도 없이 이웃 독재 국가 베라과가 퀴라소와 아루바를 공격한다. 네덜란드의 정치인들은 당황한다. 갈등이 급격히 고조되면서 세 명의 젊은 해병대원들이 나서서 행동해야 한다. 아루바의 병영은 공격을 받고 있고, 영공은 폐쇄되었지만, 네덜란드 대사는 여전히 적대 지역에서 대피하지 못한 상태다. 갓 임명된 해병대원들은 자신들의구조 임무가 시간 싸움이 되었다는 것을 깨닫는다.",
-        "director": "Bobby Boermans",
-        "runtime": 92,
-        "imdb_rating": "4.9",
-        "rotten_tomatoes": null,
-        "metacritic": "N/A",
-        "watch_providers": [
-          {
-            "name": "Google Play Movies",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": null
       }
     },
     {
@@ -16451,52 +15149,6 @@
     },
     {
       "video": {
-        "id": "N7Ovjk4cceY",
-        "title": "《AI가 점령한 세상》에서 유일한 안전지대인 〃한국〃",
-        "url": "https://www.youtube.com/watch?v=N7Ovjk4cceY",
-        "embed_url": "https://www.youtube.com/embed/N7Ovjk4cceY",
-        "channel": "기무리뷰",
-        "channel_id": "UCSaWpMhJ-wm1ekEbEvZ6AhQ",
-        "published_at": "2025-04-03T15:40:33Z",
-        "view_count": 459295,
-        "duration_sec": 1235,
-        "duration_label": "20분",
-        "has_spoiler": true,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 739413,
-        "title_ko": "마더/안드로이드",
-        "title_en": "Mother/Android",
-        "year": 2021,
-        "genres": [
-          "SF",
-          "스릴러"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/7BL8MaL3f9YYSa7FXnbaWgi5iQa.jpg",
-        "vote_average": 5.8,
-        "vote_count": 829,
-        "overview": "안드로이드가 반란을 일으켜 모든 것을 장악해버린 세상. 출산을 앞둔 젊은 커플이 위험을 무릅쓰고 기약 없는 여정을 이어간다. 어떻게든 안전한 곳을 찾아야 하기에.",
-        "director": "Mattson Tomlin",
-        "runtime": 111,
-        "imdb_rating": "5.0",
-        "rotten_tomatoes": "34",
-        "metacritic": "43",
-        "watch_providers": [
-          {
-            "name": "Netflix",
-            "type": "subscription"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "type": "subscription"
-          }
-        ],
-        "naver_rating": "8.13"
-      }
-    },
-    {
-      "video": {
         "id": "icdn7ObgZvk",
         "title": "타인들의 접근에 노이로제 걸린 주부의 선택.. 일본 공포 스릴러[영화리뷰/결말포함]",
         "url": "https://www.youtube.com/watch?v=icdn7ObgZvk",
@@ -16635,108 +15287,6 @@
     },
     {
       "video": {
-        "id": "2Py9f6e8ylg",
-        "title": "지구를 침공한 '스페이스 나치'와 지저 세계를 지배하는 '랩틸리언 히틀러' [결말 포함]",
-        "url": "https://www.youtube.com/watch?v=2Py9f6e8ylg",
-        "embed_url": "https://www.youtube.com/embed/2Py9f6e8ylg",
-        "channel": "황곰",
-        "channel_id": "UCpdFehd4N7Skd5Qs3j2WUjw",
-        "published_at": "2025-03-22T01:30:01Z",
-        "view_count": 77819,
-        "duration_sec": 756,
-        "duration_label": "12분",
-        "has_spoiler": true,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 10679,
-        "title_ko": "아이언 스카이",
-        "title_en": "Iron Sky",
-        "year": 2012,
-        "genres": [
-          "액션",
-          "코미디",
-          "SF"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/3wJmBcD5jNf6ixNekUp5T8iLsAC.jpg",
-        "vote_average": 5.75,
-        "vote_count": 1760,
-        "overview": "2018년, 지구를 침략하러 ‘외계인’이 아닌 ‘그들’이 왔다.  재선을 노리고 있는 최초의 여성 대통령이 통치하고 있는 미합중국에 예기치 않은 소식이 들어온다.  바로 달 탐사선이 연락두절 됐다는 것. 그리고 얼마 후, 지구를 침략하러 ‘그들’이 우주에서 온다.  미국은 UN안보정상회의를 소집하는데 …….",
-        "director": "Timo Vuorensola",
-        "runtime": 93,
-        "imdb_rating": "5.9",
-        "rotten_tomatoes": "42",
-        "metacritic": "N/A",
-        "watch_providers": [
-          {
-            "name": "wavve",
-            "type": "subscription"
-          },
-          {
-            "name": "Watcha",
-            "type": "subscription"
-          },
-          {
-            "name": "TVING",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "rent"
-          },
-          {
-            "name": "Google Play Movies",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": null
-      }
-    },
-    {
-      "video": {
-        "id": "-YcwKpMGTDo",
-        "title": "정부 과학자들의 실험 실패로 지옥을 열어버린 인류 (충격결말, 멘탈붕괴, 끔찍한최후)",
-        "url": "https://www.youtube.com/watch?v=-YcwKpMGTDo",
-        "embed_url": "https://www.youtube.com/embed/-YcwKpMGTDo",
-        "channel": "기무리뷰",
-        "channel_id": "UCSaWpMhJ-wm1ekEbEvZ6AhQ",
-        "published_at": "2025-03-17T15:38:18Z",
-        "view_count": 476982,
-        "duration_sec": 1288,
-        "duration_label": "21분",
-        "has_spoiler": true,
-        "match_confidence": 0.98
-      },
-      "movie": {
-        "tmdb_id": 5876,
-        "title_ko": "미스트",
-        "title_en": "The Mist",
-        "year": 2007,
-        "genres": [
-          "공포",
-          "SF",
-          "스릴러"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/uxXfrBTBByQfjLfPz0QpTHYTgCL.jpg",
-        "vote_average": 6.943,
-        "vote_count": 5790,
-        "overview": "마켓에서 물건을 고르는 도중 동네 노인이 피를 흘리면서 “안개 속에 무언가가 있다!!” 뛰쳐 들어왔다. 마트 밖은 이미 아무것도 보이지 않는 정체 불명의 안개로 뒤덮혔고, 정체불명 거대한 괴생물체의 공격을 받는다. 마트 안에는 주민들과 데이빗, 그의 아들 빌리가 고립되었고, 지금 밖으로 나간다면 모두 죽는다는 미친 예언자가 그곳을 더욱 절망스럽게 만든다. 몇 시간 뒤 그들은 믿을 수 없는 괴물들의 등장으로 목숨의 위협을 받고, 살기 위해 살아 남기 위해 싸우기로 결심한다.",
-        "director": "Frank Darabont",
-        "runtime": 126,
-        "imdb_rating": "7.1",
-        "rotten_tomatoes": "74",
-        "metacritic": "58",
-        "watch_providers": [
-          {
-            "name": "Watcha",
-            "type": "subscription"
-          }
-        ],
-        "naver_rating": "7.31"
-      }
-    },
-    {
-      "video": {
         "id": "55KvheXLoW4",
         "title": "미래의 미국 대통령 ㄷㄷ",
         "url": "https://www.youtube.com/watch?v=55KvheXLoW4",
@@ -16813,43 +15363,6 @@
           }
         ],
         "naver_rating": "8.76"
-      }
-    },
-    {
-      "video": {
-        "id": "cXgva0J9MFc",
-        "title": "치사율 99%의 검은 독을 들이마신 인류, 살아남은 미친 인간들이 지배하는 세상",
-        "url": "https://www.youtube.com/watch?v=cXgva0J9MFc",
-        "embed_url": "https://www.youtube.com/embed/cXgva0J9MFc",
-        "channel": "기무리뷰",
-        "channel_id": "UCSaWpMhJ-wm1ekEbEvZ6AhQ",
-        "published_at": "2025-03-13T08:55:39Z",
-        "view_count": 459411,
-        "duration_sec": 1115,
-        "duration_label": "18분",
-        "has_spoiler": true,
-        "match_confidence": 0.96
-      },
-      "movie": {
-        "tmdb_id": 426814,
-        "title_ko": "더 도메스틱스",
-        "title_en": "The Domestics",
-        "year": 2018,
-        "genres": [
-          "공포",
-          "스릴러"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/j64I3u1wwgPct3stvvKU2ikl14w.jpg",
-        "vote_average": 6.126,
-        "vote_count": 505,
-        "overview": "정체 모를 바이러스로 인해 대부분 인간들이 사망하고 바이러스에 면역을 가지고 있는 소수만 살아남은 지옥과 같은 세상을 묘사한 아포칼립스 소재 스릴러 영화",
-        "director": "Mike P. Nelson",
-        "runtime": 95,
-        "imdb_rating": "5.7",
-        "rotten_tomatoes": "100",
-        "metacritic": "N/A",
-        "watch_providers": [],
-        "naver_rating": null
       }
     },
     {
@@ -16944,104 +15457,6 @@
           }
         ],
         "naver_rating": "7.13"
-      }
-    },
-    {
-      "video": {
-        "id": "PdfPxHt59TA",
-        "title": "인간을 가축처럼 키워 사육하는 충격적인 세상 (시청주의)",
-        "url": "https://www.youtube.com/watch?v=PdfPxHt59TA",
-        "embed_url": "https://www.youtube.com/embed/PdfPxHt59TA",
-        "channel": "기무리뷰",
-        "channel_id": "UCSaWpMhJ-wm1ekEbEvZ6AhQ",
-        "published_at": "2025-03-06T10:10:30Z",
-        "view_count": 613699,
-        "duration_sec": 953,
-        "duration_label": "15분",
-        "has_spoiler": true,
-        "match_confidence": 0.98
-      },
-      "movie": {
-        "tmdb_id": 19901,
-        "title_ko": "데이브레이커스",
-        "title_en": "Daybreakers",
-        "year": 2010,
-        "genres": [
-          "액션",
-          "판타지",
-          "SF"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/ffnkqV0ZVyGMrDyecRuW7KbifJa.jpg",
-        "vote_average": 6.283,
-        "vote_count": 2154,
-        "overview": "서기 2019년, 정체 불명의 전염병으로 인해 인류의 대부분은 뱀파이어로 변한다. 소수의 남은 인류는 인간을 사냥하는 뱀파이어를 피해 지하에 숨게 되고, 인간이 점차 사라지자 뱀파이어 세계에서도 위기감이 감돈다. 인간의 피를 거부하며 살아가는 '블러드 뱅크'의 연구원 에드워드 달튼(에단 호크)은 인간과 뱀파이어가 공존하며 살 수 있는 대체제를 발견하려 노력하지만 그 희망은 점차 사라져 간다. 그러던 어느 날, 그의 앞에 인류생존의 키를 쥐고 있는 라이오넬(윌렘 데포)과 그의 일당이 나타난다. 그들은 에드워드에게 모든 것을 버리고 자신들과 함께 할 것을 제의하고, 이제 에드워드는 자신과 인류의 생존 앞에 모든 것을 버리고 중대한 결정을 내려야 하는데...",
-        "director": "Michael Spierig, Peter Spierig",
-        "runtime": 98,
-        "imdb_rating": null,
-        "rotten_tomatoes": null,
-        "metacritic": null,
-        "watch_providers": [
-          {
-            "name": "wavve",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": null
-      }
-    },
-    {
-      "video": {
-        "id": "ZAfg1MGKzLA",
-        "title": "전설의 레전드 산악재난 끝판왕 영화, 이걸 아직도 안보셨다고요....?",
-        "url": "https://www.youtube.com/watch?v=ZAfg1MGKzLA",
-        "embed_url": "https://www.youtube.com/embed/ZAfg1MGKzLA",
-        "channel": "기무리뷰",
-        "channel_id": "UCSaWpMhJ-wm1ekEbEvZ6AhQ",
-        "published_at": "2025-03-03T03:01:18Z",
-        "view_count": 550670,
-        "duration_sec": 1352,
-        "duration_label": "22분",
-        "has_spoiler": true,
-        "match_confidence": 0.98
-      },
-      "movie": {
-        "tmdb_id": 11678,
-        "title_ko": "버티칼 리미트",
-        "title_en": "Vertical Limit",
-        "year": 2000,
-        "genres": [
-          "모험",
-          "액션",
-          "스릴러"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/zOGxy5AODmpbNAkMoD7oymU7bWS.jpg",
-        "vote_average": 5.998,
-        "vote_count": 1129,
-        "overview": "세계 최고의 산악인 로이스는 어느날 아들 피터(크리스 오도넬 분)와 딸 애니(로빈 튜니 분), 그리고 자신의 대원들과 함께 암벽 등반을 즐긴다. 깎아지른 절벽에서 정상을 향한 모험을 즐기던 이들은 한 대원의 실수로 팀 모두가 가장 아래쪽에 있던 애니의 자일에 매달리게 된다. 결국 대원들은 끝이 보이지 않는 절벽 아래로 떨어져 버리고 마지막으로 피터, 로이스, 그리고 애니만이 자일 하나에 몸을 지탱하게 된다. 자일 하나로는 세 명이 지탱할 수 없다는 사실을 알고 있던 로이스는 침착한 어조로 피터에게 자신에게 묶인 자일을 자르라고 강요한다. 삶과 죽음을 결정짓는 찰나의 순간. 동생 애니의 만류하는 비명 속에 피터는 떨리는 손으로 칼을 든다.  3년 후. 부유한 사업가인 엘리엇(빌 팩스턴 분)은 자신의 항공사의 이벤트를 위해 세계에서 가장 어렵다는 등반 코스인 K2 등정을 계획한다. 사고 이후로 산을 버린 채 은둔한 사진작가로 살고 있는 피터는 다큐멘터리 방송 팀으로 등반대에 합류하게 된",
-        "director": "Martin Campbell",
-        "runtime": 124,
-        "imdb_rating": "6.0",
-        "rotten_tomatoes": "49",
-        "metacritic": "48",
-        "watch_providers": [
-          {
-            "name": "Watcha",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "rent"
-          },
-          {
-            "name": "Google Play Movies",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": null
       }
     },
     {
@@ -17143,44 +15558,6 @@
           }
         ],
         "naver_rating": "7.89"
-      }
-    },
-    {
-      "video": {
-        "id": "d5uhshSEXMo",
-        "title": "합법적으로 1명의 자녀만 가질 수 있도록 엄격히 통제되는 미래 사회",
-        "url": "https://www.youtube.com/watch?v=d5uhshSEXMo",
-        "embed_url": "https://www.youtube.com/embed/d5uhshSEXMo",
-        "channel": "기무리뷰",
-        "channel_id": "UCSaWpMhJ-wm1ekEbEvZ6AhQ",
-        "published_at": "2025-02-26T08:59:46Z",
-        "view_count": 930468,
-        "duration_sec": 1189,
-        "duration_label": "19분",
-        "has_spoiler": true,
-        "match_confidence": 0.98
-      },
-      "movie": {
-        "tmdb_id": 12088,
-        "title_ko": "포트리스",
-        "title_en": "Fortress",
-        "year": 1992,
-        "genres": [
-          "액션",
-          "스릴러",
-          "SF"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/evjpqWPUY4VpOdyLpeRfkGU8DiR.jpg",
-        "vote_average": 6.057,
-        "vote_count": 723,
-        "overview": "미래, 인간이 기계의 통제를 받는 상황 속에서 자원의 고갈과 인구 폭증으로 한 아이만 낳아야 되는 새로운 법이 제정된다. 여자의 임신은 철저히 금지되고 임산부는 따로 격리 수용된다. 새로 태어난 생명을 기계 인간으로 만들기 위해서이다. 존 브레닉(John Brennick : 크리스토퍼 램버트 분)은 전직 특공대 대령으로, 아내(Karen Brennick : 로린 로클린 분)가 2번째 아이를 갖자, 인간으로 키우기 위해 다른 별로 탈출을 시도하지만 검문에 걸려 죽음의 수용소 '포트리스'에 수감된다. 그곳은 사막 한가운데의 지하 요새로서 철저히 통제되고 감시되어 탈출은 불가능하다. 더욱이 수감시 몸안에 폭탄을 장치해서 통제에 따르지 않으면 죽음을 부를 뿐이다. 그곳에 수용되어 있던 사형수와 죽음의 사투를 벌여서 간신히 살아 남은 그는 다른 죄수로부터 아내가 수감되어 있는 감옥의 위치를 듣게 된다. 아내 또한 그가 살아 있다는 것을 알게되고 서로 탈출할 방법만을 연구한다. 수용 소장이 브",
-        "director": "Stuart Gordon",
-        "runtime": 95,
-        "imdb_rating": "5.9",
-        "rotten_tomatoes": "38",
-        "metacritic": "48",
-        "watch_providers": [],
-        "naver_rating": null
       }
     },
     {
@@ -17556,49 +15933,6 @@
     },
     {
       "video": {
-        "id": "fA2xJ9ucZLY",
-        "title": "당신의 주변 모든 생명을 죽이는 능력이 생긴다면?",
-        "url": "https://www.youtube.com/watch?v=fA2xJ9ucZLY",
-        "embed_url": "https://www.youtube.com/embed/fA2xJ9ucZLY",
-        "channel": "기무리뷰",
-        "channel_id": "UCSaWpMhJ-wm1ekEbEvZ6AhQ",
-        "published_at": "2025-01-19T14:49:00Z",
-        "view_count": 220772,
-        "duration_sec": 1063,
-        "duration_label": "17분",
-        "has_spoiler": true,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 436274,
-        "title_ko": "래디우스",
-        "title_en": "Radius",
-        "year": 2017,
-        "genres": [
-          "스릴러",
-          "드라마",
-          "공포"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/dUkMdxwvjR7EDfWGAB9jMBx58EH.jpg",
-        "vote_average": 6.5,
-        "vote_count": 733,
-        "overview": "기억을 잃은 채, 교통사고 현장에서 눈을 뜬 남자 '리암'.\r 도움을 청하기 위해 도로로 나온 리암의 주위에서\r 돌연 사람과 동물들이 죽기 시작하는데…….",
-        "director": "Steeve Léonard, Caroline Labrèche",
-        "runtime": 93,
-        "imdb_rating": "6.2",
-        "rotten_tomatoes": "93",
-        "metacritic": "N/A",
-        "watch_providers": [
-          {
-            "name": "Watcha",
-            "type": "subscription"
-          }
-        ],
-        "naver_rating": null
-      }
-    },
-    {
-      "video": {
         "id": "cDihL0jLD_Y",
         "title": "\"미니언즈\" 제작진이 각잡고 만들어 재밌어서 웃다가 배꼽 빠질 수 있는 \"16분 순삭\" 미국 레전드 애니.. ㅎㄷㄷ",
         "url": "https://www.youtube.com/watch?v=cDihL0jLD_Y",
@@ -17792,53 +16126,6 @@
     },
     {
       "video": {
-        "id": "gVD8Ca_sGbQ",
-        "title": "〃무정부 상태〃가 된 미국을 《탈출》하려는 200만 명의 미국인들",
-        "url": "https://www.youtube.com/watch?v=gVD8Ca_sGbQ",
-        "embed_url": "https://www.youtube.com/embed/gVD8Ca_sGbQ",
-        "channel": "기무리뷰",
-        "channel_id": "UCSaWpMhJ-wm1ekEbEvZ6AhQ",
-        "published_at": "2024-12-23T08:48:02Z",
-        "view_count": 1061757,
-        "duration_sec": 1344,
-        "duration_label": "22분",
-        "has_spoiler": false,
-        "match_confidence": 0.92
-      },
-      "movie": {
-        "tmdb_id": 602223,
-        "title_ko": "더 퍼지: 포에버",
-        "title_en": "The Forever Purge",
-        "year": 2021,
-        "genres": [
-          "액션",
-          "공포",
-          "스릴러"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/bZrStEjqKMRCywomPZiPkOWZpXL.jpg",
-        "vote_average": 6.9,
-        "vote_count": 2662,
-        "overview": "매년 단 하루, 12시간 동안 살인은 물론 어떤 범죄도 허용되는 미국의 연례 행사 ‘퍼지’ 데이! 아메리칸 드림을 꿈꾸며 미국에 정착한 멕시코 부부 ‘아델라’와 ‘후안’, 텍사스 부촌에서 마구간과 농장을 꾸리며 안락하게 살아가는 ‘딜런’ 가족까지 모든 이들이 긴장감 속에서 ‘퍼지’ 데이를 맞이한다. 다행히 큰 사고없이 ‘퍼지’ 데이를 보낸 이들은 공식적인 ‘퍼지’ 종료 사이렌이 울리자 일상으로 복귀한다. 하지만 ‘영원한 퍼지’를 통한 ‘미국의 정화’를 외치는 추종자 세력이 등장하면서 걷잡을 수 없는 폭력과 살인이 난무하기 시작한다. 안전을 위해 멕시코 국경까지 이동해야 하는 ‘아델라’와 ‘후안’, 그리고 ‘딜런’ 가족은 과연 공권력과 법의 통제가 완전히 사라져버린 ‘영원한 퍼지’ 속에서 살아남을 수 있을 것인가…",
-        "director": "Everardo Gout",
-        "runtime": 103,
-        "imdb_rating": "5.4",
-        "rotten_tomatoes": "48",
-        "metacritic": "53",
-        "watch_providers": [
-          {
-            "name": "wavve",
-            "type": "rent"
-          },
-          {
-            "name": "Google Play Movies",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": "7.40"
-      }
-    },
-    {
-      "video": {
         "id": "3RUAHJL0pHQ",
         "title": "(실화)빈 라덴 다음으로 FBI 현상금이 높았던.. 희대의 악당 이야기(결말포함)",
         "url": "https://www.youtube.com/watch?v=3RUAHJL0pHQ",
@@ -17924,57 +16211,6 @@
     },
     {
       "video": {
-        "id": "-ELFwF3WZGY",
-        "title": "하층민들끼리 전쟁하게 만들어 인구 수를 통제하는 정부 (feat. 정치인 고위공무원 타깃 제외)",
-        "url": "https://www.youtube.com/watch?v=-ELFwF3WZGY",
-        "embed_url": "https://www.youtube.com/embed/-ELFwF3WZGY",
-        "channel": "기무리뷰",
-        "channel_id": "UCSaWpMhJ-wm1ekEbEvZ6AhQ",
-        "published_at": "2024-12-11T03:00:00Z",
-        "view_count": 367750,
-        "duration_sec": 1388,
-        "duration_label": "23분",
-        "has_spoiler": false,
-        "match_confidence": 0.9
-      },
-      "movie": {
-        "tmdb_id": 316727,
-        "title_ko": "더 퍼지: 심판의 날",
-        "title_en": "The Purge: Election Year",
-        "year": 2016,
-        "genres": [
-          "액션",
-          "공포",
-          "스릴러"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/gg7tlp45xqGWMra0sqQVPvybje2.jpg",
-        "vote_average": 6.382,
-        "vote_count": 5479,
-        "overview": "일 년에 단 한 번, 12시간동안 무법의 광란이 펼쳐지는 ‘퍼지 데이’의 밤으로부터 벗어난 지 2년이 된 레오 반스(프랭크 그릴로). 올해 이 연례 행사는 퍼지 데이 찬반 논란으로 뜨겁게 달궈진 대통령 선거 전날 진행될 예정이다. 상원 위원인 찰리 론(엘리자베스 미첼)의 경호 대장인 레오의 미션은 그녀를 이 논란 속의 경쟁적인 선거에서 지켜내는 것이다. 그러나 배신은 그들을 어떤 도움도 얻을 수 없는 그 밤에 워싱턴 D.C.의 거리로 내몰고, 그들은 살아 남거나 죄를 위해 희생되어야 하는 운명에 처하게 된다.",
-        "director": "James DeMonaco",
-        "runtime": 105,
-        "imdb_rating": "6.0",
-        "rotten_tomatoes": "55",
-        "metacritic": "55",
-        "watch_providers": [
-          {
-            "name": "wavve",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "rent"
-          },
-          {
-            "name": "Google Play Movies",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": "6.90"
-      }
-    },
-    {
-      "video": {
         "id": "t4vnT622B9s",
         "title": "🎬명작은 시간이 지나도 명작이다... 30년 전에 개봉한 소름돋는 반전 미스터리 스릴러 영화 [결말포함]",
         "url": "https://www.youtube.com/watch?v=t4vnT622B9s",
@@ -18023,237 +16259,6 @@
           }
         ],
         "naver_rating": null
-      }
-    },
-    {
-      "video": {
-        "id": "G1QG9td65nc",
-        "title": "단 하루, 모든 범죄가 합법화된 미래의 사회",
-        "url": "https://www.youtube.com/watch?v=G1QG9td65nc",
-        "embed_url": "https://www.youtube.com/embed/G1QG9td65nc",
-        "channel": "기무리뷰",
-        "channel_id": "UCSaWpMhJ-wm1ekEbEvZ6AhQ",
-        "published_at": "2024-12-06T02:59:55Z",
-        "view_count": 571598,
-        "duration_sec": 1360,
-        "duration_label": "22분",
-        "has_spoiler": false,
-        "match_confidence": 0.9
-      },
-      "movie": {
-        "tmdb_id": 238636,
-        "title_ko": "더 퍼지: 거리의 반란",
-        "title_en": "The Purge: Anarchy",
-        "year": 2014,
-        "genres": [
-          "공포",
-          "스릴러"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/rHIkhTrClh2MQyFkfnu68ArMLjx.jpg",
-        "vote_average": 6.627,
-        "vote_count": 6684,
-        "overview": "1년 전, 단 하나뿐인 아들을 잃은 뒤 복수를 위해 나선 한 남자  갑작스런 차 고장으로 거리 한복판에 갇힌 위기의 커플  가장 안전하다고 믿었던 집에서 무장 집단들에게 끌려 나온 모녀  오직 재미를 위해 도시를 접수한 가면을 쓴 무리들  법의 통제는 사라지고, 살인이 허락된 단 12시간  지금, 당신도 ‘퍼지데이’에 동참하라!",
-        "director": "James DeMonaco",
-        "runtime": 103,
-        "imdb_rating": "6.4",
-        "rotten_tomatoes": "58",
-        "metacritic": "50",
-        "watch_providers": [
-          {
-            "name": "wavve",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "rent"
-          },
-          {
-            "name": "Google Play Movies",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": "7.50"
-      }
-    },
-    {
-      "video": {
-        "id": "EyuZ8IFwsiE",
-        "title": "이 영화 모르면 간첩입니다. 외계 전쟁 영화의 전설",
-        "url": "https://www.youtube.com/watch?v=EyuZ8IFwsiE",
-        "embed_url": "https://www.youtube.com/embed/EyuZ8IFwsiE",
-        "channel": "기무리뷰",
-        "channel_id": "UCSaWpMhJ-wm1ekEbEvZ6AhQ",
-        "published_at": "2024-12-02T15:21:34Z",
-        "view_count": 470449,
-        "duration_sec": 1776,
-        "duration_label": "29분",
-        "has_spoiler": true,
-        "match_confidence": 0.98
-      },
-      "movie": {
-        "tmdb_id": 602,
-        "title_ko": "인디펜던스 데이",
-        "title_en": "Independence Day",
-        "year": 1996,
-        "genres": [
-          "액션",
-          "모험",
-          "SF"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/fy4Y1o2tGip4V1Pl1DYoRBLc1GR.jpg",
-        "vote_average": 6.903,
-        "vote_count": 10349,
-        "overview": "7월 2일, 이상한 현상이 지구를 감싼다. 하늘은 이글이글 불타오르고 땅은 지진이 난 듯 격렬히 요동친다. 직경 550km, 무게가 달의 4분의 1이나 되는 거대한 괴 비행물체가 태양을 가려 지구는 그 빛을 잃어간다. 숨막히는 공포가 세계의 주요도시를 엄습하기 시작한다.  7월 3일, 거대하고 기괴한 비행물체에서 내뿜는 가공할 위력의 불기둥은 뉴욕의 마천루와 워싱턴의 백악관, 이집트의 피라밋 등을 순식간에 잿더미로 만들고, 거리의 자동차들은 휴지조각처럼 공중을 날아다닌다. 사람들은 당황하여 숨을 곳을 찾지만 도망칠 곳은 아무데도 없다. 인간의 힘으로 감당할 수 없는 엄청난 힘이 지구에 도달했음이 밝혀진다. 그들의 목적은 완전한 지구의 파멸.  7월 4일, 엄청난 파괴 속에서 살아남은 지구의 생존자들은 그 힘을 모아 거대한 괴비행물체에 대항하려 한다. 그러나 외계인들의 지구파괴는 더욱 맹렬해지고 인류 전체의 생존과 외계인으로부터 지구의 독립은 점점 어려워지는데.",
-        "director": "Roland Emmerich",
-        "runtime": 130,
-        "imdb_rating": "7.0",
-        "rotten_tomatoes": "69",
-        "metacritic": "59",
-        "watch_providers": [
-          {
-            "name": "Disney Plus",
-            "type": "subscription"
-          }
-        ],
-        "naver_rating": "7.34"
-      }
-    },
-    {
-      "video": {
-        "id": "H4xBbIOaC3g",
-        "title": "《핵폭발》로 황폐화된 〃지구〃에서 생존한 【8억명의 사람들】",
-        "url": "https://www.youtube.com/watch?v=H4xBbIOaC3g",
-        "embed_url": "https://www.youtube.com/embed/H4xBbIOaC3g",
-        "channel": "기무리뷰",
-        "channel_id": "UCSaWpMhJ-wm1ekEbEvZ6AhQ",
-        "published_at": "2024-11-25T08:03:03Z",
-        "view_count": 273665,
-        "duration_sec": 1203,
-        "duration_label": "20분",
-        "has_spoiler": true,
-        "match_confidence": 0.98
-      },
-      "movie": {
-        "tmdb_id": 49049,
-        "title_ko": "저지 드레드",
-        "title_en": "Dredd",
-        "year": 2012,
-        "genres": [
-          "액션",
-          "SF"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/iecH0Fl4JOQSBkdGiafhltFAzcO.jpg",
-        "vote_average": 6.861,
-        "vote_count": 5493,
-        "overview": "먼 미래, 세상은 폐허가 되고 사람들은 거대한 도시 메가 시티에 모여 삶을 연명한다. 이곳은 정부도 통치자도 없는 곳으로 모든 범죄는 무방비로 노출 된다. 하지만 메가 시티에도 법을 집행하기 위한 자들이 있으니 그들을 저지 - 심판자라 부르며 그 중 가장 뛰어난 자가 바로 심판자 드레드이다. 드레드는 초능력을 소유한 신입 파트너 앤더슨과 함께 모든 불법의 근원지 피치트리로 향한다. 200층의 위용을 자랑하는 제국은 그들을 맞이해 건물을 봉쇄하고 전쟁을 준비하는데...",
-        "director": "Pete Travis",
-        "runtime": 96,
-        "imdb_rating": "7.1",
-        "rotten_tomatoes": "80",
-        "metacritic": "60",
-        "watch_providers": [
-          {
-            "name": "wavve",
-            "type": "subscription"
-          },
-          {
-            "name": "Watcha",
-            "type": "subscription"
-          },
-          {
-            "name": "TVING",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": null
-      }
-    },
-    {
-      "video": {
-        "id": "VAUhWa8hm8M",
-        "title": "🔥2시간 순삭 주의🔥≪에이리언 시리즈≫",
-        "url": "https://www.youtube.com/watch?v=VAUhWa8hm8M",
-        "embed_url": "https://www.youtube.com/embed/VAUhWa8hm8M",
-        "channel": "기무리뷰",
-        "channel_id": "UCSaWpMhJ-wm1ekEbEvZ6AhQ",
-        "published_at": "2024-11-24T03:00:31Z",
-        "view_count": 1476226,
-        "duration_sec": 7629,
-        "duration_label": "2시간 7분",
-        "has_spoiler": true,
-        "match_confidence": 0.85
-      },
-      "movie": {
-        "tmdb_id": 348,
-        "title_ko": "에이리언",
-        "title_en": "Alien",
-        "year": 1979,
-        "genres": [
-          "공포",
-          "SF"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/k3m1RdlYUlCx51PxxNMlmbm7QSk.jpg",
-        "vote_average": 8.169,
-        "vote_count": 16250,
-        "overview": "2122년, 2천만톤의 광물과 7명의 승무원을 태우고 지구로 귀환중인 화물선 노스트로모호의 메인 컴퓨터 마더는 어떤 위성에서 나오는 알 수 없는 신호를 포착하게 된다. 마더에 의해 동면중 깨어난 승무원들은 이 신호를 조사하기 위해 혹성 LA-426에 착륙한다. 이들 중엔 2등 항해사인 엘렌 리플리도 있다. 혹성에서 정체 불명의 우주선을 발견한 그들은 탐사에 나서지만, 우주선은 이미 오래전에 파괴되어 썩고 있었으며 승무원들은 모두 미이라로 변해 있다. 사고 원인을 찾기 위해 좀 더 안으로 들어간 조사반은 여기저기 계란 모양의 물체가 있는 산란실을 발견하는데...",
-        "director": "Ridley Scott",
-        "runtime": 117,
-        "imdb_rating": "8.5",
-        "rotten_tomatoes": "93",
-        "metacritic": "89",
-        "watch_providers": [
-          {
-            "name": "Disney Plus",
-            "type": "subscription"
-          }
-        ],
-        "naver_rating": "7.10"
-      }
-    },
-    {
-      "video": {
-        "id": "1_Qc86iRZjs",
-        "title": "서기 2104년, 2000명의 동면인간과 1000개의 배아를 싣고 새로운 지구를 테라포밍하기 위해 지구를 떠난 우주선",
-        "url": "https://www.youtube.com/watch?v=1_Qc86iRZjs",
-        "embed_url": "https://www.youtube.com/embed/1_Qc86iRZjs",
-        "channel": "기무리뷰",
-        "channel_id": "UCSaWpMhJ-wm1ekEbEvZ6AhQ",
-        "published_at": "2024-11-14T10:22:38Z",
-        "view_count": 322677,
-        "duration_sec": 1297,
-        "duration_label": "21분",
-        "has_spoiler": false,
-        "match_confidence": 0.98
-      },
-      "movie": {
-        "tmdb_id": 126889,
-        "title_ko": "에이리언: 커버넌트",
-        "title_en": "Alien: Covenant",
-        "year": 2017,
-        "genres": [
-          "공포",
-          "SF"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/qTiZhRh4y152Gj5jvEXMPmQZ71m.jpg",
-        "vote_average": 6.174,
-        "vote_count": 9360,
-        "overview": "2천명의 승객과 12명의 승무원을 실은 커버넌트호는 새로운 행성의 개척과 이주를 위해 항해 중이다. 인공지능 로봇 월터가 홀로 깨어 승무원들의 건강을 관리하던 중 예기치 못한 사고로 선장이 사망하고 승무원들이 깨어난다. 이들은 커버넌트호를 정비하던 중 인근의 행성으로부터 알 수 없는 신호를 감지한다. 여행에 지친 승무원들은 다니엘스의 반대에도 불구하고 행성을 탐사하기로 결정한다. 이들은 정체불명의 생명체에 감염되어 위기에 빠지지만 10년 전 사라졌던 프로메테우스호의 인공지능 로봇 데이비드의 도움을 받아 상황을 모면하는데...",
-        "director": "Ridley Scott",
-        "runtime": 122,
-        "imdb_rating": "6.4",
-        "rotten_tomatoes": "65",
-        "metacritic": "65",
-        "watch_providers": [
-          {
-            "name": "Disney Plus",
-            "type": "subscription"
-          }
-        ],
-        "naver_rating": "7.10"
       }
     },
     {
@@ -18357,49 +16362,6 @@
           }
         ],
         "naver_rating": "7.94"
-      }
-    },
-    {
-      "video": {
-        "id": "6NWetTH-u3s",
-        "title": "서기 2379년, 외계 괴생명체와 인간을 이종교배시킨 지구의 과학자들",
-        "url": "https://www.youtube.com/watch?v=6NWetTH-u3s",
-        "embed_url": "https://www.youtube.com/embed/6NWetTH-u3s",
-        "channel": "기무리뷰",
-        "channel_id": "UCSaWpMhJ-wm1ekEbEvZ6AhQ",
-        "published_at": "2024-11-07T16:10:48Z",
-        "view_count": 692348,
-        "duration_sec": 1181,
-        "duration_label": "19분",
-        "has_spoiler": true,
-        "match_confidence": 0.98
-      },
-      "movie": {
-        "tmdb_id": 8078,
-        "title_ko": "에이리언 4",
-        "title_en": "Alien Resurrection",
-        "year": 1997,
-        "genres": [
-          "SF",
-          "공포",
-          "액션"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/8xv7mKnaks3vk3Y3eIuwMXJU6Og.jpg",
-        "vote_average": 6.167,
-        "vote_count": 5509,
-        "overview": "페레즈 장군이 지휘하는 연방군 의학탐사선 아우리가호는 에일리언과의 격전지였던 행성 피오리 16호에서 찾아낸 리플리의 혈액으로부터 DNA 샘플을 채취, 미수정란을 이용한 유전공학으로 리플리를 부활시키고, 이와 함께 복제된 퀸 에일리언의 태아를 리플리의 몸에서 분리해내는 데도 성공을 거둔다. 이들의 목적은 에일리언을 길들여 군견과 같은 용도로 사용하려는 것. 한편 리플리 또한 에일리언과의 유전자 결합으로 본능이 극대화된 뜻하지 않은 결과로 과학자들을 고무시키고, 페레즈 장군은 단지 에일리언을 재생하기 위한 부산물에 불과한 리플리를 두고 갈등한다.",
-        "director": "Jean-Pierre Jeunet",
-        "runtime": 108,
-        "imdb_rating": "6.2",
-        "rotten_tomatoes": "56",
-        "metacritic": "62",
-        "watch_providers": [
-          {
-            "name": "Disney Plus",
-            "type": "subscription"
-          }
-        ],
-        "naver_rating": "7.43"
       }
     },
     {
@@ -18573,49 +16535,6 @@
         "metacritic": "86",
         "watch_providers": [],
         "naver_rating": "9.21"
-      }
-    },
-    {
-      "video": {
-        "id": "zgffEiBpVMo",
-        "title": "서기 2179년, 지구에서 368,940,000,000,000Km 떨어진 행성에서 발견된 우주에서 가장 완전한 생명체",
-        "url": "https://www.youtube.com/watch?v=zgffEiBpVMo",
-        "embed_url": "https://www.youtube.com/embed/zgffEiBpVMo",
-        "channel": "기무리뷰",
-        "channel_id": "UCSaWpMhJ-wm1ekEbEvZ6AhQ",
-        "published_at": "2024-10-16T09:01:03Z",
-        "view_count": 252861,
-        "duration_sec": 1518,
-        "duration_label": "25분",
-        "has_spoiler": false,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 679,
-        "title_ko": "에이리언 2",
-        "title_en": "Aliens",
-        "year": 1986,
-        "genres": [
-          "액션",
-          "스릴러",
-          "SF"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/8J1SwqmsHRzZ5k8QVRibkzyc9jc.jpg",
-        "vote_average": 7.962,
-        "vote_count": 10768,
-        "overview": "에일리언과의 싸움에서 간신히 살아남은 리플리는 잠든 채로 57년을 떠돌다 구조선에 의해 구출된다. 회사는 리플리를 비롯한 당시 승무원들이 노스트로모호를 잃어버린 것을 추궁하지만 에이리언 얘기는 믿지 않는다. 이때 지구와 한 혹성 거주민들의 통신이 두절되는 사건이 벌어지자 리플리는 고문 자격으로 해병대와 동행하게 된다. 혹성에 도착한 해병대원들은 곧 혹성 거주민들이 에일리언 유충의 산 먹이로 된 것을 목격하고, 곧이어 벌어진 교전에서 여러 대원들을 잃는다. 그들은 혹성 거주민들의 실험실로 대피하고, 리플리는 이곳에서 마지막 생존자인 뉴트를 발견하게 된다.",
-        "director": "James Cameron",
-        "runtime": 137,
-        "imdb_rating": "8.4",
-        "rotten_tomatoes": "93",
-        "metacritic": "84",
-        "watch_providers": [
-          {
-            "name": "Disney Plus",
-            "type": "subscription"
-          }
-        ],
-        "naver_rating": "8.81"
       }
     },
     {
@@ -19381,100 +17300,6 @@
     },
     {
       "video": {
-        "id": "kq4phtAj5M0",
-        "title": "[2/2] 결말 포함!! 비 오는 날, 최고의 스릴러 영화",
-        "url": "https://www.youtube.com/watch?v=kq4phtAj5M0",
-        "embed_url": "https://www.youtube.com/embed/kq4phtAj5M0",
-        "channel": "재본리뷰",
-        "channel_id": "UCeC0UjceJxQ2SPgn8oFrF1w",
-        "published_at": "2024-07-22T03:00:32Z",
-        "view_count": 14,
-        "duration_sec": 815,
-        "duration_label": "13분",
-        "has_spoiler": true,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 2501,
-        "title_ko": "본 아이덴티티",
-        "title_en": "The Bourne Identity",
-        "year": 2002,
-        "genres": [
-          "액션",
-          "드라마",
-          "미스터리",
-          "스릴러"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/crj9CUvNqeNHNdUm8bTN9jpEWqI.jpg",
-        "vote_average": 7.475,
-        "vote_count": 10025,
-        "overview": "이탈리아 어부들이 지중해 한 가운데에서 등에 두 발의 총상을 입은 채 표류하고 있는 한 남자를 구하게 된다. 그는 기억 상실증에 걸려 자신이 누구인지조차 모른다. 단서는 등에 입은 총상과 스위스 은행의 계좌번호 뿐.  자신의 존재를 찾아 스위스로 향한 그는 자신이 파리에서 제이슨 본이라는 이름으로 살았음을 알게 되지만, 여러 개의 가명으로 만들어진 여권을 보고 자신의 정체성을 잃게 된다. 경찰과 군인까지 그를 추적하고 있다는 사실을 알게 된 제이슨 본. 추격을 피해 도망가다 우연히 만나게 된 마리라는 여성에게 2만 달러라는 거금을 주고 파리까지 차를 얻어 타게 되는데...",
-        "director": "Doug Liman",
-        "runtime": 118,
-        "imdb_rating": "7.8",
-        "rotten_tomatoes": "84",
-        "metacritic": "68",
-        "watch_providers": [
-          {
-            "name": "wavve",
-            "type": "subscription"
-          },
-          {
-            "name": "Watcha",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "rent"
-          },
-          {
-            "name": "Google Play Movies",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": "8.61"
-      }
-    },
-    {
-      "video": {
-        "id": "5iverc6eW8M",
-        "title": "2022년 넷플릭스에서 오픈했지만 국내에선 미공개된 숨겨진 SF어드벤처!! [영화리뷰/결말포함]",
-        "url": "https://www.youtube.com/watch?v=5iverc6eW8M",
-        "embed_url": "https://www.youtube.com/embed/5iverc6eW8M",
-        "channel": "시네마헌터",
-        "channel_id": "UC_RPr05YH1TBlQwxW2C7TVQ",
-        "published_at": "2024-07-21T06:49:35Z",
-        "view_count": 132563,
-        "duration_sec": 737,
-        "duration_label": "12분",
-        "has_spoiler": true,
-        "match_confidence": 0.9
-      },
-      "movie": {
-        "tmdb_id": 881957,
-        "title_ko": "캡틴 노바",
-        "title_en": "Captain Nova",
-        "year": 2021,
-        "genres": [
-          "모험",
-          "가족",
-          "SF"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/xzomO8VLkvnoudDwwz409OcOQb6.jpg",
-        "vote_average": 6.1,
-        "vote_count": 107,
-        "overview": "15세 나스가 숲에서 UFO를 우연히 발견했을 때, 그는 선장 노바와 그녀의 수다스러운 로봇 ADD가 임무를 위해 여기에 있다는 것을 발견합니다. Nas는 Nova가 미래의 과학자라는 것을 알지 못합니다. Nova는 12살 된 그녀의 몸으로 시간을 거슬러 올라갔습니다. 그녀는 기후 재앙을 막기 위해 왔습니다. 하지만 아무도 두 아이를 심각하게 받아들이지 않기 때문에 그들은 북극에 구멍을 뚫기를 원하는 백만장자를 납치하는 것 외에는 다른 해결책이 없다고 생각합니다. 하지만 그들을 막으려는 세력들이 있습니다. 나스와 노바가 지구를 구할 수 있을까요?",
-        "director": "Maurice Trouwborst",
-        "runtime": 85,
-        "imdb_rating": "5.5",
-        "rotten_tomatoes": null,
-        "metacritic": "N/A",
-        "watch_providers": [],
-        "naver_rating": null
-      }
-    },
-    {
-      "video": {
         "id": "eazTQlXvWXE",
         "title": "어느 날 우리 학교에 역대급 꽃미남이 전학 왔다 [영화리뷰/결말포함][하이틴 영화 추천]",
         "url": "https://www.youtube.com/watch?v=eazTQlXvWXE",
@@ -19564,49 +17389,6 @@
           }
         ],
         "naver_rating": null
-      }
-    },
-    {
-      "video": {
-        "id": "14DcVEIvIPA",
-        "title": "인류 vs 유인원",
-        "url": "https://www.youtube.com/watch?v=14DcVEIvIPA",
-        "embed_url": "https://www.youtube.com/embed/14DcVEIvIPA",
-        "channel": "영읽남",
-        "channel_id": "UCRT4hxfWfXEP7Iiv3ovI-0A",
-        "published_at": "2024-07-19T08:16:26Z",
-        "view_count": 20499,
-        "duration_sec": 1461,
-        "duration_label": "24분",
-        "has_spoiler": false,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 281338,
-        "title_ko": "혹성탈출: 종의 전쟁",
-        "title_en": "War for the Planet of the Apes",
-        "year": 2017,
-        "genres": [
-          "드라마",
-          "SF",
-          "전쟁"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/vJ8xKz2ip60nAEeN37eUmjAVpq2.jpg",
-        "vote_average": 7.218,
-        "vote_count": 9676,
-        "overview": "전 세계에 퍼진 치명적인 바이러스인 시미안 플루로 인해 유인원들은 나날이 진화하는 반면, 살아남은 인간들은 점차 지능을 잃고 퇴화해 간다. 멸종 위기에 처한 인간들은 유인원의 리더 시저를 찾아 없애려 하지만, 숲에 머물고 있다는 시저는 몇 년째 은신한 채 모습을 드러내지 않는다. 어느 날 인간 군대의 리더 대령(우디 해럴슨)이 시저의 거처를 급습해 그의 가족을 죽이는 사건이 일어난다. 분노한 시저는 오랫동안 함께해 온 동료 모리스(카린 코노발), 로켓(테리 노터리) 등과 함께 복수의 여정을 떠난다.",
-        "director": "Matt Reeves",
-        "runtime": 140,
-        "imdb_rating": "7.4",
-        "rotten_tomatoes": "94",
-        "metacritic": "82",
-        "watch_providers": [
-          {
-            "name": "Disney Plus",
-            "type": "subscription"
-          }
-        ],
-        "naver_rating": "8.15"
       }
     },
     {
@@ -19714,60 +17496,6 @@
     },
     {
       "video": {
-        "id": "UdDoSbhK6WY",
-        "title": "《타락한 인간들》을 초토화시켜 〃지구〃를 리셋한 『창조주』",
-        "url": "https://www.youtube.com/watch?v=UdDoSbhK6WY",
-        "embed_url": "https://www.youtube.com/embed/UdDoSbhK6WY",
-        "channel": "기무리뷰",
-        "channel_id": "UCSaWpMhJ-wm1ekEbEvZ6AhQ",
-        "published_at": "2024-07-04T09:00:24Z",
-        "view_count": 619906,
-        "duration_sec": 1436,
-        "duration_label": "23분",
-        "has_spoiler": true,
-        "match_confidence": 0.98
-      },
-      "movie": {
-        "tmdb_id": 86834,
-        "title_ko": "노아",
-        "title_en": "Noah",
-        "year": 2014,
-        "genres": [
-          "드라마",
-          "모험"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/AbBuZzg2CirxLQ9dD546lU91H7H.jpg",
-        "vote_average": 5.677,
-        "vote_count": 6574,
-        "overview": "타락한 인간 세상에서 신의 계시를 받은 유일한 인물 노아(러셀 크로우). 그는 대홍수로부터 세상을 구할 수 있는 거대한 방주를 짓기 시작한다. 방주에 탈 수 있는 이는 생명이 있는 모든 존재의 암수 한 쌍과 노아의 가족들뿐. 하지만 세상 사람들은 노아의 방주를 조롱하기 시작하고 가족들간의 의견 대립마저 생겨나는데..",
-        "director": "Darren Aronofsky",
-        "runtime": 138,
-        "imdb_rating": "5.8",
-        "rotten_tomatoes": "75",
-        "metacritic": "68",
-        "watch_providers": [
-          {
-            "name": "Netflix",
-            "type": "subscription"
-          },
-          {
-            "name": "Disney Plus",
-            "type": "subscription"
-          },
-          {
-            "name": "Watcha",
-            "type": "subscription"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "type": "subscription"
-          }
-        ],
-        "naver_rating": "9.61"
-      }
-    },
-    {
-      "video": {
         "id": "6kqDBU1VRm4",
         "title": "2024년, 프랑스 올림픽 전에.. 이미 넷플릭스에서 “전세계 1위를 찍으면서 미리 사람들에게 경고했던” 띵작 영화! 그냥 보세요 [결말포함]",
         "url": "https://www.youtube.com/watch?v=6kqDBU1VRm4",
@@ -19798,104 +17526,6 @@
         "metacritic": "N/A",
         "watch_providers": [],
         "naver_rating": null
-      }
-    },
-    {
-      "video": {
-        "id": "CxaZJYWqzV8",
-        "title": "〃핵무기〃로 《죽어가는 태양》을 고치려고 계획한 【지구인】들",
-        "url": "https://www.youtube.com/watch?v=CxaZJYWqzV8",
-        "embed_url": "https://www.youtube.com/embed/CxaZJYWqzV8",
-        "channel": "기무리뷰",
-        "channel_id": "UCSaWpMhJ-wm1ekEbEvZ6AhQ",
-        "published_at": "2024-06-24T13:00:20Z",
-        "view_count": 961567,
-        "duration_sec": 1180,
-        "duration_label": "19분",
-        "has_spoiler": false,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 38,
-        "title_ko": "이터널 선샤인",
-        "title_en": "Eternal Sunshine of the Spotless Mind",
-        "year": 2004,
-        "genres": [
-          "SF",
-          "드라마",
-          "로맨스"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/jULvvUymAqM18gIDHbMRfKHbCSB.jpg",
-        "vote_average": 8.1,
-        "vote_count": 16245,
-        "overview": "조엘은 아픈 기억만을 지워준다는 라쿠나사를 찾아가 헤어진 연인 클레멘타인의 기억을 지우기로 결심한다. 기억이 사라져 갈수록 조엘은 사랑이 시작되던 순간, 행복한 기억들, 가슴 속에 각인된 추억들을 지우기 싫어지기만 하는데... 당신을 지우면 이 아픔도 사라질까요? 사랑은 그렇게 다시 기억된다.",
-        "director": "Michel Gondry",
-        "runtime": 108,
-        "imdb_rating": "8.3",
-        "rotten_tomatoes": "93",
-        "metacritic": "89",
-        "watch_providers": [
-          {
-            "name": "wavve",
-            "type": "subscription"
-          },
-          {
-            "name": "Watcha",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": "9.06"
-      }
-    },
-    {
-      "video": {
-        "id": "A5Dqe_zAVng",
-        "title": "〃전인류의 99%〃를 쓸어버린 【바이러스】로 인해 〃지하세계〃에 고립되어 버린 『미래의 인간』",
-        "url": "https://www.youtube.com/watch?v=A5Dqe_zAVng",
-        "embed_url": "https://www.youtube.com/embed/A5Dqe_zAVng",
-        "channel": "기무리뷰",
-        "channel_id": "UCSaWpMhJ-wm1ekEbEvZ6AhQ",
-        "published_at": "2024-06-20T14:48:24Z",
-        "view_count": 390030,
-        "duration_sec": 1453,
-        "duration_label": "24분",
-        "has_spoiler": true,
-        "match_confidence": 0.98
-      },
-      "movie": {
-        "tmdb_id": 63,
-        "title_ko": "12 몽키즈",
-        "title_en": "Twelve Monkeys",
-        "year": 1995,
-        "genres": [
-          "SF",
-          "스릴러",
-          "미스터리"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/6bSEAb5YOeEKW0lbki7bFCv6Zdh.jpg",
-        "vote_average": 7.605,
-        "vote_count": 9066,
-        "overview": "서기 2035년, 미래의 인류는 바이러스 감염으로 인해 99%가 멸망하고 소수의 생존자들은 지상에서의 생활을 포기한 채 지하 세계에서 생활하게 된다. 감옥에 수감되어 있는 제임스 콜(브루스 윌리스)은 과학자들의 사면 제의를 받고 바이러스가 퍼지게 된 1996년으로 보내진다. 그러나 착오로 인해 1990년으로 보내지고 그곳에서 정신 병원에 수감된다. 그는 곧 인류가 바이러스에 의해 멸망할 것이라고 설득하지만 아무도 그의 말을 믿으려 하지 않는데, 그의 담당의사인 캐서린 레일리(매들린 스토우) 박사는 그를 치료하면서 어디서 본 것 같은 느낌을 갖는다.",
-        "director": "Terry Gilliam",
-        "runtime": 129,
-        "imdb_rating": null,
-        "rotten_tomatoes": null,
-        "metacritic": null,
-        "watch_providers": [
-          {
-            "name": "wavve",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": "9.05"
       }
     },
     {
@@ -19972,126 +17602,6 @@
         "imdb_rating": null,
         "rotten_tomatoes": null,
         "metacritic": null,
-        "watch_providers": [],
-        "naver_rating": null
-      }
-    },
-    {
-      "video": {
-        "id": "LOCcKADM6eA",
-        "title": "돈만 내면 남의 몸을 빌릴 수 있는 세상",
-        "url": "https://www.youtube.com/watch?v=LOCcKADM6eA",
-        "embed_url": "https://www.youtube.com/embed/LOCcKADM6eA",
-        "channel": "기무리뷰",
-        "channel_id": "UCSaWpMhJ-wm1ekEbEvZ6AhQ",
-        "published_at": "2024-06-10T03:00:11Z",
-        "view_count": 324739,
-        "duration_sec": 885,
-        "duration_label": "14분",
-        "has_spoiler": true,
-        "match_confidence": 0.92
-      },
-      "movie": {
-        "tmdb_id": 18501,
-        "title_ko": "게이머",
-        "title_en": "Gamer",
-        "year": 2009,
-        "genres": [
-          "액션",
-          "스릴러",
-          "SF"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/hOrHMu8XZ2CAHtAA9Aks2kccUu6.jpg",
-        "vote_average": 5.691,
-        "vote_count": 2608,
-        "overview": "가까운 미래, 전세계인들은 ‘슬레이어즈’라는 온라인 FPS 게임에 열광한다. 10대 소년 ‘사이먼’이 플레이하는 캐릭터 ‘케이블’은 게임 속에서 놀라운 활약을 펼치며 ‘슬레이어즈’를 전세계인이 열광하는 최고의 인기 게임의 자리에 오르게 한다.  모든 자유를 구속당한 채 죽음의 게임을 계속해나가는 ‘케이블’. 자유를 되찾아 사랑하는 아내와 딸의 곁으로 돌아가기 위해서는 30게임을 이겨야 한다. 하지만 갈수록 힘겨워지는 전투 속에 마지막 한 게임만을 앞두고 ‘케이블’과 ‘사이먼’은 위기에 직면한다. ‘사이먼’이 내리는 명령을 실행하는 동안 생기는 시간차인 ‘핑(Ping)’ 때문에 진정한 실력을 드러내며 자유롭게 싸울 수 없었던 ‘케이블’은 게임에서 이기고 싶다면 자신을 자유 모드로 플레이할 수 있도록 놓아달라고 부탁하게 된다.  그러던 중 이 게임을 통해 사람들의 눈과 귀를 마비시킨 채 전세계적인 온라인 시스템을 장악하려는 ‘슬레이어즈’의 개발자인 ‘켄 캐슬’의 광기서린 음모를 알게 된",
-        "director": "Brian Taylor, Mark Neveldine",
-        "runtime": 95,
-        "imdb_rating": "5.7",
-        "rotten_tomatoes": "29",
-        "metacritic": "27",
-        "watch_providers": [],
-        "naver_rating": "8.85"
-      }
-    },
-    {
-      "video": {
-        "id": "HvEPorFAT_o",
-        "title": "인류는 멸망 직전... 유인원이 점령한 지구",
-        "url": "https://www.youtube.com/watch?v=HvEPorFAT_o",
-        "embed_url": "https://www.youtube.com/embed/HvEPorFAT_o",
-        "channel": "영읽남",
-        "channel_id": "UCRT4hxfWfXEP7Iiv3ovI-0A",
-        "published_at": "2024-06-08T08:54:25Z",
-        "view_count": 30664,
-        "duration_sec": 1522,
-        "duration_label": "25분",
-        "has_spoiler": false,
-        "match_confidence": 0.93
-      },
-      "movie": {
-        "tmdb_id": 119450,
-        "title_ko": "혹성탈출: 반격의 서막",
-        "title_en": "Dawn of the Planet of the Apes",
-        "year": 2014,
-        "genres": [
-          "SF",
-          "액션",
-          "드라마",
-          "스릴러"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/39kIGCP0mvRc9IZC1oJuIaJOaAb.jpg",
-        "vote_average": 7.337,
-        "vote_count": 12170,
-        "overview": "치명적인 바이러스 시미안 플루로 인류가 거의 멸망하고 소수만이 살아남은 시대. 유인원들은 도시를 떠나 숲에서 그들의 세상을 만들었다. 도시는 폐허가 되었고, 10년간 인간과 유인원은 서로 다른 공간에 머물며 마주치지 않고 살아왔기 때문에 유인원들은 인간이 멸종한 것이 아닐까 추정하고 있다. 그 평화가 깨진 것은 도시의 비상전력이 다 소진되면서부터. 전력 공급을 위해서는 유인원이 거주하는 숲에 있는 댐을 재가동해야 한다. 우연히 두 존재가 마주치게 되자, 유인원과 인간은 평화를 지킬 것인가 무력을 써서 주도권을 가져야 하나를 두고 내부 마찰을 겪는데...",
-        "director": "Matt Reeves",
-        "runtime": 130,
-        "imdb_rating": "7.6",
-        "rotten_tomatoes": "91",
-        "metacritic": "79",
-        "watch_providers": [
-          {
-            "name": "Disney Plus",
-            "type": "subscription"
-          }
-        ],
-        "naver_rating": "8.43"
-      }
-    },
-    {
-      "video": {
-        "id": "JzhQdrRdFnQ",
-        "title": "서기 2078년, 핵폭탄이 터져 황폐화된 행성",
-        "url": "https://www.youtube.com/watch?v=JzhQdrRdFnQ",
-        "embed_url": "https://www.youtube.com/embed/JzhQdrRdFnQ",
-        "channel": "기무리뷰",
-        "channel_id": "UCSaWpMhJ-wm1ekEbEvZ6AhQ",
-        "published_at": "2024-06-05T14:57:13Z",
-        "view_count": 646585,
-        "duration_sec": 1282,
-        "duration_label": "21분",
-        "has_spoiler": true,
-        "match_confidence": 0.92
-      },
-      "movie": {
-        "tmdb_id": 9102,
-        "title_ko": "스크리머스",
-        "title_en": "Screamers",
-        "year": 1995,
-        "genres": [
-          "공포",
-          "SF",
-          "전쟁"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/eqgBf791rMZG7ywHfObpXeMpiRf.jpg",
-        "vote_average": 6.223,
-        "vote_count": 596,
-        "overview": "SF 소설 작가 필립 K 딕의 단편 소설 `2차 변종 (Second Variety)`을 원작으로 하는 영화.  서기 2078년, 지구의 에너지 문제를 단숨에 해결할수 있는 놀라운 자원인 베리늄이 시리우스 6B 행성에서 발견되고 NEB라는 회사는 독점으로 베리늄을 채굴해 지구에 공급한다. 그러나 베리늄에서 엄청난 방사능이 노출되자 지구동맹은 베리늄의 지구 반입을 막게 되고 이로인해 NEB와 지구 동맹군은 시리우스 6B성에서 치열한 전투를 펼치게 된다. 동맹군은 NEB의 전투군들을 퇴치하기위해 사막에서 활약하는 두더쥐같이 생긴 살상무기 스크리머를 개발한다. 이것은 땅속으로 이동하는 일종의 이동식 지뢰다. 그러나 컴퓨터에 의해 조정되던 스크리머는 자기 지능과 자기 복제 기능을 스스로 갖춰가며 아군과 적군을 가리지 않고 살아있는 생명체를 무조건 공격한다. 동맹군 기지의 사령관 조셉 일행은 사막을 가로질러가며 가공할만한 위력을 지닌 스크리머와 사투를 벌이게 되는데....",
-        "director": "Christian Duguay",
-        "runtime": 108,
-        "imdb_rating": "6.3",
-        "rotten_tomatoes": "29",
-        "metacritic": "N/A",
         "watch_providers": [],
         "naver_rating": null
       }
@@ -20286,80 +17796,6 @@
     },
     {
       "video": {
-        "id": "f_FbnjlSLCo",
-        "title": "한순간에 시력이 사라져버린 모든 사람들",
-        "url": "https://www.youtube.com/watch?v=f_FbnjlSLCo",
-        "embed_url": "https://www.youtube.com/embed/f_FbnjlSLCo",
-        "channel": "기무리뷰",
-        "channel_id": "UCSaWpMhJ-wm1ekEbEvZ6AhQ",
-        "published_at": "2024-05-27T15:03:29Z",
-        "view_count": 1092756,
-        "duration_sec": 1173,
-        "duration_label": "19분",
-        "has_spoiler": true,
-        "match_confidence": 0.9
-      },
-      "movie": {
-        "tmdb_id": 598,
-        "title_ko": "시티 오브 갓",
-        "title_en": "City of God",
-        "year": 2002,
-        "genres": [
-          "드라마",
-          "범죄"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/iKXrQB16sxeXoc6GlnYjeeZKsOW.jpg",
-        "vote_average": 8.43,
-        "vote_count": 8125,
-        "overview": "빈민가가 막 형성되기 시작한 1960년대, 마을을 지나가는 배달 트럭을 털면서 가족을 부양하는 텐더 삼총사가 주름잡던 그 시기에는 엄연한 룰이 존재했다. 돈은 훔치되 살인은 삼가는 것이다. 이들은 엉뚱한 용의자를 사살하고도 지갑을 챙기는 악질 경찰에 비하면 약자에 불과했다. 텐더 트리오 시대에 종지부를 찍은 제빼게노는 큰 돈을 만지기 위해서는 마약을 다뤄야 함을 알게 된다. 단짝친구 베네는 악랄하기만 할 뿐 주변을 다독일 줄 모르던 제빼게노를 보좌하며 또 다른 룰을 만들어내지만, 위태로운 평화의 유효기간은 그리 길지 않다.",
-        "director": "Fernando Meirelles",
-        "runtime": 129,
-        "imdb_rating": null,
-        "rotten_tomatoes": null,
-        "metacritic": null,
-        "watch_providers": [],
-        "naver_rating": "9.42"
-      }
-    },
-    {
-      "video": {
-        "id": "6jqVMQGxY7M",
-        "title": "해방되자마자 10,000km 떨어진 식민지 회수 전쟁에서 피맛에 눈 돌아간 파병군 [결말포함 영화리뷰]",
-        "url": "https://www.youtube.com/watch?v=6jqVMQGxY7M",
-        "embed_url": "https://www.youtube.com/embed/6jqVMQGxY7M",
-        "channel": "2런무비",
-        "channel_id": "UCnF4DyShcC90uqSUrRCYVkA",
-        "published_at": "2024-05-26T01:00:02Z",
-        "view_count": 377983,
-        "duration_sec": 1198,
-        "duration_label": "19분",
-        "has_spoiler": true,
-        "match_confidence": 0.7
-      },
-      "movie": {
-        "tmdb_id": 2731,
-        "title_ko": "인도차이나",
-        "title_en": "Indochine",
-        "year": 1992,
-        "genres": [
-          "드라마",
-          "로맨스"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/9sjQ5vmI2JFgylnK6w5WNmHIQyp.jpg",
-        "vote_average": 6.991,
-        "vote_count": 234,
-        "overview": "엘리안느 드브리(까뜨린느 드뇌브 분)는 인도차이나에서 태어난 프랑스인으로 농장에서 라텍스 나무를 키우며 소일하는데,  그곳에는 안남의 황녀였으나 사고로 부모를 잃은 까미유(린 당 팜 분)가 양녀로 있었다.  엘리안느는 그녀에게 프랑스 상류 사회식 교육을 시키고 남다른 애정을 베푼다.  그후 프랑스의 해군장교 장 밥띠스뜨(뱅상 페레 분)는 야망을 갖고 사이공에 오는데  우연히 엘리안느와 만나 뜨거운 관계로 발전한다.  그러나 운명의 장난인지 까미유도 장을 연모하게 된다.  이 사실을 알게 된 엘리안느는 까미유를 서둘러 친족과 결혼시키려고 하나 까미유는 이를 뿌리치고 장을 찾아간다.  그러나 우연한 사건에 말려들어 까미유는 프랑스 장교를 살해하게 되고 유랑 극단에 합류해 피신 생활을 한다.  세상은 혁명의 열기로 달아오르고 이 두 사람은 프랑스군의 추적을 당하게 된다.  혼돈의 역사 속에서 까미유는 장의 아들을 낳게 되고,  장과 엘리안느는 사랑하기 때문에 모든 것을 용서할 수 있다는 ",
-        "director": "Régis Wargnier",
-        "runtime": 159,
-        "imdb_rating": "7.0",
-        "rotten_tomatoes": "74",
-        "metacritic": "N/A",
-        "watch_providers": [],
-        "naver_rating": null
-      }
-    },
-    {
-      "video": {
         "id": "cGnzyF8Vlv0",
         "title": "🌴실사화 개봉🎉  복습해야죠! 바다를 꿈꾸는 소녀 모아나의 이야기🌊 *결말 포함",
         "url": "https://www.youtube.com/watch?v=cGnzyF8Vlv0",
@@ -20501,53 +17937,6 @@
           }
         ],
         "naver_rating": "8.45"
-      }
-    },
-    {
-      "video": {
-        "id": "EYhz3-tCAWk",
-        "title": "학대를 일삼는 최악의 가정에서 자란 천재해커 이야기",
-        "url": "https://www.youtube.com/watch?v=EYhz3-tCAWk",
-        "embed_url": "https://www.youtube.com/embed/EYhz3-tCAWk",
-        "channel": "영읽남",
-        "channel_id": "UCRT4hxfWfXEP7Iiv3ovI-0A",
-        "published_at": "2024-05-09T09:57:46Z",
-        "view_count": 43555,
-        "duration_sec": 1690,
-        "duration_label": "28분",
-        "has_spoiler": false,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 446807,
-        "title_ko": "거미줄에 걸린 소녀",
-        "title_en": "The Girl in the Spider's Web",
-        "year": 2018,
-        "genres": [
-          "액션",
-          "범죄",
-          "스릴러"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/oZadgNpFY3a4DlKskxKylImXxUH.jpg",
-        "vote_average": 6.16,
-        "vote_count": 1501,
-        "overview": "젊은 천재 해커 리스베트(클레어 포이)는 여성을 괴롭히는 남성을 찾아가 자신만의 방법으로 처단해서 악의 심판자라 불린다. 한 의뢰인으로부터 자신의 연구 결과를 해킹해달라는 제안을 받은 그녀가 이번에 해킹해야 하는 곳은 미 정보국 NSA. 무사히 해킹에 성공하지만 괴한의 공격을 받고 자료를 뺏기게 된 그녀는 자료를 되찾기 위해 추적을 시작하고, 이 일이 국제 해커 범죄 조직 스파이더와 그녀의 쌍둥이 여동생 카밀라(실비아 훅스)가 관련돼 있다는 것을 알게 된다. 사건의 진실과 스파이더스의 정체를 파헤칠수록 더 큰 위협에 처하게 되는데...",
-        "director": "Fede Álvarez",
-        "runtime": 115,
-        "imdb_rating": "6.1",
-        "rotten_tomatoes": "38",
-        "metacritic": "43",
-        "watch_providers": [
-          {
-            "name": "wavve",
-            "type": "rent"
-          },
-          {
-            "name": "Google Play Movies",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": "8.63"
       }
     },
     {
@@ -20841,61 +18230,6 @@
     },
     {
       "video": {
-        "id": "MdMsxDRA3qQ",
-        "title": "우주선에서 홀로 고립된 남자",
-        "url": "https://www.youtube.com/watch?v=MdMsxDRA3qQ",
-        "embed_url": "https://www.youtube.com/embed/MdMsxDRA3qQ",
-        "channel": "영읽남",
-        "channel_id": "UCRT4hxfWfXEP7Iiv3ovI-0A",
-        "published_at": "2024-04-03T09:02:07Z",
-        "view_count": 47592,
-        "duration_sec": 1561,
-        "duration_label": "26분",
-        "has_spoiler": false,
-        "match_confidence": 0.98
-      },
-      "movie": {
-        "tmdb_id": 274870,
-        "title_ko": "패신저스",
-        "title_en": "Passengers",
-        "year": 2016,
-        "genres": [
-          "드라마",
-          "로맨스",
-          "SF"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/s1eEmpDgxCPd1wbhRszCCqlvGhm.jpg",
-        "vote_average": 6.952,
-        "vote_count": 14162,
-        "overview": "120년 후의 개척 행성으로 떠나는 초호화 우주선 아발론 호.  여기엔 새로운 삶을 꿈꾸는 5,258명의 승객이 타고 있다.  그러나 알 수 없는 이유로 인해 짐 프레스턴과 오로라 레인은  90년이나 일찍 동면 상태에서 깨어나게 된다.  서서히 서로를 의지하게 되는 두 사람은  우주선에 치명적인 결함이 있다는 사실을 발견하게 되고,  마침내 그들이 남들보다 먼저 깨어난 이유를 깨닫게 되는데…",
-        "director": "Morten Tyldum",
-        "runtime": 116,
-        "imdb_rating": "7.0",
-        "rotten_tomatoes": "30",
-        "metacritic": "41",
-        "watch_providers": [
-          {
-            "name": "wavve",
-            "type": "subscription"
-          },
-          {
-            "name": "Watcha",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "rent"
-          },
-          {
-            "name": "Google Play Movies",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": "8.03"
-      }
-    },
-    {
-      "video": {
         "id": "tTiWMRVabfo",
         "title": "비행기 추락과 동시에 마을에 퍼지는 좀비 바이러스(영화리뷰/결말포함)(공포영화)",
         "url": "https://www.youtube.com/watch?v=tTiWMRVabfo",
@@ -21068,57 +18402,6 @@
           }
         ],
         "naver_rating": "9.50"
-      }
-    },
-    {
-      "video": {
-        "id": "WoKqf4muRkY",
-        "title": "기억을 이식받는 미래 사회",
-        "url": "https://www.youtube.com/watch?v=WoKqf4muRkY",
-        "embed_url": "https://www.youtube.com/embed/WoKqf4muRkY",
-        "channel": "영읽남",
-        "channel_id": "UCRT4hxfWfXEP7Iiv3ovI-0A",
-        "published_at": "2024-03-15T08:25:16Z",
-        "view_count": 66402,
-        "duration_sec": 1549,
-        "duration_label": "25분",
-        "has_spoiler": false,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 64635,
-        "title_ko": "토탈 리콜",
-        "title_en": "Total Recall",
-        "year": 2012,
-        "genres": [
-          "액션",
-          "SF",
-          "스릴러"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/dj7qkLlOEAWVTM409HRrEFeAt7M.jpg",
-        "vote_average": 6.03,
-        "vote_count": 5843,
-        "overview": "평범한 일상을 보내던 더글라스 퀘이드(콜린 파렐)는 매일 아침 의미를 알수 없는 악몽에서 깨어나며 괴로워한다. 그러던 어느날, 완벽한 기억을 심어서 고객이 원하는 환상을 현실로 바꿔준다는 “리콜사”를 방문해 자신의 꿈을 체험해 보기로 한다. 하지만 기억을 심는 과정에서 의문의 사고가 일어나고 그는 정신을 차릴 틈도 없이 전세계의 운명이 걸린 거대한 음모 속에 휘말리게 된다. 졸지에 스파이로 몰리게 된 퀘이드. 거대한 세력을 상대로 숨막히는 추격전이 시작되고, 심지어 사랑하는 아내 로리(케이트 베킨세일)마저 자신을 죽이려 한다. 한편, 갑자기 자신 앞에 나타난 의문의 여인 멜리나(제시카 비엘)는 그에게 적에 맞서 싸우자 제안하고, 현실과 심어진 기억의 경계에서 퀘이드는 점점 더 혼란스러워하는데…",
-        "director": "Len Wiseman",
-        "runtime": 118,
-        "imdb_rating": "6.2",
-        "rotten_tomatoes": "30",
-        "metacritic": "43",
-        "watch_providers": [
-          {
-            "name": "Watcha",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "rent"
-          },
-          {
-            "name": "Google Play Movies",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": null
       }
     },
     {
@@ -21389,61 +18672,6 @@
     },
     {
       "video": {
-        "id": "RM8_nvHZamg",
-        "title": "화성에서 발견한 귀여운.. 외계생명체.",
-        "url": "https://www.youtube.com/watch?v=RM8_nvHZamg",
-        "embed_url": "https://www.youtube.com/embed/RM8_nvHZamg",
-        "channel": "영읽남",
-        "channel_id": "UCRT4hxfWfXEP7Iiv3ovI-0A",
-        "published_at": "2024-02-27T10:46:47Z",
-        "view_count": 38871,
-        "duration_sec": 1152,
-        "duration_label": "19분",
-        "has_spoiler": false,
-        "match_confidence": 0.98
-      },
-      "movie": {
-        "tmdb_id": 395992,
-        "title_ko": "라이프",
-        "title_en": "Life",
-        "year": 2017,
-        "genres": [
-          "공포",
-          "SF",
-          "미스터리"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/9cor0qFsZPCLocfkkzULo2npEVo.jpg",
-        "vote_average": 6.452,
-        "vote_count": 7891,
-        "overview": "화성탐사선 필그림이 우주정거장으로 귀환한다. 우주정거장에서 이를 기다리던 6인의 우주인들은 탐사선에서 생명체를 발견하고, 인류 최초의 외계 생명체 발견에 온 인류가 환호한다. 하지만 기쁨도 잠시, 켈빈이라 명명된 생명체를 조사하던 중 사고가 일어난다. 모든 세포가 근육이자 뇌이기도 한 단세포 화성 생명체는 다른 생명체를 포식하며 성장을 시작한 것이다. 정비 담당인 애덤스(라이언 레이놀즈)를 시작으로 차례로 희생자가 나오자 생존자들은 인류의 위협이 될 생명체로부터 지구를 보호하는 한편 우주정거장으로부터 탈출하기 위한 사투를 벌인다.",
-        "director": "Daniel Espinosa",
-        "runtime": 103,
-        "imdb_rating": "6.6",
-        "rotten_tomatoes": "67",
-        "metacritic": "54",
-        "watch_providers": [
-          {
-            "name": "wavve",
-            "type": "subscription"
-          },
-          {
-            "name": "Watcha",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "rent"
-          },
-          {
-            "name": "Google Play Movies",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": "9.53"
-      }
-    },
-    {
-      "video": {
         "id": "JvBvj1tCvHk",
         "title": "'듄' 감독이 만든 미친 몰입감의 SF 걸작 [영화리뷰/결말포함]",
         "url": "https://www.youtube.com/watch?v=JvBvj1tCvHk",
@@ -21547,65 +18775,6 @@
           }
         ],
         "naver_rating": "7.70"
-      }
-    },
-    {
-      "video": {
-        "id": "5mdD8Kb5Y1c",
-        "title": "한번쯤은 가져보고 싶은 능력",
-        "url": "https://www.youtube.com/watch?v=5mdD8Kb5Y1c",
-        "embed_url": "https://www.youtube.com/embed/5mdD8Kb5Y1c",
-        "channel": "영읽남",
-        "channel_id": "UCRT4hxfWfXEP7Iiv3ovI-0A",
-        "published_at": "2024-02-21T09:51:09Z",
-        "view_count": 65631,
-        "duration_sec": 1240,
-        "duration_label": "20분",
-        "has_spoiler": false,
-        "match_confidence": 0.99
-      },
-      "movie": {
-        "tmdb_id": 9383,
-        "title_ko": "할로우 맨",
-        "title_en": "Hollow Man",
-        "year": 2000,
-        "genres": [
-          "액션",
-          "SF",
-          "스릴러"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/cIfLjO7nZ1wdQC78TO9OBD6KVXV.jpg",
-        "vote_average": 5.96,
-        "vote_count": 2746,
-        "overview": "미국 정부는 최고의 과학자들을 구성해 '할로우 맨'(투명 인간) 실험에 대한 일급 비밀 프로젝트를 추진한다. 그리고 마침내 카인은 실험용 고릴라를 그 자리에서 사라지게 하는데 성공한다. 하지만 이 실험 결과에 도취된 카인은 미국 국방성의 명령을 어기고 바로 자신에게 투명 인간 실험을 강행한다. 살과 뼈가 차례로 약물에 의해 타들어가고, 카인은 동료들이 지켜보는 가운데 실험대 위에서 흔적없이 사라지고 만다.  뒤늦게 이 일이 엄청나게 위험스러운 도박임을 깨달은 카인의 상관이자 애인인 린다는 매튜와 함께 그 약의 효능을 없애려고 시도하지만 실패한다. 게다가 투명 인간이 된 카인은 깊숙한 곳에 숨어있던 그의 욕망과 과대망상이 분출되며, 이 새로운 힘에 급속도로 취하게 된다. 보이지 않는 존재로 전지전능하게 변해버린 투명 인간 카인. 그는 그의 독선에 지친 애인 린다가 동료 매튜와 관계를 갖는 현장을 목격하게 되는 등 보지 말아야할 장면까지도 모두 맞닥뜨리면서 위험스런 존재가 되어간다.  ",
-        "director": "Paul Verhoeven",
-        "runtime": 112,
-        "imdb_rating": "5.9",
-        "rotten_tomatoes": "25",
-        "metacritic": "24",
-        "watch_providers": [
-          {
-            "name": "Netflix",
-            "type": "subscription"
-          },
-          {
-            "name": "Watcha",
-            "type": "subscription"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "rent"
-          },
-          {
-            "name": "Google Play Movies",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": null
       }
     },
     {
@@ -22093,53 +19262,6 @@
           }
         ],
         "naver_rating": null
-      }
-    },
-    {
-      "video": {
-        "id": "h0zGvsG4nRQ",
-        "title": "인류를 멸종시키는 5가지 방법",
-        "url": "https://www.youtube.com/watch?v=h0zGvsG4nRQ",
-        "embed_url": "https://www.youtube.com/embed/h0zGvsG4nRQ",
-        "channel": "영읽남",
-        "channel_id": "UCRT4hxfWfXEP7Iiv3ovI-0A",
-        "published_at": "2024-01-17T08:42:06Z",
-        "view_count": 136086,
-        "duration_sec": 1548,
-        "duration_label": "25분",
-        "has_spoiler": false,
-        "match_confidence": 0.92
-      },
-      "movie": {
-        "tmdb_id": 299687,
-        "title_ko": "제5침공",
-        "title_en": "The 5th Wave",
-        "year": 2016,
-        "genres": [
-          "SF",
-          "모험",
-          "액션"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/5v7q9kzjFemYIRct9V6ZXxwEtgy.jpg",
-        "vote_average": 5.936,
-        "vote_count": 5993,
-        "overview": "인류를 전멸시킬 ‘제5침공’이 시작된다!  제1침공 ‘어둠’ - 지구의 모든 전력을 차단  제2침공 ‘파괴’ – 전세계 도시들을 폐허로 휩쓴 대지진  제3침공 ‘전염병’ - 인류 역사상 최악의 바이러스  제4침공 ‘침투’ - 인체에 기생하여 모든 행동을 조종  인간의 모습을 한 미스터리한 존재 ‘디 아더스’(The Others)는 네 번의 무차별 침공을 일으켜 지구를 초토화시켰다. 99%의 인류가 사망한 대재난 속에서 기적적으로 살아남은 ‘캐시’(클로이 모레츠)는 마지막 공격 ‘제5침공’이 시작되기 전에 디 아더스에게 끌려간 동생을 되찾아야 한다. 인간과 적을 구분할 수 없는 상황, 과연 캐시는 살아남을 수 있을 것인가.",
-        "director": "J Blakeson",
-        "runtime": 112,
-        "imdb_rating": "5.2",
-        "rotten_tomatoes": "16",
-        "metacritic": "33",
-        "watch_providers": [
-          {
-            "name": "Watcha",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": "6.48"
       }
     },
     {
@@ -22892,62 +20014,6 @@
     },
     {
       "video": {
-        "id": "HvKmwvGMrbc",
-        "title": "《드래곤 길들이기》  시리즈 전편 한번에 몰아보기",
-        "url": "https://www.youtube.com/watch?v=HvKmwvGMrbc",
-        "embed_url": "https://www.youtube.com/embed/HvKmwvGMrbc",
-        "channel": "영읽남",
-        "channel_id": "UCRT4hxfWfXEP7Iiv3ovI-0A",
-        "published_at": "2023-11-11T06:04:32Z",
-        "view_count": 699209,
-        "duration_sec": 3536,
-        "duration_label": "58분",
-        "has_spoiler": false,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 10191,
-        "title_ko": "드래곤 길들이기",
-        "title_en": "How to Train Your Dragon",
-        "year": 2010,
-        "genres": [
-          "판타지",
-          "모험",
-          "애니메이션",
-          "가족"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/5JtTkNwOeztwfCPv965e9bZi6G3.jpg",
-        "vote_average": 7.857,
-        "vote_count": 14283,
-        "overview": "바이킹의 세계, 절대 친구가 될 수 없는 둘이 만났다?  용맹한 바이킹과 사나운 드래곤들의 싸움이 끊이지 않는 버크섬.  바이킹 족장의 아들 ‘히컵’은 드래곤 사냥에 소질 없는 마을의 사고뭉치. 어느날 그는 부상 당한 드래곤 ‘투슬리스’를 구하게 되고, 아무도 몰래 그를 돌본다. 서로를 알아가며, 드래곤들의 친구가 된 ‘히컵’. 그들과의 새로운 생활을 만끽하던 ‘히컵’은 드래곤들의 위험한 비밀을 알게 되는데…  불멸의 드래곤과 바이킹족 이단아의 만남!  2010년 5월, 그들의 스펙터클한 모험이 시작된다!",
-        "director": "Chris Sanders, Dean DeBlois",
-        "runtime": 98,
-        "imdb_rating": "8.1",
-        "rotten_tomatoes": "99",
-        "metacritic": "75",
-        "watch_providers": [
-          {
-            "name": "Netflix",
-            "type": "subscription"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "rent"
-          },
-          {
-            "name": "Google Play Movies",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": "9.00"
-      }
-    },
-    {
-      "video": {
         "id": "-_b5pEHo-EA",
         "title": "[결말포함] 넷플릭스가 날 스토킹 하나? 어떻게 내 취향을 이렇게 잘 알지?  ㅣ 괴수 추적 미스터리",
         "url": "https://www.youtube.com/watch?v=-_b5pEHo-EA",
@@ -23316,50 +20382,6 @@
     },
     {
       "video": {
-        "id": "5jaL5fQDjAg",
-        "title": "아마존 프라임 SF액션 시청률 1위 신작: 타인을 조정하는 투사 능력의 인지자!! [영화리뷰/결말포함]",
-        "url": "https://www.youtube.com/watch?v=5jaL5fQDjAg",
-        "embed_url": "https://www.youtube.com/embed/5jaL5fQDjAg",
-        "channel": "시네마헌터",
-        "channel_id": "UC_RPr05YH1TBlQwxW2C7TVQ",
-        "published_at": "2023-10-18T12:21:02Z",
-        "view_count": 296121,
-        "duration_sec": 1023,
-        "duration_label": "17분",
-        "has_spoiler": true,
-        "match_confidence": 0.92
-      },
-      "movie": {
-        "tmdb_id": 1067820,
-        "title_ko": "어웨어니스",
-        "title_en": "Awareness",
-        "year": 2023,
-        "genres": [
-          "SF",
-          "미스터리",
-          "스릴러",
-          "액션"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/gPSnanVAnKgycgc3SJGcutXCe9A.jpg",
-        "vote_average": 5.951,
-        "vote_count": 223,
-        "overview": "십 대 이안은 사회의 변두리에서 아버지와 함께 살고 있다. 그들은 사람들 마음에 시각적 환상을 투영하는 이안의 비범한 능력을 이용해 소소한 사기를 치며 근근이 살아간다. 이안이 능력을 대중 앞에서 우연히 드러낸 후, 비밀 기관이 그를 뒤쫓기 시작한다. 도망자가 된 이안은 초능력자가 자신만이 아니라는 것과 그동안의 삶이 온통 거짓이었다는 사실을 깨닫는다.",
-        "director": "Daniel Benmayor",
-        "runtime": 112,
-        "imdb_rating": "5.4",
-        "rotten_tomatoes": "11",
-        "metacritic": "N/A",
-        "watch_providers": [
-          {
-            "name": "Amazon Prime Video",
-            "type": "subscription"
-          }
-        ],
-        "naver_rating": null
-      }
-    },
-    {
-      "video": {
         "id": "5hrxfNT4EoA",
         "title": "영화 마더! 해설 (심약자 시청금지) : 숨막히는 신과 자연의 이야기",
         "url": "https://www.youtube.com/watch?v=5hrxfNT4EoA",
@@ -23634,61 +20656,6 @@
           }
         ],
         "naver_rating": "9.72"
-      }
-    },
-    {
-      "video": {
-        "id": "ys62qrLhvOA",
-        "title": "〃최면〃을 통해 【인간의 육체】를 점령하는 《무서운 가족》",
-        "url": "https://www.youtube.com/watch?v=ys62qrLhvOA",
-        "embed_url": "https://www.youtube.com/embed/ys62qrLhvOA",
-        "channel": "기무리뷰",
-        "channel_id": "UCSaWpMhJ-wm1ekEbEvZ6AhQ",
-        "published_at": "2023-09-26T10:23:22Z",
-        "view_count": 379752,
-        "duration_sec": 804,
-        "duration_label": "13분",
-        "has_spoiler": true,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 419430,
-        "title_ko": "겟 아웃",
-        "title_en": "Get Out",
-        "year": 2017,
-        "genres": [
-          "미스터리",
-          "스릴러",
-          "공포"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/paPvmoLgUUQojsSdAZmf7dwkKGT.jpg",
-        "vote_average": 7.622,
-        "vote_count": 18779,
-        "overview": "크리스와 그의 여자친구 로즈는 주말을 맞아 로즈의 부모님 집을 방문한다. 가족들의 과한 친절이 그저 딸이 흑인 남자친구를 데려왔기 때문이라고 생각한 크리스. 하지만 머무는 시간이 길어질수록 이상한 점을 한 두가지씩 발견하는데... 그가 상상도 못한 진실이 기다리고 있었다.",
-        "director": "Jordan Peele",
-        "runtime": 104,
-        "imdb_rating": "7.8",
-        "rotten_tomatoes": "98",
-        "metacritic": "85",
-        "watch_providers": [
-          {
-            "name": "wavve",
-            "type": "subscription"
-          },
-          {
-            "name": "Watcha",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "rent"
-          },
-          {
-            "name": "Google Play Movies",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": "8.45"
       }
     },
     {
@@ -24324,61 +21291,6 @@
     },
     {
       "video": {
-        "id": "KCxz9Wi-Ibg",
-        "title": "미개봉 일본 미스터리 추천 영화🔥5년 전 교통사고로 인해 단란한 가족의 평온한 일상에 가해진 균열, 가족들이 뭔가 이상하다....[영화리뷰/결말포함]",
-        "url": "https://www.youtube.com/watch?v=KCxz9Wi-Ibg",
-        "embed_url": "https://www.youtube.com/embed/KCxz9Wi-Ibg",
-        "channel": "1인실 영화관",
-        "channel_id": "UC7MJU4W2wtDLi62MZAtWQTg",
-        "published_at": "2023-07-22T03:02:30Z",
-        "view_count": 44581,
-        "duration_sec": 854,
-        "duration_label": "14분",
-        "has_spoiler": true,
-        "match_confidence": 0.85
-      },
-      "movie": {
-        "tmdb_id": 958017,
-        "title_ko": "이 아이는 사악하다",
-        "title_en": "The Good Father",
-        "year": 2022,
-        "genres": [
-          "스릴러",
-          "가족",
-          "드라마"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/c4pLui3m1CqVx0qpbX05Jzk5KpO.jpg",
-        "vote_average": 5.1,
-        "vote_count": 7,
-        "overview": "5년 전의 교통사고는 행복했던 '하나'의 가족을 조각냈다. 엄마는 혼수상태에 빠졌고, 여동생은 얼굴에 심한 화상을, 아빠는 한쪽 다리에 장애를 얻었다. 5년 만에 눈을 뜬 엄마가 집으로 돌아온다. 오랜만에 한 자리에 모인 네 식구. 그런데 뭔가 이상하다. '하나'는 생각한다.",
-        "director": "Sho Kataoka",
-        "runtime": 100,
-        "imdb_rating": null,
-        "rotten_tomatoes": null,
-        "metacritic": null,
-        "watch_providers": [
-          {
-            "name": "wavve",
-            "type": "subscription"
-          },
-          {
-            "name": "Watcha",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "rent"
-          },
-          {
-            "name": "Google Play Movies",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": null
-      }
-    },
-    {
-      "video": {
         "id": "pvAD7DWIZTE",
         "title": "[스릴러/결말포함] 정말 따끈하게 지리는 신작-숲속의 제한구역에 들어갔다가 생긴 긴박한 일들",
         "url": "https://www.youtube.com/watch?v=pvAD7DWIZTE",
@@ -24714,56 +21626,6 @@
     },
     {
       "video": {
-        "id": "cjrQy8ieGIY",
-        "title": "600만 구독자가 선택한 웹 소설 원작🔥오.세.이.사 열풍의 주역 후쿠모토 리코의 2023년 일본 로맨스 타임루프 신작 [영화리뷰/결말포함]",
-        "url": "https://www.youtube.com/watch?v=cjrQy8ieGIY",
-        "embed_url": "https://www.youtube.com/embed/cjrQy8ieGIY",
-        "channel": "1인실 영화관",
-        "channel_id": "UC7MJU4W2wtDLi62MZAtWQTg",
-        "published_at": "2023-06-09T08:00:27Z",
-        "view_count": 225452,
-        "duration_sec": 944,
-        "duration_label": "15분",
-        "has_spoiler": true,
-        "match_confidence": 0.85
-      },
-      "movie": {
-        "tmdb_id": 896945,
-        "title_ko": "네가 떨어뜨린 푸른 하늘",
-        "title_en": "The Blue Skies at Your Feet",
-        "year": 2022,
-        "genres": [
-          "로맨스",
-          "드라마"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/awo5oIHolivTDWM2XBgzg7AXYYN.jpg",
-        "vote_average": 6.8,
-        "vote_count": 10,
-        "overview": "푸른 하늘 아래 매월 1일마다 영화를 보기로 약속한 ‘미유’와 ‘슈야’. 하지만 ‘슈야’의 변심에 약속은 깨지고 만다. 충격에 빠진 ‘미유’ 앞에 다시 나타난 ‘슈야’. 그 순간, 트럭이 돌진하고 ‘슈야’는 ‘미유’를 감싼 채 교통사고를 당한다. “딱 하루만 시간을 돌려주세요!” 눈을 뜬 ‘미유’ 어제와 같은 하루가 반복된다는 사실을 깨닫는데… ‘슈야’를 구할 수 있는 마지막 기회! 널 위해 미래를 바꿀게",
-        "director": "Yuki Saito",
-        "runtime": 93,
-        "imdb_rating": "5.5",
-        "rotten_tomatoes": null,
-        "metacritic": "N/A",
-        "watch_providers": [
-          {
-            "name": "wavve",
-            "type": "subscription"
-          },
-          {
-            "name": "TVING",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": "5.88"
-      }
-    },
-    {
-      "video": {
         "id": "m3Tff7_tJ88",
         "title": "존잼이라는 댓글 1위! 끊을 수 없는 미쳐버린 몰입감! 애플티비 신작! [결말포함]",
         "url": "https://www.youtube.com/watch?v=m3Tff7_tJ88",
@@ -24950,55 +21812,6 @@
     },
     {
       "video": {
-        "id": "itRCwKz9eJs",
-        "title": "일본 최고의 여배우들을 자매로 뭉치게 한 고레에다 히로카즈 감독의 명작_남겨진 사람들의 이야기 [결말포함/영화리뷰]",
-        "url": "https://www.youtube.com/watch?v=itRCwKz9eJs",
-        "embed_url": "https://www.youtube.com/embed/itRCwKz9eJs",
-        "channel": "씨네레터",
-        "channel_id": "UC-jEggDPnD9tKTK4Hk47y7w",
-        "published_at": "2023-05-21T21:00:14Z",
-        "view_count": 171742,
-        "duration_sec": 985,
-        "duration_label": "16분",
-        "has_spoiler": true,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 315846,
-        "title_ko": "바닷마을 다이어리",
-        "title_en": "Our Little Sister",
-        "year": 2015,
-        "genres": [
-          "드라마"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/6aV7pcVSrRd41GCKkt9eLVgEPAX.jpg",
-        "vote_average": 7.573,
-        "vote_count": 555,
-        "overview": "15년 전 가족을 버린 아버지의 장례식, 어릴 적 나와 꼭 닮은 아이를 만났다. 조그마한 바닷가 마을 카마쿠라에 살고 있는 사치, 요시노, 치카는 15년 전 집을 떠난 아버지의 부고를 듣고 장례식장으로 향한다. 아버지에 대한 미움도, 추억도 어느덧 희미해졌지만 홀로 남겨진 이복 여동생 스즈에게만은 왠지 마음이 쓰이는데..",
-        "director": "Hirokazu Kore-eda",
-        "runtime": 127,
-        "imdb_rating": "7.6",
-        "rotten_tomatoes": "93",
-        "metacritic": "75",
-        "watch_providers": [
-          {
-            "name": "Watcha",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "rent"
-          },
-          {
-            "name": "Google Play Movies",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": "8.81"
-      }
-    },
-    {
-      "video": {
         "id": "9C3xE4Aie30",
         "title": "아서는 왜 조커가 된 걸까? (조커) 해석",
         "url": "https://www.youtube.com/watch?v=9C3xE4Aie30",
@@ -25038,57 +21851,6 @@
           }
         ],
         "naver_rating": null
-      }
-    },
-    {
-      "video": {
-        "id": "dZSm2FhwJTQ",
-        "title": "다빈치코드 시리즈 마지막 이야기",
-        "url": "https://www.youtube.com/watch?v=dZSm2FhwJTQ",
-        "embed_url": "https://www.youtube.com/embed/dZSm2FhwJTQ",
-        "channel": "영읽남",
-        "channel_id": "UCRT4hxfWfXEP7Iiv3ovI-0A",
-        "published_at": "2023-05-16T08:28:15Z",
-        "view_count": 268387,
-        "duration_sec": 1415,
-        "duration_label": "23분",
-        "has_spoiler": false,
-        "match_confidence": 0.98
-      },
-      "movie": {
-        "tmdb_id": 207932,
-        "title_ko": "인페르노",
-        "title_en": "Inferno",
-        "year": 2016,
-        "genres": [
-          "미스터리",
-          "스릴러",
-          "액션"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/tAdpfrbdll9WjDAS92vq1dx3pYn.jpg",
-        "vote_average": 6.088,
-        "vote_count": 6609,
-        "overview": "전세계 인구를 절반으로 줄일 것을 주장한 천재 생물학자 ‘조브리스트’의 갑작스러운 자살 이후 하버드대 기호학자 ‘로버트 랭던’은 기억을 잃은 채 피렌체의 한 병원에서 눈을 뜬다. 담당 의사 ‘시에나 브룩스’의 도움으로 병원을 탈출한 랭던은 사고 전 자신의 옷에서 의문의 실린더를 발견하고, 단테의 신곡 [지옥편]을 묘사한 보티첼리의 ‘지옥의 지도’가 숨겨져 있음을 알게 된다. 하지만, 원본과 달리 지옥의 지도에는 조작된 암호들이 새겨져 있고, 랭던은 이 모든 것이 전 인류를 위협할 거대한 계획과 얽혀져 있다는 것을 직감하게 되는데…",
-        "director": "Ron Howard",
-        "runtime": 122,
-        "imdb_rating": "6.2",
-        "rotten_tomatoes": "23",
-        "metacritic": "42",
-        "watch_providers": [
-          {
-            "name": "wavve",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "rent"
-          },
-          {
-            "name": "Google Play Movies",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": "8.11"
       }
     },
     {
@@ -25192,52 +21954,6 @@
           }
         ],
         "naver_rating": "6.55"
-      }
-    },
-    {
-      "video": {
-        "id": "eeXIOAjvzDA",
-        "title": "입소문으로 관객수만 110만🔥없는 연애세포도 만들어줄 유치하지만 가슴먹먹한 일본 로맨스 레전드 [영화리뷰/결말포함]",
-        "url": "https://www.youtube.com/watch?v=eeXIOAjvzDA",
-        "embed_url": "https://www.youtube.com/embed/eeXIOAjvzDA",
-        "channel": "1인실 영화관",
-        "channel_id": "UC7MJU4W2wtDLi62MZAtWQTg",
-        "published_at": "2023-04-29T02:29:49Z",
-        "view_count": 973752,
-        "duration_sec": 1193,
-        "duration_label": "19분",
-        "has_spoiler": true,
-        "match_confidence": 0.9
-      },
-      "movie": {
-        "tmdb_id": 977871,
-        "title_ko": "오늘 밤, 세계에서 이 사랑이 사라진다 해도",
-        "title_en": "Even If This Love Disappears from the World Tonight",
-        "year": 2022,
-        "genres": [
-          "로맨스",
-          "드라마"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/5NJmR3IA7Rk3inlA4AeQy5ZC5cA.jpg",
-        "vote_average": 7.357,
-        "vote_count": 42,
-        "overview": "\"카미야 토루에 대해 잊지 말 것”  자고 일어나면 전날의 기억을 잃는 ‘선행성 기억상실증’에 걸린 소녀 ‘마오리’  “내일의 마오리도 내가 즐겁게 해줄 거야”  누구에게도 기억되지 않는 무색무취의 평범한 소년 ‘토루’  매일 밤 사랑이 사라지는 세계.  그럼에도 불구하고,  다음 날 서로를 향한 애틋한 고백을 반복하는  두 소년, 소녀의 가장 슬픈 청춘담",
-        "director": "Takahiro Miki",
-        "runtime": 121,
-        "imdb_rating": "7.2",
-        "rotten_tomatoes": null,
-        "metacritic": "N/A",
-        "watch_providers": [
-          {
-            "name": "wavve",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": null
       }
     },
     {
@@ -25429,49 +22145,6 @@
         "metacritic": "72",
         "watch_providers": [],
         "naver_rating": "8.76"
-      }
-    },
-    {
-      "video": {
-        "id": "2czjN_Zv74E",
-        "title": "제작비 2600억, 시공간을 넘나들며 모든 세계를 파괴하는 우주의 정복자!! [영화리뷰/결말포함]",
-        "url": "https://www.youtube.com/watch?v=2czjN_Zv74E",
-        "embed_url": "https://www.youtube.com/embed/2czjN_Zv74E",
-        "channel": "시네마헌터",
-        "channel_id": "UC_RPr05YH1TBlQwxW2C7TVQ",
-        "published_at": "2023-04-20T12:52:21Z",
-        "view_count": 272229,
-        "duration_sec": 1062,
-        "duration_label": "17분",
-        "has_spoiler": true,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 640146,
-        "title_ko": "앤트맨과 와스프: 퀀텀매니아",
-        "title_en": "Ant-Man and the Wasp: Quantumania",
-        "year": 2023,
-        "genres": [
-          "액션",
-          "모험",
-          "SF"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/sz6mTIDDQmR3DYgJudiTmoW2gR5.jpg",
-        "vote_average": 6.229,
-        "vote_count": 5773,
-        "overview": "슈퍼히어로 파트너인 스캇 랭과 호프 반 다인, 호프의 부모 재닛 반 다인과 행크 핌, 그리고 스캇의 딸 캐시 랭까지 미지의 양자 영역 세계 속에 빠져버린 앤트맨 패밀리. 그 곳에서 새로운 존재들과 무한한 우주를 다스리는 정복자 캉을 만나며, 그 누구도 예상 못 한 모든 것의 한계를 뛰어넘는 모험을 시작하게 되는데…",
-        "director": "Peyton Reed",
-        "runtime": 124,
-        "imdb_rating": "6.0",
-        "rotten_tomatoes": "46",
-        "metacritic": "48",
-        "watch_providers": [
-          {
-            "name": "Disney Plus",
-            "type": "subscription"
-          }
-        ],
-        "naver_rating": "6.74"
       }
     },
     {
@@ -25920,56 +22593,6 @@
     },
     {
       "video": {
-        "id": "qMtsnZW_sdU",
-        "title": "다빈치코드 시리즈 첫번째 이야기",
-        "url": "https://www.youtube.com/watch?v=qMtsnZW_sdU",
-        "embed_url": "https://www.youtube.com/embed/qMtsnZW_sdU",
-        "channel": "영읽남",
-        "channel_id": "UCRT4hxfWfXEP7Iiv3ovI-0A",
-        "published_at": "2023-03-22T08:34:06Z",
-        "view_count": 627166,
-        "duration_sec": 1689,
-        "duration_label": "28분",
-        "has_spoiler": false,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 591,
-        "title_ko": "다빈치 코드",
-        "title_en": "The Da Vinci Code",
-        "year": 2006,
-        "genres": [
-          "스릴러",
-          "미스터리"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/52cjQg88xZNx8JKU7GpbIf19mL1.jpg",
-        "vote_average": 6.725,
-        "vote_count": 10008,
-        "overview": "특별강연을 위해 파리에 체류중이던 하버드대 기호학자 로버트 랭던(톰 행크스)은 깊은 밤 급박한 호출을 받는다. 루브르 박물관의 수석 큐레이터 자크 소니에르가 박물관 내에서 살해당한 시체로 발견된 것이다. 시체 주변에 가득한 이해할 수 없는 암호들… 그중 ‘P.S. 로버트 랭던을 찾아라’는 암호 때문에 살인누명까지 뒤집어쓴 랭던은 자크의 손녀이자 기호학자인 소피 느뷔(오드리 토투)와 함께 자크가 남긴 불가사의한 수수께끼를 풀어나가기 시작한다.  인류역사를 뒤바꿀 거대한 비밀이 벗겨지는 순간,  최초의 목격자는 당신이다!  랭던과 소피는 시시각각 좁혀오는 경찰 조직과 파슈 국장(장 르노)의 숨가쁜 포위망을 피하면서, ‘모나리자’, ‘암굴의 성모’ 등 천재화가 레오나르도 다 빈치의 작품들 속에 숨겨진 충격적인 비밀을 추적한다. 하지만 코드 속에 감춰진 실마리를 쫓아 진실에 접근할수록 비밀단체 시온 수도회가 지켜온 비밀을 지워버리려는 ‘오푸스 데이’의 추격은 더욱 격렬해지고, 마침내 두 사",
-        "director": "Ron Howard",
-        "runtime": 149,
-        "imdb_rating": "6.6",
-        "rotten_tomatoes": "25",
-        "metacritic": "46",
-        "watch_providers": [
-          {
-            "name": "wavve",
-            "type": "subscription"
-          },
-          {
-            "name": "Watcha",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": null
-      }
-    },
-    {
-      "video": {
         "id": "T41J4Lghn7A",
         "title": "세상에서 가장 무서운 벌을 받는 여자.. [영화리뷰/결말포함]",
         "url": "https://www.youtube.com/watch?v=T41J4Lghn7A",
@@ -26341,60 +22964,6 @@
           }
         ],
         "naver_rating": "9.8"
-      }
-    },
-    {
-      "video": {
-        "id": "V4B4kfx8AWg",
-        "title": "[결말포함/영화 리뷰 해석] 19세기 영국의 자유연애 에 관한 영화",
-        "url": "https://www.youtube.com/watch?v=V4B4kfx8AWg",
-        "embed_url": "https://www.youtube.com/embed/V4B4kfx8AWg",
-        "channel": "에디터-원의 문화잡지",
-        "channel_id": "UCGzXoNi2B06ikhurWYI-s9w",
-        "published_at": "2023-02-16T10:04:33Z",
-        "view_count": 103465,
-        "duration_sec": 1177,
-        "duration_label": "19분",
-        "has_spoiler": true,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 4348,
-        "title_ko": "오만과 편견",
-        "title_en": "Pride & Prejudice",
-        "year": 2005,
-        "genres": [
-          "드라마",
-          "로맨스"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/rgKfvG0PgJBIPR6cNICukRnfMga.jpg",
-        "vote_average": 8.049,
-        "vote_count": 8711,
-        "overview": "베넷 가의 다섯 자매 중 둘째인 엘리자베스는 사랑하는 사람과의 결혼을 믿는 자존심 강하고 영리한 소녀이다. 부유하고 명망있는 가문의 신사 빙리와 그의 친구 다아시가 여름 동안 대저택에 머물게 되고, 댄스 파티에서 처음 만난 엘리자베스와 다아시는 서로에게서 눈을 떼지 못한다. 다아시는 아름답고 지적인 그녀의 매력에 점점 빠져들고, 폭우가 쏟아지는 날 비바람이 몰아치는 언덕에서 가슴 속 깊은 곳에 담아둔 뜨거운 사랑을 그녀에게 고백한다. 하지만 다아시가 빙리와 제인의 결혼을 제인이 명망있는 가문 출신이 아니라는 이유로 반대한 것을 알게 되자, 그를 오만하고 편견에 가득 찬 속물로 여기며 외면하는데...",
-        "director": "Joe Wright",
-        "runtime": 128,
-        "imdb_rating": "7.8",
-        "rotten_tomatoes": "87",
-        "metacritic": "82",
-        "watch_providers": [
-          {
-            "name": "wavve",
-            "type": "subscription"
-          },
-          {
-            "name": "Watcha",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "rent"
-          },
-          {
-            "name": "Google Play Movies",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": "8.88"
       }
     },
     {
@@ -26962,43 +23531,6 @@
             "type": "rent"
           }
         ],
-        "naver_rating": null
-      }
-    },
-    {
-      "video": {
-        "id": "_C2OCJ270XM",
-        "title": "한번 입장하면 두 번 다시 바깥에 나갈 수 없는 테마파크",
-        "url": "https://www.youtube.com/watch?v=_C2OCJ270XM",
-        "embed_url": "https://www.youtube.com/embed/_C2OCJ270XM",
-        "channel": "기무리뷰",
-        "channel_id": "UCSaWpMhJ-wm1ekEbEvZ6AhQ",
-        "published_at": "2022-12-30T10:05:03Z",
-        "view_count": 930511,
-        "duration_sec": 772,
-        "duration_label": "12분",
-        "has_spoiler": true,
-        "match_confidence": 0.9
-      },
-      "movie": {
-        "tmdb_id": 15422,
-        "title_ko": "다크 라이드",
-        "title_en": "Dark Ride",
-        "year": 2006,
-        "genres": [
-          "공포",
-          "스릴러"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/pQbQuJ7JBpaybG3n8pX43YvIoMv.jpg",
-        "vote_average": 4.705,
-        "vote_count": 105,
-        "overview": "10년 전 연쇄살인 사건을 일으킨 살인마 `해변의 도살자`가 수감된 정신병원에서 탈출한다. 한편, 휴가를 떠난 4명의 청년들은 재개장한 10년 전 사건의 놀이공원을 찾게 되고 놀이공원 안 '어둠의 열차'에 들어간 청년들은 그곳에서 수상한 인기척을 느끼게 된다.",
-        "director": "Craig Singer",
-        "runtime": 94,
-        "imdb_rating": "4.6",
-        "rotten_tomatoes": null,
-        "metacritic": "N/A",
-        "watch_providers": [],
         "naver_rating": null
       }
     },
@@ -27669,65 +24201,6 @@
     },
     {
       "video": {
-        "id": "mG6HoDpKPQU",
-        "title": "왕가위 감독이 23일 만에 만든 홍콩영화 걸작_1부 [결말포함/영화리뷰]",
-        "url": "https://www.youtube.com/watch?v=mG6HoDpKPQU",
-        "embed_url": "https://www.youtube.com/embed/mG6HoDpKPQU",
-        "channel": "씨네레터",
-        "channel_id": "UC-jEggDPnD9tKTK4Hk47y7w",
-        "published_at": "2022-10-13T11:27:23Z",
-        "view_count": 148892,
-        "duration_sec": 850,
-        "duration_label": "14분",
-        "has_spoiler": true,
-        "match_confidence": 0.99
-      },
-      "movie": {
-        "tmdb_id": 11104,
-        "title_ko": "중경삼림",
-        "title_en": "Chungking Express",
-        "year": 1994,
-        "genres": [
-          "드라마",
-          "코미디",
-          "로맨스"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/xWHLnEqz6fXmTvWMF4N2y2aOH8U.jpg",
-        "vote_average": 7.966,
-        "vote_count": 2169,
-        "overview": "경찰 223은 헤어진 옛 애인을 기다리며, 1달 동안 그녀에게서 연락이 오지 않으면 그녀를 잊기로 마음먹는다. 같은 시간, 마약 딜러는 자신을 배신한 마약 중개인을 제거한 뒤 술집을 찾고 그곳에서 경찰 223은 술집으로 처음 들어오는 여자를 사랑하겠노라 마음먹는다. 한편 패스트푸드점에서 일하는 점원 페이는 언제나처럼 똑같은 샐러드를 고른 경찰 663을 남몰래 좋아하고 있다. 어느 날, 경찰 663의 애인이 이별의 편지와 함께 경찰 663의 아파트 열쇠를 페이의 가게에게 맡긴다. 페이는 경찰 663이 집을 비운 사이 남아있는 그녀의 흔적을 하나 둘 지워나가는데...",
-        "director": "Wong Kar-Wai",
-        "runtime": 103,
-        "imdb_rating": "7.9",
-        "rotten_tomatoes": "89",
-        "metacritic": "78",
-        "watch_providers": [
-          {
-            "name": "Netflix",
-            "type": "subscription"
-          },
-          {
-            "name": "Disney Plus",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "subscription"
-          },
-          {
-            "name": "Watcha",
-            "type": "subscription"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "type": "subscription"
-          }
-        ],
-        "naver_rating": "9.01"
-      }
-    },
-    {
-      "video": {
         "id": "WeRcOUzXYSg",
         "title": "비상선언  뜻 결말 포함 줄거리 리뷰 관객수 제작비 손익분기점 쿠팡플레이 영화 추천 무료 다시 보기",
         "url": "https://www.youtube.com/watch?v=WeRcOUzXYSg",
@@ -27814,44 +24287,6 @@
           }
         ],
         "naver_rating": "9.34"
-      }
-    },
-    {
-      "video": {
-        "id": "AEdJtB7jTHg",
-        "title": "외계인의 충격적인 정체, 글리치 뇌피셜 리뷰(결말포함)",
-        "url": "https://www.youtube.com/watch?v=AEdJtB7jTHg",
-        "embed_url": "https://www.youtube.com/embed/AEdJtB7jTHg",
-        "channel": "무비포커스",
-        "channel_id": "UCoMKD1IaNv7uVus222lg01g",
-        "published_at": "2022-10-08T04:09:42Z",
-        "view_count": 6535,
-        "duration_sec": 291,
-        "duration_label": "4분",
-        "has_spoiler": true,
-        "match_confidence": 0.9
-      },
-      "movie": {
-        "tmdb_id": 1402764,
-        "title_ko": "I AM GLITCHING",
-        "title_en": "I AM GLITCHING",
-        "year": 2025,
-        "genres": [
-          "애니메이션",
-          "가족",
-          "SF"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/hRt8CEAchXAKfmkfdjWAeA5dSI2.jpg",
-        "vote_average": 0.0,
-        "vote_count": 0,
-        "overview": "",
-        "director": "Salma Parra",
-        "runtime": 7,
-        "imdb_rating": null,
-        "rotten_tomatoes": null,
-        "metacritic": null,
-        "watch_providers": [],
-        "naver_rating": null
       }
     },
     {
@@ -28796,55 +25231,6 @@
     },
     {
       "video": {
-        "id": "wMd2w5ca98E",
-        "title": "잔잔한데 계속 보게 만드는 힘이 있는 영화 [영화리뷰/결말포함]",
-        "url": "https://www.youtube.com/watch?v=wMd2w5ca98E",
-        "embed_url": "https://www.youtube.com/embed/wMd2w5ca98E",
-        "channel": "따쓸",
-        "channel_id": "UCUUwWmivezjfcgypGYfiy1A",
-        "published_at": "2022-06-18T06:00:11Z",
-        "view_count": 246226,
-        "duration_sec": 766,
-        "duration_label": "12분",
-        "has_spoiler": true,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 315846,
-        "title_ko": "바닷마을 다이어리",
-        "title_en": "Our Little Sister",
-        "year": 2015,
-        "genres": [
-          "드라마"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/6aV7pcVSrRd41GCKkt9eLVgEPAX.jpg",
-        "vote_average": 7.573,
-        "vote_count": 555,
-        "overview": "15년 전 가족을 버린 아버지의 장례식, 어릴 적 나와 꼭 닮은 아이를 만났다. 조그마한 바닷가 마을 카마쿠라에 살고 있는 사치, 요시노, 치카는 15년 전 집을 떠난 아버지의 부고를 듣고 장례식장으로 향한다. 아버지에 대한 미움도, 추억도 어느덧 희미해졌지만 홀로 남겨진 이복 여동생 스즈에게만은 왠지 마음이 쓰이는데..",
-        "director": "Hirokazu Kore-eda",
-        "runtime": 127,
-        "imdb_rating": "7.6",
-        "rotten_tomatoes": "93",
-        "metacritic": "75",
-        "watch_providers": [
-          {
-            "name": "Watcha",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "rent"
-          },
-          {
-            "name": "Google Play Movies",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": "8.81"
-      }
-    },
-    {
-      "video": {
         "id": "J0V2oaLQkQo",
         "title": "일본이 다시 전쟁 가능한 국가가 된다면? - 아키라(AKIRA) 결말 해석 | 해설 | 리뷰",
         "url": "https://www.youtube.com/watch?v=J0V2oaLQkQo",
@@ -28900,91 +25286,6 @@
           }
         ],
         "naver_rating": "9.11"
-      }
-    },
-    {
-      "video": {
-        "id": "rifjDaFDQWE",
-        "title": "제작비 2000억, 마법 군단 모가니언을 부활시키는 금기시된 마법 주문서!! [영화리뷰/결말포함][액션판타지]",
-        "url": "https://www.youtube.com/watch?v=rifjDaFDQWE",
-        "embed_url": "https://www.youtube.com/embed/rifjDaFDQWE",
-        "channel": "시네마헌터",
-        "channel_id": "UC_RPr05YH1TBlQwxW2C7TVQ",
-        "published_at": "2022-06-16T12:09:45Z",
-        "view_count": 284390,
-        "duration_sec": 920,
-        "duration_label": "15분",
-        "has_spoiler": true,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 27022,
-        "title_ko": "마법사의 제자",
-        "title_en": "The Sorcerer's Apprentice",
-        "year": 2010,
-        "genres": [
-          "판타지",
-          "모험",
-          "액션"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/h59GHE8xgQQRSl3V0Xu2rzxzpjq.jpg",
-        "vote_average": 6.138,
-        "vote_count": 5248,
-        "overview": "현대 과학이 집결된 최첨단의 도시 맨하탄. 이 화려한 도시의 한쪽에는 한때는 누군가의 상상이었으며, 이제는 사람들의 손가락질을 받는 어느덧 환상 속의 신화가 되어버린 위대한 마법사 ‘발타자 블레이크(니콜라스 케이지 분)’가 살고 있다. 물론 그의 본업은 사악한 어둠의 마법사 ‘맥심 호르바스(알프레드 몰리나 분)’로부터 도시를 지키는 것.  전세계 어둠의 세력을 모으는 맥심을 물리치기 위해 발타자 역시 평범해 보이지만 엄청난 마법의 잠재력을 지닌 데이브(제이 바루첼 분)를 과감히 제자로 거둔다. 자신의 의지와는 상관없이 인류의 운명을 책임지는 임무를 맡게 된 데이브. 그러나 목숨이 왔다갔다하는 마법 훈련만으로도 모자랐는지 스승인 발타자는 사상 최악 어둠의 마법사 맥심과 지상 최대의 마법 전쟁을 시작한다.  다소 엉뚱하지만 분명 위대한 마법사 발타자와 더 없이 사악한 어둠의 마법사 맥심. 그들의 불꽃튀는 대결 속에서 마법사의 제자로 다시 태어난 데이브는 도시와 인류를 구원할 수 있을 것",
-        "director": "Jon Turteltaub",
-        "runtime": 109,
-        "imdb_rating": "6.1",
-        "rotten_tomatoes": "40",
-        "metacritic": "46",
-        "watch_providers": [
-          {
-            "name": "Disney Plus",
-            "type": "subscription"
-          }
-        ],
-        "naver_rating": null
-      }
-    },
-    {
-      "video": {
-        "id": "8BylVBID-8M",
-        "title": "부잣집 하녀로 들어간 베트남 여자의 인생 [영화리뷰/결말포함]",
-        "url": "https://www.youtube.com/watch?v=8BylVBID-8M",
-        "embed_url": "https://www.youtube.com/embed/8BylVBID-8M",
-        "channel": "따쓸",
-        "channel_id": "UCUUwWmivezjfcgypGYfiy1A",
-        "published_at": "2022-06-04T23:30:01Z",
-        "view_count": 576472,
-        "duration_sec": 514,
-        "duration_label": "8분",
-        "has_spoiler": true,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 19552,
-        "title_ko": "그린 파파야 향기",
-        "title_en": "The Scent of Green Papaya",
-        "year": 1993,
-        "genres": [
-          "드라마",
-          "로맨스"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/wIjKFkJB5GUO80eEEjju7HGf9ue.jpg",
-        "vote_average": 7.014,
-        "vote_count": 214,
-        "overview": "열 살박이 소녀 무이는 농촌을 떠나 도시의 한 가정의 하녀로 일하게 되면서 무책임한 가장 때문에 일어나는 주인 집안의 불행을 알게 된다. 가장이 전재산을 빼앗아 가정을 등지자 여주인은 트롱, 람, 틴 세 아이와 어렵게 살아간다. 무이는 막내 틴의 괴롭힘을 참으며 가끔 들르는 트롱의 친구 쿠엔에게 애정을 느낀다. 세월은 흘러 작은 소녀에서 아름다운 처녀로 성장한 무이는 여주인의 며느리에게 쫓겨나 항상 연정을 품어왔지만 결코 가까이 할 수 없었던 쿠엔의 집에서 일하게 된다. 무이는 하녀로서의 봉사와 애정이 혼합된 사랑을 얻게 되면서 베트남 여성으로서 가장 찬란한 인생을 시작한다",
-        "director": "Trần Anh Hùng",
-        "runtime": 104,
-        "imdb_rating": "7.3",
-        "rotten_tomatoes": "100",
-        "metacritic": "81",
-        "watch_providers": [
-          {
-            "name": "Watcha",
-            "type": "subscription"
-          }
-        ],
-        "naver_rating": null
       }
     },
     {
@@ -29144,44 +25445,6 @@
           }
         ],
         "naver_rating": "9.18"
-      }
-    },
-    {
-      "video": {
-        "id": "GD6p-RyWark",
-        "title": "[영화리뷰/결말포함] 전 세계 사람들이 모두 사라진 세상에서 살아남은 생존자들",
-        "url": "https://www.youtube.com/watch?v=GD6p-RyWark",
-        "embed_url": "https://www.youtube.com/embed/GD6p-RyWark",
-        "channel": "영화보는하루",
-        "channel_id": "UCwdJhYvBxVnWAjM0RYBmT4g",
-        "published_at": "2022-05-11T13:15:01Z",
-        "view_count": 2472564,
-        "duration_sec": 754,
-        "duration_label": "12분",
-        "has_spoiler": true,
-        "match_confidence": 0.9
-      },
-      "movie": {
-        "tmdb_id": 286538,
-        "title_ko": "세상 끝에서 우리는",
-        "title_en": "Bokeh",
-        "year": 2017,
-        "genres": [
-          "드라마",
-          "SF",
-          "스릴러"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/cedeEgSeKpsFZH9z9LgWbEqILlW.jpg",
-        "vote_average": 5.422,
-        "vote_count": 269,
-        "overview": "아이슬란드로 휴가를 온 젊은 미국인 커플. 어느 날 눈을 떠보니 세상 사람들이 모두 사라져버렸다. 기댈 곳은 서로의 어깨뿐인 두 사람은 이제 어떻게 살아가야 할까?",
-        "director": "Geoffrey Orthwein, Andrew Sullivan",
-        "runtime": 104,
-        "imdb_rating": "5.0",
-        "rotten_tomatoes": "48",
-        "metacritic": "56",
-        "watch_providers": [],
-        "naver_rating": null
       }
     },
     {
@@ -29703,56 +25966,6 @@
     },
     {
       "video": {
-        "id": "GSMfnk-dUzo",
-        "title": "(넷플릭스)실화) 인생에서 한 여자만을 사랑한 남자에게 벌어지는 일 [영화리뷰/결말포함]",
-        "url": "https://www.youtube.com/watch?v=GSMfnk-dUzo",
-        "embed_url": "https://www.youtube.com/embed/GSMfnk-dUzo",
-        "channel": "따쓸",
-        "channel_id": "UCUUwWmivezjfcgypGYfiy1A",
-        "published_at": "2022-04-09T04:15:00Z",
-        "view_count": 489580,
-        "duration_sec": 836,
-        "duration_label": "13분",
-        "has_spoiler": true,
-        "match_confidence": 0.98
-      },
-      "movie": {
-        "tmdb_id": 11036,
-        "title_ko": "노트북",
-        "title_en": "The Notebook",
-        "year": 2004,
-        "genres": [
-          "로맨스",
-          "드라마"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/ntdgcdsmMuHd9s4oEKTvWDiUyU7.jpg",
-        "vote_average": 7.888,
-        "vote_count": 12464,
-        "overview": "17살, 노아는 밝고 순수한 앨리를 보고 첫눈에 반한다. 빠른 속도로 서로에게 빠져드는 둘. 그러나 이들 앞에 놓인 장벽에 막혀 이별하게 된다. 24살, 앨리는 우연히 신문에서 노아의 소식을 접하고 잊을 수 없는 첫사랑 앞에서 다시 한 번 선택의 기로에 서게 되는데…",
-        "director": "Nick Cassavetes",
-        "runtime": 123,
-        "imdb_rating": "7.8",
-        "rotten_tomatoes": "54",
-        "metacritic": "53",
-        "watch_providers": [
-          {
-            "name": "wavve",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "rent"
-          },
-          {
-            "name": "Google Play Movies",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": "9.22"
-      }
-    },
-    {
-      "video": {
         "id": "2Nej_b377gA",
         "title": "\"디즈니 플러스\"에서 꼭 봐야할 \"정준하\" 더빙 \"주토피아\" 제작진이 선사하는 레전드 미국 애니 ㅎㄷㄷ",
         "url": "https://www.youtube.com/watch?v=2Nej_b377gA",
@@ -29839,49 +26052,6 @@
           }
         ],
         "naver_rating": "8.52"
-      }
-    },
-    {
-      "video": {
-        "id": "pM1Y3VdRXXU",
-        "title": "인생 멜로 영화로 유명한 감동적인 판타지 로맨스 영화 [영화리뷰 결말포함]",
-        "url": "https://www.youtube.com/watch?v=pM1Y3VdRXXU",
-        "embed_url": "https://www.youtube.com/embed/pM1Y3VdRXXU",
-        "channel": "무드킹",
-        "channel_id": "UCzAwNywSkY0ycIqZL29zClg",
-        "published_at": "2022-03-12T12:41:55Z",
-        "view_count": 708532,
-        "duration_sec": 1092,
-        "duration_label": "18분",
-        "has_spoiler": true,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 15775,
-        "title_ko": "이프 온리",
-        "title_en": "If Only",
-        "year": 2004,
-        "genres": [
-          "드라마",
-          "로맨스",
-          "판타지"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/mdP2jfx5ai3DoCFWQi5mqBWuxAy.jpg",
-        "vote_average": 7.029,
-        "vote_count": 645,
-        "overview": "바쁜 일상에 쫓겨 연인 사만다를 뒤로 미뤄왔던 이안. 사소한 다툼 끝에 그녀를 떠나보낸 그날 밤, 예상치 못한 사고로 그는 눈앞에서 가장 소중한 사람을 잃는다. 모든 것이 끝났다고 생각한 순간, 잠에서 깨어난 그의 앞에 믿을 수 없게도 똑같은 하루가 다시 펼쳐진다. 단 한 번, 다시 주어진 기회. 모든 후회의 순간을 되돌리듯 사만다에게 다시 사랑을 전하려는 이안. 과연 그는, 그녀를 지킬 수 있을까?",
-        "director": "Gil Junger",
-        "runtime": 96,
-        "imdb_rating": "7.0",
-        "rotten_tomatoes": null,
-        "metacritic": "N/A",
-        "watch_providers": [
-          {
-            "name": "Watcha",
-            "type": "subscription"
-          }
-        ],
-        "naver_rating": "8.99"
       }
     },
     {
@@ -30112,60 +26282,6 @@
     },
     {
       "video": {
-        "id": "v3vlBEN9Csc",
-        "title": "시골처녀에게 반해버린 영국100대 부자 [영화리뷰/결말포함]",
-        "url": "https://www.youtube.com/watch?v=v3vlBEN9Csc",
-        "embed_url": "https://www.youtube.com/embed/v3vlBEN9Csc",
-        "channel": "따쓸",
-        "channel_id": "UCUUwWmivezjfcgypGYfiy1A",
-        "published_at": "2022-02-27T03:00:17Z",
-        "view_count": 912154,
-        "duration_sec": 591,
-        "duration_label": "9분",
-        "has_spoiler": true,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 4348,
-        "title_ko": "오만과 편견",
-        "title_en": "Pride & Prejudice",
-        "year": 2005,
-        "genres": [
-          "드라마",
-          "로맨스"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/rgKfvG0PgJBIPR6cNICukRnfMga.jpg",
-        "vote_average": 8.049,
-        "vote_count": 8711,
-        "overview": "베넷 가의 다섯 자매 중 둘째인 엘리자베스는 사랑하는 사람과의 결혼을 믿는 자존심 강하고 영리한 소녀이다. 부유하고 명망있는 가문의 신사 빙리와 그의 친구 다아시가 여름 동안 대저택에 머물게 되고, 댄스 파티에서 처음 만난 엘리자베스와 다아시는 서로에게서 눈을 떼지 못한다. 다아시는 아름답고 지적인 그녀의 매력에 점점 빠져들고, 폭우가 쏟아지는 날 비바람이 몰아치는 언덕에서 가슴 속 깊은 곳에 담아둔 뜨거운 사랑을 그녀에게 고백한다. 하지만 다아시가 빙리와 제인의 결혼을 제인이 명망있는 가문 출신이 아니라는 이유로 반대한 것을 알게 되자, 그를 오만하고 편견에 가득 찬 속물로 여기며 외면하는데...",
-        "director": "Joe Wright",
-        "runtime": 128,
-        "imdb_rating": "7.8",
-        "rotten_tomatoes": "87",
-        "metacritic": "82",
-        "watch_providers": [
-          {
-            "name": "wavve",
-            "type": "subscription"
-          },
-          {
-            "name": "Watcha",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "rent"
-          },
-          {
-            "name": "Google Play Movies",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": "8.88"
-      }
-    },
-    {
-      "video": {
         "id": "brc7UHfEIJA",
         "title": "\"디즈니 플러스\"에서 재밌다고 난리난 \"디즈니\" 와 \"마블\" 콜라보레이션!! 레전드 미국 애니 ㅎㄷㄷ",
         "url": "https://www.youtube.com/watch?v=brc7UHfEIJA",
@@ -30249,49 +26365,6 @@
           }
         ],
         "naver_rating": "8.92"
-      }
-    },
-    {
-      "video": {
-        "id": "kIWHCK-7zWE",
-        "title": "초능력을 가지고 태어나는 인류의 4%가 살아가는법  (영화추천, 결말포함)",
-        "url": "https://www.youtube.com/watch?v=kIWHCK-7zWE",
-        "embed_url": "https://www.youtube.com/embed/kIWHCK-7zWE",
-        "channel": "영화의 민족",
-        "channel_id": "UCrq9Oh2ndvpHlEfbQo1dEVA",
-        "published_at": "2022-02-23T04:49:35Z",
-        "view_count": 174,
-        "duration_sec": 1022,
-        "duration_label": "17분",
-        "has_spoiler": true,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 461130,
-        "title_ko": "코드 8",
-        "title_en": "Code 8",
-        "year": 2019,
-        "genres": [
-          "SF",
-          "액션",
-          "범죄"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/nFNfFAKpfR3kotmwyqg6b8man89.jpg",
-        "vote_average": 6.266,
-        "vote_count": 2154,
-        "overview": "근 미래, 인류의 4%뿐인 초능력자 ‘특수 인간’의 능력이 통제 받는 세상. 인간들은 그들을 범죄자로 취급하며 감시와 탄압을 일삼는다. 죽음으로 내모는 인간들의 악랄함에 ‘특수 인간’은 살아남기 위해 목숨을 건 최후의 전쟁을 시작하게 되는데…",
-        "director": "Jeff Chan",
-        "runtime": 99,
-        "imdb_rating": "6.1",
-        "rotten_tomatoes": "85",
-        "metacritic": "48",
-        "watch_providers": [
-          {
-            "name": "Google Play Movies",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": null
       }
     },
     {
@@ -30424,64 +26497,6 @@
     },
     {
       "video": {
-        "id": "wQMBFCT3Mbw",
-        "title": "잔인한 살인사건 뒤에 숨겨진 거대한 진실과 충격반전 (결말포함)",
-        "url": "https://www.youtube.com/watch?v=wQMBFCT3Mbw",
-        "embed_url": "https://www.youtube.com/embed/wQMBFCT3Mbw",
-        "channel": "영화보는하루",
-        "channel_id": "UCwdJhYvBxVnWAjM0RYBmT4g",
-        "published_at": "2022-01-30T02:00:11Z",
-        "view_count": 276884,
-        "duration_sec": 1118,
-        "duration_label": "18분",
-        "has_spoiler": true,
-        "match_confidence": 0.92
-      },
-      "movie": {
-        "tmdb_id": 570661,
-        "title_ko": "콜리니 케이스",
-        "title_en": "The Collini Case",
-        "year": 2019,
-        "genres": [
-          "드라마",
-          "스릴러"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/w4sFxMMHIzqxD3L4a0LcXv52anP.jpg",
-        "vote_average": 7.387,
-        "vote_count": 430,
-        "overview": "호텔 스위트룸에서 발생한 대기업회장 살인사건! 침묵하는 피고인 vs 3개월차 신입 국선변호인. 낯익은 한자루의 총 안에 숨겨진 비밀! 진실에 다가 갈수록 사건은 전혀 예상치 못한 방향으로 전개되는데.. 남은 시간 4일, 사건 뒤에 숨겨진 거대한 진실을 밝혀라!",
-        "director": "Marco Kreuzpaintner",
-        "runtime": 118,
-        "imdb_rating": "7.3",
-        "rotten_tomatoes": "80",
-        "metacritic": "N/A",
-        "watch_providers": [
-          {
-            "name": "wavve",
-            "type": "subscription"
-          },
-          {
-            "name": "Watcha",
-            "type": "subscription"
-          },
-          {
-            "name": "TVING",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "rent"
-          },
-          {
-            "name": "Google Play Movies",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": null
-      }
-    },
-    {
-      "video": {
         "id": "_MMMOz12MAE",
         "title": "신의 선물을 받지 못한 살리에리를 비추는 카메라: 아마데우스 촬영 완전 분석 1부 | 당감마 EP.30",
         "url": "https://www.youtube.com/watch?v=_MMMOz12MAE",
@@ -30561,49 +26576,6 @@
           }
         ],
         "naver_rating": "9.5"
-      }
-    },
-    {
-      "video": {
-        "id": "ErxfT35q4Xk",
-        "title": "지구상의 지적 생명체를 잡아먹는 돌연변이 포식자의 정체!! [영화리뷰/결말포함]",
-        "url": "https://www.youtube.com/watch?v=ErxfT35q4Xk",
-        "embed_url": "https://www.youtube.com/embed/ErxfT35q4Xk",
-        "channel": "시네마헌터",
-        "channel_id": "UC_RPr05YH1TBlQwxW2C7TVQ",
-        "published_at": "2022-01-19T13:35:15Z",
-        "view_count": 1753480,
-        "duration_sec": 883,
-        "duration_label": "14분",
-        "has_spoiler": true,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 524434,
-        "title_ko": "이터널스",
-        "title_en": "Eternals",
-        "year": 2021,
-        "genres": [
-          "SF",
-          "액션",
-          "모험"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/aNtAP8ZzUMdnCPoqYgVOcgI0Eh4.jpg",
-        "vote_average": 6.773,
-        "vote_count": 9075,
-        "overview": "이터널스는 7천년 전 우주선 도모를 타고 지구에 온 순간부터 지구를 사랑한 히어로들이다. 이들의 임무는 기괴한 크리처 데비안츠에게서 인간을 지키는 것. 임무를 부여한 이는 그들을 탄생시킨 천상의 존재 셀레스티얼이다. 이터널스는 시간의 흐름을 느낄 수 없기에, 공간을 기준 삼아 연대기를 구성하는 뱀파이어처럼 세계 곳곳에 흩어져 자신만의 삶을 살아가고 있다. 물질을 변화시키는 세르시는 런던에서 박물관 학자가 됐고, 우주의 기운을 총처럼 쏘는 킹고는 발리우드 배우로 살며, 타인을 조종하는 드루이그는 아마존에 소국을 만들었다. 괴력의 소유자 길가메시는 호주 사막에서 정신 건강이 위험해진 테나를 돌보며 살고 있다. 세르시는 데비안츠의 공세가 심해지자 오랜 연인 이카리스, 소녀처럼 보이는 불멸의 존재 스프라이트와 함께 이터널스를 불러모으기 시작한다.",
-        "director": "Chloé Zhao",
-        "runtime": 156,
-        "imdb_rating": "6.2",
-        "rotten_tomatoes": "47",
-        "metacritic": "52",
-        "watch_providers": [
-          {
-            "name": "Disney Plus",
-            "type": "subscription"
-          }
-        ],
-        "naver_rating": "6.35"
       }
     },
     {
@@ -30823,65 +26795,6 @@
     },
     {
       "video": {
-        "id": "rQLE5c9-zvE",
-        "title": "[영화리뷰/결말포함] 금쪽같던 조카가 납치되자 눈이 뒤집혀버린 신부님의 선택",
-        "url": "https://www.youtube.com/watch?v=rQLE5c9-zvE",
-        "embed_url": "https://www.youtube.com/embed/rQLE5c9-zvE",
-        "channel": "회색곰씨네",
-        "channel_id": "UCW80TW575i-G1EDe1eqS3Tw",
-        "published_at": "2021-12-10T11:00:23Z",
-        "view_count": 42338,
-        "duration_sec": 914,
-        "duration_label": "15분",
-        "has_spoiler": true,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 38321,
-        "title_ko": "프리스트",
-        "title_en": "Priest",
-        "year": 2011,
-        "genres": [
-          "액션",
-          "판타지",
-          "공포"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/iyXl7zW8U1AVBxF9whch2ylIwIr.jpg",
-        "vote_average": 5.859,
-        "vote_count": 2499,
-        "overview": "신의 규율에 의해 통제되는 거대한 미래도시. 전사가 된 신부 프리스트(폴 베타니)는 인류를 위협하는 존재들과 수 세기에 걸친 전쟁을 승리로 이끌고 돌아온다. 하지만 그의 능력을 두려워한 신의 조직에게 버림받아 비참한 삶을 살아 간다. 어느 날 다시 부활한 뱀파이어의 습격으로 가족을 잃게 된 프리스트는 신과의 서약을 깨고 자신의 모든 걸 걸고 복수에 나서게 되는데…",
-        "director": "Scott Stewart",
-        "runtime": 87,
-        "imdb_rating": "5.7",
-        "rotten_tomatoes": "16",
-        "metacritic": "41",
-        "watch_providers": [
-          {
-            "name": "Netflix",
-            "type": "subscription"
-          },
-          {
-            "name": "Watcha",
-            "type": "subscription"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "rent"
-          },
-          {
-            "name": "Google Play Movies",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": "7.99"
-      }
-    },
-    {
-      "video": {
         "id": "r9VpjX8vGUo",
         "title": "[영화리뷰/결말포함] 조선왕조 500년   3  ㅣ 세계 4대 해전의 영웅   13척의 배로  왜군 133척의 배를 수장시켜버리다",
         "url": "https://www.youtube.com/watch?v=r9VpjX8vGUo",
@@ -30938,100 +26851,6 @@
           }
         ],
         "naver_rating": "8.88"
-      }
-    },
-    {
-      "video": {
-        "id": "r2uPV2JQx0U",
-        "title": "고대 유물을 절대 건드려서는 안되는 이유 ㅎㄷㄷ;; [영화리뷰/결말포함]",
-        "url": "https://www.youtube.com/watch?v=r2uPV2JQx0U",
-        "embed_url": "https://www.youtube.com/embed/r2uPV2JQx0U",
-        "channel": "시네마헌터",
-        "channel_id": "UC_RPr05YH1TBlQwxW2C7TVQ",
-        "published_at": "2021-12-09T13:18:40Z",
-        "view_count": 1537305,
-        "duration_sec": 875,
-        "duration_label": "14분",
-        "has_spoiler": true,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 516632,
-        "title_ko": "엠티맨",
-        "title_en": "The Empty Man",
-        "year": 2020,
-        "genres": [
-          "공포",
-          "미스터리"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/kfP5mBkAicN23vihkKHWlxUoLnO.jpg",
-        "vote_average": 6.172,
-        "vote_count": 990,
-        "overview": "10대 아이들의 연이은 실종사건으로 공포에 빠진 마을. 은퇴한 전직 경찰 제임스는 친구의 딸 아만다의 실종에 의문을 품고 사건을 조사하기 시작한다. 그는 사건을 파헤치던 중, 전설로 기록된 공포의 존재 ‘엠티맨’과 그를 추종하는 비밀 단체가 아이들의 실종에 연루되어 있음을 깨닫게 된다. 엠티맨의 실체에 다가설수록 목숨마저 위협당하는 공포와 마주하게 되는데…",
-        "director": "David Prior",
-        "runtime": 137,
-        "imdb_rating": "6.2",
-        "rotten_tomatoes": "73",
-        "metacritic": "N/A",
-        "watch_providers": [
-          {
-            "name": "wavve",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": null
-      }
-    },
-    {
-      "video": {
-        "id": "cIK7NFrL1fE",
-        "title": "25년 전에 나온 개소름 돋는 역대급 반전영화 (결말포함)",
-        "url": "https://www.youtube.com/watch?v=cIK7NFrL1fE",
-        "embed_url": "https://www.youtube.com/embed/cIK7NFrL1fE",
-        "channel": "영화보는하루",
-        "channel_id": "UCwdJhYvBxVnWAjM0RYBmT4g",
-        "published_at": "2021-12-07T23:00:15Z",
-        "view_count": 564119,
-        "duration_sec": 1160,
-        "duration_label": "19분",
-        "has_spoiler": true,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 1592,
-        "title_ko": "프라이멀 피어",
-        "title_en": "Primal Fear",
-        "year": 1996,
-        "genres": [
-          "범죄",
-          "드라마",
-          "미스터리",
-          "스릴러"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/vLv8a0OpH33EDyU2ZqRb5mfMnKS.jpg",
-        "vote_average": 7.656,
-        "vote_count": 3876,
-        "overview": "오만하지만 능력있는 변호사 마틴 베일(리차드 기어)은 카톨릭 대주교 살해 혐의로 현장에서 도망치다 붙잡힌 19살의 소년 용의자 애런 스탬플러(에드워드 노튼)의 모습을 TV로 보고 교도소로 찾아가 무보수로 변호할 것을 제의한다. 검사로는 마틴 베일의 검사 동료였던 여검사 베너블(로라 린니)이 맡게 되어 둘 사이에 팽팽한 경쟁이 시작된다. 피살자의 피가 묻은 용의자의 옷과 운동화를 확실한 증거로 제시하며 피고의 유죄를 주장하는 검사. 하지만 현장에는 또다른 제3자가 있었다고 주장하는 피고는 그 당시 기억을 못한다고 우기며 정신감정결과 어린 시절 학대로 인한 심리 억압적 기억상실 환자임을 변호사측에서는 강조한다. 그러던 중 애런의 다중 인격이 튀어나오는데...",
-        "director": "Gregory Hoblit",
-        "runtime": 130,
-        "imdb_rating": "7.7",
-        "rotten_tomatoes": "77",
-        "metacritic": "47",
-        "watch_providers": [
-          {
-            "name": "Netflix",
-            "type": "subscription"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "type": "subscription"
-          },
-          {
-            "name": "Google Play Movies",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": null
       }
     },
     {
@@ -31544,88 +27363,6 @@
           }
         ],
         "naver_rating": "8.61"
-      }
-    },
-    {
-      "video": {
-        "id": "6xNGIq5AtQg",
-        "title": "CIA 최고 요원들의 화끈한 액션과 로맨스!! 진짜 재미있고 유쾌한 영화 [영화리뷰 결말포함]",
-        "url": "https://www.youtube.com/watch?v=6xNGIq5AtQg",
-        "embed_url": "https://www.youtube.com/embed/6xNGIq5AtQg",
-        "channel": "무드킹",
-        "channel_id": "UCzAwNywSkY0ycIqZL29zClg",
-        "published_at": "2021-10-02T23:47:13Z",
-        "view_count": 72018,
-        "duration_sec": 1125,
-        "duration_label": "18분",
-        "has_spoiler": true,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 59962,
-        "title_ko": "디스 민즈 워",
-        "title_en": "This Means War",
-        "year": 2012,
-        "genres": [
-          "액션",
-          "코미디",
-          "로맨스"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/1PuUcrNqiyvP4y5MKwRGfMuMXv4.jpg",
-        "vote_average": 6.18,
-        "vote_count": 3585,
-        "overview": "세계 최고의 실력을 가진 CIA 특수요원 터크(톰 하디)와 프랭클린(크리스 파인). 서로를 위해 목숨도 내놓을 수 있는 절친한 친구 사이지만 동시에 로렌(리즈 위더스푼)을 좋아하게 되면서 둘의 우정은 순식간에 금이 간다. 최고의 CIA 요원답게 서로의 만남을 방해하기 위해 최첨단 기술력을 총동원, 감시와 도청으로 로렌의 환심을 사려던 두 사람은 급기야 자동차 폭파와 비행기 공중 분해까지 불사하며 한 나라를 통째로 집어삼킬 만큼 거대한 전쟁으로 치닫게 된다. 동시에 로렌 역시 서로 상반되지만, 충분히 매력적인 두 사람 중 누구를 선택해야 할지 혼란스럽기만 한데...",
-        "director": "McG",
-        "runtime": 98,
-        "imdb_rating": "6.3",
-        "rotten_tomatoes": "24",
-        "metacritic": "31",
-        "watch_providers": [
-          {
-            "name": "Disney Plus",
-            "type": "subscription"
-          }
-        ],
-        "naver_rating": null
-      }
-    },
-    {
-      "video": {
-        "id": "pP3BU7ZgkZ4",
-        "title": "반전에 반전을 거듭하는 심리 스릴러 영화 [영화리뷰 결말포함]",
-        "url": "https://www.youtube.com/watch?v=pP3BU7ZgkZ4",
-        "embed_url": "https://www.youtube.com/embed/pP3BU7ZgkZ4",
-        "channel": "무드킹",
-        "channel_id": "UCzAwNywSkY0ycIqZL29zClg",
-        "published_at": "2021-09-25T03:00:31Z",
-        "view_count": 1767513,
-        "duration_sec": 936,
-        "duration_label": "15분",
-        "has_spoiler": true,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 2043,
-        "title_ko": "스파이더 게임",
-        "title_en": "Along Came a Spider",
-        "year": 2001,
-        "genres": [
-          "범죄",
-          "미스터리",
-          "스릴러",
-          "액션"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/vipRsbIpwUNf1gjfOcVNizQ1o3c.jpg",
-        "vote_average": 6.348,
-        "vote_count": 2044,
-        "overview": "워싱턴 D.C. 경찰이자 범죄심리 분석가인 알렉스 크로스는 임무수행중 동료를 잃고 칩거한다. 로즈 상원의원의 딸 메건이 유괴당하는 사건이 발생한 뒤 범인은 크로스에게 단서를 남긴다. 크로스는 담당 경호원 가운데 한 사람인 제시와 함께 수사에 나선다. 그러나 범인의 목적은 다른 데 있다. 바로 메건을 미끼로 러시아 대통령의 아들 드미트리를 납치하려는 것이다.",
-        "director": "Lee Tamahori",
-        "runtime": 103,
-        "imdb_rating": "6.4",
-        "rotten_tomatoes": "32",
-        "metacritic": "42",
-        "watch_providers": [],
-        "naver_rating": null
       }
     },
     {
@@ -32874,65 +28611,6 @@
     },
     {
       "video": {
-        "id": "609aXCEWLkg",
-        "title": "[영화리뷰/결말포함] 6.25 한국전쟁영화 걸작 5 ㅣ 6.25전쟁 중 가장 참혹하고 지옥같았던 마지막 고지 전투",
-        "url": "https://www.youtube.com/watch?v=609aXCEWLkg",
-        "embed_url": "https://www.youtube.com/embed/609aXCEWLkg",
-        "channel": "넥스트무비",
-        "channel_id": "UCE3bTvzD-boQ60lxi73aw0w",
-        "published_at": "2021-05-04T00:02:06Z",
-        "view_count": 2046364,
-        "duration_sec": 1064,
-        "duration_label": "17분",
-        "has_spoiler": true,
-        "match_confidence": 0.98
-      },
-      "movie": {
-        "tmdb_id": 79553,
-        "title_ko": "고지전",
-        "title_en": "The Front Line",
-        "year": 2011,
-        "genres": [
-          "드라마",
-          "액션",
-          "전쟁"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/sHAef4ts9Y5EREhs9UlOPEga4h3.jpg",
-        "vote_average": 7.174,
-        "vote_count": 198,
-        "overview": "1953년 2월, 휴전협상이 난항을 거듭하는 가운데 교착전이 한창인 동부전선 최전방 애록고지에서 전사한 중대장의 시신에서 아군의 총알이 발견된다. 상부에서는 이번 사건을 적과의 내통과 관련되어 있음을 의심하고 방첩대 중위 강은표에게 동부전선으로 가 조사하라는 임무를 내린다. 애록고지로 향한 은표는 그 곳에서 죽은 줄 알았던 친구 김수혁을 만나게 된다. 유약한 학생이었던 수혁은 2년 사이에 이등병에서 중위로 특진해 악어중대의 실질적 리더가 되어 있고, 그가 함께하는 악어중대는 명성과 달리 춥다고 북한 군복을 덧입는 모습을 보이고 갓 스무살이 된 어린 청년이 대위로 부대를 이끄는 등 뭔가 미심쩍다. 이 모든 것이 혼란스러운 가운데 은표는 오직 병사들의 목숨으로만 지켜낼 수 있는 최후의 격전지 애록고지의 실체와 마주하게 되는데…",
-        "director": "Jang Hoon",
-        "runtime": 133,
-        "imdb_rating": "7.3",
-        "rotten_tomatoes": "71",
-        "metacritic": "59",
-        "watch_providers": [
-          {
-            "name": "Netflix",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "subscription"
-          },
-          {
-            "name": "Watcha",
-            "type": "subscription"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "type": "subscription"
-          },
-          {
-            "name": "TVING",
-            "type": "subscription"
-          }
-        ],
-        "naver_rating": "9.24"
-      }
-    },
-    {
-      "video": {
         "id": "EGT7VAWF7-U",
         "title": "왕따라고 무시하다 역관광당한 초딩의 최후 (결말포함)",
         "url": "https://www.youtube.com/watch?v=EGT7VAWF7-U",
@@ -33137,58 +28815,6 @@
     },
     {
       "video": {
-        "id": "9_hutDKfD9o",
-        "title": "하필 싸이코패스의 집을 털게 된 도둑의 최후 (결말포함)",
-        "url": "https://www.youtube.com/watch?v=9_hutDKfD9o",
-        "embed_url": "https://www.youtube.com/embed/9_hutDKfD9o",
-        "channel": "영화보는하루",
-        "channel_id": "UCwdJhYvBxVnWAjM0RYBmT4g",
-        "published_at": "2021-04-16T07:00:02Z",
-        "view_count": 56995,
-        "duration_sec": 955,
-        "duration_label": "15분",
-        "has_spoiler": true,
-        "match_confidence": 0.97
-      },
-      "movie": {
-        "tmdb_id": 467632,
-        "title_ko": "배드 사마리안",
-        "title_en": "Bad Samaritan",
-        "year": 2018,
-        "genres": [
-          "스릴러",
-          "범죄",
-          "공포",
-          "드라마"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/kl5jfZ7lkNAhTPlAdWOwmlF5Yij.jpg",
-        "vote_average": 6.748,
-        "vote_count": 772,
-        "overview": "장난 삼아 손님이 맡긴 차를 이용해 빈집을 털며 용돈을 마련하는 ‘션’은 어느 날 마세라티를 타고 온 VIP 손님 ‘케일’의 초호화 저택에 몰래 들어갔다가 숨겨진 방에 쇠사슬로 묶여진 채 감금된 여인을 발견한다. 뒤돌아 나왔어야 할 순간, 살려달라는 여인의 말에 그는 결국 돌이킬 수 없는 선택을 하게 되고, 그 때부터 직장, 여자친구, SNS까지 주변의 모든 일상이 하나 둘씩 처참하게 짓밟히고 감당할 수 없는 위협이 ‘션’의 숨통을 조여오기 시작하는데…",
-        "director": "Dean Devlin",
-        "runtime": 107,
-        "imdb_rating": "6.4",
-        "rotten_tomatoes": "54",
-        "metacritic": "42",
-        "watch_providers": [
-          {
-            "name": "Watcha",
-            "type": "subscription"
-          },
-          {
-            "name": "TVING",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": "8.17"
-      }
-    },
-    {
-      "video": {
         "id": "GANicOfrUqA",
         "title": "문제 틀리면 죽여버리시는 선생님들.. (재업)",
         "url": "https://www.youtube.com/watch?v=GANicOfrUqA",
@@ -33278,65 +28904,6 @@
           }
         ],
         "naver_rating": null
-      }
-    },
-    {
-      "video": {
-        "id": "PilQgRhwJrU",
-        "title": "대한민국 국가부도까지 남은시간... 단 7일(영화리뷰, 결말포함)",
-        "url": "https://www.youtube.com/watch?v=PilQgRhwJrU",
-        "embed_url": "https://www.youtube.com/embed/PilQgRhwJrU",
-        "channel": "에쓰'시네마S'CINEMA",
-        "channel_id": "UCAANlWLv3_i5Q8gUpapkHKw",
-        "published_at": "2021-04-07T10:28:17Z",
-        "view_count": 2817732,
-        "duration_sec": 918,
-        "duration_label": "15분",
-        "has_spoiler": true,
-        "match_confidence": 0.93
-      },
-      "movie": {
-        "tmdb_id": 453127,
-        "title_ko": "청년경찰",
-        "title_en": "Midnight Runners",
-        "year": 2017,
-        "genres": [
-          "코미디",
-          "액션",
-          "범죄"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/q80MQrVj8NivteUXd3PHbVsaeAY.jpg",
-        "vote_average": 7.5,
-        "vote_count": 245,
-        "overview": "의욕충만 경찰대생 기준과 이론백단 경찰대생 희열. 둘도 없는 친구인 두 사람은 외출을 나왔다 우연히 납치 사건을 목격하게 된다.  목격자는 오직 두 사람 뿐. 기준과 희열은 학교에서 배운 대로 지체 없이 경찰에 신고한다. 하지만 복잡한 절차와 부족한 증거로 수사는 전혀 진행될 기미가 보이지 않는 상황! 1분 1초가 급박한 상황에서 아까운 시간만 흘러가자, 기준과 희열은 직접 발로 뛰는 수사에 나서기로 하고 예측 불가능한 상황을 마주하게 되는데…",
-        "director": "Jason Kim",
-        "runtime": 109,
-        "imdb_rating": "7.3",
-        "rotten_tomatoes": "100",
-        "metacritic": "N/A",
-        "watch_providers": [
-          {
-            "name": "Netflix",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "subscription"
-          },
-          {
-            "name": "Watcha",
-            "type": "subscription"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "type": "subscription"
-          },
-          {
-            "name": "TVING",
-            "type": "subscription"
-          }
-        ],
-        "naver_rating": "9.03"
       }
     },
     {
@@ -33526,47 +29093,6 @@
           }
         ],
         "naver_rating": "8.79"
-      }
-    },
-    {
-      "video": {
-        "id": "XxicVwdl8ho",
-        "title": "[공포영화] 쌍둥이 언니의 재능과 인기를 질투한 동생이 벌인 짓",
-        "url": "https://www.youtube.com/watch?v=XxicVwdl8ho",
-        "embed_url": "https://www.youtube.com/embed/XxicVwdl8ho",
-        "channel": "미쓰김씨네",
-        "channel_id": "UCMyHwbWZJi_dbYCEbm97dXw",
-        "published_at": "2021-03-20T11:02:41Z",
-        "view_count": 492284,
-        "duration_sec": 1194,
-        "duration_label": "19분",
-        "has_spoiler": true,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 746640,
-        "title_ko": "녹턴",
-        "title_en": "Nocturne",
-        "year": 2022,
-        "genres": [
-          "다큐멘터리"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/n3W7ScwCH1INJCBjaFasjD1eyP6.jpg",
-        "vote_average": 8.5,
-        "vote_count": 2,
-        "overview": "음악에 천재적 재능을 지닌 형과 그의 그림자 엄마. 형의 그림자를 벗어나 세상 속으로 떠나고 싶은 동생. 너무나 다른 세 사람, 진정한 가족이 될 수 있을까?",
-        "director": "Jeong Gwan-jo",
-        "runtime": 94,
-        "imdb_rating": null,
-        "rotten_tomatoes": null,
-        "metacritic": "N/A",
-        "watch_providers": [
-          {
-            "name": "Google Play Movies",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": null
       }
     },
     {
@@ -35492,64 +31018,6 @@
     },
     {
       "video": {
-        "id": "qzDyZwXoMxQ",
-        "title": "동네친구에서 연인이 되는 과정(영화리뷰/결말포함/영화추천)",
-        "url": "https://www.youtube.com/watch?v=qzDyZwXoMxQ",
-        "embed_url": "https://www.youtube.com/embed/qzDyZwXoMxQ",
-        "channel": "무비로드",
-        "channel_id": "UCC4FGTu-TqPMkMvILyEb27g",
-        "published_at": "2020-11-17T09:00:21Z",
-        "view_count": 2776678,
-        "duration_sec": 558,
-        "duration_label": "9분",
-        "has_spoiler": true,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 597295,
-        "title_ko": "나의 청춘은 너의 것",
-        "title_en": "Love The Way You Are",
-        "year": 2019,
-        "genres": [
-          "로맨스",
-          "코미디"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/djwEvOdFX1fTEpp7YVbYZl8KyY6.jpg",
-        "vote_average": 5.4,
-        "vote_count": 34,
-        "overview": "모범생 팡위커와 유독 그에게만 빛나 보이는 린린이 어린 시절 동네 친구에서 연인이 되기까지의 새콤달콤한 여정을 담은 로맨스 일대기",
-        "director": "Dai Mengying, Zhou Tong",
-        "runtime": 90,
-        "imdb_rating": "6.0",
-        "rotten_tomatoes": null,
-        "metacritic": "N/A",
-        "watch_providers": [
-          {
-            "name": "Netflix",
-            "type": "subscription"
-          },
-          {
-            "name": "Watcha",
-            "type": "subscription"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "type": "subscription"
-          },
-          {
-            "name": "TVING",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": "7.83"
-      }
-    },
-    {
-      "video": {
         "id": "opZH6oF9O40",
         "title": "《인셉션》 총정리 1부 - 10분만에 정주행",
         "url": "https://www.youtube.com/watch?v=opZH6oF9O40",
@@ -35597,65 +31065,6 @@
           }
         ],
         "naver_rating": "9.48"
-      }
-    },
-    {
-      "video": {
-        "id": "Yutrkm8rnLc",
-        "title": "영화 담보 요약, 결말) 납치가 사랑으로 바뀌는 신파극",
-        "url": "https://www.youtube.com/watch?v=Yutrkm8rnLc",
-        "embed_url": "https://www.youtube.com/embed/Yutrkm8rnLc",
-        "channel": "홍블러탑골 극장",
-        "channel_id": "UCv8dx2GxJuwyM7bw8W4Qlxw",
-        "published_at": "2020-11-03T11:00:07Z",
-        "view_count": 1292160,
-        "duration_sec": 741,
-        "duration_label": "12분",
-        "has_spoiler": true,
-        "match_confidence": 0.96
-      },
-      "movie": {
-        "tmdb_id": 589174,
-        "title_ko": "담보",
-        "title_en": "Pawn",
-        "year": 2020,
-        "genres": [
-          "코미디",
-          "드라마",
-          "가족"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/b6clzuYNbizWFUtcpLBsp00zXNe.jpg",
-        "vote_average": 8.361,
-        "vote_count": 72,
-        "overview": "1993년 인천, 거칠고 까칠한 사채업자 두석과 종배는 떼인 돈 받으러 갔다가 얼떨결에 9살 승이를 담보로 맡게 된다. 뜻도 모른 채 담보가 된 승이와 승이 엄마의 사정으로 아이의 입양까지 책임지게 된 두석과 종배. 하지만 부잣집으로 간 줄 알았던 승이가 엉뚱한 곳에 있다는 것을 알게 된 두 사람은 승이를 데려와 돌보게 된다. 예고 없이 찾아온 아이에게 인생을 담보 잡힌 두석과 종배. 빚 때문에 아저씨들에게 맡겨진 담보 승이. 두석, 종배, 승이 세 사람은 어느덧 서로에게 특별한 존재가 되는데...",
-        "director": "Kang Dae-gyu",
-        "runtime": 113,
-        "imdb_rating": "7.7",
-        "rotten_tomatoes": null,
-        "metacritic": "N/A",
-        "watch_providers": [
-          {
-            "name": "Netflix",
-            "type": "subscription"
-          },
-          {
-            "name": "Watcha",
-            "type": "subscription"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "type": "subscription"
-          },
-          {
-            "name": "TVING",
-            "type": "subscription"
-          },
-          {
-            "name": "wavve",
-            "type": "rent"
-          }
-        ],
-        "naver_rating": null
       }
     },
     {
@@ -36717,43 +32126,6 @@
     },
     {
       "video": {
-        "id": "ZwI2RGQaqIw",
-        "title": "결말포함|잔잔하지만 뭉클한 감동 원하는 분께 추천!(feat.리버피닉스)",
-        "url": "https://www.youtube.com/watch?v=ZwI2RGQaqIw",
-        "embed_url": "https://www.youtube.com/embed/ZwI2RGQaqIw",
-        "channel": "큐트퍼니무비",
-        "channel_id": "UCcn9uCqanGTsjhO6rnahVlA",
-        "published_at": "2020-05-14T23:36:27Z",
-        "view_count": 3918,
-        "duration_sec": 964,
-        "duration_label": "16분",
-        "has_spoiler": true,
-        "match_confidence": 0.98
-      },
-      "movie": {
-        "tmdb_id": 235,
-        "title_ko": "스탠 바이 미",
-        "title_en": "Stand by Me",
-        "year": 1986,
-        "genres": [
-          "범죄",
-          "드라마"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/gLYbrbNQrw08CYPyCQxAKTmtRvM.jpg",
-        "vote_average": 7.838,
-        "vote_count": 6474,
-        "overview": "오레곤주의 작은 마을 캐슬록. 섬세한 성격으로 문학에 소질이 있는 고디, 알콜 중독인 아버지 밑에서 갑갑한 생활을 하지만 타고난 리더쉽으로 동네 꼬마들을 지휘하는 크리스, 2차대전의 영웅이었던 아버지를 존경하는 열정의 소년 테디, 착한 꼬마 뚱보 번은 이 마을에서 사는 단짝 친구들이다. 어느 날 번은 패거리들에게 며칠 전 행방불명된 소년의 시체가 저멀리 숲속에 있다는 소식을 전해준다. 만약 시체를 찾아낸다면 마을의 영웅이 되는 것. 네 명의 소년은 호기심과 모험심을 억누르지 못하고 숲을 향해 여행을 떠난다.",
-        "director": "Rob Reiner",
-        "runtime": 87,
-        "imdb_rating": null,
-        "rotten_tomatoes": null,
-        "metacritic": null,
-        "watch_providers": [],
-        "naver_rating": "7.84"
-      }
-    },
-    {
-      "video": {
         "id": "4PxsaBOTjw0",
         "title": "평범한 소녀가 위기에 빠진 인류를 구할 수 있었던 이유 [ SF영화 추천 ] [ 인터스텔라 ] [ 넷플릭스 영화 추천 ] [ 왓챠 영화 추천 ]",
         "url": "https://www.youtube.com/watch?v=4PxsaBOTjw0",
@@ -37600,82 +32972,6 @@
         "metacritic": null,
         "watch_providers": [],
         "naver_rating": "9.27"
-      }
-    },
-    {
-      "video": {
-        "id": "AgIsnGYu9O0",
-        "title": "결말포함|이소룡 이야기를 헐리우드에서 만든다면..",
-        "url": "https://www.youtube.com/watch?v=AgIsnGYu9O0",
-        "embed_url": "https://www.youtube.com/embed/AgIsnGYu9O0",
-        "channel": "큐트퍼니무비",
-        "channel_id": "UCcn9uCqanGTsjhO6rnahVlA",
-        "published_at": "2020-02-02T11:59:21Z",
-        "view_count": 5278,
-        "duration_sec": 831,
-        "duration_label": "13분",
-        "has_spoiler": true,
-        "match_confidence": 0.9
-      },
-      "movie": {
-        "tmdb_id": 10423,
-        "title_ko": "드래곤 : 브루스 리 스토리",
-        "title_en": "Dragon: The Bruce Lee Story",
-        "year": 1993,
-        "genres": [
-          "드라마",
-          "역사",
-          "액션"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/lxhsdC8wuGgQf0gKCt8wyHHxGcQ.jpg",
-        "vote_average": 6.892,
-        "vote_count": 792,
-        "overview": "브루스 리는 가문 대대로 내려오는 악귀의 저주를 물리치기 위해 아버지의 권유로 무술을 배우지만, 미국 병사를 폭행하고는 미국으로 가 샌프란시스코에 정착한다. 중국인 식당에서 요리사로 일하던 중 여자 문제로 싸움을 벌여 해고되자, 해고 수당으로 대학에 진학한다. 그는 우연히 체육관에서 시비 끝에 알게 된 백인들에게 무술을 가르치게되고, 여기에서 만난 린다와 사랑에 빠져 결혼하기에 이른다. 생계를 위한 수단으로 도장을 운영하던 그는 서양인에게 무술을 가르치지 말라는 미국 내 중국 무술인의 압력을 받고, 자신의 정당성을 인정받기 위해 그들과 결투를 벌인다. 그러나, 브루스 리는 대결 도중 척추를 다쳐 전신마비가 되지만 린다의 극진한 간호로 회복한다. 그리고 자신이 창안한 절권도의 홍보를 위해 선 브러더스와 재결투를 하여 승리하는데, 이를 계기로 TV 영화에 출연, 영화 스타로의 길에 들어서게 된다. 그의 독특한 무술은 인기를 얻기 시작하고 헐리웃으로부터 관심을 끌게 된다. 그러면서 영화에",
-        "director": "Rob Cohen",
-        "runtime": 119,
-        "imdb_rating": null,
-        "rotten_tomatoes": null,
-        "metacritic": null,
-        "watch_providers": [],
-        "naver_rating": null
-      }
-    },
-    {
-      "video": {
-        "id": "gnNadUVFwxE",
-        "title": "결말포함|일도사랑도 모두 쟁취하게될거같이 느껴지게 하는 영화",
-        "url": "https://www.youtube.com/watch?v=gnNadUVFwxE",
-        "embed_url": "https://www.youtube.com/embed/gnNadUVFwxE",
-        "channel": "큐트퍼니무비",
-        "channel_id": "UCcn9uCqanGTsjhO6rnahVlA",
-        "published_at": "2020-01-29T08:16:50Z",
-        "view_count": 2309,
-        "duration_sec": 1265,
-        "duration_label": "21분",
-        "has_spoiler": true,
-        "match_confidence": 0.95
-      },
-      "movie": {
-        "tmdb_id": 3525,
-        "title_ko": "워킹 걸",
-        "title_en": "Working Girl",
-        "year": 1988,
-        "genres": [
-          "코미디",
-          "로맨스",
-          "드라마"
-        ],
-        "poster_url": "https://image.tmdb.org/t/p/w500/q2jfFzZvAzjTaArQR0tjilIZ5aJ.jpg",
-        "vote_average": 6.604,
-        "vote_count": 1049,
-        "overview": "뉴욕 증권가에서 성공하고 싶어하는 테스 맥길(멜라니 그리피스)은 30세가 될 때 까지 기회를 잡지 못하고 비서 노릇만 하고 있는 인물이다. 그녀의 보스인 캐서린(시고니 위버)이 자신의 아이디어를 받아들일 자세가 되어 있다는 것을 안 테스는 매우 기뻐한다. 그러던 중 캐서린은 스키장에서 다리를 다치게 된다.  그녀가 돌아올 때까지 일을 맡게 된 테스는 그녀의 아이디어를 가지고 더 큰 일을 벌이려 한다. 투자 상담가인 잭 트레이너(해리슨 포드)와 함께 일을 벌이면서 테스는 캐서린의 애인이라는 사실을 모르는 채 그를 사랑하게 되는데...",
-        "director": "Mike Nichols",
-        "runtime": 114,
-        "imdb_rating": null,
-        "rotten_tomatoes": null,
-        "metacritic": null,
-        "watch_providers": [],
-        "naver_rating": "6.98"
       }
     },
     {
