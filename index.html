@@ -370,8 +370,8 @@ function renderCard(item,idx){
   const genres=cleanGenres(m.genres).slice(0,2).join(' · ');
   const views=fmt(v.view_count||0);
   const watched=isWatched(v.id)?' watched':'';
-  const others=getOtherVideos(item);
   const ottHtml=(m.watch_providers||[]).slice(0,3).map(p=>`<span class="ott-tag">${p.name}</span>`).join('');
+  const otherCount=allItems.filter(i=>i.movie.tmdb_id===m.tmdb_id&&i.video.id!==v.id).length;
   return `<div class="card${watched}" onclick="openPlayer(${idx})">
     <div class="card-thumb">
       <img src="${thumb}" alt="" loading="lazy">
@@ -399,13 +399,9 @@ function renderCard(item,idx){
       <div class="card-video-title">${v.title}</div>
       <div class="card-stats">
         <span>${v.channel}</span><span>조회수 ${views}</span>
+        ${otherCount?`<span>📺 +${otherCount}개 해설</span>`:''}
       </div>
-      ${others.length?`<div class="card-others">
-        <div class="card-others-label">📺 이 영화의 다른 해설 ${others.length}개</div>
-        <div class="card-others-list">${others.slice(0,3).map(o=>`<span class="card-other-chip" onclick="event.stopPropagation();openPlayer(${filteredItems.indexOf(o)||allItems.indexOf(o)})">${o.video.channel} · ${fmtDur(o.video.duration_sec)}</span>`).join('')}</div>
-      </div>`:''}
     </div>
-    <button class="card-share" onclick="event.stopPropagation();shareItem(${idx})">↗</button>
   </div>`;
 }
 
