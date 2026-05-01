@@ -127,18 +127,13 @@ html,body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:var(--b
       <span class="brand-name">Don't <em>Watch It All</em></span>
     </div>
     <div class="tabs">
-      <button class="tab active" onclick="switchTab('today')">🎲 오늘 이거 어때</button>
-      <button class="tab" onclick="switchTab('feed')">오늘 뭐볼까</button>
+      <button class="tab active" onclick="switchTab('feed')">오늘 뭐볼까</button>
+      <button class="tab" onclick="switchTab('today')">🎲 오늘 이거 어때</button>
       <button class="tab" onclick="switchTab('search')">영화 찾아줘</button>
     </div>
   </div>
 
-  <!-- Today's picks tab -->
-  <div id="tab-today">
-    <div class="feed" id="today-feed"></div>
-  </div>
-
-  <div id="tab-feed" style="display:none;">
+  <div id="tab-feed">
     <div class="feed">
       <!-- Filters -->
       <div class="filter-row" id="genre-filter"></div>
@@ -164,6 +159,11 @@ html,body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:var(--b
         <button onclick="loadMore()" style="padding:10px 24px;border-radius:10px;background:var(--surface);border:1px solid var(--surface2);color:var(--text2);font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;">더 보기</button>
       </div>
     </div>
+  </div>
+
+  <!-- Today's picks tab -->
+  <div id="tab-today" style="display:none;">
+    <div class="feed" id="today-feed"></div>
   </div>
 
   <div id="tab-search" style="display:none;">
@@ -487,8 +487,8 @@ function switchTab(tab){
   document.getElementById('tab-today').style.display='none';
   document.getElementById('tab-feed').style.display='none';
   document.getElementById('tab-search').style.display='none';
-  if(tab==='today'){document.querySelectorAll('.tab')[0].classList.add('active');document.getElementById('tab-today').style.display='';}
-  else if(tab==='feed'){document.querySelectorAll('.tab')[1].classList.add('active');document.getElementById('tab-feed').style.display='';applyFilters();}
+  if(tab==='feed'){document.querySelectorAll('.tab')[0].classList.add('active');document.getElementById('tab-feed').style.display='';applyFilters();}
+  else if(tab==='today'){document.querySelectorAll('.tab')[1].classList.add('active');document.getElementById('tab-today').style.display='';}
   else{document.querySelectorAll('.tab')[2].classList.add('active');document.getElementById('tab-search').style.display='';document.getElementById('searchInput').focus();}
 }
 
