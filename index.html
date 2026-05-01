@@ -114,11 +114,19 @@ function render(){
   document.getElementById('info').textContent=items.length+'개 영상';
   var el=document.getElementById('list');
   el.innerHTML=items.slice(0,40).map(function(x,i){
+    // 5개마다 광고 슬롯 삽입
+    var adSlot='';
+    if(i>0&&i%5===0){
+      adSlot='<div class="ad-slot" style="background:#1A1A1A;border-radius:14px;padding:20px;margin-bottom:14px;text-align:center;min-height:100px;display:flex;align-items:center;justify-content:center;border:1px dashed #333">'+
+        '<div class="adfit-container" id="ad-slot-'+i+'">'+
+        '<span style="font-size:11px;color:#444">AD</span>'+
+        '</div></div>';
+    }
     var v=x.video,m=x.movie;
     var rating=m.vote_average?m.vote_average.toFixed(1):'';
     var genres=(m.genres||[]).filter(function(g){return['TV 영화','음악','역사','가족','서부'].indexOf(g)<0}).slice(0,2).join(' · ');
     var ott=(m.watch_providers||[]).slice(0,3).map(function(p){return'<span class="ott">'+p.name+'</span>'}).join('');
-    return '<div class="card" data-i="'+i+'">'+
+    return adSlot+'<div class="card" data-i="'+i+'">'+
       '<div class="card-img"><img src="https://img.youtube.com/vi/'+v.id+'/mqdefault.jpg" loading="lazy">'+
       (v.duration_label?'<span class="card-dur">'+v.duration_label+'</span>':'')+
       (v.has_spoiler?'<span class="card-sp">결말 포함</span>':'')+
