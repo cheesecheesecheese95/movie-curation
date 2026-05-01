@@ -65,7 +65,7 @@ body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;colo
   <div class="hd">
     <div style="display:flex;align-items:center;justify-content:space-between">
       <div class="logo">🎬 Don't <em>Watch It All</em></div>
-      <a href="/about.html" style="font-size:11px;color:#666;text-decoration:none">ℹ️ 소개</a>
+      <a href="#" onclick="document.getElementById('settings-modal').style.display='flex';return false" style="font-size:11px;color:#666;text-decoration:none">⚙️ 설정</a>
     </div>
     <div class="tabs" id="tabs">
       <button class="on" data-tab="feed">오늘 뭐볼까</button>
@@ -109,6 +109,19 @@ body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;colo
     <div class="p-info">
       <div class="p-title" id="p-t"></div>
       <div class="p-meta" id="p-m"></div>
+    </div>
+  </div>
+
+  <!-- 설정 모달 -->
+  <div id="settings-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:600;align-items:center;justify-content:center" onclick="if(event.target===this)this.style.display='none'">
+    <div style="background:#1A1A1A;border-radius:16px;padding:24px;width:90%;max-width:360px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px">
+        <span style="font-size:16px;font-weight:800">⚙️ 설정</span>
+        <button onclick="document.getElementById('settings-modal').style.display='none'" style="background:none;border:none;color:#999;font-size:20px;cursor:pointer">✕</button>
+      </div>
+      <a href="/about.html" style="display:block;padding:14px 0;border-bottom:1px solid #2A2A2A;color:#F0F0F0;text-decoration:none;font-size:14px">📖 서비스 소개</a>
+      <a href="/privacy.html" style="display:block;padding:14px 0;border-bottom:1px solid #2A2A2A;color:#F0F0F0;text-decoration:none;font-size:14px">🔒 개인정보처리방침</a>
+      <a href="mailto:ourmove@naver.com" style="display:block;padding:14px 0;color:#F0F0F0;text-decoration:none;font-size:14px">✉️ 문의하기 <span style="font-size:11px;color:#666">ourmove@naver.com</span></a>
     </div>
   </div>
 </div>
