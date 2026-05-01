@@ -33,7 +33,8 @@
         "runtime": 90,
         "imdb_rating": "3.7",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -69,7 +70,8 @@
         "runtime": 86,
         "imdb_rating": "5.9",
         "rotten_tomatoes": "68",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -104,7 +106,8 @@
         "runtime": 109,
         "imdb_rating": "7.0",
         "rotten_tomatoes": "75",
-        "metacritic": "62"
+        "metacritic": "62",
+        "watch_providers": []
       }
     },
     {
@@ -138,7 +141,8 @@
         "runtime": 119,
         "imdb_rating": "5.8",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -173,7 +177,8 @@
         "runtime": 100,
         "imdb_rating": "6.0",
         "rotten_tomatoes": "31",
-        "metacritic": "34"
+        "metacritic": "34",
+        "watch_providers": []
       }
     },
     {
@@ -208,7 +213,8 @@
         "runtime": 103,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -242,7 +248,8 @@
         "runtime": 95,
         "imdb_rating": "4.4",
         "rotten_tomatoes": "43",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -276,7 +283,8 @@
         "runtime": 93,
         "imdb_rating": "7.5",
         "rotten_tomatoes": "92",
-        "metacritic": "87"
+        "metacritic": "87",
+        "watch_providers": []
       }
     },
     {
@@ -312,7 +320,8 @@
         "runtime": 96,
         "imdb_rating": "6.5",
         "rotten_tomatoes": "88",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -348,7 +357,8 @@
         "runtime": 116,
         "imdb_rating": "7.9",
         "rotten_tomatoes": "94",
-        "metacritic": "81"
+        "metacritic": "81",
+        "watch_providers": []
       }
     },
     {
@@ -382,7 +392,8 @@
         "runtime": 90,
         "imdb_rating": "7.8",
         "rotten_tomatoes": "100",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -416,7 +427,8 @@
         "runtime": 112,
         "imdb_rating": "5.2",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -452,7 +464,8 @@
         "runtime": 108,
         "imdb_rating": "5.7",
         "rotten_tomatoes": "50",
-        "metacritic": "55"
+        "metacritic": "55",
+        "watch_providers": []
       }
     },
     {
@@ -488,7 +501,8 @@
         "runtime": 122,
         "imdb_rating": "6.8",
         "rotten_tomatoes": "84",
-        "metacritic": "67"
+        "metacritic": "67",
+        "watch_providers": []
       }
     },
     {
@@ -522,7 +536,8 @@
         "runtime": 86,
         "imdb_rating": "4.8",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -558,7 +573,8 @@
         "runtime": 88,
         "imdb_rating": "4.4",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -592,7 +608,8 @@
         "runtime": 91,
         "imdb_rating": "6.0",
         "rotten_tomatoes": "73",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -627,7 +644,8 @@
         "runtime": 90,
         "imdb_rating": "5.6",
         "rotten_tomatoes": "55",
-        "metacritic": "40"
+        "metacritic": "40",
+        "watch_providers": []
       }
     },
     {
@@ -664,7 +682,8 @@
         "runtime": 97,
         "imdb_rating": "5.8",
         "rotten_tomatoes": "71",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -699,7 +718,8 @@
         "runtime": 100,
         "imdb_rating": "6.4",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -735,7 +755,8 @@
         "runtime": 131,
         "imdb_rating": "5.2",
         "rotten_tomatoes": "35",
-        "metacritic": "41"
+        "metacritic": "41",
+        "watch_providers": []
       }
     },
     {
@@ -771,7 +792,8 @@
         "runtime": 108,
         "imdb_rating": "6.1",
         "rotten_tomatoes": null,
-        "metacritic": "50"
+        "metacritic": "50",
+        "watch_providers": []
       }
     },
     {
@@ -806,7 +828,8 @@
         "runtime": 102,
         "imdb_rating": "6.2",
         "rotten_tomatoes": "41",
-        "metacritic": "48"
+        "metacritic": "48",
+        "watch_providers": []
       }
     },
     {
@@ -842,7 +865,8 @@
         "runtime": 91,
         "imdb_rating": "4.2",
         "rotten_tomatoes": "0",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -876,7 +900,8 @@
         "runtime": 103,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -912,7 +937,8 @@
         "runtime": 110,
         "imdb_rating": "6.8",
         "rotten_tomatoes": "64",
-        "metacritic": "53"
+        "metacritic": "53",
+        "watch_providers": []
       }
     },
     {
@@ -947,7 +973,8 @@
         "runtime": 117,
         "imdb_rating": "7.2",
         "rotten_tomatoes": "89",
-        "metacritic": "65"
+        "metacritic": "65",
+        "watch_providers": []
       }
     },
     {
@@ -981,7 +1008,8 @@
         "runtime": 93,
         "imdb_rating": "5.6",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -1016,7 +1044,8 @@
         "runtime": 104,
         "imdb_rating": "7.1",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -1052,7 +1081,8 @@
         "runtime": 120,
         "imdb_rating": "6.1",
         "rotten_tomatoes": "60",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -1087,7 +1117,8 @@
         "runtime": 102,
         "imdb_rating": "5.8",
         "rotten_tomatoes": "17",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -1123,7 +1154,8 @@
         "runtime": 100,
         "imdb_rating": "5.6",
         "rotten_tomatoes": "36",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -1158,7 +1190,8 @@
         "runtime": 117,
         "imdb_rating": "6.7",
         "rotten_tomatoes": "100",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -1194,7 +1227,8 @@
         "runtime": 93,
         "imdb_rating": "5.5",
         "rotten_tomatoes": "31",
-        "metacritic": "53"
+        "metacritic": "53",
+        "watch_providers": []
       }
     },
     {
@@ -1230,7 +1264,8 @@
         "runtime": 103,
         "imdb_rating": "7.6",
         "rotten_tomatoes": "50",
-        "metacritic": "46"
+        "metacritic": "46",
+        "watch_providers": []
       }
     },
     {
@@ -1265,7 +1300,8 @@
         "runtime": 144,
         "imdb_rating": "7.8",
         "rotten_tomatoes": "90",
-        "metacritic": "72"
+        "metacritic": "72",
+        "watch_providers": []
       }
     },
     {
@@ -1300,7 +1336,8 @@
         "runtime": 133,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -1334,7 +1371,8 @@
         "runtime": 96,
         "imdb_rating": "6.0",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -1370,7 +1408,8 @@
         "runtime": 127,
         "imdb_rating": "7.1",
         "rotten_tomatoes": "84",
-        "metacritic": "64"
+        "metacritic": "64",
+        "watch_providers": []
       }
     },
     {
@@ -1405,7 +1444,8 @@
         "runtime": 98,
         "imdb_rating": "6.8",
         "rotten_tomatoes": "91",
-        "metacritic": "71"
+        "metacritic": "71",
+        "watch_providers": []
       }
     },
     {
@@ -1440,7 +1480,8 @@
         "runtime": 108,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -1475,7 +1516,8 @@
         "runtime": 14,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -1512,7 +1554,8 @@
         "runtime": 85,
         "imdb_rating": "4.7",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -1548,7 +1591,8 @@
         "runtime": 106,
         "imdb_rating": "5.9",
         "rotten_tomatoes": "40",
-        "metacritic": "52"
+        "metacritic": "52",
+        "watch_providers": []
       }
     },
     {
@@ -1585,7 +1629,8 @@
         "runtime": 94,
         "imdb_rating": "6.1",
         "rotten_tomatoes": "30",
-        "metacritic": "40"
+        "metacritic": "40",
+        "watch_providers": []
       }
     },
     {
@@ -1622,7 +1667,8 @@
         "runtime": 84,
         "imdb_rating": "6.2",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -1659,7 +1705,8 @@
         "runtime": 84,
         "imdb_rating": "6.2",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -1694,7 +1741,8 @@
         "runtime": 89,
         "imdb_rating": "6.7",
         "rotten_tomatoes": "89",
-        "metacritic": "72"
+        "metacritic": "72",
+        "watch_providers": []
       }
     },
     {
@@ -1730,7 +1778,8 @@
         "runtime": 109,
         "imdb_rating": "6.6",
         "rotten_tomatoes": "63",
-        "metacritic": "61"
+        "metacritic": "61",
+        "watch_providers": []
       }
     },
     {
@@ -1766,7 +1815,8 @@
         "runtime": 96,
         "imdb_rating": "7.0",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -1802,7 +1852,8 @@
         "runtime": 110,
         "imdb_rating": "4.3",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -1836,7 +1887,8 @@
         "runtime": 96,
         "imdb_rating": "5.3",
         "rotten_tomatoes": "40",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -1868,7 +1920,8 @@
         "runtime": 0,
         "imdb_rating": "7.6",
         "rotten_tomatoes": "88",
-        "metacritic": "78"
+        "metacritic": "78",
+        "watch_providers": []
       }
     },
     {
@@ -1904,7 +1957,8 @@
         "runtime": 98,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -1940,7 +1994,8 @@
         "runtime": 106,
         "imdb_rating": "5.9",
         "rotten_tomatoes": "66",
-        "metacritic": "59"
+        "metacritic": "59",
+        "watch_providers": []
       }
     },
     {
@@ -1975,7 +2030,8 @@
         "runtime": 95,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -2011,7 +2067,8 @@
         "runtime": 140,
         "imdb_rating": "6.4",
         "rotten_tomatoes": "73",
-        "metacritic": "68"
+        "metacritic": "68",
+        "watch_providers": []
       }
     },
     {
@@ -2047,7 +2104,8 @@
         "runtime": 90,
         "imdb_rating": "4.8",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -2082,7 +2140,8 @@
         "runtime": 89,
         "imdb_rating": "4.7",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -2117,7 +2176,8 @@
         "runtime": 88,
         "imdb_rating": "4.2",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -2152,7 +2212,8 @@
         "runtime": 99,
         "imdb_rating": "5.5",
         "rotten_tomatoes": "49",
-        "metacritic": "54"
+        "metacritic": "54",
+        "watch_providers": []
       }
     },
     {
@@ -2188,7 +2249,8 @@
         "runtime": 124,
         "imdb_rating": "6.4",
         "rotten_tomatoes": "24",
-        "metacritic": "36"
+        "metacritic": "36",
+        "watch_providers": []
       }
     },
     {
@@ -2222,7 +2284,8 @@
         "runtime": 0,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -2258,7 +2321,8 @@
         "runtime": 101,
         "imdb_rating": "6.1",
         "rotten_tomatoes": null,
-        "metacritic": "26"
+        "metacritic": "26",
+        "watch_providers": []
       }
     },
     {
@@ -2292,7 +2356,8 @@
         "runtime": 97,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -2327,7 +2392,8 @@
         "runtime": 160,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -2362,7 +2428,8 @@
         "runtime": 94,
         "imdb_rating": "6.3",
         "rotten_tomatoes": "71",
-        "metacritic": "58"
+        "metacritic": "58",
+        "watch_providers": []
       }
     },
     {
@@ -2397,7 +2464,8 @@
         "runtime": 83,
         "imdb_rating": "6.0",
         "rotten_tomatoes": "86",
-        "metacritic": "62"
+        "metacritic": "62",
+        "watch_providers": []
       }
     },
     {
@@ -2433,7 +2501,8 @@
         "runtime": 85,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -2469,7 +2538,8 @@
         "runtime": 0,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -2505,7 +2575,8 @@
         "runtime": 90,
         "imdb_rating": "5.6",
         "rotten_tomatoes": "40",
-        "metacritic": "48"
+        "metacritic": "48",
+        "watch_providers": []
       }
     },
     {
@@ -2540,7 +2611,8 @@
         "runtime": 52,
         "imdb_rating": "6.8",
         "rotten_tomatoes": "100",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -2575,7 +2647,8 @@
         "runtime": 99,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -2610,7 +2683,8 @@
         "runtime": 105,
         "imdb_rating": "4.0",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -2644,7 +2718,8 @@
         "runtime": 91,
         "imdb_rating": "5.6",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -2680,7 +2755,8 @@
         "runtime": 134,
         "imdb_rating": "7.5",
         "rotten_tomatoes": "63",
-        "metacritic": "58"
+        "metacritic": "58",
+        "watch_providers": []
       }
     },
     {
@@ -2717,7 +2793,8 @@
         "runtime": 10,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -2752,7 +2829,8 @@
         "runtime": 115,
         "imdb_rating": "6.7",
         "rotten_tomatoes": "13",
-        "metacritic": "34"
+        "metacritic": "34",
+        "watch_providers": []
       }
     },
     {
@@ -2788,7 +2866,8 @@
         "runtime": 0,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -2825,7 +2904,8 @@
         "runtime": 84,
         "imdb_rating": "8.0",
         "rotten_tomatoes": "95",
-        "metacritic": "95"
+        "metacritic": "95",
+        "watch_providers": []
       }
     },
     {
@@ -2860,7 +2940,8 @@
         "runtime": 119,
         "imdb_rating": "6.5",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -2895,7 +2976,8 @@
         "runtime": 84,
         "imdb_rating": "4.4",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -2931,7 +3013,8 @@
         "runtime": 108,
         "imdb_rating": "6.2",
         "rotten_tomatoes": "32",
-        "metacritic": "27"
+        "metacritic": "27",
+        "watch_providers": []
       }
     },
     {
@@ -2966,7 +3049,8 @@
         "runtime": 91,
         "imdb_rating": "5.8",
         "rotten_tomatoes": "87",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -3002,7 +3086,8 @@
         "runtime": 15,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -3037,7 +3122,8 @@
         "runtime": 103,
         "imdb_rating": "6.1",
         "rotten_tomatoes": "53",
-        "metacritic": "52"
+        "metacritic": "52",
+        "watch_providers": []
       }
     },
     {
@@ -3071,7 +3157,8 @@
         "runtime": 98,
         "imdb_rating": "6.3",
         "rotten_tomatoes": "89",
-        "metacritic": "68"
+        "metacritic": "68",
+        "watch_providers": []
       }
     },
     {
@@ -3106,7 +3193,8 @@
         "runtime": 101,
         "imdb_rating": "2.3",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -3143,7 +3231,8 @@
         "runtime": 99,
         "imdb_rating": "6.2",
         "rotten_tomatoes": "71",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -3179,7 +3268,8 @@
         "runtime": 96,
         "imdb_rating": "7.4",
         "rotten_tomatoes": "88",
-        "metacritic": "82"
+        "metacritic": "82",
+        "watch_providers": []
       }
     },
     {
@@ -3215,7 +3305,8 @@
         "runtime": 87,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -3253,7 +3344,8 @@
         "runtime": 8,
         "imdb_rating": "7.5",
         "rotten_tomatoes": "88",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -3288,7 +3380,8 @@
         "runtime": 100,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -3323,7 +3416,8 @@
         "runtime": 109,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -3358,7 +3452,8 @@
         "runtime": 89,
         "imdb_rating": "6.4",
         "rotten_tomatoes": "67",
-        "metacritic": "62"
+        "metacritic": "62",
+        "watch_providers": []
       }
     },
     {
@@ -3392,7 +3487,8 @@
         "runtime": 93,
         "imdb_rating": "4.9",
         "rotten_tomatoes": "29",
-        "metacritic": "47"
+        "metacritic": "47",
+        "watch_providers": []
       }
     },
     {
@@ -3427,7 +3523,8 @@
         "runtime": 98,
         "imdb_rating": "5.3",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -3462,7 +3559,8 @@
         "runtime": 91,
         "imdb_rating": "6.6",
         "rotten_tomatoes": "21",
-        "metacritic": "38"
+        "metacritic": "38",
+        "watch_providers": []
       }
     },
     {
@@ -3498,7 +3596,8 @@
         "runtime": 107,
         "imdb_rating": "6.5",
         "rotten_tomatoes": "78",
-        "metacritic": "62"
+        "metacritic": "62",
+        "watch_providers": []
       }
     },
     {
@@ -3535,7 +3634,8 @@
         "runtime": 89,
         "imdb_rating": "4.0",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -3571,7 +3671,8 @@
         "runtime": 120,
         "imdb_rating": "6.1",
         "rotten_tomatoes": "60",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -3606,7 +3707,8 @@
         "runtime": 52,
         "imdb_rating": "6.2",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -3640,7 +3742,8 @@
         "runtime": 20,
         "imdb_rating": "6.9",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -3676,7 +3779,8 @@
         "runtime": 111,
         "imdb_rating": "6.7",
         "rotten_tomatoes": "71",
-        "metacritic": "65"
+        "metacritic": "65",
+        "watch_providers": []
       }
     },
     {
@@ -3711,7 +3815,8 @@
         "runtime": 102,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -3747,7 +3852,8 @@
         "runtime": 108,
         "imdb_rating": "6.2",
         "rotten_tomatoes": "83",
-        "metacritic": "61"
+        "metacritic": "61",
+        "watch_providers": []
       }
     },
     {
@@ -3784,7 +3890,8 @@
         "runtime": 100,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -3821,7 +3928,8 @@
         "runtime": 125,
         "imdb_rating": "6.4",
         "rotten_tomatoes": null,
-        "metacritic": "67"
+        "metacritic": "67",
+        "watch_providers": []
       }
     },
     {
@@ -3857,7 +3965,8 @@
         "runtime": 140,
         "imdb_rating": "7.0",
         "rotten_tomatoes": "42",
-        "metacritic": "49"
+        "metacritic": "49",
+        "watch_providers": []
       }
     },
     {
@@ -3893,7 +4002,8 @@
         "runtime": 127,
         "imdb_rating": "7.0",
         "rotten_tomatoes": "86",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -3927,7 +4037,8 @@
         "runtime": 9,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -3963,7 +4074,8 @@
         "runtime": 90,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -3998,7 +4110,8 @@
         "runtime": 106,
         "imdb_rating": "6.3",
         "rotten_tomatoes": "45",
-        "metacritic": "47"
+        "metacritic": "47",
+        "watch_providers": []
       }
     },
     {
@@ -4034,7 +4147,8 @@
         "runtime": 127,
         "imdb_rating": "7.1",
         "rotten_tomatoes": "60",
-        "metacritic": "56"
+        "metacritic": "56",
+        "watch_providers": []
       }
     },
     {
@@ -4070,7 +4184,8 @@
         "runtime": 96,
         "imdb_rating": "6.3",
         "rotten_tomatoes": "88",
-        "metacritic": "72"
+        "metacritic": "72",
+        "watch_providers": []
       }
     },
     {
@@ -4104,7 +4219,8 @@
         "runtime": 107,
         "imdb_rating": "4.2",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -4139,7 +4255,8 @@
         "runtime": 88,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -4174,7 +4291,8 @@
         "runtime": 120,
         "imdb_rating": "6.4",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -4209,7 +4327,8 @@
         "runtime": 113,
         "imdb_rating": "7.0",
         "rotten_tomatoes": "80",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -4245,7 +4364,8 @@
         "runtime": 111,
         "imdb_rating": "7.1",
         "rotten_tomatoes": "100",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -4280,7 +4400,8 @@
         "runtime": 93,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -4316,7 +4437,8 @@
         "runtime": 107,
         "imdb_rating": "5.5",
         "rotten_tomatoes": "9",
-        "metacritic": "19"
+        "metacritic": "19",
+        "watch_providers": []
       }
     },
     {
@@ -4353,7 +4475,8 @@
         "runtime": 81,
         "imdb_rating": "8.3",
         "rotten_tomatoes": "100",
-        "metacritic": "96"
+        "metacritic": "96",
+        "watch_providers": []
       }
     },
     {
@@ -4388,7 +4511,8 @@
         "runtime": 97,
         "imdb_rating": "6.7",
         "rotten_tomatoes": "61",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -4422,7 +4546,8 @@
         "runtime": 98,
         "imdb_rating": "6.5",
         "rotten_tomatoes": "85",
-        "metacritic": "66"
+        "metacritic": "66",
+        "watch_providers": []
       }
     },
     {
@@ -4458,7 +4583,8 @@
         "runtime": 115,
         "imdb_rating": "5.8",
         "rotten_tomatoes": "15",
-        "metacritic": "39"
+        "metacritic": "39",
+        "watch_providers": []
       }
     },
     {
@@ -4494,7 +4620,8 @@
         "runtime": 91,
         "imdb_rating": "4.1",
         "rotten_tomatoes": "19",
-        "metacritic": "23"
+        "metacritic": "23",
+        "watch_providers": []
       }
     },
     {
@@ -4531,7 +4658,8 @@
         "runtime": 125,
         "imdb_rating": "6.4",
         "rotten_tomatoes": null,
-        "metacritic": "67"
+        "metacritic": "67",
+        "watch_providers": []
       }
     },
     {
@@ -4567,7 +4695,8 @@
         "runtime": 84,
         "imdb_rating": "7.1",
         "rotten_tomatoes": "81",
-        "metacritic": "70"
+        "metacritic": "70",
+        "watch_providers": []
       }
     },
     {
@@ -4605,7 +4734,8 @@
         "runtime": 108,
         "imdb_rating": "7.4",
         "rotten_tomatoes": "91",
-        "metacritic": "73"
+        "metacritic": "73",
+        "watch_providers": []
       }
     },
     {
@@ -4640,7 +4770,8 @@
         "runtime": 91,
         "imdb_rating": "5.8",
         "rotten_tomatoes": "87",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -4675,7 +4806,8 @@
         "runtime": 108,
         "imdb_rating": "6.5",
         "rotten_tomatoes": "56",
-        "metacritic": "56"
+        "metacritic": "56",
+        "watch_providers": []
       }
     },
     {
@@ -4711,7 +4843,8 @@
         "runtime": 129,
         "imdb_rating": "7.6",
         "rotten_tomatoes": "86",
-        "metacritic": "76"
+        "metacritic": "76",
+        "watch_providers": []
       }
     },
     {
@@ -4747,7 +4880,8 @@
         "runtime": 98,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -4782,7 +4916,8 @@
         "runtime": 91,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -4818,7 +4953,8 @@
         "runtime": 98,
         "imdb_rating": "3.8",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -4853,7 +4989,8 @@
         "runtime": 84,
         "imdb_rating": "7.5",
         "rotten_tomatoes": "93",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -4885,7 +5022,8 @@
         "runtime": 20,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -4921,7 +5059,8 @@
         "runtime": 85,
         "imdb_rating": "4.9",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -4956,7 +5095,8 @@
         "runtime": 103,
         "imdb_rating": "6.1",
         "rotten_tomatoes": "51",
-        "metacritic": "45"
+        "metacritic": "45",
+        "watch_providers": []
       }
     },
     {
@@ -4991,7 +5131,8 @@
         "runtime": 115,
         "imdb_rating": "7.0",
         "rotten_tomatoes": "90",
-        "metacritic": "84"
+        "metacritic": "84",
+        "watch_providers": []
       }
     },
     {
@@ -5027,7 +5168,8 @@
         "runtime": 134,
         "imdb_rating": "7.5",
         "rotten_tomatoes": "63",
-        "metacritic": "58"
+        "metacritic": "58",
+        "watch_providers": []
       }
     },
     {
@@ -5062,7 +5204,8 @@
         "runtime": 105,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -5098,7 +5241,8 @@
         "runtime": 98,
         "imdb_rating": "6.2",
         "rotten_tomatoes": "67",
-        "metacritic": "49"
+        "metacritic": "49",
+        "watch_providers": []
       }
     },
     {
@@ -5134,7 +5278,8 @@
         "runtime": 119,
         "imdb_rating": "6.1",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -5170,7 +5315,8 @@
         "runtime": 88,
         "imdb_rating": "5.2",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -5205,7 +5351,8 @@
         "runtime": 123,
         "imdb_rating": "6.5",
         "rotten_tomatoes": "57",
-        "metacritic": "64"
+        "metacritic": "64",
+        "watch_providers": []
       }
     },
     {
@@ -5241,7 +5388,8 @@
         "runtime": 113,
         "imdb_rating": "5.8",
         "rotten_tomatoes": "24",
-        "metacritic": "34"
+        "metacritic": "34",
+        "watch_providers": []
       }
     },
     {
@@ -5276,7 +5424,8 @@
         "runtime": 90,
         "imdb_rating": "5.8",
         "rotten_tomatoes": "67",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -5312,7 +5461,8 @@
         "runtime": 14,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -5348,7 +5498,8 @@
         "runtime": 14,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -5384,7 +5535,8 @@
         "runtime": 116,
         "imdb_rating": "5.7",
         "rotten_tomatoes": "47",
-        "metacritic": "52"
+        "metacritic": "52",
+        "watch_providers": []
       }
     },
     {
@@ -5420,7 +5572,8 @@
         "runtime": 110,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -5456,7 +5609,8 @@
         "runtime": 119,
         "imdb_rating": "6.6",
         "rotten_tomatoes": "54",
-        "metacritic": "43"
+        "metacritic": "43",
+        "watch_providers": []
       }
     },
     {
@@ -5491,7 +5645,8 @@
         "runtime": 93,
         "imdb_rating": "4.7",
         "rotten_tomatoes": "81",
-        "metacritic": "65"
+        "metacritic": "65",
+        "watch_providers": []
       }
     },
     {
@@ -5527,7 +5682,8 @@
         "runtime": 106,
         "imdb_rating": "5.8",
         "rotten_tomatoes": "46",
-        "metacritic": "36"
+        "metacritic": "36",
+        "watch_providers": []
       }
     },
     {
@@ -5562,7 +5718,8 @@
         "runtime": 126,
         "imdb_rating": "3.3",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -5597,7 +5754,8 @@
         "runtime": 91,
         "imdb_rating": "6.8",
         "rotten_tomatoes": "76",
-        "metacritic": "55"
+        "metacritic": "55",
+        "watch_providers": []
       }
     },
     {
@@ -5633,7 +5791,8 @@
         "runtime": 126,
         "imdb_rating": "6.4",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -5668,7 +5827,8 @@
         "runtime": 96,
         "imdb_rating": "7.1",
         "rotten_tomatoes": "80",
-        "metacritic": "60"
+        "metacritic": "60",
+        "watch_providers": []
       }
     },
     {
@@ -5705,7 +5865,8 @@
         "runtime": 78,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -5740,7 +5901,8 @@
         "runtime": 140,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -5774,7 +5936,8 @@
         "runtime": 126,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -5809,7 +5972,8 @@
         "runtime": 98,
         "imdb_rating": "4.3",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -5843,7 +6007,8 @@
         "runtime": 115,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -5875,7 +6040,8 @@
         "runtime": 75,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -5911,7 +6077,8 @@
         "runtime": 101,
         "imdb_rating": "5.5",
         "rotten_tomatoes": "45",
-        "metacritic": "46"
+        "metacritic": "46",
+        "watch_providers": []
       }
     },
     {
@@ -5948,7 +6115,8 @@
         "runtime": 119,
         "imdb_rating": "6.2",
         "rotten_tomatoes": "19",
-        "metacritic": "42"
+        "metacritic": "42",
+        "watch_providers": []
       }
     },
     {
@@ -5984,7 +6152,8 @@
         "runtime": 83,
         "imdb_rating": "3.6",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -6020,7 +6189,8 @@
         "runtime": 0,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -6055,7 +6225,8 @@
         "runtime": 91,
         "imdb_rating": "7.7",
         "rotten_tomatoes": "97",
-        "metacritic": "91"
+        "metacritic": "91",
+        "watch_providers": []
       }
     },
     {
@@ -6091,7 +6262,8 @@
         "runtime": 101,
         "imdb_rating": "6.5",
         "rotten_tomatoes": "85",
-        "metacritic": "77"
+        "metacritic": "77",
+        "watch_providers": []
       }
     },
     {
@@ -6126,7 +6298,8 @@
         "runtime": 108,
         "imdb_rating": "4.1",
         "rotten_tomatoes": "25",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -6162,7 +6335,8 @@
         "runtime": 92,
         "imdb_rating": "5.5",
         "rotten_tomatoes": "61",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -6198,7 +6372,8 @@
         "runtime": 90,
         "imdb_rating": "4.7",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -6233,7 +6408,8 @@
         "runtime": 101,
         "imdb_rating": "5.5",
         "rotten_tomatoes": "76",
-        "metacritic": "69"
+        "metacritic": "69",
+        "watch_providers": []
       }
     },
     {
@@ -6268,7 +6444,8 @@
         "runtime": 101,
         "imdb_rating": "7.5",
         "rotten_tomatoes": "86",
-        "metacritic": "68"
+        "metacritic": "68",
+        "watch_providers": []
       }
     },
     {
@@ -6303,7 +6480,8 @@
         "runtime": 101,
         "imdb_rating": "5.2",
         "rotten_tomatoes": "16",
-        "metacritic": "35"
+        "metacritic": "35",
+        "watch_providers": []
       }
     },
     {
@@ -6339,7 +6517,8 @@
         "runtime": 117,
         "imdb_rating": "6.6",
         "rotten_tomatoes": "76",
-        "metacritic": "73"
+        "metacritic": "73",
+        "watch_providers": []
       }
     },
     {
@@ -6375,7 +6554,8 @@
         "runtime": 95,
         "imdb_rating": "6.2",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -6410,7 +6590,8 @@
         "runtime": 91,
         "imdb_rating": "5.5",
         "rotten_tomatoes": "20",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -6445,7 +6626,8 @@
         "runtime": 102,
         "imdb_rating": "5.5",
         "rotten_tomatoes": "45",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -6481,7 +6663,8 @@
         "runtime": 97,
         "imdb_rating": "6.9",
         "rotten_tomatoes": "59",
-        "metacritic": "53"
+        "metacritic": "53",
+        "watch_providers": []
       }
     },
     {
@@ -6517,7 +6700,8 @@
         "runtime": 98,
         "imdb_rating": "7.1",
         "rotten_tomatoes": "72",
-        "metacritic": "65"
+        "metacritic": "65",
+        "watch_providers": []
       }
     },
     {
@@ -6552,7 +6736,8 @@
         "runtime": 98,
         "imdb_rating": "6.5",
         "rotten_tomatoes": "78",
-        "metacritic": "61"
+        "metacritic": "61",
+        "watch_providers": []
       }
     },
     {
@@ -6587,7 +6772,8 @@
         "runtime": 102,
         "imdb_rating": "6.3",
         "rotten_tomatoes": "84",
-        "metacritic": "67"
+        "metacritic": "67",
+        "watch_providers": []
       }
     },
     {
@@ -6621,7 +6807,8 @@
         "runtime": 47,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -6656,7 +6843,8 @@
         "runtime": 115,
         "imdb_rating": "7.1",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -6692,7 +6880,8 @@
         "runtime": 119,
         "imdb_rating": "5.5",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -6728,7 +6917,8 @@
         "runtime": 195,
         "imdb_rating": "7.3",
         "rotten_tomatoes": "66",
-        "metacritic": "61"
+        "metacritic": "61",
+        "watch_providers": []
       }
     },
     {
@@ -6763,7 +6953,8 @@
         "runtime": 100,
         "imdb_rating": "6.5",
         "rotten_tomatoes": "88",
-        "metacritic": "68"
+        "metacritic": "68",
+        "watch_providers": []
       }
     },
     {
@@ -6798,7 +6989,8 @@
         "runtime": 100,
         "imdb_rating": "6.5",
         "rotten_tomatoes": "88",
-        "metacritic": "68"
+        "metacritic": "68",
+        "watch_providers": []
       }
     },
     {
@@ -6830,7 +7022,8 @@
         "runtime": 9,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -6866,7 +7059,8 @@
         "runtime": 99,
         "imdb_rating": "5.1",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -6902,7 +7096,8 @@
         "runtime": 107,
         "imdb_rating": "5.4",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -6938,7 +7133,8 @@
         "runtime": 107,
         "imdb_rating": "5.4",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -6975,7 +7171,8 @@
         "runtime": 115,
         "imdb_rating": "6.3",
         "rotten_tomatoes": "13",
-        "metacritic": "25"
+        "metacritic": "25",
+        "watch_providers": []
       }
     },
     {
@@ -7009,7 +7206,8 @@
         "runtime": 91,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -7046,7 +7244,8 @@
         "runtime": 97,
         "imdb_rating": "7.5",
         "rotten_tomatoes": "91",
-        "metacritic": "73"
+        "metacritic": "73",
+        "watch_providers": []
       }
     },
     {
@@ -7081,7 +7280,8 @@
         "runtime": 121,
         "imdb_rating": "7.2",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -7117,7 +7317,8 @@
         "runtime": 107,
         "imdb_rating": "5.4",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -7153,7 +7354,8 @@
         "runtime": 107,
         "imdb_rating": "5.4",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -7189,7 +7391,8 @@
         "runtime": 107,
         "imdb_rating": "5.4",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -7221,7 +7424,8 @@
         "runtime": 9,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -7256,7 +7460,8 @@
         "runtime": 97,
         "imdb_rating": "5.8",
         "rotten_tomatoes": "29",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -7292,7 +7497,8 @@
         "runtime": 101,
         "imdb_rating": "7.8",
         "rotten_tomatoes": "91",
-        "metacritic": "80"
+        "metacritic": "80",
+        "watch_providers": []
       }
     },
     {
@@ -7329,7 +7535,8 @@
         "runtime": 104,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -7365,7 +7572,8 @@
         "runtime": 127,
         "imdb_rating": "6.3",
         "rotten_tomatoes": "60",
-        "metacritic": "56"
+        "metacritic": "56",
+        "watch_providers": []
       }
     },
     {
@@ -7401,7 +7609,8 @@
         "runtime": 122,
         "imdb_rating": "7.2",
         "rotten_tomatoes": "69",
-        "metacritic": "67"
+        "metacritic": "67",
+        "watch_providers": []
       }
     },
     {
@@ -7436,7 +7645,8 @@
         "runtime": 89,
         "imdb_rating": "6.2",
         "rotten_tomatoes": "55",
-        "metacritic": "44"
+        "metacritic": "44",
+        "watch_providers": []
       }
     },
     {
@@ -7471,7 +7681,8 @@
         "runtime": 118,
         "imdb_rating": "5.6",
         "rotten_tomatoes": "17",
-        "metacritic": "37"
+        "metacritic": "37",
+        "watch_providers": []
       }
     },
     {
@@ -7507,7 +7718,8 @@
         "runtime": 195,
         "imdb_rating": "7.3",
         "rotten_tomatoes": "66",
-        "metacritic": "61"
+        "metacritic": "61",
+        "watch_providers": []
       }
     },
     {
@@ -7542,7 +7754,8 @@
         "runtime": 115,
         "imdb_rating": "7.1",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -7576,7 +7789,8 @@
         "runtime": 145,
         "imdb_rating": "6.6",
         "rotten_tomatoes": "86",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -7610,7 +7824,8 @@
         "runtime": 64,
         "imdb_rating": "6.7",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -7645,7 +7860,8 @@
         "runtime": 96,
         "imdb_rating": "6.2",
         "rotten_tomatoes": "37",
-        "metacritic": "48"
+        "metacritic": "48",
+        "watch_providers": []
       }
     },
     {
@@ -7680,7 +7896,8 @@
         "runtime": 80,
         "imdb_rating": "5.3",
         "rotten_tomatoes": "17",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -7716,7 +7933,8 @@
         "runtime": 82,
         "imdb_rating": "5.4",
         "rotten_tomatoes": "71",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -7752,7 +7970,8 @@
         "runtime": 89,
         "imdb_rating": "6.6",
         "rotten_tomatoes": "71",
-        "metacritic": "67"
+        "metacritic": "67",
+        "watch_providers": []
       }
     },
     {
@@ -7787,7 +8006,8 @@
         "runtime": 98,
         "imdb_rating": "6.5",
         "rotten_tomatoes": "78",
-        "metacritic": "61"
+        "metacritic": "61",
+        "watch_providers": []
       }
     },
     {
@@ -7824,7 +8044,8 @@
         "runtime": 135,
         "imdb_rating": "7.0",
         "rotten_tomatoes": "63",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -7860,7 +8081,8 @@
         "runtime": 90,
         "imdb_rating": "5.6",
         "rotten_tomatoes": "25",
-        "metacritic": "40"
+        "metacritic": "40",
+        "watch_providers": []
       }
     },
     {
@@ -7895,7 +8117,8 @@
         "runtime": 90,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -7930,7 +8153,8 @@
         "runtime": 15,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -7966,7 +8190,8 @@
         "runtime": 105,
         "imdb_rating": "6.2",
         "rotten_tomatoes": "55",
-        "metacritic": "57"
+        "metacritic": "57",
+        "watch_providers": []
       }
     },
     {
@@ -8001,7 +8226,8 @@
         "runtime": 106,
         "imdb_rating": "5.6",
         "rotten_tomatoes": null,
-        "metacritic": "38"
+        "metacritic": "38",
+        "watch_providers": []
       }
     },
     {
@@ -8036,7 +8262,8 @@
         "runtime": 121,
         "imdb_rating": "7.7",
         "rotten_tomatoes": "91",
-        "metacritic": "68"
+        "metacritic": "68",
+        "watch_providers": []
       }
     },
     {
@@ -8071,7 +8298,8 @@
         "runtime": 107,
         "imdb_rating": "5.6",
         "rotten_tomatoes": "20",
-        "metacritic": "42"
+        "metacritic": "42",
+        "watch_providers": []
       }
     },
     {
@@ -8107,7 +8335,8 @@
         "runtime": 88,
         "imdb_rating": "7.5",
         "rotten_tomatoes": "100",
-        "metacritic": "76"
+        "metacritic": "76",
+        "watch_providers": []
       }
     },
     {
@@ -8144,7 +8373,8 @@
         "runtime": 85,
         "imdb_rating": "5.7",
         "rotten_tomatoes": "74",
-        "metacritic": "57"
+        "metacritic": "57",
+        "watch_providers": []
       }
     },
     {
@@ -8179,7 +8409,8 @@
         "runtime": 89,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -8213,7 +8444,8 @@
         "runtime": 88,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -8248,7 +8480,8 @@
         "runtime": 85,
         "imdb_rating": "5.5",
         "rotten_tomatoes": null,
-        "metacritic": "43"
+        "metacritic": "43",
+        "watch_providers": []
       }
     },
     {
@@ -8283,7 +8516,8 @@
         "runtime": 89,
         "imdb_rating": "4.7",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -8318,7 +8552,8 @@
         "runtime": 108,
         "imdb_rating": "8.2",
         "rotten_tomatoes": "100",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -8354,7 +8589,8 @@
         "runtime": 122,
         "imdb_rating": "7.7",
         "rotten_tomatoes": "84",
-        "metacritic": "68"
+        "metacritic": "68",
+        "watch_providers": []
       }
     },
     {
@@ -8389,7 +8625,8 @@
         "runtime": 99,
         "imdb_rating": "5.7",
         "rotten_tomatoes": "23",
-        "metacritic": "33"
+        "metacritic": "33",
+        "watch_providers": []
       }
     },
     {
@@ -8423,7 +8660,8 @@
         "runtime": 126,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -8459,7 +8697,8 @@
         "runtime": 147,
         "imdb_rating": "7.8",
         "rotten_tomatoes": "85",
-        "metacritic": "66"
+        "metacritic": "66",
+        "watch_providers": []
       }
     },
     {
@@ -8494,7 +8733,8 @@
         "runtime": 100,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -8526,7 +8766,8 @@
         "runtime": 21,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -8562,7 +8803,8 @@
         "runtime": 100,
         "imdb_rating": "7.5",
         "rotten_tomatoes": "88",
-        "metacritic": "67"
+        "metacritic": "67",
+        "watch_providers": []
       }
     },
     {
@@ -8597,7 +8839,8 @@
         "runtime": 91,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -8635,7 +8878,8 @@
         "runtime": 108,
         "imdb_rating": "7.4",
         "rotten_tomatoes": "91",
-        "metacritic": "73"
+        "metacritic": "73",
+        "watch_providers": []
       }
     },
     {
@@ -8669,7 +8913,8 @@
         "runtime": 3,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -8705,7 +8950,8 @@
         "runtime": 115,
         "imdb_rating": "6.8",
         "rotten_tomatoes": "59",
-        "metacritic": "45"
+        "metacritic": "45",
+        "watch_providers": []
       }
     },
     {
@@ -8741,7 +8987,8 @@
         "runtime": 90,
         "imdb_rating": "6.2",
         "rotten_tomatoes": "71",
-        "metacritic": "60"
+        "metacritic": "60",
+        "watch_providers": []
       }
     },
     {
@@ -8777,7 +9024,8 @@
         "runtime": 162,
         "imdb_rating": "7.4",
         "rotten_tomatoes": "88",
-        "metacritic": "73"
+        "metacritic": "73",
+        "watch_providers": []
       }
     },
     {
@@ -8815,7 +9063,8 @@
         "runtime": 8,
         "imdb_rating": "7.5",
         "rotten_tomatoes": "88",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -8850,7 +9099,8 @@
         "runtime": 93,
         "imdb_rating": "7.1",
         "rotten_tomatoes": "85",
-        "metacritic": "60"
+        "metacritic": "60",
+        "watch_providers": []
       }
     },
     {
@@ -8885,7 +9135,8 @@
         "runtime": 91,
         "imdb_rating": "5.2",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -8921,7 +9172,8 @@
         "runtime": 150,
         "imdb_rating": "7.4",
         "rotten_tomatoes": "85",
-        "metacritic": "78"
+        "metacritic": "78",
+        "watch_providers": []
       }
     },
     {
@@ -8957,7 +9209,8 @@
         "runtime": 95,
         "imdb_rating": "5.1",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -8992,7 +9245,8 @@
         "runtime": 94,
         "imdb_rating": "5.2",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -9028,7 +9282,8 @@
         "runtime": 114,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -9063,7 +9318,8 @@
         "runtime": 107,
         "imdb_rating": "5.5",
         "rotten_tomatoes": "39",
-        "metacritic": "54"
+        "metacritic": "54",
+        "watch_providers": []
       }
     },
     {
@@ -9099,7 +9355,8 @@
         "runtime": 104,
         "imdb_rating": "5.7",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -9135,7 +9392,8 @@
         "runtime": 114,
         "imdb_rating": "6.5",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -9171,7 +9429,8 @@
         "runtime": 150,
         "imdb_rating": "7.4",
         "rotten_tomatoes": "85",
-        "metacritic": "78"
+        "metacritic": "78",
+        "watch_providers": []
       }
     },
     {
@@ -9207,7 +9466,8 @@
         "runtime": 84,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -9241,7 +9501,8 @@
         "runtime": 95,
         "imdb_rating": "6.4",
         "rotten_tomatoes": "69",
-        "metacritic": "22"
+        "metacritic": "22",
+        "watch_providers": []
       }
     },
     {
@@ -9276,7 +9537,8 @@
         "runtime": 89,
         "imdb_rating": "6.4",
         "rotten_tomatoes": "82",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -9311,7 +9573,8 @@
         "runtime": 93,
         "imdb_rating": "5.4",
         "rotten_tomatoes": "40",
-        "metacritic": "46"
+        "metacritic": "46",
+        "watch_providers": []
       }
     },
     {
@@ -9345,7 +9608,8 @@
         "runtime": 90,
         "imdb_rating": "5.8",
         "rotten_tomatoes": "37",
-        "metacritic": "39"
+        "metacritic": "39",
+        "watch_providers": []
       }
     },
     {
@@ -9380,7 +9644,8 @@
         "runtime": 88,
         "imdb_rating": "7.5",
         "rotten_tomatoes": "98",
-        "metacritic": "96"
+        "metacritic": "96",
+        "watch_providers": []
       }
     },
     {
@@ -9417,7 +9682,8 @@
         "runtime": 132,
         "imdb_rating": "6.4",
         "rotten_tomatoes": "41",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -9453,7 +9719,8 @@
         "runtime": 117,
         "imdb_rating": "6.7",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -9489,7 +9756,8 @@
         "runtime": 94,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -9524,7 +9792,8 @@
         "runtime": 99,
         "imdb_rating": "6.8",
         "rotten_tomatoes": "78",
-        "metacritic": "61"
+        "metacritic": "61",
+        "watch_providers": []
       }
     },
     {
@@ -9560,7 +9829,8 @@
         "runtime": 103,
         "imdb_rating": "7.6",
         "rotten_tomatoes": "97",
-        "metacritic": "88"
+        "metacritic": "88",
+        "watch_providers": []
       }
     },
     {
@@ -9595,7 +9865,8 @@
         "runtime": 101,
         "imdb_rating": "7.5",
         "rotten_tomatoes": "86",
-        "metacritic": "68"
+        "metacritic": "68",
+        "watch_providers": []
       }
     },
     {
@@ -9631,7 +9902,8 @@
         "runtime": 113,
         "imdb_rating": "7.5",
         "rotten_tomatoes": "91",
-        "metacritic": "73"
+        "metacritic": "73",
+        "watch_providers": []
       }
     },
     {
@@ -9666,7 +9938,8 @@
         "runtime": 95,
         "imdb_rating": "7.2",
         "rotten_tomatoes": "80",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -9702,7 +9975,8 @@
         "runtime": 127,
         "imdb_rating": "6.0",
         "rotten_tomatoes": "57",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -9737,7 +10011,8 @@
         "runtime": 102,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -9773,7 +10048,8 @@
         "runtime": 94,
         "imdb_rating": "5.4",
         "rotten_tomatoes": "25",
-        "metacritic": "38"
+        "metacritic": "38",
+        "watch_providers": []
       }
     },
     {
@@ -9809,7 +10085,8 @@
         "runtime": 119,
         "imdb_rating": "6.2",
         "rotten_tomatoes": "53",
-        "metacritic": "48"
+        "metacritic": "48",
+        "watch_providers": []
       }
     },
     {
@@ -9844,7 +10121,8 @@
         "runtime": 111,
         "imdb_rating": "7.0",
         "rotten_tomatoes": "89",
-        "metacritic": "71"
+        "metacritic": "71",
+        "watch_providers": []
       }
     },
     {
@@ -9879,7 +10157,8 @@
         "runtime": 100,
         "imdb_rating": "5.3",
         "rotten_tomatoes": "44",
-        "metacritic": "55"
+        "metacritic": "55",
+        "watch_providers": []
       }
     },
     {
@@ -9913,7 +10192,8 @@
         "runtime": 77,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -9948,7 +10228,8 @@
         "runtime": 132,
         "imdb_rating": "6.8",
         "rotten_tomatoes": "69",
-        "metacritic": "65"
+        "metacritic": "65",
+        "watch_providers": []
       }
     },
     {
@@ -9984,7 +10265,8 @@
         "runtime": 135,
         "imdb_rating": "7.2",
         "rotten_tomatoes": "82",
-        "metacritic": "72"
+        "metacritic": "72",
+        "watch_providers": []
       }
     },
     {
@@ -10020,7 +10302,8 @@
         "runtime": 97,
         "imdb_rating": "5.6",
         "rotten_tomatoes": "56",
-        "metacritic": "59"
+        "metacritic": "59",
+        "watch_providers": []
       }
     },
     {
@@ -10054,7 +10337,8 @@
         "runtime": 114,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -10089,7 +10373,8 @@
         "runtime": 99,
         "imdb_rating": "7.3",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -10125,7 +10410,8 @@
         "runtime": 110,
         "imdb_rating": "7.0",
         "rotten_tomatoes": "96",
-        "metacritic": "70"
+        "metacritic": "70",
+        "watch_providers": []
       }
     },
     {
@@ -10161,7 +10447,8 @@
         "runtime": 114,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -10196,7 +10483,8 @@
         "runtime": 110,
         "imdb_rating": "6.7",
         "rotten_tomatoes": "92",
-        "metacritic": "73"
+        "metacritic": "73",
+        "watch_providers": []
       }
     },
     {
@@ -10232,7 +10520,8 @@
         "runtime": 85,
         "imdb_rating": "4.8",
         "rotten_tomatoes": "30",
-        "metacritic": "43"
+        "metacritic": "43",
+        "watch_providers": []
       }
     },
     {
@@ -10268,7 +10557,8 @@
         "runtime": 89,
         "imdb_rating": "5.5",
         "rotten_tomatoes": "20",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -10304,7 +10594,8 @@
         "runtime": 89,
         "imdb_rating": "5.7",
         "rotten_tomatoes": "65",
-        "metacritic": "54"
+        "metacritic": "54",
+        "watch_providers": []
       }
     },
     {
@@ -10341,7 +10632,8 @@
         "runtime": 98,
         "imdb_rating": "5.7",
         "rotten_tomatoes": "33",
-        "metacritic": "50"
+        "metacritic": "50",
+        "watch_providers": []
       }
     },
     {
@@ -10377,7 +10669,8 @@
         "runtime": 91,
         "imdb_rating": "6.1",
         "rotten_tomatoes": "88",
-        "metacritic": "78"
+        "metacritic": "78",
+        "watch_providers": []
       }
     },
     {
@@ -10412,7 +10705,8 @@
         "runtime": 115,
         "imdb_rating": "5.9",
         "rotten_tomatoes": "11",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -10448,7 +10742,8 @@
         "runtime": 116,
         "imdb_rating": "6.8",
         "rotten_tomatoes": "93",
-        "metacritic": "75"
+        "metacritic": "75",
+        "watch_providers": []
       }
     },
     {
@@ -10484,7 +10779,8 @@
         "runtime": 90,
         "imdb_rating": "5.7",
         "rotten_tomatoes": "31",
-        "metacritic": "40"
+        "metacritic": "40",
+        "watch_providers": []
       }
     },
     {
@@ -10520,7 +10816,8 @@
         "runtime": 139,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -10556,7 +10853,8 @@
         "runtime": 102,
         "imdb_rating": "6.2",
         "rotten_tomatoes": "25",
-        "metacritic": "33"
+        "metacritic": "33",
+        "watch_providers": []
       }
     },
     {
@@ -10591,7 +10889,8 @@
         "runtime": 94,
         "imdb_rating": "4.6",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -10626,7 +10925,8 @@
         "runtime": 111,
         "imdb_rating": "6.7",
         "rotten_tomatoes": "54",
-        "metacritic": "52"
+        "metacritic": "52",
+        "watch_providers": []
       }
     },
     {
@@ -10662,7 +10962,8 @@
         "runtime": 106,
         "imdb_rating": "6.9",
         "rotten_tomatoes": "68",
-        "metacritic": "49"
+        "metacritic": "49",
+        "watch_providers": []
       }
     },
     {
@@ -10697,7 +10998,8 @@
         "runtime": 90,
         "imdb_rating": "5.9",
         "rotten_tomatoes": "26",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -10731,7 +11033,8 @@
         "runtime": 47,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -10766,7 +11069,8 @@
         "runtime": 156,
         "imdb_rating": "7.4",
         "rotten_tomatoes": "99",
-        "metacritic": "81"
+        "metacritic": "81",
+        "watch_providers": []
       }
     },
     {
@@ -10802,7 +11106,8 @@
         "runtime": 113,
         "imdb_rating": "5.3",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -10840,7 +11145,8 @@
         "runtime": 93,
         "imdb_rating": "7.0",
         "rotten_tomatoes": "83",
-        "metacritic": "74"
+        "metacritic": "74",
+        "watch_providers": []
       }
     },
     {
@@ -10875,7 +11181,8 @@
         "runtime": 102,
         "imdb_rating": "6.7",
         "rotten_tomatoes": "55",
-        "metacritic": "50"
+        "metacritic": "50",
+        "watch_providers": []
       }
     },
     {
@@ -10910,7 +11217,8 @@
         "runtime": 138,
         "imdb_rating": "6.6",
         "rotten_tomatoes": "47",
-        "metacritic": "43"
+        "metacritic": "43",
+        "watch_providers": []
       }
     },
     {
@@ -10945,7 +11253,8 @@
         "runtime": 102,
         "imdb_rating": "6.7",
         "rotten_tomatoes": "55",
-        "metacritic": "50"
+        "metacritic": "50",
+        "watch_providers": []
       }
     },
     {
@@ -10981,7 +11290,8 @@
         "runtime": 99,
         "imdb_rating": "6.4",
         "rotten_tomatoes": "68",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -11017,7 +11327,8 @@
         "runtime": 117,
         "imdb_rating": "7.3",
         "rotten_tomatoes": "89",
-        "metacritic": "86"
+        "metacritic": "86",
+        "watch_providers": []
       }
     },
     {
@@ -11053,7 +11364,8 @@
         "runtime": 83,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -11088,7 +11400,8 @@
         "runtime": 128,
         "imdb_rating": "6.6",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -11122,7 +11435,8 @@
         "runtime": 107,
         "imdb_rating": "5.7",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -11158,7 +11472,8 @@
         "runtime": 101,
         "imdb_rating": "6.7",
         "rotten_tomatoes": "92",
-        "metacritic": "76"
+        "metacritic": "76",
+        "watch_providers": []
       }
     },
     {
@@ -11194,7 +11509,8 @@
         "runtime": 128,
         "imdb_rating": "6.3",
         "rotten_tomatoes": "45",
-        "metacritic": "54"
+        "metacritic": "54",
+        "watch_providers": []
       }
     },
     {
@@ -11230,7 +11546,8 @@
         "runtime": 114,
         "imdb_rating": "6.1",
         "rotten_tomatoes": "60",
-        "metacritic": "47"
+        "metacritic": "47",
+        "watch_providers": []
       }
     },
     {
@@ -11266,7 +11583,8 @@
         "runtime": 100,
         "imdb_rating": "7.5",
         "rotten_tomatoes": "88",
-        "metacritic": "67"
+        "metacritic": "67",
+        "watch_providers": []
       }
     },
     {
@@ -11300,7 +11618,8 @@
         "runtime": 91,
         "imdb_rating": "4.8",
         "rotten_tomatoes": "38",
-        "metacritic": "47"
+        "metacritic": "47",
+        "watch_providers": []
       }
     },
     {
@@ -11336,7 +11655,8 @@
         "runtime": 100,
         "imdb_rating": "5.7",
         "rotten_tomatoes": "25",
-        "metacritic": "41"
+        "metacritic": "41",
+        "watch_providers": []
       }
     },
     {
@@ -11374,7 +11694,8 @@
         "runtime": 101,
         "imdb_rating": "7.5",
         "rotten_tomatoes": "92",
-        "metacritic": "75"
+        "metacritic": "75",
+        "watch_providers": []
       }
     },
     {
@@ -11409,7 +11730,8 @@
         "runtime": 21,
         "imdb_rating": "8.4",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -11445,7 +11767,8 @@
         "runtime": 95,
         "imdb_rating": "5.6",
         "rotten_tomatoes": "16",
-        "metacritic": "34"
+        "metacritic": "34",
+        "watch_providers": []
       }
     },
     {
@@ -11479,7 +11802,8 @@
         "runtime": 94,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -11515,7 +11839,8 @@
         "runtime": 105,
         "imdb_rating": "3.5",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -11551,7 +11876,8 @@
         "runtime": 114,
         "imdb_rating": "6.7",
         "rotten_tomatoes": null,
-        "metacritic": "54"
+        "metacritic": "54",
+        "watch_providers": []
       }
     },
     {
@@ -11587,7 +11913,8 @@
         "runtime": 103,
         "imdb_rating": "6.5",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -11623,7 +11950,8 @@
         "runtime": 97,
         "imdb_rating": "6.9",
         "rotten_tomatoes": "93",
-        "metacritic": "70"
+        "metacritic": "70",
+        "watch_providers": []
       }
     },
     {
@@ -11658,7 +11986,8 @@
         "runtime": 97,
         "imdb_rating": "7.0",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -11692,7 +12021,8 @@
         "runtime": 0,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -11727,7 +12057,8 @@
         "runtime": 101,
         "imdb_rating": "5.2",
         "rotten_tomatoes": "20",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -11764,7 +12095,8 @@
         "runtime": 99,
         "imdb_rating": "5.5",
         "rotten_tomatoes": "49",
-        "metacritic": "53"
+        "metacritic": "53",
+        "watch_providers": []
       }
     },
     {
@@ -11799,7 +12131,8 @@
         "runtime": 142,
         "imdb_rating": "9.3",
         "rotten_tomatoes": "89",
-        "metacritic": "82"
+        "metacritic": "82",
+        "watch_providers": []
       }
     },
     {
@@ -11834,7 +12167,8 @@
         "runtime": 21,
         "imdb_rating": "8.4",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -11868,7 +12202,8 @@
         "runtime": 0,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -11904,7 +12239,8 @@
         "runtime": 99,
         "imdb_rating": "6.2",
         "rotten_tomatoes": "66",
-        "metacritic": "67"
+        "metacritic": "67",
+        "watch_providers": []
       }
     },
     {
@@ -11940,7 +12276,8 @@
         "runtime": 106,
         "imdb_rating": "6.3",
         "rotten_tomatoes": "71",
-        "metacritic": "53"
+        "metacritic": "53",
+        "watch_providers": []
       }
     },
     {
@@ -11975,7 +12312,8 @@
         "runtime": 176,
         "imdb_rating": "8.0",
         "rotten_tomatoes": "95",
-        "metacritic": "95"
+        "metacritic": "95",
+        "watch_providers": []
       }
     },
     {
@@ -12010,7 +12348,8 @@
         "runtime": 114,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -12046,7 +12385,8 @@
         "runtime": 130,
         "imdb_rating": "7.5",
         "rotten_tomatoes": "19",
-        "metacritic": "31"
+        "metacritic": "31",
+        "watch_providers": []
       }
     },
     {
@@ -12081,7 +12421,8 @@
         "runtime": 88,
         "imdb_rating": "6.5",
         "rotten_tomatoes": "67",
-        "metacritic": "62"
+        "metacritic": "62",
+        "watch_providers": []
       }
     },
     {
@@ -12117,7 +12458,8 @@
         "runtime": 114,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -12153,7 +12495,8 @@
         "runtime": 125,
         "imdb_rating": "6.8",
         "rotten_tomatoes": "45",
-        "metacritic": "58"
+        "metacritic": "58",
+        "watch_providers": []
       }
     },
     {
@@ -12189,7 +12532,8 @@
         "runtime": 114,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -12225,7 +12569,8 @@
         "runtime": 97,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -12260,7 +12605,8 @@
         "runtime": 104,
         "imdb_rating": "5.2",
         "rotten_tomatoes": "64",
-        "metacritic": "57"
+        "metacritic": "57",
+        "watch_providers": []
       }
     },
     {
@@ -12296,7 +12642,8 @@
         "runtime": 127,
         "imdb_rating": "7.1",
         "rotten_tomatoes": "64",
-        "metacritic": "63"
+        "metacritic": "63",
+        "watch_providers": []
       }
     },
     {
@@ -12332,7 +12679,8 @@
         "runtime": 92,
         "imdb_rating": "5.6",
         "rotten_tomatoes": "71",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -12367,7 +12715,8 @@
         "runtime": 7,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -12402,7 +12751,8 @@
         "runtime": 131,
         "imdb_rating": "6.5",
         "rotten_tomatoes": "80",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -12437,7 +12787,8 @@
         "runtime": 113,
         "imdb_rating": "7.2",
         "rotten_tomatoes": "82",
-        "metacritic": "61"
+        "metacritic": "61",
+        "watch_providers": []
       }
     },
     {
@@ -12472,7 +12823,8 @@
         "runtime": 114,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -12507,7 +12859,8 @@
         "runtime": 111,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -12544,7 +12897,8 @@
         "runtime": 96,
         "imdb_rating": "7.4",
         "rotten_tomatoes": "91",
-        "metacritic": "77"
+        "metacritic": "77",
+        "watch_providers": []
       }
     },
     {
@@ -12581,7 +12935,8 @@
         "runtime": 158,
         "imdb_rating": "7.1",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -12617,7 +12972,8 @@
         "runtime": 16,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -12651,7 +13007,8 @@
         "runtime": 42,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -12687,7 +13044,8 @@
         "runtime": 158,
         "imdb_rating": "5.9",
         "rotten_tomatoes": "40",
-        "metacritic": "49"
+        "metacritic": "49",
+        "watch_providers": []
       }
     },
     {
@@ -12722,7 +13080,8 @@
         "runtime": 97,
         "imdb_rating": "5.0",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -12756,7 +13115,8 @@
         "runtime": 96,
         "imdb_rating": "6.3",
         "rotten_tomatoes": "97",
-        "metacritic": "67"
+        "metacritic": "67",
+        "watch_providers": []
       }
     },
     {
@@ -12792,7 +13152,8 @@
         "runtime": 107,
         "imdb_rating": "5.3",
         "rotten_tomatoes": "70",
-        "metacritic": "46"
+        "metacritic": "46",
+        "watch_providers": []
       }
     },
     {
@@ -12824,7 +13185,8 @@
         "runtime": 44,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -12862,7 +13224,8 @@
         "runtime": 100,
         "imdb_rating": "6.3",
         "rotten_tomatoes": "61",
-        "metacritic": "58"
+        "metacritic": "58",
+        "watch_providers": []
       }
     },
     {
@@ -12898,7 +13261,8 @@
         "runtime": 88,
         "imdb_rating": "6.1",
         "rotten_tomatoes": "15",
-        "metacritic": "35"
+        "metacritic": "35",
+        "watch_providers": []
       }
     },
     {
@@ -12935,7 +13299,8 @@
         "runtime": 96,
         "imdb_rating": "6.6",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -12969,7 +13334,8 @@
         "runtime": 96,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -13005,7 +13371,8 @@
         "runtime": 118,
         "imdb_rating": "6.7",
         "rotten_tomatoes": "69",
-        "metacritic": "66"
+        "metacritic": "66",
+        "watch_providers": []
       }
     },
     {
@@ -13039,7 +13406,8 @@
         "runtime": 90,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -13075,7 +13443,8 @@
         "runtime": 118,
         "imdb_rating": "7.4",
         "rotten_tomatoes": "93",
-        "metacritic": "84"
+        "metacritic": "84",
+        "watch_providers": []
       }
     },
     {
@@ -13112,7 +13481,8 @@
         "runtime": 119,
         "imdb_rating": "7.8",
         "rotten_tomatoes": "82",
-        "metacritic": "74"
+        "metacritic": "74",
+        "watch_providers": []
       }
     },
     {
@@ -13148,7 +13518,8 @@
         "runtime": 120,
         "imdb_rating": "5.2",
         "rotten_tomatoes": "28",
-        "metacritic": "32"
+        "metacritic": "32",
+        "watch_providers": []
       }
     },
     {
@@ -13184,7 +13555,8 @@
         "runtime": 137,
         "imdb_rating": "7.9",
         "rotten_tomatoes": "97",
-        "metacritic": "69"
+        "metacritic": "69",
+        "watch_providers": []
       }
     },
     {
@@ -13220,7 +13592,8 @@
         "runtime": 92,
         "imdb_rating": "4.9",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -13257,7 +13630,8 @@
         "runtime": 101,
         "imdb_rating": "5.6",
         "rotten_tomatoes": null,
-        "metacritic": "45"
+        "metacritic": "45",
+        "watch_providers": []
       }
     },
     {
@@ -13294,7 +13668,8 @@
         "runtime": 99,
         "imdb_rating": "6.7",
         "rotten_tomatoes": "65",
-        "metacritic": "59"
+        "metacritic": "59",
+        "watch_providers": []
       }
     },
     {
@@ -13329,7 +13704,8 @@
         "runtime": 131,
         "imdb_rating": "6.3",
         "rotten_tomatoes": "32",
-        "metacritic": "40"
+        "metacritic": "40",
+        "watch_providers": []
       }
     },
     {
@@ -13365,7 +13741,8 @@
         "runtime": 134,
         "imdb_rating": "7.5",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -13400,7 +13777,8 @@
         "runtime": 12,
         "imdb_rating": "7.4",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -13435,7 +13813,8 @@
         "runtime": 109,
         "imdb_rating": "2.1",
         "rotten_tomatoes": null,
-        "metacritic": "50"
+        "metacritic": "50",
+        "watch_providers": []
       }
     },
     {
@@ -13472,7 +13851,8 @@
         "runtime": 120,
         "imdb_rating": "6.6",
         "rotten_tomatoes": "35",
-        "metacritic": "46"
+        "metacritic": "46",
+        "watch_providers": []
       }
     },
     {
@@ -13507,7 +13887,8 @@
         "runtime": 111,
         "imdb_rating": "5.0",
         "rotten_tomatoes": "34",
-        "metacritic": "43"
+        "metacritic": "43",
+        "watch_providers": []
       }
     },
     {
@@ -13543,7 +13924,8 @@
         "runtime": 94,
         "imdb_rating": "6.6",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -13578,7 +13960,8 @@
         "runtime": 113,
         "imdb_rating": "6.6",
         "rotten_tomatoes": "95",
-        "metacritic": "70"
+        "metacritic": "70",
+        "watch_providers": []
       }
     },
     {
@@ -13613,7 +13996,8 @@
         "runtime": 135,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -13649,7 +14033,8 @@
         "runtime": 93,
         "imdb_rating": "5.9",
         "rotten_tomatoes": "42",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -13685,7 +14070,8 @@
         "runtime": 126,
         "imdb_rating": "7.1",
         "rotten_tomatoes": "74",
-        "metacritic": "58"
+        "metacritic": "58",
+        "watch_providers": []
       }
     },
     {
@@ -13721,7 +14107,8 @@
         "runtime": 84,
         "imdb_rating": "6.5",
         "rotten_tomatoes": "71",
-        "metacritic": "66"
+        "metacritic": "66",
+        "watch_providers": []
       }
     },
     {
@@ -13756,7 +14143,8 @@
         "runtime": 101,
         "imdb_rating": "5.8",
         "rotten_tomatoes": "47",
-        "metacritic": "59"
+        "metacritic": "59",
+        "watch_providers": []
       }
     },
     {
@@ -13791,7 +14179,8 @@
         "runtime": 95,
         "imdb_rating": "5.7",
         "rotten_tomatoes": "100",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -13827,7 +14216,8 @@
         "runtime": 118,
         "imdb_rating": "7.3",
         "rotten_tomatoes": "89",
-        "metacritic": "87"
+        "metacritic": "87",
+        "watch_providers": []
       }
     },
     {
@@ -13863,7 +14253,8 @@
         "runtime": 109,
         "imdb_rating": "6.0",
         "rotten_tomatoes": "40",
-        "metacritic": "41"
+        "metacritic": "41",
+        "watch_providers": []
       }
     },
     {
@@ -13899,7 +14290,8 @@
         "runtime": 98,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -13935,7 +14327,8 @@
         "runtime": 124,
         "imdb_rating": "6.0",
         "rotten_tomatoes": "49",
-        "metacritic": "48"
+        "metacritic": "48",
+        "watch_providers": []
       }
     },
     {
@@ -13970,7 +14363,8 @@
         "runtime": 137,
         "imdb_rating": "6.8",
         "rotten_tomatoes": "78",
-        "metacritic": "63"
+        "metacritic": "63",
+        "watch_providers": []
       }
     },
     {
@@ -14006,7 +14400,8 @@
         "runtime": 108,
         "imdb_rating": "7.0",
         "rotten_tomatoes": "91",
-        "metacritic": "77"
+        "metacritic": "77",
+        "watch_providers": []
       }
     },
     {
@@ -14042,7 +14437,8 @@
         "runtime": 95,
         "imdb_rating": "5.9",
         "rotten_tomatoes": "38",
-        "metacritic": "48"
+        "metacritic": "48",
+        "watch_providers": []
       }
     },
     {
@@ -14078,7 +14474,8 @@
         "runtime": 102,
         "imdb_rating": "2.9",
         "rotten_tomatoes": "27",
-        "metacritic": "27"
+        "metacritic": "27",
+        "watch_providers": []
       }
     },
     {
@@ -14112,7 +14509,8 @@
         "runtime": 124,
         "imdb_rating": "8.0",
         "rotten_tomatoes": "100",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -14148,7 +14546,8 @@
         "runtime": 9,
         "imdb_rating": "8.0",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -14184,7 +14583,8 @@
         "runtime": 84,
         "imdb_rating": "5.8",
         "rotten_tomatoes": "50",
-        "metacritic": "55"
+        "metacritic": "55",
+        "watch_providers": []
       }
     },
     {
@@ -14219,7 +14619,8 @@
         "runtime": 116,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -14254,7 +14655,8 @@
         "runtime": 100,
         "imdb_rating": "5.0",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -14289,7 +14691,8 @@
         "runtime": 98,
         "imdb_rating": "4.2",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -14325,7 +14728,8 @@
         "runtime": 100,
         "imdb_rating": "6.8",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -14361,7 +14765,8 @@
         "runtime": 93,
         "imdb_rating": "6.2",
         "rotten_tomatoes": "93",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -14398,7 +14803,8 @@
         "runtime": 81,
         "imdb_rating": "8.3",
         "rotten_tomatoes": "100",
-        "metacritic": "96"
+        "metacritic": "96",
+        "watch_providers": []
       }
     },
     {
@@ -14434,7 +14840,8 @@
         "runtime": 118,
         "imdb_rating": "6.6",
         "rotten_tomatoes": "56",
-        "metacritic": "56"
+        "metacritic": "56",
+        "watch_providers": []
       }
     },
     {
@@ -14470,7 +14877,8 @@
         "runtime": 123,
         "imdb_rating": "7.8",
         "rotten_tomatoes": "70",
-        "metacritic": "55"
+        "metacritic": "55",
+        "watch_providers": []
       }
     },
     {
@@ -14506,7 +14914,8 @@
         "runtime": 76,
         "imdb_rating": "4.4",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -14542,7 +14951,8 @@
         "runtime": 103,
         "imdb_rating": "5.4",
         "rotten_tomatoes": "48",
-        "metacritic": "53"
+        "metacritic": "53",
+        "watch_providers": []
       }
     },
     {
@@ -14578,7 +14988,8 @@
         "runtime": 122,
         "imdb_rating": "6.8",
         "rotten_tomatoes": "74",
-        "metacritic": "68"
+        "metacritic": "68",
+        "watch_providers": []
       }
     },
     {
@@ -14613,7 +15024,8 @@
         "runtime": 159,
         "imdb_rating": "8.2",
         "rotten_tomatoes": "96",
-        "metacritic": "92"
+        "metacritic": "92",
+        "watch_providers": []
       }
     },
     {
@@ -14649,7 +15061,8 @@
         "runtime": 105,
         "imdb_rating": "6.0",
         "rotten_tomatoes": "55",
-        "metacritic": "55"
+        "metacritic": "55",
+        "watch_providers": []
       }
     },
     {
@@ -14686,7 +15099,8 @@
         "runtime": 130,
         "imdb_rating": "7.7",
         "rotten_tomatoes": "77",
-        "metacritic": "47"
+        "metacritic": "47",
+        "watch_providers": []
       }
     },
     {
@@ -14721,7 +15135,8 @@
         "runtime": 103,
         "imdb_rating": "6.4",
         "rotten_tomatoes": "58",
-        "metacritic": "50"
+        "metacritic": "50",
+        "watch_providers": []
       }
     },
     {
@@ -14757,7 +15172,8 @@
         "runtime": 130,
         "imdb_rating": "7.0",
         "rotten_tomatoes": "69",
-        "metacritic": "59"
+        "metacritic": "59",
+        "watch_providers": []
       }
     },
     {
@@ -14792,7 +15208,8 @@
         "runtime": 96,
         "imdb_rating": "7.1",
         "rotten_tomatoes": "80",
-        "metacritic": "60"
+        "metacritic": "60",
+        "watch_providers": []
       }
     },
     {
@@ -14827,7 +15244,8 @@
         "runtime": 117,
         "imdb_rating": "8.5",
         "rotten_tomatoes": "93",
-        "metacritic": "89"
+        "metacritic": "89",
+        "watch_providers": []
       }
     },
     {
@@ -14862,7 +15280,8 @@
         "runtime": 122,
         "imdb_rating": "6.4",
         "rotten_tomatoes": "65",
-        "metacritic": "65"
+        "metacritic": "65",
+        "watch_providers": []
       }
     },
     {
@@ -14896,7 +15315,8 @@
         "runtime": 150,
         "imdb_rating": "7.0",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -14931,7 +15351,8 @@
         "runtime": 124,
         "imdb_rating": "7.4",
         "rotten_tomatoes": "17",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -14967,7 +15388,8 @@
         "runtime": 108,
         "imdb_rating": "6.2",
         "rotten_tomatoes": "56",
-        "metacritic": "62"
+        "metacritic": "62",
+        "watch_providers": []
       }
     },
     {
@@ -15003,7 +15425,8 @@
         "runtime": 132,
         "imdb_rating": "6.3",
         "rotten_tomatoes": "45",
-        "metacritic": "53"
+        "metacritic": "53",
+        "watch_providers": []
       }
     },
     {
@@ -15039,7 +15462,8 @@
         "runtime": 96,
         "imdb_rating": "6.6",
         "rotten_tomatoes": "36",
-        "metacritic": "35"
+        "metacritic": "35",
+        "watch_providers": []
       }
     },
     {
@@ -15077,7 +15501,8 @@
         "runtime": 8,
         "imdb_rating": "7.5",
         "rotten_tomatoes": "88",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -15113,7 +15538,8 @@
         "runtime": 118,
         "imdb_rating": "8.6",
         "rotten_tomatoes": "95",
-        "metacritic": "86"
+        "metacritic": "86",
+        "watch_providers": []
       }
     },
     {
@@ -15149,7 +15575,8 @@
         "runtime": 137,
         "imdb_rating": "8.4",
         "rotten_tomatoes": "93",
-        "metacritic": "84"
+        "metacritic": "84",
+        "watch_providers": []
       }
     },
     {
@@ -15185,7 +15612,8 @@
         "runtime": 123,
         "imdb_rating": "7.8",
         "rotten_tomatoes": "70",
-        "metacritic": "55"
+        "metacritic": "55",
+        "watch_providers": []
       }
     },
     {
@@ -15221,7 +15649,8 @@
         "runtime": 138,
         "imdb_rating": "5.2",
         "rotten_tomatoes": "31",
-        "metacritic": "45"
+        "metacritic": "45",
+        "watch_providers": []
       }
     },
     {
@@ -15258,7 +15687,8 @@
         "runtime": 96,
         "imdb_rating": "6.9",
         "rotten_tomatoes": "72",
-        "metacritic": "63"
+        "metacritic": "63",
+        "watch_providers": []
       }
     },
     {
@@ -15293,7 +15723,8 @@
         "runtime": 124,
         "imdb_rating": "7.2",
         "rotten_tomatoes": "84",
-        "metacritic": "68"
+        "metacritic": "68",
+        "watch_providers": []
       }
     },
     {
@@ -15328,7 +15759,8 @@
         "runtime": 126,
         "imdb_rating": "6.6",
         "rotten_tomatoes": "68",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -15364,7 +15796,8 @@
         "runtime": 96,
         "imdb_rating": "6.3",
         "rotten_tomatoes": "88",
-        "metacritic": "72"
+        "metacritic": "72",
+        "watch_providers": []
       }
     },
     {
@@ -15399,7 +15832,8 @@
         "runtime": 97,
         "imdb_rating": "6.7",
         "rotten_tomatoes": "61",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -15435,7 +15869,8 @@
         "runtime": 97,
         "imdb_rating": "5.9",
         "rotten_tomatoes": "18",
-        "metacritic": "34"
+        "metacritic": "34",
+        "watch_providers": []
       }
     },
     {
@@ -15469,7 +15904,8 @@
         "runtime": 108,
         "imdb_rating": "5.9",
         "rotten_tomatoes": "83",
-        "metacritic": "47"
+        "metacritic": "47",
+        "watch_providers": []
       }
     },
     {
@@ -15505,7 +15941,8 @@
         "runtime": 101,
         "imdb_rating": null,
         "rotten_tomatoes": "25",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -15542,7 +15979,8 @@
         "runtime": 91,
         "imdb_rating": "6.7",
         "rotten_tomatoes": "75",
-        "metacritic": "68"
+        "metacritic": "68",
+        "watch_providers": []
       }
     },
     {
@@ -15577,7 +16015,8 @@
         "runtime": 103,
         "imdb_rating": "6.8",
         "rotten_tomatoes": "91",
-        "metacritic": "74"
+        "metacritic": "74",
+        "watch_providers": []
       }
     },
     {
@@ -15613,7 +16052,8 @@
         "runtime": 130,
         "imdb_rating": "8.3",
         "rotten_tomatoes": "91",
-        "metacritic": "80"
+        "metacritic": "80",
+        "watch_providers": []
       }
     },
     {
@@ -15651,7 +16091,8 @@
         "runtime": 8,
         "imdb_rating": "7.5",
         "rotten_tomatoes": "88",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -15687,7 +16128,8 @@
         "runtime": 100,
         "imdb_rating": "6.8",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -15724,7 +16166,8 @@
         "runtime": 121,
         "imdb_rating": "6.5",
         "rotten_tomatoes": "44",
-        "metacritic": "45"
+        "metacritic": "45",
+        "watch_providers": []
       }
     },
     {
@@ -15761,7 +16204,8 @@
         "runtime": 118,
         "imdb_rating": "7.8",
         "rotten_tomatoes": "84",
-        "metacritic": "68"
+        "metacritic": "68",
+        "watch_providers": []
       }
     },
     {
@@ -15797,7 +16241,8 @@
         "runtime": 85,
         "imdb_rating": "5.5",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -15834,7 +16279,8 @@
         "runtime": 100,
         "imdb_rating": "6.3",
         "rotten_tomatoes": "73",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -15868,7 +16314,8 @@
         "runtime": 124,
         "imdb_rating": "7.9",
         "rotten_tomatoes": "96",
-        "metacritic": "80"
+        "metacritic": "80",
+        "watch_providers": []
       }
     },
     {
@@ -15904,7 +16351,8 @@
         "runtime": 140,
         "imdb_rating": "7.4",
         "rotten_tomatoes": "94",
-        "metacritic": "82"
+        "metacritic": "82",
+        "watch_providers": []
       }
     },
     {
@@ -15939,7 +16387,8 @@
         "runtime": 125,
         "imdb_rating": "7.0",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -15977,7 +16426,8 @@
         "runtime": 102,
         "imdb_rating": "7.8",
         "rotten_tomatoes": "90",
-        "metacritic": "74"
+        "metacritic": "74",
+        "watch_providers": []
       }
     },
     {
@@ -16012,7 +16462,8 @@
         "runtime": 138,
         "imdb_rating": "5.8",
         "rotten_tomatoes": "75",
-        "metacritic": "68"
+        "metacritic": "68",
+        "watch_providers": []
       }
     },
     {
@@ -16044,7 +16495,8 @@
         "runtime": 0,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -16080,7 +16532,8 @@
         "runtime": 108,
         "imdb_rating": "8.3",
         "rotten_tomatoes": "93",
-        "metacritic": "89"
+        "metacritic": "89",
+        "watch_providers": []
       }
     },
     {
@@ -16116,7 +16569,8 @@
         "runtime": 129,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -16153,7 +16607,8 @@
         "runtime": 101,
         "imdb_rating": "6.3",
         "rotten_tomatoes": "50",
-        "metacritic": "49"
+        "metacritic": "49",
+        "watch_providers": []
       }
     },
     {
@@ -16185,7 +16640,8 @@
         "runtime": 5,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -16221,7 +16677,8 @@
         "runtime": 95,
         "imdb_rating": "5.7",
         "rotten_tomatoes": "29",
-        "metacritic": "27"
+        "metacritic": "27",
+        "watch_providers": []
       }
     },
     {
@@ -16258,7 +16715,8 @@
         "runtime": 130,
         "imdb_rating": "7.6",
         "rotten_tomatoes": "91",
-        "metacritic": "79"
+        "metacritic": "79",
+        "watch_providers": []
       }
     },
     {
@@ -16294,7 +16752,8 @@
         "runtime": 108,
         "imdb_rating": "6.3",
         "rotten_tomatoes": "29",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -16330,7 +16789,8 @@
         "runtime": 126,
         "imdb_rating": "5.9",
         "rotten_tomatoes": "39",
-        "metacritic": "46"
+        "metacritic": "46",
+        "watch_providers": []
       }
     },
     {
@@ -16365,7 +16825,8 @@
         "runtime": 123,
         "imdb_rating": "6.5",
         "rotten_tomatoes": "83",
-        "metacritic": "80"
+        "metacritic": "80",
+        "watch_providers": []
       }
     },
     {
@@ -16402,7 +16863,8 @@
         "runtime": 91,
         "imdb_rating": "6.8",
         "rotten_tomatoes": "56",
-        "metacritic": "59"
+        "metacritic": "59",
+        "watch_providers": []
       }
     },
     {
@@ -16439,7 +16901,8 @@
         "runtime": 108,
         "imdb_rating": "6.3",
         "rotten_tomatoes": "83",
-        "metacritic": "69"
+        "metacritic": "69",
+        "watch_providers": []
       }
     },
     {
@@ -16474,7 +16937,8 @@
         "runtime": 129,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -16509,7 +16973,8 @@
         "runtime": 159,
         "imdb_rating": "7.0",
         "rotten_tomatoes": "74",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -16546,7 +17011,8 @@
         "runtime": 107,
         "imdb_rating": "7.6",
         "rotten_tomatoes": "95",
-        "metacritic": "81"
+        "metacritic": "81",
+        "watch_providers": []
       }
     },
     {
@@ -16583,7 +17049,8 @@
         "runtime": 81,
         "imdb_rating": "7.5",
         "rotten_tomatoes": "76",
-        "metacritic": "61"
+        "metacritic": "61",
+        "watch_providers": []
       }
     },
     {
@@ -16621,7 +17088,8 @@
         "runtime": 144,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -16657,7 +17125,8 @@
         "runtime": 115,
         "imdb_rating": "6.1",
         "rotten_tomatoes": "38",
-        "metacritic": "43"
+        "metacritic": "43",
+        "watch_providers": []
       }
     },
     {
@@ -16692,7 +17161,8 @@
         "runtime": 104,
         "imdb_rating": "6.8",
         "rotten_tomatoes": "44",
-        "metacritic": "46"
+        "metacritic": "46",
+        "watch_providers": []
       }
     },
     {
@@ -16727,7 +17197,8 @@
         "runtime": 97,
         "imdb_rating": "6.9",
         "rotten_tomatoes": null,
-        "metacritic": "73"
+        "metacritic": "73",
+        "watch_providers": []
       }
     },
     {
@@ -16762,7 +17233,8 @@
         "runtime": 128,
         "imdb_rating": "7.8",
         "rotten_tomatoes": "87",
-        "metacritic": "82"
+        "metacritic": "82",
+        "watch_providers": []
       }
     },
     {
@@ -16797,7 +17269,8 @@
         "runtime": 110,
         "imdb_rating": "6.4",
         "rotten_tomatoes": "73",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -16832,7 +17305,8 @@
         "runtime": 119,
         "imdb_rating": "4.8",
         "rotten_tomatoes": null,
-        "metacritic": "38"
+        "metacritic": "38",
+        "watch_providers": []
       }
     },
     {
@@ -16868,7 +17342,8 @@
         "runtime": 125,
         "imdb_rating": "7.9",
         "rotten_tomatoes": "94",
-        "metacritic": "79"
+        "metacritic": "79",
+        "watch_providers": []
       }
     },
     {
@@ -16904,7 +17379,8 @@
         "runtime": 116,
         "imdb_rating": "7.0",
         "rotten_tomatoes": "30",
-        "metacritic": "41"
+        "metacritic": "41",
+        "watch_providers": []
       }
     },
     {
@@ -16940,7 +17416,8 @@
         "runtime": 118,
         "imdb_rating": "7.4",
         "rotten_tomatoes": "79",
-        "metacritic": "68"
+        "metacritic": "68",
+        "watch_providers": []
       }
     },
     {
@@ -16976,7 +17453,8 @@
         "runtime": 114,
         "imdb_rating": "6.0",
         "rotten_tomatoes": "28",
-        "metacritic": "43"
+        "metacritic": "43",
+        "watch_providers": []
       }
     },
     {
@@ -17011,7 +17489,8 @@
         "runtime": 92,
         "imdb_rating": "6.3",
         "rotten_tomatoes": "14",
-        "metacritic": "33"
+        "metacritic": "33",
+        "watch_providers": []
       }
     },
     {
@@ -17049,7 +17528,8 @@
         "runtime": 86,
         "imdb_rating": "6.8",
         "rotten_tomatoes": "79",
-        "metacritic": "71"
+        "metacritic": "71",
+        "watch_providers": []
       }
     },
     {
@@ -17085,7 +17565,8 @@
         "runtime": 118,
         "imdb_rating": "6.2",
         "rotten_tomatoes": "30",
-        "metacritic": "43"
+        "metacritic": "43",
+        "watch_providers": []
       }
     },
     {
@@ -17122,7 +17603,8 @@
         "runtime": 108,
         "imdb_rating": "8.0",
         "rotten_tomatoes": "98",
-        "metacritic": "78"
+        "metacritic": "78",
+        "watch_providers": []
       }
     },
     {
@@ -17157,7 +17639,8 @@
         "runtime": 167,
         "imdb_rating": "8.4",
         "rotten_tomatoes": "92",
-        "metacritic": "79"
+        "metacritic": "79",
+        "watch_providers": []
       }
     },
     {
@@ -17193,7 +17676,8 @@
         "runtime": 0,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -17229,7 +17713,8 @@
         "runtime": 106,
         "imdb_rating": "5.5",
         "rotten_tomatoes": "17",
-        "metacritic": "28"
+        "metacritic": "28",
+        "watch_providers": []
       }
     },
     {
@@ -17263,7 +17748,8 @@
         "runtime": 102,
         "imdb_rating": "5.5",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -17298,7 +17784,8 @@
         "runtime": 155,
         "imdb_rating": "8.0",
         "rotten_tomatoes": "83",
-        "metacritic": "74"
+        "metacritic": "74",
+        "watch_providers": []
       }
     },
     {
@@ -17334,7 +17821,8 @@
         "runtime": 103,
         "imdb_rating": "6.6",
         "rotten_tomatoes": "67",
-        "metacritic": "54"
+        "metacritic": "54",
+        "watch_providers": []
       }
     },
     {
@@ -17370,7 +17858,8 @@
         "runtime": 116,
         "imdb_rating": "7.9",
         "rotten_tomatoes": "94",
-        "metacritic": "81"
+        "metacritic": "81",
+        "watch_providers": []
       }
     },
     {
@@ -17407,7 +17896,8 @@
         "runtime": 133,
         "imdb_rating": "7.5",
         "rotten_tomatoes": null,
-        "metacritic": "45"
+        "metacritic": "45",
+        "watch_providers": []
       }
     },
     {
@@ -17443,7 +17933,8 @@
         "runtime": 112,
         "imdb_rating": "5.9",
         "rotten_tomatoes": "25",
-        "metacritic": "24"
+        "metacritic": "24",
+        "watch_providers": []
       }
     },
     {
@@ -17478,7 +17969,8 @@
         "runtime": 96,
         "imdb_rating": "6.1",
         "rotten_tomatoes": "44",
-        "metacritic": "50"
+        "metacritic": "50",
+        "watch_providers": []
       }
     },
     {
@@ -17513,7 +18005,8 @@
         "runtime": 102,
         "imdb_rating": "6.1",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -17549,7 +18042,8 @@
         "runtime": 132,
         "imdb_rating": "7.5",
         "rotten_tomatoes": "76",
-        "metacritic": "64"
+        "metacritic": "64",
+        "watch_providers": []
       }
     },
     {
@@ -17586,7 +18080,8 @@
         "runtime": 105,
         "imdb_rating": "5.8",
         "rotten_tomatoes": "52",
-        "metacritic": "54"
+        "metacritic": "54",
+        "watch_providers": []
       }
     },
     {
@@ -17621,7 +18116,8 @@
         "runtime": 92,
         "imdb_rating": "6.3",
         "rotten_tomatoes": "36",
-        "metacritic": "41"
+        "metacritic": "41",
+        "watch_providers": []
       }
     },
     {
@@ -17657,7 +18153,8 @@
         "runtime": 121,
         "imdb_rating": "7.0",
         "rotten_tomatoes": "53",
-        "metacritic": "42"
+        "metacritic": "42",
+        "watch_providers": []
       }
     },
     {
@@ -17692,7 +18189,8 @@
         "runtime": 99,
         "imdb_rating": "7.0",
         "rotten_tomatoes": "67",
-        "metacritic": "57"
+        "metacritic": "57",
+        "watch_providers": []
       }
     },
     {
@@ -17728,7 +18226,8 @@
         "runtime": 115,
         "imdb_rating": "7.0",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -17764,7 +18263,8 @@
         "runtime": 97,
         "imdb_rating": "6.6",
         "rotten_tomatoes": "74",
-        "metacritic": "59"
+        "metacritic": "59",
+        "watch_providers": []
       }
     },
     {
@@ -17802,7 +18302,8 @@
         "runtime": 109,
         "imdb_rating": "4.8",
         "rotten_tomatoes": "89",
-        "metacritic": "66"
+        "metacritic": "66",
+        "watch_providers": []
       }
     },
     {
@@ -17838,7 +18339,8 @@
         "runtime": 112,
         "imdb_rating": "5.2",
         "rotten_tomatoes": "16",
-        "metacritic": "33"
+        "metacritic": "33",
+        "watch_providers": []
       }
     },
     {
@@ -17872,7 +18374,8 @@
         "runtime": 110,
         "imdb_rating": "7.3",
         "rotten_tomatoes": "72",
-        "metacritic": "53"
+        "metacritic": "53",
+        "watch_providers": []
       }
     },
     {
@@ -17908,7 +18411,8 @@
         "runtime": 147,
         "imdb_rating": "7.8",
         "rotten_tomatoes": "85",
-        "metacritic": "66"
+        "metacritic": "66",
+        "watch_providers": []
       }
     },
     {
@@ -17945,7 +18449,8 @@
         "runtime": 91,
         "imdb_rating": "6.4",
         "rotten_tomatoes": "64",
-        "metacritic": "64"
+        "metacritic": "64",
+        "watch_providers": []
       }
     },
     {
@@ -17982,7 +18487,8 @@
         "runtime": 115,
         "imdb_rating": "8.1",
         "rotten_tomatoes": "96",
-        "metacritic": "96"
+        "metacritic": "96",
+        "watch_providers": []
       }
     },
     {
@@ -18017,7 +18523,8 @@
         "runtime": 103,
         "imdb_rating": "5.6",
         "rotten_tomatoes": "20",
-        "metacritic": "24"
+        "metacritic": "24",
+        "watch_providers": []
       }
     },
     {
@@ -18053,7 +18560,8 @@
         "runtime": 140,
         "imdb_rating": "6.4",
         "rotten_tomatoes": "73",
-        "metacritic": "68"
+        "metacritic": "68",
+        "watch_providers": []
       }
     },
     {
@@ -18088,7 +18596,8 @@
         "runtime": 130,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -18125,7 +18634,8 @@
         "runtime": 123,
         "imdb_rating": "6.5",
         "rotten_tomatoes": "61",
-        "metacritic": "50"
+        "metacritic": "50",
+        "watch_providers": []
       }
     },
     {
@@ -18162,7 +18672,8 @@
         "runtime": 96,
         "imdb_rating": "6.9",
         "rotten_tomatoes": "72",
-        "metacritic": "63"
+        "metacritic": "63",
+        "watch_providers": []
       }
     },
     {
@@ -18197,7 +18708,8 @@
         "runtime": 9,
         "imdb_rating": "7.4",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -18232,7 +18744,8 @@
         "runtime": 85,
         "imdb_rating": "5.3",
         "rotten_tomatoes": "72",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -18268,7 +18781,8 @@
         "runtime": 100,
         "imdb_rating": "7.7",
         "rotten_tomatoes": "89",
-        "metacritic": "71"
+        "metacritic": "71",
+        "watch_providers": []
       }
     },
     {
@@ -18306,7 +18820,8 @@
         "runtime": 100,
         "imdb_rating": "6.9",
         "rotten_tomatoes": "87",
-        "metacritic": "64"
+        "metacritic": "64",
+        "watch_providers": []
       }
     },
     {
@@ -18341,7 +18856,8 @@
         "runtime": 110,
         "imdb_rating": "6.6",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -18376,7 +18892,8 @@
         "runtime": 128,
         "imdb_rating": "7.4",
         "rotten_tomatoes": "61",
-        "metacritic": "55"
+        "metacritic": "55",
+        "watch_providers": []
       }
     },
     {
@@ -18412,7 +18929,8 @@
         "runtime": 124,
         "imdb_rating": "7.3",
         "rotten_tomatoes": "96",
-        "metacritic": "91"
+        "metacritic": "91",
+        "watch_providers": []
       }
     },
     {
@@ -18449,7 +18967,8 @@
         "runtime": 98,
         "imdb_rating": "8.1",
         "rotten_tomatoes": "99",
-        "metacritic": "75"
+        "metacritic": "75",
+        "watch_providers": []
       }
     },
     {
@@ -18485,7 +19004,8 @@
         "runtime": 104,
         "imdb_rating": "5.8",
         "rotten_tomatoes": "90",
-        "metacritic": "62"
+        "metacritic": "62",
+        "watch_providers": []
       }
     },
     {
@@ -18523,7 +19043,8 @@
         "runtime": 7,
         "imdb_rating": "8.2",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -18561,7 +19082,8 @@
         "runtime": 105,
         "imdb_rating": "6.2",
         "rotten_tomatoes": "71",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -18597,7 +19119,8 @@
         "runtime": 109,
         "imdb_rating": "6.7",
         "rotten_tomatoes": "36",
-        "metacritic": "53"
+        "metacritic": "53",
+        "watch_providers": []
       }
     },
     {
@@ -18633,7 +19156,8 @@
         "runtime": 98,
         "imdb_rating": "8.4",
         "rotten_tomatoes": "95",
-        "metacritic": "95"
+        "metacritic": "95",
+        "watch_providers": []
       }
     },
     {
@@ -18669,7 +19193,8 @@
         "runtime": 113,
         "imdb_rating": "5.7",
         "rotten_tomatoes": "47",
-        "metacritic": "46"
+        "metacritic": "46",
+        "watch_providers": []
       }
     },
     {
@@ -18706,7 +19231,8 @@
         "runtime": 117,
         "imdb_rating": "7.2",
         "rotten_tomatoes": "62",
-        "metacritic": "65"
+        "metacritic": "65",
+        "watch_providers": []
       }
     },
     {
@@ -18741,7 +19267,8 @@
         "runtime": 91,
         "imdb_rating": "4.8",
         "rotten_tomatoes": "5",
-        "metacritic": "25"
+        "metacritic": "25",
+        "watch_providers": []
       }
     },
     {
@@ -18778,7 +19305,8 @@
         "runtime": 112,
         "imdb_rating": "5.4",
         "rotten_tomatoes": "11",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -18813,7 +19341,8 @@
         "runtime": 121,
         "imdb_rating": "6.6",
         "rotten_tomatoes": "68",
-        "metacritic": "76"
+        "metacritic": "76",
+        "watch_providers": []
       }
     },
     {
@@ -18848,7 +19377,8 @@
         "runtime": 136,
         "imdb_rating": "7.0",
         "rotten_tomatoes": "51",
-        "metacritic": "52"
+        "metacritic": "52",
+        "watch_providers": []
       }
     },
     {
@@ -18880,7 +19410,8 @@
         "runtime": 19,
         "imdb_rating": "7.7",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -18917,7 +19448,8 @@
         "runtime": 97,
         "imdb_rating": "5.3",
         "rotten_tomatoes": "56",
-        "metacritic": "56"
+        "metacritic": "56",
+        "watch_providers": []
       }
     },
     {
@@ -18952,7 +19484,8 @@
         "runtime": 91,
         "imdb_rating": "5.6",
         "rotten_tomatoes": "50",
-        "metacritic": "49"
+        "metacritic": "49",
+        "watch_providers": []
       }
     },
     {
@@ -18987,7 +19520,8 @@
         "runtime": 6,
         "imdb_rating": "8.3",
         "rotten_tomatoes": "100",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -19023,7 +19557,8 @@
         "runtime": 104,
         "imdb_rating": "7.8",
         "rotten_tomatoes": "98",
-        "metacritic": "85"
+        "metacritic": "85",
+        "watch_providers": []
       }
     },
     {
@@ -19058,7 +19593,8 @@
         "runtime": 139,
         "imdb_rating": "8.8",
         "rotten_tomatoes": "80",
-        "metacritic": "67"
+        "metacritic": "67",
+        "watch_providers": []
       }
     },
     {
@@ -19094,7 +19630,8 @@
         "runtime": 131,
         "imdb_rating": "8.5",
         "rotten_tomatoes": "99",
-        "metacritic": "97"
+        "metacritic": "97",
+        "watch_providers": []
       }
     },
     {
@@ -19130,7 +19667,8 @@
         "runtime": 124,
         "imdb_rating": "7.1",
         "rotten_tomatoes": null,
-        "metacritic": "72"
+        "metacritic": "72",
+        "watch_providers": []
       }
     },
     {
@@ -19166,7 +19704,8 @@
         "runtime": 7,
         "imdb_rating": "6.2",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -19204,7 +19743,8 @@
         "runtime": 105,
         "imdb_rating": "6.5",
         "rotten_tomatoes": "48",
-        "metacritic": "48"
+        "metacritic": "48",
+        "watch_providers": []
       }
     },
     {
@@ -19240,7 +19780,8 @@
         "runtime": 97,
         "imdb_rating": "5.4",
         "rotten_tomatoes": "65",
-        "metacritic": "48"
+        "metacritic": "48",
+        "watch_providers": []
       }
     },
     {
@@ -19275,7 +19816,8 @@
         "runtime": 127,
         "imdb_rating": "7.4",
         "rotten_tomatoes": "80",
-        "metacritic": "53"
+        "metacritic": "53",
+        "watch_providers": []
       }
     },
     {
@@ -19312,7 +19854,8 @@
         "runtime": 108,
         "imdb_rating": "7.7",
         "rotten_tomatoes": "87",
-        "metacritic": "72"
+        "metacritic": "72",
+        "watch_providers": []
       }
     },
     {
@@ -19348,7 +19891,8 @@
         "runtime": 104,
         "imdb_rating": "5.9",
         "rotten_tomatoes": "22",
-        "metacritic": "41"
+        "metacritic": "41",
+        "watch_providers": []
       }
     },
     {
@@ -19384,7 +19928,8 @@
         "runtime": 99,
         "imdb_rating": "6.1",
         "rotten_tomatoes": "85",
-        "metacritic": "48"
+        "metacritic": "48",
+        "watch_providers": []
       }
     },
     {
@@ -19419,7 +19964,8 @@
         "runtime": 181,
         "imdb_rating": "8.2",
         "rotten_tomatoes": "93",
-        "metacritic": "90"
+        "metacritic": "90",
+        "watch_providers": []
       }
     },
     {
@@ -19453,7 +19999,8 @@
         "runtime": 145,
         "imdb_rating": "6.6",
         "rotten_tomatoes": "86",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -19488,7 +20035,8 @@
         "runtime": 118,
         "imdb_rating": "7.2",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -19524,7 +20072,8 @@
         "runtime": 100,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -19558,7 +20107,8 @@
         "runtime": 96,
         "imdb_rating": "4.8",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -19593,7 +20143,8 @@
         "runtime": 83,
         "imdb_rating": "6.0",
         "rotten_tomatoes": "86",
-        "metacritic": "62"
+        "metacritic": "62",
+        "watch_providers": []
       }
     },
     {
@@ -19630,7 +20181,8 @@
         "runtime": 89,
         "imdb_rating": "5.6",
         "rotten_tomatoes": "24",
-        "metacritic": "63"
+        "metacritic": "63",
+        "watch_providers": []
       }
     },
     {
@@ -19664,7 +20216,8 @@
         "runtime": 89,
         "imdb_rating": "4.7",
         "rotten_tomatoes": "13",
-        "metacritic": "24"
+        "metacritic": "24",
+        "watch_providers": []
       }
     },
     {
@@ -19700,7 +20253,8 @@
         "runtime": 102,
         "imdb_rating": "5.7",
         "rotten_tomatoes": "38",
-        "metacritic": "45"
+        "metacritic": "45",
+        "watch_providers": []
       }
     },
     {
@@ -19735,7 +20289,8 @@
         "runtime": 95,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -19772,7 +20327,8 @@
         "runtime": 93,
         "imdb_rating": "6.7",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -19811,7 +20367,8 @@
         "runtime": 92,
         "imdb_rating": "6.5",
         "rotten_tomatoes": "40",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -19846,7 +20403,8 @@
         "runtime": 93,
         "imdb_rating": "5.5",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -19882,7 +20440,8 @@
         "runtime": 93,
         "imdb_rating": "7.1",
         "rotten_tomatoes": "100",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -19919,7 +20478,8 @@
         "runtime": 108,
         "imdb_rating": "6.4",
         "rotten_tomatoes": "29",
-        "metacritic": "45"
+        "metacritic": "45",
+        "watch_providers": []
       }
     },
     {
@@ -19954,7 +20514,8 @@
         "runtime": 147,
         "imdb_rating": "7.8",
         "rotten_tomatoes": "90",
-        "metacritic": "76"
+        "metacritic": "76",
+        "watch_providers": []
       }
     },
     {
@@ -19989,7 +20550,8 @@
         "runtime": 61,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -20023,7 +20585,8 @@
         "runtime": 127,
         "imdb_rating": "7.6",
         "rotten_tomatoes": "93",
-        "metacritic": "75"
+        "metacritic": "75",
+        "watch_providers": []
       }
     },
     {
@@ -20059,7 +20622,8 @@
         "runtime": 122,
         "imdb_rating": "8.3",
         "rotten_tomatoes": "68",
-        "metacritic": "59"
+        "metacritic": "59",
+        "watch_providers": []
       }
     },
     {
@@ -20095,7 +20659,8 @@
         "runtime": 122,
         "imdb_rating": "6.2",
         "rotten_tomatoes": "23",
-        "metacritic": "42"
+        "metacritic": "42",
+        "watch_providers": []
       }
     },
     {
@@ -20131,7 +20696,8 @@
         "runtime": 170,
         "imdb_rating": "7.6",
         "rotten_tomatoes": "94",
-        "metacritic": "78"
+        "metacritic": "78",
+        "watch_providers": []
       }
     },
     {
@@ -20168,7 +20734,8 @@
         "runtime": 137,
         "imdb_rating": "6.6",
         "rotten_tomatoes": "79",
-        "metacritic": "67"
+        "metacritic": "67",
+        "watch_providers": []
       }
     },
     {
@@ -20203,7 +20770,8 @@
         "runtime": 121,
         "imdb_rating": "7.2",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -20238,7 +20806,8 @@
         "runtime": 116,
         "imdb_rating": "6.8",
         "rotten_tomatoes": "67",
-        "metacritic": "56"
+        "metacritic": "56",
+        "watch_providers": []
       }
     },
     {
@@ -20275,7 +20844,8 @@
         "runtime": 103,
         "imdb_rating": "6.7",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -20311,7 +20881,8 @@
         "runtime": 108,
         "imdb_rating": "5.8",
         "rotten_tomatoes": "30",
-        "metacritic": "42"
+        "metacritic": "42",
+        "watch_providers": []
       }
     },
     {
@@ -20347,7 +20918,8 @@
         "runtime": 119,
         "imdb_rating": "6.0",
         "rotten_tomatoes": "87",
-        "metacritic": "72"
+        "metacritic": "72",
+        "watch_providers": []
       }
     },
     {
@@ -20383,7 +20955,8 @@
         "runtime": 124,
         "imdb_rating": "6.0",
         "rotten_tomatoes": "46",
-        "metacritic": "48"
+        "metacritic": "48",
+        "watch_providers": []
       }
     },
     {
@@ -20419,7 +20992,8 @@
         "runtime": 178,
         "imdb_rating": "7.2",
         "rotten_tomatoes": "48",
-        "metacritic": "43"
+        "metacritic": "43",
+        "watch_providers": []
       }
     },
     {
@@ -20453,7 +21027,8 @@
         "runtime": 112,
         "imdb_rating": "7.9",
         "rotten_tomatoes": "90",
-        "metacritic": "81"
+        "metacritic": "81",
+        "watch_providers": []
       }
     },
     {
@@ -20489,7 +21064,8 @@
         "runtime": 128,
         "imdb_rating": "7.7",
         "rotten_tomatoes": "96",
-        "metacritic": "79"
+        "metacritic": "79",
+        "watch_providers": []
       }
     },
     {
@@ -20526,7 +21102,8 @@
         "runtime": 96,
         "imdb_rating": "6.8",
         "rotten_tomatoes": "90",
-        "metacritic": "67"
+        "metacritic": "67",
+        "watch_providers": []
       }
     },
     {
@@ -20563,7 +21140,8 @@
         "runtime": 87,
         "imdb_rating": "4.4",
         "rotten_tomatoes": "30",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -20598,7 +21176,8 @@
         "runtime": 115,
         "imdb_rating": "7.1",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -20634,7 +21213,8 @@
         "runtime": 131,
         "imdb_rating": "8.5",
         "rotten_tomatoes": "99",
-        "metacritic": "97"
+        "metacritic": "97",
+        "watch_providers": []
       }
     },
     {
@@ -20669,7 +21249,8 @@
         "runtime": 99,
         "imdb_rating": "3.5",
         "rotten_tomatoes": "76",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -20705,7 +21286,8 @@
         "runtime": 131,
         "imdb_rating": "6.7",
         "rotten_tomatoes": "68",
-        "metacritic": "55"
+        "metacritic": "55",
+        "watch_providers": []
       }
     },
     {
@@ -20740,7 +21322,8 @@
         "runtime": 149,
         "imdb_rating": "6.6",
         "rotten_tomatoes": "25",
-        "metacritic": "46"
+        "metacritic": "46",
+        "watch_providers": []
       }
     },
     {
@@ -20774,7 +21357,8 @@
         "runtime": 98,
         "imdb_rating": "6.9",
         "rotten_tomatoes": "78",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -20810,7 +21394,8 @@
         "runtime": 124,
         "imdb_rating": "7.2",
         "rotten_tomatoes": "83",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -20845,7 +21430,8 @@
         "runtime": 95,
         "imdb_rating": "6.6",
         "rotten_tomatoes": "47",
-        "metacritic": "53"
+        "metacritic": "53",
+        "watch_providers": []
       }
     },
     {
@@ -20881,7 +21467,8 @@
         "runtime": 120,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -20918,7 +21505,8 @@
         "runtime": 118,
         "imdb_rating": "7.8",
         "rotten_tomatoes": "84",
-        "metacritic": "68"
+        "metacritic": "68",
+        "watch_providers": []
       }
     },
     {
@@ -20954,7 +21542,8 @@
         "runtime": 128,
         "imdb_rating": "7.3",
         "rotten_tomatoes": "90",
-        "metacritic": "87"
+        "metacritic": "87",
+        "watch_providers": []
       }
     },
     {
@@ -20990,7 +21579,8 @@
         "runtime": 101,
         "imdb_rating": "7.6",
         "rotten_tomatoes": "92",
-        "metacritic": "71"
+        "metacritic": "71",
+        "watch_providers": []
       }
     },
     {
@@ -21025,7 +21615,8 @@
         "runtime": 128,
         "imdb_rating": "7.8",
         "rotten_tomatoes": "87",
-        "metacritic": "82"
+        "metacritic": "82",
+        "watch_providers": []
       }
     },
     {
@@ -21061,7 +21652,8 @@
         "runtime": 124,
         "imdb_rating": "6.0",
         "rotten_tomatoes": "46",
-        "metacritic": "48"
+        "metacritic": "48",
+        "watch_providers": []
       }
     },
     {
@@ -21097,7 +21689,8 @@
         "runtime": 138,
         "imdb_rating": "7.3",
         "rotten_tomatoes": "94",
-        "metacritic": "85"
+        "metacritic": "85",
+        "watch_providers": []
       }
     },
     {
@@ -21134,7 +21727,8 @@
         "runtime": 115,
         "imdb_rating": "5.7",
         "rotten_tomatoes": "20",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -21169,7 +21763,8 @@
         "runtime": 85,
         "imdb_rating": "6.4",
         "rotten_tomatoes": "80",
-        "metacritic": "71"
+        "metacritic": "71",
+        "watch_providers": []
       }
     },
     {
@@ -21205,7 +21800,8 @@
         "runtime": 114,
         "imdb_rating": "6.2",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -21240,7 +21836,8 @@
         "runtime": 88,
         "imdb_rating": "5.2",
         "rotten_tomatoes": "79",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -21275,7 +21872,8 @@
         "runtime": 98,
         "imdb_rating": "5.0",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -21311,7 +21909,8 @@
         "runtime": 105,
         "imdb_rating": "5.1",
         "rotten_tomatoes": "27",
-        "metacritic": "38"
+        "metacritic": "38",
+        "watch_providers": []
       }
     },
     {
@@ -21345,7 +21944,8 @@
         "runtime": 98,
         "imdb_rating": "5.5",
         "rotten_tomatoes": "52",
-        "metacritic": "52"
+        "metacritic": "52",
+        "watch_providers": []
       }
     },
     {
@@ -21381,7 +21981,8 @@
         "runtime": 105,
         "imdb_rating": "6.8",
         "rotten_tomatoes": "76",
-        "metacritic": "72"
+        "metacritic": "72",
+        "watch_providers": []
       }
     },
     {
@@ -21415,7 +22016,8 @@
         "runtime": 94,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -21451,7 +22053,8 @@
         "runtime": 98,
         "imdb_rating": "6.3",
         "rotten_tomatoes": "65",
-        "metacritic": "57"
+        "metacritic": "57",
+        "watch_providers": []
       }
     },
     {
@@ -21486,7 +22089,8 @@
         "runtime": 94,
         "imdb_rating": "4.6",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -21521,7 +22125,8 @@
         "runtime": 111,
         "imdb_rating": "6.8",
         "rotten_tomatoes": "20",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -21557,7 +22162,8 @@
         "runtime": 103,
         "imdb_rating": "6.0",
         "rotten_tomatoes": "70",
-        "metacritic": "58"
+        "metacritic": "58",
+        "watch_providers": []
       }
     },
     {
@@ -21592,7 +22198,8 @@
         "runtime": 112,
         "imdb_rating": "8.5",
         "rotten_tomatoes": "75",
-        "metacritic": "57"
+        "metacritic": "57",
+        "watch_providers": []
       }
     },
     {
@@ -21627,7 +22234,8 @@
         "runtime": 194,
         "imdb_rating": "8.0",
         "rotten_tomatoes": "88",
-        "metacritic": "75"
+        "metacritic": "75",
+        "watch_providers": []
       }
     },
     {
@@ -21663,7 +22271,8 @@
         "runtime": 97,
         "imdb_rating": "8.2",
         "rotten_tomatoes": "95",
-        "metacritic": "65"
+        "metacritic": "65",
+        "watch_providers": []
       }
     },
     {
@@ -21699,7 +22308,8 @@
         "runtime": 95,
         "imdb_rating": "7.0",
         "rotten_tomatoes": "81",
-        "metacritic": "73"
+        "metacritic": "73",
+        "watch_providers": []
       }
     },
     {
@@ -21735,7 +22345,8 @@
         "runtime": 95,
         "imdb_rating": "7.3",
         "rotten_tomatoes": "97",
-        "metacritic": "77"
+        "metacritic": "77",
+        "watch_providers": []
       }
     },
     {
@@ -21771,7 +22382,8 @@
         "runtime": 105,
         "imdb_rating": "5.1",
         "rotten_tomatoes": "27",
-        "metacritic": "38"
+        "metacritic": "38",
+        "watch_providers": []
       }
     },
     {
@@ -21805,7 +22417,8 @@
         "runtime": 84,
         "imdb_rating": "7.1",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -21840,7 +22453,8 @@
         "runtime": 87,
         "imdb_rating": "5.8",
         "rotten_tomatoes": "100",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -21877,7 +22491,8 @@
         "runtime": 90,
         "imdb_rating": "7.8",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -21913,7 +22528,8 @@
         "runtime": 135,
         "imdb_rating": "7.3",
         "rotten_tomatoes": "96",
-        "metacritic": "88"
+        "metacritic": "88",
+        "watch_providers": []
       }
     },
     {
@@ -21951,7 +22567,8 @@
         "runtime": 102,
         "imdb_rating": "8.1",
         "rotten_tomatoes": "98",
-        "metacritic": "94"
+        "metacritic": "94",
+        "watch_providers": []
       }
     },
     {
@@ -21986,7 +22603,8 @@
         "runtime": 102,
         "imdb_rating": "8.5",
         "rotten_tomatoes": "99",
-        "metacritic": "100"
+        "metacritic": "100",
+        "watch_providers": []
       }
     },
     {
@@ -22022,7 +22640,8 @@
         "runtime": 103,
         "imdb_rating": "7.9",
         "rotten_tomatoes": "89",
-        "metacritic": "78"
+        "metacritic": "78",
+        "watch_providers": []
       }
     },
     {
@@ -22058,7 +22677,8 @@
         "runtime": 140,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -22095,7 +22715,8 @@
         "runtime": 137,
         "imdb_rating": "6.3",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -22131,7 +22752,8 @@
         "runtime": 7,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -22167,7 +22789,8 @@
         "runtime": 131,
         "imdb_rating": "6.7",
         "rotten_tomatoes": "68",
-        "metacritic": "55"
+        "metacritic": "55",
+        "watch_providers": []
       }
     },
     {
@@ -22202,7 +22825,8 @@
         "runtime": 117,
         "imdb_rating": "8.1",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -22237,7 +22861,8 @@
         "runtime": 113,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -22273,7 +22898,8 @@
         "runtime": 118,
         "imdb_rating": "7.8",
         "rotten_tomatoes": "95",
-        "metacritic": "76"
+        "metacritic": "76",
+        "watch_providers": []
       }
     },
     {
@@ -22308,7 +22934,8 @@
         "runtime": 84,
         "imdb_rating": "3.5",
         "rotten_tomatoes": "17",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -22343,7 +22970,8 @@
         "runtime": 136,
         "imdb_rating": "8.7",
         "rotten_tomatoes": "83",
-        "metacritic": "73"
+        "metacritic": "73",
+        "watch_providers": []
       }
     },
     {
@@ -22379,7 +23007,8 @@
         "runtime": 0,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -22413,7 +23042,8 @@
         "runtime": 151,
         "imdb_rating": "7.5",
         "rotten_tomatoes": "92",
-        "metacritic": "85"
+        "metacritic": "85",
+        "watch_providers": []
       }
     },
     {
@@ -22448,7 +23078,8 @@
         "runtime": 105,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -22483,7 +23114,8 @@
         "runtime": 96,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -22518,7 +23150,8 @@
         "runtime": 104,
         "imdb_rating": "7.0",
         "rotten_tomatoes": "64",
-        "metacritic": "61"
+        "metacritic": "61",
+        "watch_providers": []
       }
     },
     {
@@ -22552,7 +23185,8 @@
         "runtime": 87,
         "imdb_rating": "7.0",
         "rotten_tomatoes": "91",
-        "metacritic": "84"
+        "metacritic": "84",
+        "watch_providers": []
       }
     },
     {
@@ -22587,7 +23221,8 @@
         "runtime": 144,
         "imdb_rating": "7.8",
         "rotten_tomatoes": "83",
-        "metacritic": "67"
+        "metacritic": "67",
+        "watch_providers": []
       }
     },
     {
@@ -22623,7 +23258,8 @@
         "runtime": 158,
         "imdb_rating": "5.9",
         "rotten_tomatoes": "40",
-        "metacritic": "49"
+        "metacritic": "49",
+        "watch_providers": []
       }
     },
     {
@@ -22659,7 +23295,8 @@
         "runtime": 100,
         "imdb_rating": "8.2",
         "rotten_tomatoes": "99",
-        "metacritic": "90"
+        "metacritic": "90",
+        "watch_providers": []
       }
     },
     {
@@ -22694,7 +23331,8 @@
         "runtime": 136,
         "imdb_rating": "7.7",
         "rotten_tomatoes": "97",
-        "metacritic": "84"
+        "metacritic": "84",
+        "watch_providers": []
       }
     },
     {
@@ -22730,7 +23368,8 @@
         "runtime": 85,
         "imdb_rating": "5.4",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -22765,7 +23404,8 @@
         "runtime": 99,
         "imdb_rating": "6.5",
         "rotten_tomatoes": "56",
-        "metacritic": "36"
+        "metacritic": "36",
+        "watch_providers": []
       }
     },
     {
@@ -22801,7 +23441,8 @@
         "runtime": 85,
         "imdb_rating": "5.4",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -22835,7 +23476,8 @@
         "runtime": 127,
         "imdb_rating": "7.6",
         "rotten_tomatoes": "93",
-        "metacritic": "75"
+        "metacritic": "75",
+        "watch_providers": []
       }
     },
     {
@@ -22871,7 +23513,8 @@
         "runtime": 124,
         "imdb_rating": "8.0",
         "rotten_tomatoes": "91",
-        "metacritic": "68"
+        "metacritic": "68",
+        "watch_providers": []
       }
     },
     {
@@ -22907,7 +23550,8 @@
         "runtime": 109,
         "imdb_rating": "6.1",
         "rotten_tomatoes": "40",
-        "metacritic": "46"
+        "metacritic": "46",
+        "watch_providers": []
       }
     },
     {
@@ -22942,7 +23586,8 @@
         "runtime": 104,
         "imdb_rating": "7.3",
         "rotten_tomatoes": "100",
-        "metacritic": "81"
+        "metacritic": "81",
+        "watch_providers": []
       }
     },
     {
@@ -22976,7 +23621,8 @@
         "runtime": 90,
         "imdb_rating": "5.4",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -23012,7 +23658,8 @@
         "runtime": 94,
         "imdb_rating": "7.9",
         "rotten_tomatoes": "100",
-        "metacritic": "88"
+        "metacritic": "88",
+        "watch_providers": []
       }
     },
     {
@@ -23046,7 +23693,8 @@
         "runtime": 7,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -23083,7 +23731,8 @@
         "runtime": 81,
         "imdb_rating": "8.3",
         "rotten_tomatoes": "100",
-        "metacritic": "96"
+        "metacritic": "96",
+        "watch_providers": []
       }
     },
     {
@@ -23119,7 +23768,8 @@
         "runtime": 104,
         "imdb_rating": "5.0",
         "rotten_tomatoes": "48",
-        "metacritic": "56"
+        "metacritic": "56",
+        "watch_providers": []
       }
     },
     {
@@ -23155,7 +23805,8 @@
         "runtime": 126,
         "imdb_rating": "6.9",
         "rotten_tomatoes": "73",
-        "metacritic": "60"
+        "metacritic": "60",
+        "watch_providers": []
       }
     },
     {
@@ -23189,7 +23840,8 @@
         "runtime": 125,
         "imdb_rating": "7.0",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -23226,7 +23878,8 @@
         "runtime": 102,
         "imdb_rating": "7.2",
         "rotten_tomatoes": null,
-        "metacritic": "75"
+        "metacritic": "75",
+        "watch_providers": []
       }
     },
     {
@@ -23262,7 +23915,8 @@
         "runtime": 126,
         "imdb_rating": "6.9",
         "rotten_tomatoes": "73",
-        "metacritic": "60"
+        "metacritic": "60",
+        "watch_providers": []
       }
     },
     {
@@ -23298,7 +23952,8 @@
         "runtime": 109,
         "imdb_rating": "7.0",
         "rotten_tomatoes": "79",
-        "metacritic": "73"
+        "metacritic": "73",
+        "watch_providers": []
       }
     },
     {
@@ -23334,7 +23989,8 @@
         "runtime": 109,
         "imdb_rating": "6.7",
         "rotten_tomatoes": "70",
-        "metacritic": "59"
+        "metacritic": "59",
+        "watch_providers": []
       }
     },
     {
@@ -23368,7 +24024,8 @@
         "runtime": 107,
         "imdb_rating": "7.5",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -23403,7 +24060,8 @@
         "runtime": 106,
         "imdb_rating": "6.0",
         "rotten_tomatoes": "76",
-        "metacritic": "63"
+        "metacritic": "63",
+        "watch_providers": []
       }
     },
     {
@@ -23439,7 +24097,8 @@
         "runtime": 115,
         "imdb_rating": "7.5",
         "rotten_tomatoes": "89",
-        "metacritic": "72"
+        "metacritic": "72",
+        "watch_providers": []
       }
     },
     {
@@ -23475,7 +24134,8 @@
         "runtime": 133,
         "imdb_rating": "7.3",
         "rotten_tomatoes": "73",
-        "metacritic": "66"
+        "metacritic": "66",
+        "watch_providers": []
       }
     },
     {
@@ -23511,7 +24171,8 @@
         "runtime": 111,
         "imdb_rating": "8.0",
         "rotten_tomatoes": "94",
-        "metacritic": "72"
+        "metacritic": "72",
+        "watch_providers": []
       }
     },
     {
@@ -23550,7 +24211,8 @@
         "runtime": 112,
         "imdb_rating": "7.0",
         "rotten_tomatoes": "88",
-        "metacritic": "71"
+        "metacritic": "71",
+        "watch_providers": []
       }
     },
     {
@@ -23585,7 +24247,8 @@
         "runtime": 123,
         "imdb_rating": "7.8",
         "rotten_tomatoes": "54",
-        "metacritic": "53"
+        "metacritic": "53",
+        "watch_providers": []
       }
     },
     {
@@ -23622,7 +24285,8 @@
         "runtime": 108,
         "imdb_rating": "7.7",
         "rotten_tomatoes": "87",
-        "metacritic": "72"
+        "metacritic": "72",
+        "watch_providers": []
       }
     },
     {
@@ -23657,7 +24321,8 @@
         "runtime": 127,
         "imdb_rating": "6.8",
         "rotten_tomatoes": "94",
-        "metacritic": "89"
+        "metacritic": "89",
+        "watch_providers": []
       }
     },
     {
@@ -23693,7 +24358,8 @@
         "runtime": 96,
         "imdb_rating": "7.0",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -23728,7 +24394,8 @@
         "runtime": 119,
         "imdb_rating": "7.1",
         "rotten_tomatoes": "85",
-        "metacritic": "71"
+        "metacritic": "71",
+        "watch_providers": []
       }
     },
     {
@@ -23764,7 +24431,8 @@
         "runtime": 123,
         "imdb_rating": "7.8",
         "rotten_tomatoes": "70",
-        "metacritic": "55"
+        "metacritic": "55",
+        "watch_providers": []
       }
     },
     {
@@ -23799,7 +24467,8 @@
         "runtime": 112,
         "imdb_rating": "7.1",
         "rotten_tomatoes": "71",
-        "metacritic": "59"
+        "metacritic": "59",
+        "watch_providers": []
       }
     },
     {
@@ -23834,7 +24503,8 @@
         "runtime": 113,
         "imdb_rating": "6.8",
         "rotten_tomatoes": "62",
-        "metacritic": "52"
+        "metacritic": "52",
+        "watch_providers": []
       }
     },
     {
@@ -23870,7 +24540,8 @@
         "runtime": 105,
         "imdb_rating": "5.1",
         "rotten_tomatoes": "15",
-        "metacritic": "35"
+        "metacritic": "35",
+        "watch_providers": []
       }
     },
     {
@@ -23905,7 +24576,8 @@
         "runtime": 128,
         "imdb_rating": "7.8",
         "rotten_tomatoes": "87",
-        "metacritic": "82"
+        "metacritic": "82",
+        "watch_providers": []
       }
     },
     {
@@ -23943,7 +24615,8 @@
         "runtime": 102,
         "imdb_rating": "7.8",
         "rotten_tomatoes": "90",
-        "metacritic": "74"
+        "metacritic": "74",
+        "watch_providers": []
       }
     },
     {
@@ -23978,7 +24651,8 @@
         "runtime": 155,
         "imdb_rating": "8.0",
         "rotten_tomatoes": "83",
-        "metacritic": "74"
+        "metacritic": "74",
+        "watch_providers": []
       }
     },
     {
@@ -24014,7 +24688,8 @@
         "runtime": 99,
         "imdb_rating": "6.1",
         "rotten_tomatoes": "85",
-        "metacritic": "48"
+        "metacritic": "48",
+        "watch_providers": []
       }
     },
     {
@@ -24049,7 +24724,8 @@
         "runtime": 100,
         "imdb_rating": "7.6",
         "rotten_tomatoes": null,
-        "metacritic": "66"
+        "metacritic": "66",
+        "watch_providers": []
       }
     },
     {
@@ -24086,7 +24762,8 @@
         "runtime": 123,
         "imdb_rating": "6.1",
         "rotten_tomatoes": "37",
-        "metacritic": "46"
+        "metacritic": "46",
+        "watch_providers": []
       }
     },
     {
@@ -24122,7 +24799,8 @@
         "runtime": 160,
         "imdb_rating": "8.4",
         "rotten_tomatoes": "90",
-        "metacritic": "87"
+        "metacritic": "87",
+        "watch_providers": []
       }
     },
     {
@@ -24157,7 +24835,8 @@
         "runtime": 118,
         "imdb_rating": "7.3",
         "rotten_tomatoes": "80",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -24193,7 +24872,8 @@
         "runtime": 160,
         "imdb_rating": "8.4",
         "rotten_tomatoes": "90",
-        "metacritic": "87"
+        "metacritic": "87",
+        "watch_providers": []
       }
     },
     {
@@ -24231,7 +24911,8 @@
         "runtime": 8,
         "imdb_rating": "7.5",
         "rotten_tomatoes": "88",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -24267,7 +24948,8 @@
         "runtime": 156,
         "imdb_rating": "6.2",
         "rotten_tomatoes": "47",
-        "metacritic": "52"
+        "metacritic": "52",
+        "watch_providers": []
       }
     },
     {
@@ -24302,7 +24984,8 @@
         "runtime": 105,
         "imdb_rating": "6.8",
         "rotten_tomatoes": "80",
-        "metacritic": "66"
+        "metacritic": "66",
+        "watch_providers": []
       }
     },
     {
@@ -24338,7 +25021,8 @@
         "runtime": 150,
         "imdb_rating": "7.5",
         "rotten_tomatoes": "69",
-        "metacritic": "62"
+        "metacritic": "62",
+        "watch_providers": []
       }
     },
     {
@@ -24374,7 +25058,8 @@
         "runtime": 116,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -24410,7 +25095,8 @@
         "runtime": 90,
         "imdb_rating": "5.6",
         "rotten_tomatoes": "40",
-        "metacritic": "48"
+        "metacritic": "48",
+        "watch_providers": []
       }
     },
     {
@@ -24446,7 +25132,8 @@
         "runtime": 90,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -24482,7 +25169,8 @@
         "runtime": 87,
         "imdb_rating": "5.7",
         "rotten_tomatoes": "16",
-        "metacritic": "41"
+        "metacritic": "41",
+        "watch_providers": []
       }
     },
     {
@@ -24519,7 +25207,8 @@
         "runtime": 128,
         "imdb_rating": "7.1",
         "rotten_tomatoes": "88",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -24554,7 +25243,8 @@
         "runtime": 137,
         "imdb_rating": "6.2",
         "rotten_tomatoes": "73",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -24591,7 +25281,8 @@
         "runtime": 130,
         "imdb_rating": "7.7",
         "rotten_tomatoes": "77",
-        "metacritic": "47"
+        "metacritic": "47",
+        "watch_providers": []
       }
     },
     {
@@ -24625,7 +25316,8 @@
         "runtime": 88,
         "imdb_rating": "5.1",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -24663,7 +25355,8 @@
         "runtime": 95,
         "imdb_rating": "7.4",
         "rotten_tomatoes": "91",
-        "metacritic": "71"
+        "metacritic": "71",
+        "watch_providers": []
       }
     },
     {
@@ -24699,7 +25392,8 @@
         "runtime": 156,
         "imdb_rating": "6.2",
         "rotten_tomatoes": "47",
-        "metacritic": "52"
+        "metacritic": "52",
+        "watch_providers": []
       }
     },
     {
@@ -24735,7 +25429,8 @@
         "runtime": 156,
         "imdb_rating": "6.2",
         "rotten_tomatoes": "47",
-        "metacritic": "52"
+        "metacritic": "52",
+        "watch_providers": []
       }
     },
     {
@@ -24771,7 +25466,8 @@
         "runtime": 101,
         "imdb_rating": "6.6",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -24807,7 +25503,8 @@
         "runtime": 149,
         "imdb_rating": "6.4",
         "rotten_tomatoes": "31",
-        "metacritic": "37"
+        "metacritic": "37",
+        "watch_providers": []
       }
     },
     {
@@ -24842,7 +25539,8 @@
         "runtime": 111,
         "imdb_rating": "6.5",
         "rotten_tomatoes": "11",
-        "metacritic": "26"
+        "metacritic": "26",
+        "watch_providers": []
       }
     },
     {
@@ -24878,7 +25576,8 @@
         "runtime": 117,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -24913,7 +25612,8 @@
         "runtime": 105,
         "imdb_rating": "7.5",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -24950,7 +25650,8 @@
         "runtime": 118,
         "imdb_rating": "7.6",
         "rotten_tomatoes": "95",
-        "metacritic": "73"
+        "metacritic": "73",
+        "watch_providers": []
       }
     },
     {
@@ -24987,7 +25688,8 @@
         "runtime": 118,
         "imdb_rating": "7.8",
         "rotten_tomatoes": "84",
-        "metacritic": "68"
+        "metacritic": "68",
+        "watch_providers": []
       }
     },
     {
@@ -25023,7 +25725,8 @@
         "runtime": 98,
         "imdb_rating": "6.3",
         "rotten_tomatoes": "24",
-        "metacritic": "31"
+        "metacritic": "31",
+        "watch_providers": []
       }
     },
     {
@@ -25060,7 +25763,8 @@
         "runtime": 103,
         "imdb_rating": "6.4",
         "rotten_tomatoes": "32",
-        "metacritic": "42"
+        "metacritic": "42",
+        "watch_providers": []
       }
     },
     {
@@ -25095,7 +25799,8 @@
         "runtime": 119,
         "imdb_rating": "7.2",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -25131,7 +25836,8 @@
         "runtime": 113,
         "imdb_rating": "5.8",
         "rotten_tomatoes": "24",
-        "metacritic": "38"
+        "metacritic": "38",
+        "watch_providers": []
       }
     },
     {
@@ -25166,7 +25872,8 @@
         "runtime": 111,
         "imdb_rating": "7.4",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -25202,7 +25909,8 @@
         "runtime": 122,
         "imdb_rating": "8.3",
         "rotten_tomatoes": "68",
-        "metacritic": "59"
+        "metacritic": "59",
+        "watch_providers": []
       }
     },
     {
@@ -25237,7 +25945,8 @@
         "runtime": 95,
         "imdb_rating": "3.9",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -25272,7 +25981,8 @@
         "runtime": 89,
         "imdb_rating": "5.6",
         "rotten_tomatoes": "31",
-        "metacritic": "39"
+        "metacritic": "39",
+        "watch_providers": []
       }
     },
     {
@@ -25308,7 +26018,8 @@
         "runtime": 93,
         "imdb_rating": "5.9",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -25344,7 +26055,8 @@
         "runtime": 99,
         "imdb_rating": "5.3",
         "rotten_tomatoes": "9",
-        "metacritic": "24"
+        "metacritic": "24",
+        "watch_providers": []
       }
     },
     {
@@ -25378,7 +26090,8 @@
         "runtime": 97,
         "imdb_rating": "9.0",
         "rotten_tomatoes": "100",
-        "metacritic": "97"
+        "metacritic": "97",
+        "watch_providers": []
       }
     },
     {
@@ -25414,7 +26127,8 @@
         "runtime": 142,
         "imdb_rating": "8.8",
         "rotten_tomatoes": "75",
-        "metacritic": "82"
+        "metacritic": "82",
+        "watch_providers": []
       }
     },
     {
@@ -25450,7 +26164,8 @@
         "runtime": 80,
         "imdb_rating": "5.3",
         "rotten_tomatoes": "59",
-        "metacritic": "57"
+        "metacritic": "57",
+        "watch_providers": []
       }
     },
     {
@@ -25486,7 +26201,8 @@
         "runtime": 95,
         "imdb_rating": "3.2",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -25522,7 +26238,8 @@
         "runtime": 127,
         "imdb_rating": "6.3",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -25557,7 +26274,8 @@
         "runtime": 131,
         "imdb_rating": "6.5",
         "rotten_tomatoes": "80",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -25592,7 +26310,8 @@
         "runtime": 131,
         "imdb_rating": "6.5",
         "rotten_tomatoes": "80",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -25628,7 +26347,8 @@
         "runtime": 134,
         "imdb_rating": "6.6",
         "rotten_tomatoes": "79",
-        "metacritic": "68"
+        "metacritic": "68",
+        "watch_providers": []
       }
     },
     {
@@ -25663,7 +26383,8 @@
         "runtime": 115,
         "imdb_rating": "6.1",
         "rotten_tomatoes": "67",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -25699,7 +26420,8 @@
         "runtime": 91,
         "imdb_rating": "7.0",
         "rotten_tomatoes": "83",
-        "metacritic": "66"
+        "metacritic": "66",
+        "watch_providers": []
       }
     },
     {
@@ -25735,7 +26457,8 @@
         "runtime": 117,
         "imdb_rating": "6.3",
         "rotten_tomatoes": "26",
-        "metacritic": "29"
+        "metacritic": "29",
+        "watch_providers": []
       }
     },
     {
@@ -25771,7 +26494,8 @@
         "runtime": 134,
         "imdb_rating": "6.6",
         "rotten_tomatoes": "79",
-        "metacritic": "68"
+        "metacritic": "68",
+        "watch_providers": []
       }
     },
     {
@@ -25805,7 +26529,8 @@
         "runtime": 105,
         "imdb_rating": "5.8",
         "rotten_tomatoes": "56",
-        "metacritic": "56"
+        "metacritic": "56",
+        "watch_providers": []
       }
     },
     {
@@ -25840,7 +26565,8 @@
         "runtime": 90,
         "imdb_rating": "6.6",
         "rotten_tomatoes": "70",
-        "metacritic": "68"
+        "metacritic": "68",
+        "watch_providers": []
       }
     },
     {
@@ -25874,7 +26600,8 @@
         "runtime": 105,
         "imdb_rating": "5.7",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -25909,7 +26636,8 @@
         "runtime": 95,
         "imdb_rating": "7.1",
         "rotten_tomatoes": "76",
-        "metacritic": "61"
+        "metacritic": "61",
+        "watch_providers": []
       }
     },
     {
@@ -25943,7 +26671,8 @@
         "runtime": 89,
         "imdb_rating": "6.4",
         "rotten_tomatoes": "64",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -25978,7 +26707,8 @@
         "runtime": 121,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -26014,7 +26744,8 @@
         "runtime": 133,
         "imdb_rating": "7.3",
         "rotten_tomatoes": "71",
-        "metacritic": "59"
+        "metacritic": "59",
+        "watch_providers": []
       }
     },
     {
@@ -26049,7 +26780,8 @@
         "runtime": 91,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -26084,7 +26816,8 @@
         "runtime": 145,
         "imdb_rating": "2.5",
         "rotten_tomatoes": "4",
-        "metacritic": "6"
+        "metacritic": "6",
+        "watch_providers": []
       }
     },
     {
@@ -26120,7 +26853,8 @@
         "runtime": 99,
         "imdb_rating": "6.4",
         "rotten_tomatoes": "56",
-        "metacritic": "58"
+        "metacritic": "58",
+        "watch_providers": []
       }
     },
     {
@@ -26155,7 +26889,8 @@
         "runtime": 100,
         "imdb_rating": "6.0",
         "rotten_tomatoes": "31",
-        "metacritic": "34"
+        "metacritic": "34",
+        "watch_providers": []
       }
     },
     {
@@ -26190,7 +26925,8 @@
         "runtime": 90,
         "imdb_rating": "6.1",
         "rotten_tomatoes": "83",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -26227,7 +26963,8 @@
         "runtime": 107,
         "imdb_rating": "6.4",
         "rotten_tomatoes": "54",
-        "metacritic": "42"
+        "metacritic": "42",
+        "watch_providers": []
       }
     },
     {
@@ -26263,7 +27000,8 @@
         "runtime": 118,
         "imdb_rating": "6.3",
         "rotten_tomatoes": "57",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -26299,7 +27037,8 @@
         "runtime": 110,
         "imdb_rating": "6.3",
         "rotten_tomatoes": "8",
-        "metacritic": "37"
+        "metacritic": "37",
+        "watch_providers": []
       }
     },
     {
@@ -26335,7 +27074,8 @@
         "runtime": 109,
         "imdb_rating": "7.3",
         "rotten_tomatoes": "100",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -26371,7 +27111,8 @@
         "runtime": 99,
         "imdb_rating": "5.2",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -26407,7 +27148,8 @@
         "runtime": 136,
         "imdb_rating": "6.7",
         "rotten_tomatoes": "42",
-        "metacritic": "47"
+        "metacritic": "47",
+        "watch_providers": []
       }
     },
     {
@@ -26443,7 +27185,8 @@
         "runtime": 125,
         "imdb_rating": "7.3",
         "rotten_tomatoes": "72",
-        "metacritic": "64"
+        "metacritic": "64",
+        "watch_providers": []
       }
     },
     {
@@ -26480,7 +27223,8 @@
         "runtime": 90,
         "imdb_rating": "6.8",
         "rotten_tomatoes": "89",
-        "metacritic": "73"
+        "metacritic": "73",
+        "watch_providers": []
       }
     },
     {
@@ -26514,7 +27258,8 @@
         "runtime": 94,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -26551,7 +27296,8 @@
         "runtime": 113,
         "imdb_rating": "6.8",
         "rotten_tomatoes": "66",
-        "metacritic": "57"
+        "metacritic": "57",
+        "watch_providers": []
       }
     },
     {
@@ -26588,7 +27334,8 @@
         "runtime": 104,
         "imdb_rating": "6.7",
         "rotten_tomatoes": "69",
-        "metacritic": "59"
+        "metacritic": "59",
+        "watch_providers": []
       }
     },
     {
@@ -26625,7 +27372,8 @@
         "runtime": 119,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -26660,7 +27408,8 @@
         "runtime": 109,
         "imdb_rating": "7.0",
         "rotten_tomatoes": "75",
-        "metacritic": "62"
+        "metacritic": "62",
+        "watch_providers": []
       }
     },
     {
@@ -26695,7 +27444,8 @@
         "runtime": 114,
         "imdb_rating": "6.4",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -26730,7 +27480,8 @@
         "runtime": 114,
         "imdb_rating": "6.4",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -26767,7 +27518,8 @@
         "runtime": 97,
         "imdb_rating": "6.4",
         "rotten_tomatoes": "88",
-        "metacritic": "70"
+        "metacritic": "70",
+        "watch_providers": []
       }
     },
     {
@@ -26803,7 +27555,8 @@
         "runtime": 140,
         "imdb_rating": "6.6",
         "rotten_tomatoes": "41",
-        "metacritic": "48"
+        "metacritic": "48",
+        "watch_providers": []
       }
     },
     {
@@ -26838,7 +27591,8 @@
         "runtime": 128,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -26874,7 +27628,8 @@
         "runtime": 102,
         "imdb_rating": "6.6",
         "rotten_tomatoes": "31",
-        "metacritic": "40"
+        "metacritic": "40",
+        "watch_providers": []
       }
     },
     {
@@ -26909,7 +27664,8 @@
         "runtime": 103,
         "imdb_rating": "8.2",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -26948,7 +27704,8 @@
         "runtime": 96,
         "imdb_rating": "5.2",
         "rotten_tomatoes": "17",
-        "metacritic": "34"
+        "metacritic": "34",
+        "watch_providers": []
       }
     },
     {
@@ -26984,7 +27741,8 @@
         "runtime": 135,
         "imdb_rating": "7.3",
         "rotten_tomatoes": "96",
-        "metacritic": "88"
+        "metacritic": "88",
+        "watch_providers": []
       }
     },
     {
@@ -27020,7 +27778,8 @@
         "runtime": 129,
         "imdb_rating": "7.4",
         "rotten_tomatoes": "60",
-        "metacritic": "48"
+        "metacritic": "48",
+        "watch_providers": []
       }
     },
     {
@@ -27057,7 +27816,8 @@
         "runtime": 100,
         "imdb_rating": "7.6",
         "rotten_tomatoes": "96",
-        "metacritic": "84"
+        "metacritic": "84",
+        "watch_providers": []
       }
     },
     {
@@ -27092,7 +27852,8 @@
         "runtime": 175,
         "imdb_rating": "9.2",
         "rotten_tomatoes": "97",
-        "metacritic": "100"
+        "metacritic": "100",
+        "watch_providers": []
       }
     },
     {
@@ -27129,7 +27890,8 @@
         "runtime": 105,
         "imdb_rating": "8.4",
         "rotten_tomatoes": "97",
-        "metacritic": "81"
+        "metacritic": "81",
+        "watch_providers": []
       }
     },
     {
@@ -27165,7 +27927,8 @@
         "runtime": 141,
         "imdb_rating": "7.7",
         "rotten_tomatoes": "61",
-        "metacritic": "63"
+        "metacritic": "63",
+        "watch_providers": []
       }
     },
     {
@@ -27200,7 +27963,8 @@
         "runtime": 132,
         "imdb_rating": "6.9",
         "rotten_tomatoes": "60",
-        "metacritic": "55"
+        "metacritic": "55",
+        "watch_providers": []
       }
     },
     {
@@ -27236,7 +28000,8 @@
         "runtime": 108,
         "imdb_rating": "6.5",
         "rotten_tomatoes": "42",
-        "metacritic": "48"
+        "metacritic": "48",
+        "watch_providers": []
       }
     },
     {
@@ -27273,7 +28038,8 @@
         "runtime": 115,
         "imdb_rating": "5.5",
         "rotten_tomatoes": "55",
-        "metacritic": "51"
+        "metacritic": "51",
+        "watch_providers": []
       }
     },
     {
@@ -27308,7 +28074,8 @@
         "runtime": 103,
         "imdb_rating": "7.0",
         "rotten_tomatoes": "92",
-        "metacritic": "78"
+        "metacritic": "78",
+        "watch_providers": []
       }
     },
     {
@@ -27343,7 +28110,8 @@
         "runtime": 125,
         "imdb_rating": "6.7",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -27379,7 +28147,8 @@
         "runtime": 86,
         "imdb_rating": "5.2",
         "rotten_tomatoes": "16",
-        "metacritic": "32"
+        "metacritic": "32",
+        "watch_providers": []
       }
     },
     {
@@ -27414,7 +28183,8 @@
         "runtime": 100,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -27450,7 +28220,8 @@
         "runtime": 95,
         "imdb_rating": "6.1",
         "rotten_tomatoes": "38",
-        "metacritic": "48"
+        "metacritic": "48",
+        "watch_providers": []
       }
     },
     {
@@ -27485,7 +28256,8 @@
         "runtime": 106,
         "imdb_rating": "5.3",
         "rotten_tomatoes": "18",
-        "metacritic": "30"
+        "metacritic": "30",
+        "watch_providers": []
       }
     },
     {
@@ -27521,7 +28293,8 @@
         "runtime": 92,
         "imdb_rating": "6.4",
         "rotten_tomatoes": "37",
-        "metacritic": "42"
+        "metacritic": "42",
+        "watch_providers": []
       }
     },
     {
@@ -27557,7 +28330,8 @@
         "runtime": 114,
         "imdb_rating": "7.1",
         "rotten_tomatoes": "46",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -27593,7 +28367,8 @@
         "runtime": 121,
         "imdb_rating": "7.0",
         "rotten_tomatoes": "46",
-        "metacritic": "50"
+        "metacritic": "50",
+        "watch_providers": []
       }
     },
     {
@@ -27628,7 +28403,8 @@
         "runtime": 93,
         "imdb_rating": "6.1",
         "rotten_tomatoes": "65",
-        "metacritic": "33"
+        "metacritic": "33",
+        "watch_providers": []
       }
     },
     {
@@ -27663,7 +28439,8 @@
         "runtime": 115,
         "imdb_rating": "7.2",
         "rotten_tomatoes": "80",
-        "metacritic": "66"
+        "metacritic": "66",
+        "watch_providers": []
       }
     },
     {
@@ -27698,7 +28475,8 @@
         "runtime": 99,
         "imdb_rating": "5.6",
         "rotten_tomatoes": "15",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -27734,7 +28512,8 @@
         "runtime": 94,
         "imdb_rating": "5.3",
         "rotten_tomatoes": "36",
-        "metacritic": "43"
+        "metacritic": "43",
+        "watch_providers": []
       }
     },
     {
@@ -27770,7 +28549,8 @@
         "runtime": 121,
         "imdb_rating": "7.0",
         "rotten_tomatoes": "46",
-        "metacritic": "50"
+        "metacritic": "50",
+        "watch_providers": []
       }
     },
     {
@@ -27804,7 +28584,8 @@
         "runtime": 105,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -27839,7 +28620,8 @@
         "runtime": 90,
         "imdb_rating": "6.0",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -27875,7 +28657,8 @@
         "runtime": 148,
         "imdb_rating": "8.8",
         "rotten_tomatoes": "87",
-        "metacritic": "74"
+        "metacritic": "74",
+        "watch_providers": []
       }
     },
     {
@@ -27911,7 +28694,8 @@
         "runtime": 113,
         "imdb_rating": "7.7",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -27946,7 +28730,8 @@
         "runtime": 116,
         "imdb_rating": "5.6",
         "rotten_tomatoes": "45",
-        "metacritic": "39"
+        "metacritic": "39",
+        "watch_providers": []
       }
     },
     {
@@ -27982,7 +28767,8 @@
         "runtime": 101,
         "imdb_rating": "7.8",
         "rotten_tomatoes": "91",
-        "metacritic": "80"
+        "metacritic": "80",
+        "watch_providers": []
       }
     },
     {
@@ -28017,7 +28803,8 @@
         "runtime": 87,
         "imdb_rating": "7.5",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -28053,7 +28840,8 @@
         "runtime": 92,
         "imdb_rating": "5.7",
         "rotten_tomatoes": "44",
-        "metacritic": "48"
+        "metacritic": "48",
+        "watch_providers": []
       }
     },
     {
@@ -28088,7 +28876,8 @@
         "runtime": 118,
         "imdb_rating": "6.2",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -28122,7 +28911,8 @@
         "runtime": 87,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -28158,7 +28948,8 @@
         "runtime": 126,
         "imdb_rating": "6.8",
         "rotten_tomatoes": null,
-        "metacritic": "67"
+        "metacritic": "67",
+        "watch_providers": []
       }
     },
     {
@@ -28193,7 +28984,8 @@
         "runtime": 110,
         "imdb_rating": "7.0",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -28228,7 +29020,8 @@
         "runtime": 104,
         "imdb_rating": "6.8",
         "rotten_tomatoes": "30",
-        "metacritic": "43"
+        "metacritic": "43",
+        "watch_providers": []
       }
     },
     {
@@ -28265,7 +29058,8 @@
         "runtime": 106,
         "imdb_rating": "7.6",
         "rotten_tomatoes": "92",
-        "metacritic": "70"
+        "metacritic": "70",
+        "watch_providers": []
       }
     },
     {
@@ -28301,7 +29095,8 @@
         "runtime": 88,
         "imdb_rating": "6.3",
         "rotten_tomatoes": null,
-        "metacritic": "56"
+        "metacritic": "56",
+        "watch_providers": []
       }
     },
     {
@@ -28337,7 +29132,8 @@
         "runtime": 126,
         "imdb_rating": "6.8",
         "rotten_tomatoes": null,
-        "metacritic": "67"
+        "metacritic": "67",
+        "watch_providers": []
       }
     },
     {
@@ -28373,7 +29169,8 @@
         "runtime": 181,
         "imdb_rating": "8.4",
         "rotten_tomatoes": "94",
-        "metacritic": "78"
+        "metacritic": "78",
+        "watch_providers": []
       }
     },
     {
@@ -28409,7 +29206,8 @@
         "runtime": 122,
         "imdb_rating": "8.2",
         "rotten_tomatoes": "93",
-        "metacritic": "92"
+        "metacritic": "92",
+        "watch_providers": []
       }
     },
     {
@@ -28446,7 +29244,8 @@
         "runtime": 114,
         "imdb_rating": "6.0",
         "rotten_tomatoes": "49",
-        "metacritic": "48"
+        "metacritic": "48",
+        "watch_providers": []
       }
     },
     {
@@ -28482,7 +29281,8 @@
         "runtime": 122,
         "imdb_rating": "8.2",
         "rotten_tomatoes": "93",
-        "metacritic": "92"
+        "metacritic": "92",
+        "watch_providers": []
       }
     },
     {
@@ -28519,7 +29319,8 @@
         "runtime": 97,
         "imdb_rating": "7.6",
         "rotten_tomatoes": "87",
-        "metacritic": "66"
+        "metacritic": "66",
+        "watch_providers": []
       }
     },
     {
@@ -28555,7 +29356,8 @@
         "runtime": 118,
         "imdb_rating": "6.4",
         "rotten_tomatoes": "52",
-        "metacritic": "44"
+        "metacritic": "44",
+        "watch_providers": []
       }
     },
     {
@@ -28591,7 +29393,8 @@
         "runtime": 131,
         "imdb_rating": "8.5",
         "rotten_tomatoes": "99",
-        "metacritic": "97"
+        "metacritic": "97",
+        "watch_providers": []
       }
     },
     {
@@ -28627,7 +29430,8 @@
         "runtime": 160,
         "imdb_rating": "8.2",
         "rotten_tomatoes": "96",
-        "metacritic": "97"
+        "metacritic": "97",
+        "watch_providers": []
       }
     },
     {
@@ -28665,7 +29469,8 @@
         "runtime": 78,
         "imdb_rating": "7.4",
         "rotten_tomatoes": "86",
-        "metacritic": "70"
+        "metacritic": "70",
+        "watch_providers": []
       }
     },
     {
@@ -28701,7 +29506,8 @@
         "runtime": 124,
         "imdb_rating": "6.6",
         "rotten_tomatoes": "64",
-        "metacritic": "51"
+        "metacritic": "51",
+        "watch_providers": []
       }
     },
     {
@@ -28737,7 +29543,8 @@
         "runtime": 169,
         "imdb_rating": "8.7",
         "rotten_tomatoes": "73",
-        "metacritic": "74"
+        "metacritic": "74",
+        "watch_providers": []
       }
     },
     {
@@ -28773,7 +29580,8 @@
         "runtime": 135,
         "imdb_rating": "6.5",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -28809,7 +29617,8 @@
         "runtime": 94,
         "imdb_rating": "6.3",
         "rotten_tomatoes": "75",
-        "metacritic": "63"
+        "metacritic": "63",
+        "watch_providers": []
       }
     },
     {
@@ -28845,7 +29654,8 @@
         "runtime": 227,
         "imdb_rating": "8.9",
         "rotten_tomatoes": "91",
-        "metacritic": "92"
+        "metacritic": "92",
+        "watch_providers": []
       }
     },
     {
@@ -28881,7 +29691,8 @@
         "runtime": 95,
         "imdb_rating": "7.0",
         "rotten_tomatoes": "81",
-        "metacritic": "73"
+        "metacritic": "73",
+        "watch_providers": []
       }
     },
     {
@@ -28916,7 +29727,8 @@
         "runtime": 116,
         "imdb_rating": "6.8",
         "rotten_tomatoes": "93",
-        "metacritic": "81"
+        "metacritic": "81",
+        "watch_providers": []
       }
     },
     {
@@ -28952,7 +29764,8 @@
         "runtime": 148,
         "imdb_rating": "7.1",
         "rotten_tomatoes": "83",
-        "metacritic": "72"
+        "metacritic": "72",
+        "watch_providers": []
       }
     },
     {
@@ -28987,7 +29800,8 @@
         "runtime": 96,
         "imdb_rating": "6.1",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -29023,7 +29837,8 @@
         "runtime": 86,
         "imdb_rating": "7.1",
         "rotten_tomatoes": "89",
-        "metacritic": "73"
+        "metacritic": "73",
+        "watch_providers": []
       }
     },
     {
@@ -29061,7 +29876,8 @@
         "runtime": 137,
         "imdb_rating": "7.3",
         "rotten_tomatoes": "39",
-        "metacritic": "63"
+        "metacritic": "63",
+        "watch_providers": []
       }
     },
     {
@@ -29097,7 +29913,8 @@
         "runtime": 115,
         "imdb_rating": "7.1",
         "rotten_tomatoes": "86",
-        "metacritic": "65"
+        "metacritic": "65",
+        "watch_providers": []
       }
     },
     {
@@ -29131,7 +29948,8 @@
         "runtime": 137,
         "imdb_rating": "7.9",
         "rotten_tomatoes": "95",
-        "metacritic": "94"
+        "metacritic": "94",
+        "watch_providers": []
       }
     },
     {
@@ -29167,7 +29985,8 @@
         "runtime": 108,
         "imdb_rating": "8.3",
         "rotten_tomatoes": "93",
-        "metacritic": "89"
+        "metacritic": "89",
+        "watch_providers": []
       }
     },
     {
@@ -29201,7 +30020,8 @@
         "runtime": 103,
         "imdb_rating": "7.3",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -29237,7 +30057,8 @@
         "runtime": 131,
         "imdb_rating": "8.5",
         "rotten_tomatoes": "99",
-        "metacritic": "97"
+        "metacritic": "97",
+        "watch_providers": []
       }
     },
     {
@@ -29273,7 +30094,8 @@
         "runtime": 96,
         "imdb_rating": "6.2",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -29309,7 +30131,8 @@
         "runtime": 117,
         "imdb_rating": null,
         "rotten_tomatoes": "61",
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -29345,7 +30168,8 @@
         "runtime": 96,
         "imdb_rating": "7.0",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -29381,7 +30205,8 @@
         "runtime": 106,
         "imdb_rating": "6.8",
         "rotten_tomatoes": "85",
-        "metacritic": "70"
+        "metacritic": "70",
+        "watch_providers": []
       }
     },
     {
@@ -29416,7 +30241,8 @@
         "runtime": 158,
         "imdb_rating": "7.5",
         "rotten_tomatoes": "70",
-        "metacritic": "63"
+        "metacritic": "63",
+        "watch_providers": []
       }
     },
     {
@@ -29452,7 +30278,8 @@
         "runtime": 140,
         "imdb_rating": "7.3",
         "rotten_tomatoes": "71",
-        "metacritic": "62"
+        "metacritic": "62",
+        "watch_providers": []
       }
     },
     {
@@ -29489,7 +30316,8 @@
         "runtime": 124,
         "imdb_rating": "5.1",
         "rotten_tomatoes": "46",
-        "metacritic": "58"
+        "metacritic": "58",
+        "watch_providers": []
       }
     },
     {
@@ -29524,7 +30352,8 @@
         "runtime": 93,
         "imdb_rating": "6.0",
         "rotten_tomatoes": "60",
-        "metacritic": "53"
+        "metacritic": "53",
+        "watch_providers": []
       }
     },
     {
@@ -29560,7 +30389,8 @@
         "runtime": 134,
         "imdb_rating": "7.5",
         "rotten_tomatoes": "63",
-        "metacritic": "58"
+        "metacritic": "58",
+        "watch_providers": []
       }
     },
     {
@@ -29595,7 +30425,8 @@
         "runtime": 94,
         "imdb_rating": "7.0",
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -29631,7 +30462,8 @@
         "runtime": 125,
         "imdb_rating": "7.9",
         "rotten_tomatoes": "94",
-        "metacritic": "79"
+        "metacritic": "79",
+        "watch_providers": []
       }
     },
     {
@@ -29667,7 +30499,8 @@
         "runtime": 114,
         "imdb_rating": "5.7",
         "rotten_tomatoes": null,
-        "metacritic": "34"
+        "metacritic": "34",
+        "watch_providers": []
       }
     },
     {
@@ -29703,7 +30536,8 @@
         "runtime": 151,
         "imdb_rating": "8.5",
         "rotten_tomatoes": "91",
-        "metacritic": "85"
+        "metacritic": "85",
+        "watch_providers": []
       }
     },
     {
@@ -29739,7 +30573,8 @@
         "runtime": 148,
         "imdb_rating": "7.1",
         "rotten_tomatoes": "83",
-        "metacritic": "72"
+        "metacritic": "72",
+        "watch_providers": []
       }
     },
     {
@@ -29771,7 +30606,8 @@
         "runtime": 24,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": "N/A"
+        "metacritic": "N/A",
+        "watch_providers": []
       }
     },
     {
@@ -29807,7 +30643,8 @@
         "runtime": 131,
         "imdb_rating": "8.5",
         "rotten_tomatoes": "99",
-        "metacritic": "97"
+        "metacritic": "97",
+        "watch_providers": []
       }
     },
     {
@@ -29843,7 +30680,8 @@
         "runtime": 131,
         "imdb_rating": "8.5",
         "rotten_tomatoes": "99",
-        "metacritic": "97"
+        "metacritic": "97",
+        "watch_providers": []
       }
     },
     {
@@ -29880,7 +30718,8 @@
         "runtime": 98,
         "imdb_rating": "7.3",
         "rotten_tomatoes": "91",
-        "metacritic": "72"
+        "metacritic": "72",
+        "watch_providers": []
       }
     },
     {
@@ -29916,7 +30755,8 @@
         "runtime": 181,
         "imdb_rating": "8.4",
         "rotten_tomatoes": "94",
-        "metacritic": "78"
+        "metacritic": "78",
+        "watch_providers": []
       }
     },
     {
@@ -29948,7 +30788,8 @@
         "runtime": 14,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -29983,7 +30824,8 @@
         "runtime": 116,
         "imdb_rating": "6.8",
         "rotten_tomatoes": "93",
-        "metacritic": "81"
+        "metacritic": "81",
+        "watch_providers": []
       }
     },
     {
@@ -30019,7 +30861,8 @@
         "runtime": 127,
         "imdb_rating": "8.0",
         "rotten_tomatoes": "91",
-        "metacritic": "94"
+        "metacritic": "94",
+        "watch_providers": []
       }
     },
     {
@@ -30055,7 +30898,8 @@
         "runtime": 161,
         "imdb_rating": "7.6",
         "rotten_tomatoes": "64",
-        "metacritic": "56"
+        "metacritic": "56",
+        "watch_providers": []
       }
     },
     {
@@ -30090,7 +30934,8 @@
         "runtime": 118,
         "imdb_rating": "8.1",
         "rotten_tomatoes": "93",
-        "metacritic": "86"
+        "metacritic": "86",
+        "watch_providers": []
       }
     },
     {
@@ -30126,7 +30971,8 @@
         "runtime": 109,
         "imdb_rating": "6.7",
         "rotten_tomatoes": "70",
-        "metacritic": "59"
+        "metacritic": "59",
+        "watch_providers": []
       }
     },
     {
@@ -30162,7 +31008,8 @@
         "runtime": 143,
         "imdb_rating": "6.9",
         "rotten_tomatoes": "51",
-        "metacritic": "51"
+        "metacritic": "51",
+        "watch_providers": []
       }
     },
     {
@@ -30198,7 +31045,8 @@
         "runtime": 117,
         "imdb_rating": "6.6",
         "rotten_tomatoes": "33",
-        "metacritic": "45"
+        "metacritic": "45",
+        "watch_providers": []
       }
     },
     {
@@ -30232,7 +31080,8 @@
         "runtime": 115,
         "imdb_rating": "8.3",
         "rotten_tomatoes": "92",
-        "metacritic": "77"
+        "metacritic": "77",
+        "watch_providers": []
       }
     },
     {
@@ -30269,7 +31118,8 @@
         "runtime": 108,
         "imdb_rating": "7.7",
         "rotten_tomatoes": "87",
-        "metacritic": "72"
+        "metacritic": "72",
+        "watch_providers": []
       }
     },
     {
@@ -30305,7 +31155,8 @@
         "runtime": 95,
         "imdb_rating": null,
         "rotten_tomatoes": null,
-        "metacritic": null
+        "metacritic": null,
+        "watch_providers": []
       }
     },
     {
@@ -30340,7 +31191,8 @@
         "runtime": 118,
         "imdb_rating": "8.1",
         "rotten_tomatoes": "93",
-        "metacritic": "86"
+        "metacritic": "86",
+        "watch_providers": []
       }
     }
   ]

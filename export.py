@@ -15,7 +15,7 @@ def export_feed():
                m.tmdb_id, m.title_ko, m.title_en, m.year, m.genres,
                m.poster_url, m.vote_average, m.vote_count, m.overview,
                m.director, m.runtime,
-               m.imdb_rating, m.rotten_tomatoes, m.metacritic
+               m.imdb_rating, m.rotten_tomatoes, m.metacritic, m.watch_providers
         FROM videos v
         JOIN movies m ON v.tmdb_id = m.tmdb_id
         WHERE v.tmdb_id IS NOT NULL AND v.match_confidence >= 0.5
@@ -55,6 +55,7 @@ def export_feed():
                 "imdb_rating": r["imdb_rating"],
                 "rotten_tomatoes": r["rotten_tomatoes"],
                 "metacritic": r["metacritic"],
+                "watch_providers": json.loads(r["watch_providers"]) if r["watch_providers"] else [],
             },
         })
 
