@@ -376,7 +376,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "1.5"
+        "naver_rating": null
       }
     },
     {
@@ -467,7 +467,7 @@
         "rotten_tomatoes": "100",
         "metacritic": "N/A",
         "watch_providers": [],
-        "naver_rating": "3.4"
+        "naver_rating": null
       }
     },
     {
@@ -728,7 +728,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "3.69"
+        "naver_rating": null
       }
     },
     {
@@ -875,7 +875,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "2019.11"
+        "naver_rating": null
       }
     },
     {
@@ -968,7 +968,7 @@
         "rotten_tomatoes": null,
         "metacritic": "50",
         "watch_providers": [],
-        "naver_rating": "2026.04"
+        "naver_rating": null
       }
     },
     {
@@ -1468,7 +1468,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "2016.05"
+        "naver_rating": null
       }
     },
     {
@@ -1561,7 +1561,7 @@
             "type": "subscription"
           }
         ],
-        "naver_rating": "1.5"
+        "naver_rating": null
       }
     },
     {
@@ -1646,7 +1646,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "2009.05"
+        "naver_rating": null
       }
     },
     {
@@ -2069,7 +2069,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "2020.04"
+        "naver_rating": null
       }
     },
     {
@@ -2241,7 +2241,7 @@
         "rotten_tomatoes": "88",
         "metacritic": "78",
         "watch_providers": [],
-        "naver_rating": "1.5"
+        "naver_rating": null
       }
     },
     {
@@ -2548,7 +2548,7 @@
         "rotten_tomatoes": null,
         "metacritic": "N/A",
         "watch_providers": [],
-        "naver_rating": "2025.11"
+        "naver_rating": null
       }
     },
     {
@@ -2738,7 +2738,7 @@
         "rotten_tomatoes": null,
         "metacritic": null,
         "watch_providers": [],
-        "naver_rating": "2021.02"
+        "naver_rating": null
       }
     },
     {
@@ -2780,7 +2780,7 @@
             "type": "subscription"
           }
         ],
-        "naver_rating": "10.1374"
+        "naver_rating": null
       }
     },
     {
@@ -3078,7 +3078,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "3.70"
+        "naver_rating": null
       }
     },
     {
@@ -3282,7 +3282,7 @@
         "rotten_tomatoes": "13",
         "metacritic": "34",
         "watch_providers": [],
-        "naver_rating": "2013.11"
+        "naver_rating": null
       }
     },
     {
@@ -3364,7 +3364,7 @@
             "type": "subscription"
           }
         ],
-        "naver_rating": "2017.03"
+        "naver_rating": null
       }
     },
     {
@@ -3770,7 +3770,7 @@
         "rotten_tomatoes": "71",
         "metacritic": "N/A",
         "watch_providers": [],
-        "naver_rating": "1.5"
+        "naver_rating": null
       }
     },
     {
@@ -3808,7 +3808,7 @@
         "rotten_tomatoes": "88",
         "metacritic": "82",
         "watch_providers": [],
-        "naver_rating": "2007.07"
+        "naver_rating": null
       }
     },
     {
@@ -3928,7 +3928,7 @@
         "rotten_tomatoes": null,
         "metacritic": null,
         "watch_providers": [],
-        "naver_rating": "2013.06"
+        "naver_rating": null
       }
     },
     {
@@ -4214,7 +4214,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "2.09"
+        "naver_rating": null
       }
     },
     {
@@ -4258,7 +4258,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "2018.11"
+        "naver_rating": null
       }
     },
     {
@@ -4796,7 +4796,7 @@
             "type": "subscription"
           }
         ],
-        "naver_rating": "10.1374"
+        "naver_rating": null
       }
     },
     {
@@ -4834,7 +4834,7 @@
         "rotten_tomatoes": "60",
         "metacritic": "56",
         "watch_providers": [],
-        "naver_rating": "2011.10"
+        "naver_rating": null
       }
     },
     {
@@ -5279,7 +5279,7 @@
             "type": "subscription"
           }
         ],
-        "naver_rating": "2010.11"
+        "naver_rating": null
       }
     },
     {
@@ -5675,7 +5675,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "2006.04"
+        "naver_rating": null
       }
     },
     {
@@ -6577,7 +6577,7 @@
         "rotten_tomatoes": "54",
         "metacritic": "43",
         "watch_providers": [],
-        "naver_rating": "2026.03"
+        "naver_rating": null
       }
     },
     {
@@ -6853,7 +6853,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "2012.12"
+        "naver_rating": null
       }
     },
     {
@@ -6934,7 +6934,7 @@
         "rotten_tomatoes": null,
         "metacritic": "N/A",
         "watch_providers": [],
-        "naver_rating": "10.1374"
+        "naver_rating": null
       }
     },
     {
@@ -7434,7 +7434,7 @@
         "rotten_tomatoes": "61",
         "metacritic": "N/A",
         "watch_providers": [],
-        "naver_rating": "3.1"
+        "naver_rating": null
       }
     },
     {
@@ -9347,7 +9347,7 @@
         "rotten_tomatoes": "71",
         "metacritic": "67",
         "watch_providers": [],
-        "naver_rating": "2022.07"
+        "naver_rating": null
       }
     },
     {
@@ -11139,7 +11139,7 @@
         "rotten_tomatoes": "69",
         "metacritic": "22",
         "watch_providers": [],
-        "naver_rating": "10.862"
+        "naver_rating": null
       }
     },
     {
@@ -11222,7 +11222,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "10.1374"
+        "naver_rating": null
       }
     },
     {
@@ -11832,7 +11832,7 @@
             "type": "subscription"
           }
         ],
-        "naver_rating": "10.1374"
+        "naver_rating": null
       }
     },
     {
@@ -12337,7 +12337,7 @@
             "type": "subscription"
           }
         ],
-        "naver_rating": "1.1"
+        "naver_rating": null
       }
     },
     {
@@ -12867,7 +12867,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "2005.08"
+        "naver_rating": null
       }
     },
     {
@@ -13253,7 +13253,7 @@
         "rotten_tomatoes": "68",
         "metacritic": "N/A",
         "watch_providers": [],
-        "naver_rating": "10.1374"
+        "naver_rating": null
       }
     },
     {
@@ -14615,7 +14615,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "2025.08"
+        "naver_rating": null
       }
     },
     {
@@ -15214,7 +15214,7 @@
             "type": "subscription"
           }
         ],
-        "naver_rating": "1.5"
+        "naver_rating": null
       }
     },
     {
@@ -15546,7 +15546,7 @@
             "type": "subscription"
           }
         ],
-        "naver_rating": "2018.11"
+        "naver_rating": null
       }
     },
     {
@@ -15926,7 +15926,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "2012.10"
+        "naver_rating": null
       }
     },
     {
@@ -15970,7 +15970,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "4.0"
+        "naver_rating": null
       }
     },
     {
@@ -16446,7 +16446,7 @@
         "rotten_tomatoes": "35",
         "metacritic": "46",
         "watch_providers": [],
-        "naver_rating": "2024.07"
+        "naver_rating": null
       }
     },
     {
@@ -16689,7 +16689,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "2012.10"
+        "naver_rating": null
       }
     },
     {
@@ -17551,7 +17551,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "2024.06"
+        "naver_rating": null
       }
     },
     {
@@ -17594,7 +17594,7 @@
             "type": "subscription"
           }
         ],
-        "naver_rating": "2017.11"
+        "naver_rating": null
       }
     },
     {
@@ -17787,7 +17787,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "10.1374"
+        "naver_rating": null
       }
     },
     {
@@ -18169,7 +18169,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "2012.12"
+        "naver_rating": null
       }
     },
     {
@@ -18302,7 +18302,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "2023.02"
+        "naver_rating": null
       }
     },
     {
@@ -18446,7 +18446,7 @@
             "type": "subscription"
           }
         ],
-        "naver_rating": "1.5"
+        "naver_rating": null
       }
     },
     {
@@ -18950,7 +18950,7 @@
             "type": "subscription"
           }
         ],
-        "naver_rating": "2010.11"
+        "naver_rating": null
       }
     },
     {
@@ -19001,7 +19001,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "2010.02"
+        "naver_rating": null
       }
     },
     {
@@ -19088,7 +19088,7 @@
         "rotten_tomatoes": "25",
         "metacritic": "N/A",
         "watch_providers": [],
-        "naver_rating": "10.1374"
+        "naver_rating": null
       }
     },
     {
@@ -19337,7 +19337,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "2024.06"
+        "naver_rating": null
       }
     },
     {
@@ -19376,7 +19376,7 @@
         "rotten_tomatoes": "44",
         "metacritic": "45",
         "watch_providers": [],
-        "naver_rating": "2008.11"
+        "naver_rating": null
       }
     },
     {
@@ -19470,7 +19470,7 @@
         "rotten_tomatoes": null,
         "metacritic": "N/A",
         "watch_providers": [],
-        "naver_rating": "2024.08"
+        "naver_rating": null
       }
     },
     {
@@ -21118,7 +21118,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "2012.08"
+        "naver_rating": null
       }
     },
     {
@@ -22043,7 +22043,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "2006.01"
+        "naver_rating": null
       }
     },
     {
@@ -22887,7 +22887,7 @@
             "type": "subscription"
           }
         ],
-        "naver_rating": "2026.04"
+        "naver_rating": null
       }
     },
     {
@@ -23084,7 +23084,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "2024.12"
+        "naver_rating": null
       }
     },
     {
@@ -23135,7 +23135,7 @@
             "type": "subscription"
           }
         ],
-        "naver_rating": "12.7302"
+        "naver_rating": null
       }
     },
     {
@@ -23225,7 +23225,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "2020.07"
+        "naver_rating": null
       }
     },
     {
@@ -23591,7 +23591,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "2019.09"
+        "naver_rating": null
       }
     },
     {
@@ -23895,7 +23895,7 @@
             "type": "subscription"
           }
         ],
-        "naver_rating": "1.5"
+        "naver_rating": null
       }
     },
     {
@@ -24093,7 +24093,7 @@
             "type": "subscription"
           }
         ],
-        "naver_rating": "10.1374"
+        "naver_rating": null
       }
     },
     {
@@ -24174,7 +24174,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "10.1374"
+        "naver_rating": null
       }
     },
     {
@@ -24709,7 +24709,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "2019.07"
+        "naver_rating": null
       }
     },
     {
@@ -24862,7 +24862,7 @@
             "type": "subscription"
           }
         ],
-        "naver_rating": "2011.09"
+        "naver_rating": null
       }
     },
     {
@@ -25037,7 +25037,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "10.1374"
+        "naver_rating": null
       }
     },
     {
@@ -25287,7 +25287,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "1.5"
+        "naver_rating": null
       }
     },
     {
@@ -25674,7 +25674,7 @@
             "type": "subscription"
           }
         ],
-        "naver_rating": "10.1374"
+        "naver_rating": null
       }
     },
     {
@@ -25965,7 +25965,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "10.1374"
+        "naver_rating": null
       }
     },
     {
@@ -26119,7 +26119,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "2016.08"
+        "naver_rating": null
       }
     },
     {
@@ -26766,7 +26766,7 @@
             "type": "subscription"
           }
         ],
-        "naver_rating": "20.59"
+        "naver_rating": null
       }
     },
     {
@@ -27049,7 +27049,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "2023.01"
+        "naver_rating": null
       }
     },
     {
@@ -27145,7 +27145,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "2012.03"
+        "naver_rating": null
       }
     },
     {
@@ -27234,7 +27234,7 @@
             "type": "subscription"
           }
         ],
-        "naver_rating": "0.6"
+        "naver_rating": null
       }
     },
     {
@@ -27383,7 +27383,7 @@
             "type": "subscription"
           }
         ],
-        "naver_rating": "20.59"
+        "naver_rating": null
       }
     },
     {
@@ -28272,7 +28272,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "2023.03"
+        "naver_rating": null
       }
     },
     {
@@ -28396,7 +28396,7 @@
         "rotten_tomatoes": "64",
         "metacritic": "61",
         "watch_providers": [],
-        "naver_rating": "2008.06"
+        "naver_rating": null
       }
     },
     {
@@ -28499,7 +28499,7 @@
             "type": "subscription"
           }
         ],
-        "naver_rating": "2010.08"
+        "naver_rating": null
       }
     },
     {
@@ -28942,7 +28942,7 @@
             "type": "subscription"
           }
         ],
-        "naver_rating": "2010.07"
+        "naver_rating": null
       }
     },
     {
@@ -29265,7 +29265,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "2011.04"
+        "naver_rating": null
       }
     },
     {
@@ -29309,7 +29309,7 @@
             "type": "subscription"
           }
         ],
-        "naver_rating": "10.1374"
+        "naver_rating": null
       }
     },
     {
@@ -29601,7 +29601,7 @@
         "rotten_tomatoes": "73",
         "metacritic": "66",
         "watch_providers": [],
-        "naver_rating": "2011.03"
+        "naver_rating": null
       }
     },
     {
@@ -29792,7 +29792,7 @@
             "type": "subscription"
           }
         ],
-        "naver_rating": "10.1374"
+        "naver_rating": null
       }
     },
     {
@@ -30291,7 +30291,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "10.1374"
+        "naver_rating": null
       }
     },
     {
@@ -30979,7 +30979,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "2020.11"
+        "naver_rating": null
       }
     },
     {
@@ -31297,7 +31297,7 @@
             "type": "subscription"
           }
         ],
-        "naver_rating": "2013.07"
+        "naver_rating": null
       }
     },
     {
@@ -31679,7 +31679,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "2018.09"
+        "naver_rating": null
       }
     },
     {
@@ -31823,7 +31823,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "10.1374"
+        "naver_rating": null
       }
     },
     {
@@ -31965,7 +31965,7 @@
         "rotten_tomatoes": null,
         "metacritic": "N/A",
         "watch_providers": [],
-        "naver_rating": "2006.07"
+        "naver_rating": null
       }
     },
     {
@@ -32154,7 +32154,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "2013.04"
+        "naver_rating": null
       }
     },
     {
@@ -34044,7 +34044,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "2012.02"
+        "naver_rating": null
       }
     },
     {
@@ -34238,7 +34238,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "2011.12"
+        "naver_rating": null
       }
     },
     {
@@ -34452,7 +34452,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "2009.01"
+        "naver_rating": null
       }
     },
     {
@@ -34591,7 +34591,7 @@
             "type": "subscription"
           }
         ],
-        "naver_rating": "2006.12"
+        "naver_rating": null
       }
     },
     {
@@ -34890,7 +34890,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "10.1374"
+        "naver_rating": null
       }
     },
     {
@@ -34986,7 +34986,7 @@
         "rotten_tomatoes": "37",
         "metacritic": "42",
         "watch_providers": [],
-        "naver_rating": "2010.03"
+        "naver_rating": null
       }
     },
     {
@@ -35071,7 +35071,7 @@
             "type": "subscription"
           }
         ],
-        "naver_rating": "2020.11"
+        "naver_rating": null
       }
     },
     {
@@ -35163,7 +35163,7 @@
         "rotten_tomatoes": "65",
         "metacritic": "33",
         "watch_providers": [],
-        "naver_rating": "2016.07"
+        "naver_rating": null
       }
     },
     {
@@ -35655,7 +35655,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "10.1374"
+        "naver_rating": null
       }
     },
     {
@@ -36369,7 +36369,7 @@
             "type": "subscription"
           }
         ],
-        "naver_rating": "10.1374"
+        "naver_rating": null
       }
     },
     {
@@ -36712,7 +36712,7 @@
             "type": "subscription"
           }
         ],
-        "naver_rating": "1.5"
+        "naver_rating": null
       }
     },
     {
@@ -36847,7 +36847,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "2009.11"
+        "naver_rating": null
       }
     },
     {
@@ -37132,7 +37132,7 @@
             "type": "subscription"
           }
         ],
-        "naver_rating": "10.1374"
+        "naver_rating": null
       }
     },
     {
@@ -37713,7 +37713,7 @@
         "rotten_tomatoes": null,
         "metacritic": "N/A",
         "watch_providers": [],
-        "naver_rating": "2017.10"
+        "naver_rating": null
       }
     },
     {
@@ -37907,7 +37907,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "10.1374"
+        "naver_rating": null
       }
     },
     {
@@ -37999,7 +37999,7 @@
         "rotten_tomatoes": null,
         "metacritic": null,
         "watch_providers": [],
-        "naver_rating": "2025.11"
+        "naver_rating": null
       }
     },
     {
@@ -38407,7 +38407,7 @@
             "type": "subscription"
           }
         ],
-        "naver_rating": "10.1374"
+        "naver_rating": null
       }
     },
     {
@@ -38836,7 +38836,7 @@
             "type": "rent"
           }
         ],
-        "naver_rating": "2009.03"
+        "naver_rating": null
       }
     },
     {
@@ -39093,7 +39093,7 @@
             "type": "subscription"
           }
         ],
-        "naver_rating": "10.1374"
+        "naver_rating": null
       }
     },
     {
