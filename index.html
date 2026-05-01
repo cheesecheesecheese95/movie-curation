@@ -3,545 +3,256 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="0">
-<title>Don't Watch It All — 오늘 뭐 볼까?</title>
+<title>Don't Watch It All</title>
 <style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-:root{
-  --bg:#0D0D0D;--surface:#1A1A1A;--surface2:#242424;--surface3:#2E2E2E;
-  --text:#F0F0F0;--text2:#999;--text3:#666;
-  --accent:#E50914;--green:#2ECC71;--gold:#F1C40F;
-  --radius:14px;--shadow:0 4px 20px rgba(0,0,0,0.4);--max-w:480px;
-}
-html,body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;overflow-x:hidden;}
-.app{max-width:var(--max-w);margin:0 auto;min-height:100vh;}
-.header{position:sticky;top:0;z-index:100;background:rgba(13,13,13,0.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);padding:14px 16px 0;}
-.brand{display:flex;align-items:center;gap:8px;margin-bottom:14px;}
-.brand-name{font-size:15px;font-weight:900;letter-spacing:-0.02em;}
-.brand-name em{font-style:normal;color:var(--accent);}
-.tabs{display:flex;gap:0;border-bottom:2px solid var(--surface2);}
-.tab{flex:1;padding:12px 0;text-align:center;font-size:14px;font-weight:700;color:var(--text3);cursor:pointer;border:none;background:none;font-family:inherit;position:relative;transition:color 0.2s;}
-.tab.active{color:var(--text);}
-.tab.active::after{content:'';position:absolute;bottom:-2px;left:20%;width:60%;height:2px;background:var(--accent);border-radius:2px;}
-.feed{padding:0 16px 100px;}
-.filter-row{display:flex;gap:6px;overflow-x:auto;padding:12px 0 6px;-webkit-overflow-scrolling:touch;}
-.filter-row::-webkit-scrollbar{display:none;}
-.chip{padding:7px 14px;border-radius:20px;font-size:12px;font-weight:600;white-space:nowrap;cursor:pointer;border:1px solid var(--surface2);background:var(--surface);color:var(--text2);transition:all 0.15s;flex-shrink:0;}
-.chip.active{background:var(--text);color:var(--bg);border-color:var(--text);}
-.chip.accent{border-color:var(--accent);color:var(--accent);}
-.chip.accent.active{background:var(--accent);color:#fff;border-color:var(--accent);}
-/* Duration filter */
-.dur-row{display:flex;gap:6px;padding:0 0 6px;}
-.dur-chip{padding:5px 10px;border-radius:14px;font-size:11px;font-weight:600;cursor:pointer;border:1px solid var(--surface2);background:var(--surface);color:var(--text3);font-family:inherit;transition:all 0.15s;}
-.dur-chip.active{background:var(--surface3);color:var(--text);border-color:var(--text3);}
-/* Sort + count */
-.sort-bar{display:flex;align-items:center;justify-content:space-between;padding:6px 0 12px;}
-.sort-bar .count{font-size:12px;color:var(--text3);}
-.sort-btns{display:flex;gap:4px;}
-.sort-btn{padding:5px 10px;border-radius:8px;font-size:11px;font-weight:600;cursor:pointer;border:1px solid var(--surface2);background:var(--surface);color:var(--text3);font-family:inherit;transition:all 0.15s;}
-.sort-btn.active{background:var(--surface3);color:var(--text);border-color:var(--text3);}
-/* Daily pick */
-.daily-pick{background:linear-gradient(135deg,#1a1a2e,#16213e);border-radius:16px;padding:16px;margin:12px 0;position:relative;overflow:hidden;}
-.daily-pick::before{content:'';position:absolute;top:-50%;right:-30%;width:200px;height:200px;background:radial-gradient(circle,rgba(229,9,20,0.15),transparent);border-radius:50%;}
-.dp-label{font-size:11px;font-weight:700;color:var(--accent);margin-bottom:8px;text-transform:uppercase;letter-spacing:0.05em;}
-.dp-content{display:flex;gap:12px;position:relative;}
-.dp-poster{width:70px;height:105px;border-radius:8px;overflow:hidden;flex-shrink:0;}
-.dp-poster img{width:100%;height:100%;object-fit:cover;}
-.dp-info{flex:1;}
-.dp-title{font-size:16px;font-weight:800;margin-bottom:4px;}
-.dp-meta{font-size:11px;color:var(--text2);margin-bottom:6px;}
-.dp-ratings{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px;}
-.dp-btn{padding:8px 16px;border-radius:10px;font-size:12px;font-weight:700;border:none;cursor:pointer;font-family:inherit;background:var(--accent);color:#fff;}
-/* Card */
-.card{background:var(--surface);border-radius:var(--radius);overflow:hidden;margin-bottom:14px;box-shadow:var(--shadow);cursor:pointer;transition:transform 0.15s;position:relative;}
-.card:active{transform:scale(0.98);}
-.card.watched{opacity:0.5;}
-.card.watched::after{content:'✓ 봤어요';position:absolute;top:8px;right:8px;background:rgba(0,0,0,0.75);color:var(--green);font-size:10px;font-weight:700;padding:3px 8px;border-radius:4px;z-index:2;}
-.card-thumb{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;background:#000;}
-.card-thumb img{width:100%;height:100%;object-fit:cover;}
-.card-duration{position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,0.8);color:#fff;font-size:11px;font-weight:700;padding:2px 6px;border-radius:4px;}
-.card-spoiler{position:absolute;top:8px;left:8px;background:var(--accent);color:#fff;font-size:10px;font-weight:700;padding:3px 8px;border-radius:4px;}
-.card-body{padding:12px 14px;}
-.card-movie-row{display:flex;gap:10px;margin-bottom:8px;}
-.card-poster{width:44px;height:66px;border-radius:6px;overflow:hidden;flex-shrink:0;background:var(--surface2);}
-.card-poster img{width:100%;height:100%;object-fit:cover;}
-.card-movie-info{flex:1;min-width:0;}
-.card-movie-title{font-size:15px;font-weight:800;line-height:1.3;margin-bottom:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-.card-movie-meta{font-size:11px;color:var(--text2);display:flex;gap:6px;flex-wrap:wrap;align-items:center;}
-.card-movie-meta .rating{color:var(--gold);font-weight:700;}
-.card-ratings{display:flex;gap:6px;margin-top:4px;font-size:10px;font-weight:600;flex-wrap:wrap;}
-.rt{padding:2px 6px;border-radius:4px;}
-.rt-tmdb{background:rgba(1,210,119,0.15);color:#01D277;}
-.rt-imdb{background:rgba(245,197,24,0.15);color:#F5C518;}
-.rt-rotten{background:rgba(250,50,10,0.15);color:#FA320A;}
-.card-ott{display:flex;gap:4px;margin-top:6px;flex-wrap:wrap;}
-.ott-tag{font-size:9px;padding:2px 6px;border-radius:4px;background:var(--surface2);color:var(--text2);}
-.card-video-title{font-size:12px;color:var(--text2);line-height:1.5;margin-bottom:6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
-.card-stats{display:flex;gap:10px;font-size:11px;color:var(--text3);margin-top:4px;}
-.card-share{position:absolute;bottom:12px;right:12px;background:var(--surface2);border:none;color:var(--text3);font-size:14px;width:28px;height:28px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;}
-/* Other videos for same movie */
-.card-others{margin-top:8px;padding-top:8px;border-top:1px solid var(--surface2);}
-.card-others-label{font-size:10px;color:var(--text3);margin-bottom:4px;}
-.card-others-list{display:flex;gap:4px;overflow-x:auto;}
-.card-other-chip{font-size:10px;padding:3px 8px;border-radius:6px;background:var(--surface2);color:var(--text2);white-space:nowrap;cursor:pointer;flex-shrink:0;}
-/* Hidden gems section */
-.section-label{font-size:13px;font-weight:800;color:var(--text);margin:16px 0 10px;display:flex;align-items:center;gap:6px;}
-/* Player */
-.player-overlay{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.95);z-index:500;display:none;flex-direction:column;}
-.player-overlay.active{display:flex;}
-.player-header{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;flex-shrink:0;}
-.player-close{background:none;border:none;color:#fff;font-size:24px;cursor:pointer;padding:4px;}
-.player-frame{display:flex;align-items:center;justify-content:center;}
-.player-frame iframe{width:100%;max-width:var(--max-w);aspect-ratio:16/9;border:none;border-radius:8px;}
-.player-info{padding:16px;overflow-y:auto;flex:1;}
-.player-movie-title{font-size:18px;font-weight:900;margin-bottom:4px;}
-.player-movie-meta{font-size:12px;color:var(--text2);margin-bottom:6px;}
-.player-ott{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;}
-.player-ott .ott-tag{font-size:11px;padding:4px 10px;border-radius:6px;}
-.player-actions{display:flex;gap:8px;margin-bottom:14px;}
-.player-btn{padding:8px 16px;border-radius:10px;font-size:12px;font-weight:700;cursor:pointer;border:1px solid var(--green);background:transparent;color:var(--green);font-family:inherit;transition:all 0.15s;}
-.player-btn.done{background:var(--green);color:#000;}
-.player-share-btn{padding:8px 16px;border-radius:10px;font-size:12px;font-weight:700;cursor:pointer;border:1px solid var(--surface2);background:var(--surface);color:var(--text2);font-family:inherit;}
-.player-next-label{font-size:13px;font-weight:700;color:var(--text2);margin-bottom:10px;}
-.player-next-list{display:flex;flex-direction:column;gap:8px;}
-.player-next-item{display:flex;gap:10px;padding:10px;background:var(--surface);border-radius:10px;cursor:pointer;}
-.player-next-item img{width:120px;height:68px;object-fit:cover;border-radius:6px;flex-shrink:0;}
-.player-next-item .pn-info{flex:1;min-width:0;}
-.player-next-item .pn-title{font-size:12px;font-weight:600;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
-.player-next-item .pn-ch{font-size:11px;color:var(--text3);margin-top:3px;}
-/* Search */
-.search-wrap{padding:16px;display:none;}
-.search-wrap.active{display:block;}
-.search-input{width:100%;padding:12px 16px;border-radius:12px;border:1.5px solid var(--surface2);background:var(--surface);color:var(--text);font-size:15px;font-family:inherit;outline:none;}
-.search-input:focus{border-color:var(--accent);}
-.search-input::placeholder{color:var(--text3);}
-.search-results{padding:0 16px 100px;}
-.search-empty{text-align:center;padding:60px 0;color:var(--text3);font-size:14px;}
-.loading{text-align:center;padding:60px 0;color:var(--text3);}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;color:#F0F0F0;-webkit-font-smoothing:antialiased}
+.app{max-width:480px;margin:0 auto;min-height:100vh}
+.hd{position:sticky;top:0;z-index:100;background:rgba(13,13,13,.92);backdrop-filter:blur(12px);padding:14px 16px 0}
+.logo{font-size:15px;font-weight:900;margin-bottom:14px}
+.logo em{font-style:normal;color:#E50914}
+.tabs{display:flex;border-bottom:2px solid #242424}
+.tabs button{flex:1;padding:12px 0;text-align:center;font-size:13px;font-weight:700;color:#666;cursor:pointer;border:none;background:none;font-family:inherit}
+.tabs button.on{color:#F0F0F0}
+.chips{display:flex;gap:6px;overflow-x:auto;padding:12px 16px 8px;-webkit-overflow-scrolling:touch}
+.chips::-webkit-scrollbar{display:none}
+.chips span{padding:7px 14px;border-radius:20px;font-size:12px;font-weight:600;white-space:nowrap;cursor:pointer;border:1px solid #242424;background:#1A1A1A;color:#999;flex-shrink:0}
+.chips span.on{background:#F0F0F0;color:#0D0D0D;border-color:#F0F0F0}
+.info{padding:4px 16px 8px;font-size:12px;color:#666}
+.list{padding:0 16px 80px}
+.card{background:#1A1A1A;border-radius:14px;overflow:hidden;margin-bottom:14px;cursor:pointer}
+.card-img{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;background:#000}
+.card-img img{width:100%;height:100%;object-fit:cover}
+.card-dur{position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,.8);color:#fff;font-size:11px;font-weight:700;padding:2px 6px;border-radius:4px}
+.card-sp{position:absolute;top:8px;left:8px;background:#E50914;color:#fff;font-size:10px;font-weight:700;padding:3px 8px;border-radius:4px}
+.card-bd{padding:12px 14px}
+.card-row{display:flex;gap:10px;margin-bottom:8px}
+.card-poster{width:44px;height:66px;border-radius:6px;overflow:hidden;flex-shrink:0;background:#242424}
+.card-poster img{width:100%;height:100%;object-fit:cover}
+.card-info{flex:1;min-width:0}
+.card-title{font-size:15px;font-weight:800;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.card-meta{font-size:11px;color:#999;display:flex;gap:6px;flex-wrap:wrap;margin-top:2px}
+.card-meta .star{color:#F1C40F;font-weight:700}
+.card-rt{display:flex;gap:6px;margin-top:4px;font-size:10px;font-weight:600;flex-wrap:wrap}
+.rt{padding:2px 6px;border-radius:4px}
+.rt-t{background:rgba(1,210,119,.15);color:#01D277}
+.rt-i{background:rgba(245,197,24,.15);color:#F5C518}
+.rt-r{background:rgba(250,50,10,.15);color:#FA320A}
+.card-ott{display:flex;gap:4px;margin-top:6px;flex-wrap:wrap}
+.ott{font-size:9px;padding:2px 6px;border-radius:4px;background:#242424;color:#999}
+.card-vt{font-size:12px;color:#999;line-height:1.5;margin-bottom:6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.card-st{display:flex;gap:10px;font-size:11px;color:#666}
+.player{position:fixed;inset:0;background:rgba(0,0,0,.95);z-index:500;display:none;flex-direction:column}
+.player.on{display:flex}
+.p-top{display:flex;justify-content:space-between;padding:12px 16px}
+.p-close{background:none;border:none;color:#fff;font-size:24px;cursor:pointer}
+.p-frame{display:flex;align-items:center;justify-content:center}
+.p-frame iframe{width:100%;max-width:480px;aspect-ratio:16/9;border:none;border-radius:8px}
+.p-info{padding:16px;overflow-y:auto;flex:1}
+.p-title{font-size:16px;font-weight:800;margin-bottom:4px}
+.p-meta{font-size:12px;color:#999;margin-bottom:12px}
+.search-box{padding:16px}
+.search-box input{width:100%;padding:12px 16px;border-radius:12px;border:1.5px solid #242424;background:#1A1A1A;color:#F0F0F0;font-size:15px;font-family:inherit;outline:none}
+.search-box input:focus{border-color:#E50914}
+.empty{text-align:center;padding:60px 0;color:#666;font-size:13px}
 </style>
 </head>
 <body>
 <div class="app">
-  <div class="header">
-    <div class="brand">
-      <span style="font-size:22px;">🎬</span>
-      <span class="brand-name">Don't <em>Watch It All</em></span>
-    </div>
-    <div class="tabs">
-      <button class="tab active" onclick="switchTab('feed')">오늘 뭐볼까</button>
-      <button class="tab" onclick="switchTab('today')">🎲 오늘 이거 어때</button>
-      <button class="tab" onclick="switchTab('search')">영화 찾아줘</button>
+  <div class="hd">
+    <div class="logo">🎬 Don't <em>Watch It All</em></div>
+    <div class="tabs" id="tabs">
+      <button class="on" data-tab="feed">오늘 뭐볼까</button>
+      <button data-tab="today">🎲 오늘 이거 어때</button>
+      <button data-tab="search">영화 찾아줘</button>
     </div>
   </div>
 
-  <div id="tab-feed">
-    <div class="feed">
-      <!-- Filters -->
-      <div class="filter-row" id="genre-filter"></div>
-      <div class="filter-row" id="extra-filter"></div>
-      <div class="dur-row" id="dur-filter"></div>
-      <div class="sort-bar">
-        <span class="count" id="feed-count"></span>
-        <div class="sort-btns">
-          <button class="sort-btn active" onclick="setSort(this,'shuffle')">🔀</button>
-          <button class="sort-btn" onclick="setSort(this,'latest')">최신순</button>
-          <button class="sort-btn" onclick="setSort(this,'views')">조회수</button>
-          <button class="sort-btn" onclick="setSort(this,'rating')">평점</button>
-        </div>
-      </div>
-      <!-- Hidden gems -->
-      <div id="gems-section" style="display:none;">
-        <div class="section-label">💎 숨은 명작</div>
-        <div id="gems-list"></div>
-      </div>
-      <!-- Feed -->
-      <div id="feed-list"><div class="loading">로딩 중...</div></div>
-      <div id="load-more" style="display:none;text-align:center;padding:20px;">
-        <button onclick="loadMore()" style="padding:10px 24px;border-radius:10px;background:var(--surface);border:1px solid var(--surface2);color:var(--text2);font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;">더 보기</button>
-      </div>
-    </div>
+  <div id="v-feed">
+    <div class="chips" id="genres"></div>
+    <div class="info" id="info"></div>
+    <div class="list" id="list"></div>
   </div>
 
-  <!-- Today's picks tab -->
-  <div id="tab-today" style="display:none;">
-    <div class="feed" id="today-feed"></div>
+  <div id="v-today" style="display:none">
+    <div class="list" id="today-list" style="padding-top:16px"></div>
   </div>
 
-  <div id="tab-search" style="display:none;">
-    <div class="search-wrap active">
-      <input class="search-input" type="search" placeholder="영화 제목을 검색하세요..." id="searchInput" autocomplete="off">
-    </div>
-    <div class="search-results" id="search-results">
-      <div class="search-empty">🔍 영화 제목으로 요약 영상을 찾아보세요</div>
-    </div>
+  <div id="v-search" style="display:none">
+    <div class="search-box"><input id="q" placeholder="영화 제목을 검색하세요..." autocomplete="off"></div>
+    <div class="list" id="slist"></div>
   </div>
 
-  <div class="player-overlay" id="player-overlay">
-    <div class="player-header">
-      <button class="player-close" onclick="closePlayer()">✕</button>
-      <span style="font-size:12px;color:var(--text3);" id="player-channel"></span>
+  <div class="player" id="player">
+    <div class="p-top">
+      <button class="p-close" id="p-close">✕</button>
+      <span style="font-size:12px;color:#666" id="p-ch"></span>
     </div>
-    <div class="player-frame">
-      <iframe id="player-iframe" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
-    <div class="player-info">
-      <div class="player-movie-title" id="player-title"></div>
-      <div class="player-movie-meta" id="player-meta"></div>
-      <div class="player-ott" id="player-ott"></div>
-      <div class="player-actions">
-        <button class="player-btn" id="player-watched" onclick="toggleWatched()">👁 시청 완료</button>
-        <button class="player-share-btn" onclick="shareVideo()">🔗 공유</button>
-      </div>
-      <div class="player-next-label" id="player-next-label">다음 추천</div>
-      <div class="player-next-list" id="player-next"></div>
+    <div class="p-frame"><iframe id="p-if" src="" allow="autoplay;encrypted-media" allowfullscreen></iframe></div>
+    <div class="p-info">
+      <div class="p-title" id="p-t"></div>
+      <div class="p-meta" id="p-m"></div>
     </div>
   </div>
 </div>
 
 <script>
-let allItems=[], filteredItems=[], displayedCount=0;
-let currentGenre='전체', spoilerFilter='all', sortMode='shuffle', durFilter='all';
-let todayPicks=[];
-let currentPlayerVideoId=null, currentPlayerItem=null;
-const PAGE_SIZE=20;
+var DATA=[], CUR=[], GENRE='전체', TAB='feed';
 
-function getWatched(){try{return JSON.parse(localStorage.getItem('dwia_watched')||'{}');}catch{return{};}}
-function setWatchedId(v){const w=getWatched();w[v]=Date.now();localStorage.setItem('dwia_watched',JSON.stringify(w));}
-function removeWatchedId(v){const w=getWatched();delete w[v];localStorage.setItem('dwia_watched',JSON.stringify(w));}
-function isWatched(v){return!!getWatched()[v];}
+function fmt(n){return n>=10000?Math.round(n/10000)+'만':n>=1000?Math.round(n/1000)+'천':n+''}
 
-const HIDDEN_GENRES=new Set(['TV 영화','음악','역사','가족','서부']);
-function cleanGenres(g){return(g||[]).filter(x=>!HIDDEN_GENRES.has(x));}
-function shuffle(a){const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]];}return b;}
-function fmt(n){if(n>10000)return Math.round(n/10000)+'만';if(n>1000)return Math.round(n/1000)+'천';return n+'';}
-function fmtDur(s){if(!s)return'';const h=Math.floor(s/3600),m=Math.floor((s%3600)/60);return h?h+'시간 '+m+'분':m+'분';}
-
-// Movie grouping — find other videos for same movie
-function getOtherVideos(item){
-  return allItems.filter(i=>i.movie.tmdb_id===item.movie.tmdb_id&&i.video.id!==item.video.id);
+function shuffle(arr){
+  var a=arr.slice(),i=a.length,j,t;
+  while(i>1){j=Math.floor(Math.random()*(i--));t=a[i];a[i]=a[j];a[j]=t;}
+  return a;
 }
 
-async function loadFeed(){
-  try{
-    const r=await fetch('data/feed.json',{cache:'no-store'});
-    const data=await r.json();
-    allItems=data.items||[];
-    console.log('Feed loaded:',allItems.length,'items');
-    buildFilters();
-    renderDailyPick();
-    renderGems();
-    applyFilters();
-  }catch(e){
-    document.getElementById('feed-list').innerHTML='<div class="loading">피드를 불러올 수 없습니다.</div>';
-  }
-}
-
-function buildFilters(){
-  const genreCounts={};
-  allItems.forEach(i=>cleanGenres(i.movie.genres).forEach(g=>{genreCounts[g]=(genreCounts[g]||0)+1;}));
-  const sorted=Object.entries(genreCounts).sort((a,b)=>b[1]-a[1]).slice(0,12).map(e=>e[0]);
-  document.getElementById('genre-filter').innerHTML=
-    `<div class="chip active" onclick="filterGenre(this,'전체')">전체</div>`+
-    sorted.map(g=>`<div class="chip" onclick="filterGenre(this,'${g}')">${g}</div>`).join('');
-  document.getElementById('extra-filter').innerHTML=
-    `<div class="chip accent" onclick="toggleSpoiler(this,'spoiler')">🔴 결말포함</div>`+
-    `<div class="chip" onclick="toggleSpoiler(this,'nospoiler')">결말없음</div>`+
-    `<span style="width:1px;height:20px;background:var(--surface2);flex-shrink:0;margin:0 2px;"></span>`+
-    `<div class="chip" onclick="toggleWatchedFilter(this)" id="chip-watched">🙈 안 본 것만</div>`;
-  document.getElementById('dur-filter').innerHTML=
-    `<div class="dur-chip active" onclick="setDur(this,'all')">분량 무관</div>`+
-    `<div class="dur-chip" onclick="setDur(this,'short')">10분 이하</div>`+
-    `<div class="dur-chip" onclick="setDur(this,'mid')">10~20분</div>`+
-    `<div class="dur-chip" onclick="setDur(this,'long')">20분+</div>`;
-}
-
-function renderDailyPick(){
-  // 날짜 기반 시드로 매일 다른 5편 선택
-  const seed=new Date().toDateString();
-  let hash=0;for(let i=0;i<seed.length;i++)hash=seed.charCodeAt(i)+(hash<<5)-hash;
-  const pool=allItems.filter(i=>(i.movie.vote_average||0)>=6.5&&(i.video.view_count||0)>5000);
-  if(!pool.length)return;
-  // 시드 기반 셔플
-  const seeded=[...pool];
-  for(let i=seeded.length-1;i>0;i--){const j=Math.abs((hash*31+i*17)%(i+1));[seeded[i],seeded[j]]=[seeded[j],seeded[i]];}
-  // 같은 영화 중복 제거, 5편 선택
-  const seen=new Set();
-  todayPicks=[];
-  for(const item of seeded){
-    if(todayPicks.length>=10)break;
-    if(seen.has(item.movie.tmdb_id))continue;
-    seen.add(item.movie.tmdb_id);
-    todayPicks.push(item);
-  }
-  const el=document.getElementById('today-feed');
-  el.innerHTML=`<div style="padding:16px 0 8px;"><div class="section-label">🎲 오늘의 추천 10편</div><div style="font-size:12px;color:var(--text3);margin-bottom:12px;">매일 새로운 영화를 추천해드려요</div></div>`+
-    todayPicks.map((item,i)=>{
-      const m=item.movie,v=item.video;
-      const ratings=[];
-      if(m.vote_average)ratings.push(`<span class="rt rt-tmdb">TMDB ${m.vote_average.toFixed(1)}</span>`);
-      if(m.imdb_rating)ratings.push(`<span class="rt rt-imdb">IMDb ${m.imdb_rating}</span>`);
-      if(m.rotten_tomatoes)ratings.push(`<span class="rt rt-rotten">🍅 ${m.rotten_tomatoes}%</span>`);
-      const ott=(m.watch_providers||[]).slice(0,3).map(p=>`<span class="ott-tag">${p.name}</span>`).join('');
-      const idx=allItems.indexOf(item);
-      return `<div class="daily-pick" style="display:block;margin-bottom:12px;" onclick="openPlayer(${idx})">
-        <div class="dp-label">#${i+1}</div>
-        <div class="dp-content">
-          ${m.poster_url?`<div class="dp-poster"><img src="${m.poster_url}"></div>`:''}
-          <div class="dp-info">
-            <div class="dp-title">${m.title_ko||m.title_en}</div>
-            <div class="dp-meta">${m.year||''} · ${cleanGenres(m.genres).slice(0,2).join(' · ')} · ${m.director||''}</div>
-            <div class="dp-ratings">${ratings.join('')}</div>
-            ${ott?`<div style="margin-top:4px;">${ott}</div>`:''}
-            <div style="margin-top:6px;font-size:11px;color:var(--text3);">▶ ${v.channel} · ${v.duration_label||''}</div>
-          </div>
-        </div>
-      </div>`;
-    }).join('');
-}
-
-function renderGems(){
-  const gems=allItems.filter(i=>(i.movie.vote_average||0)>=7.5&&(i.video.view_count||0)<50000)
-    .sort((a,b)=>(b.movie.vote_average||0)-(a.movie.vote_average||0)).slice(0,5);
-  if(!gems.length)return;
-  const el=document.getElementById('gems-section');
-  el.style.display='';
-  document.getElementById('gems-list').innerHTML=gems.map((item,i)=>{
-    const idx=allItems.indexOf(item);
-    return renderCard(item,idx);
+function render(){
+  var items=GENRE==='전체'?DATA.slice():DATA.filter(function(x){return(x.movie.genres||[]).indexOf(GENRE)>=0});
+  items=shuffle(items);
+  CUR=items;
+  document.getElementById('info').textContent=items.length+'개 영상';
+  var el=document.getElementById('list');
+  el.innerHTML=items.slice(0,40).map(function(x,i){
+    var v=x.video,m=x.movie;
+    var rating=m.vote_average?m.vote_average.toFixed(1):'';
+    var genres=(m.genres||[]).filter(function(g){return['TV 영화','음악','역사','가족','서부'].indexOf(g)<0}).slice(0,2).join(' · ');
+    var ott=(m.watch_providers||[]).slice(0,3).map(function(p){return'<span class="ott">'+p.name+'</span>'}).join('');
+    return '<div class="card" data-i="'+i+'">'+
+      '<div class="card-img"><img src="https://img.youtube.com/vi/'+v.id+'/mqdefault.jpg" loading="lazy">'+
+      (v.duration_label?'<span class="card-dur">'+v.duration_label+'</span>':'')+
+      (v.has_spoiler?'<span class="card-sp">결말 포함</span>':'')+
+      '</div><div class="card-bd"><div class="card-row">'+
+      (m.poster_url?'<div class="card-poster"><img src="'+m.poster_url+'" loading="lazy"></div>':'')+
+      '<div class="card-info"><div class="card-title">'+(m.title_ko||m.title_en||'')+'</div>'+
+      '<div class="card-meta">'+(rating?'<span class="star">⭐ '+rating+'</span>':'')+
+      (m.year?'<span>'+m.year+'</span>':'')+(genres?'<span>'+genres+'</span>':'')+'</div>'+
+      '<div class="card-rt">'+(rating?'<span class="rt rt-t">TMDB '+rating+'</span>':'')+
+      (m.imdb_rating?'<span class="rt rt-i">IMDb '+m.imdb_rating+'</span>':'')+
+      (m.rotten_tomatoes?'<span class="rt rt-r">🍅 '+m.rotten_tomatoes+'%</span>':'')+
+      '</div></div></div>'+(ott?'<div class="card-ott">'+ott+'</div>':'')+
+      '<div class="card-vt">'+v.title+'</div>'+
+      '<div class="card-st"><span>'+v.channel+'</span><span>조회수 '+fmt(v.view_count||0)+'</span></div>'+
+      '</div></div>';
   }).join('');
 }
 
-let watchedFilter=false;
-function toggleWatchedFilter(el){watchedFilter=!watchedFilter;el.classList.toggle('active',watchedFilter);applyFilters();}
-function filterGenre(el,g){document.querySelectorAll('#genre-filter .chip').forEach(c=>c.classList.remove('active'));el.classList.add('active');currentGenre=g;applyFilters();}
-function toggleSpoiler(el,m){const was=el.classList.contains('active');document.querySelectorAll('#extra-filter .chip.accent,#extra-filter .chip:not(.accent)').forEach(c=>c.classList.remove('active'));spoilerFilter=was?'all':m;if(!was)el.classList.add('active');applyFilters();}
-function setSort(el,m){document.querySelectorAll('.sort-btn').forEach(b=>b.classList.remove('active'));el.classList.add('active');sortMode=m;applyFilters();}
-function setDur(el,d){document.querySelectorAll('.dur-chip').forEach(c=>c.classList.remove('active'));el.classList.add('active');durFilter=d;applyFilters();}
-
-function applyFilters(){
-  let items=[...allItems];
-  if(currentGenre!=='전체')items=items.filter(i=>cleanGenres(i.movie.genres).includes(currentGenre));
-  if(spoilerFilter==='spoiler')items=items.filter(i=>i.video.has_spoiler);
-  else if(spoilerFilter==='nospoiler')items=items.filter(i=>!i.video.has_spoiler);
-  if(watchedFilter)items=items.filter(i=>!isWatched(i.video.id));
-  if(durFilter==='short')items=items.filter(i=>(i.video.duration_sec||0)<=600);
-  else if(durFilter==='mid')items=items.filter(i=>{const d=i.video.duration_sec||0;return d>600&&d<=1200;});
-  else if(durFilter==='long')items=items.filter(i=>(i.video.duration_sec||0)>1200);
-
-  if(sortMode==='latest')items.sort((a,b)=>(b.video.published_at||'').localeCompare(a.video.published_at||''));
-  else if(sortMode==='views')items.sort((a,b)=>(b.video.view_count||0)-(a.video.view_count||0));
-  else if(sortMode==='rating')items.sort((a,b)=>(b.movie.vote_average||0)-(a.movie.vote_average||0));
-  else{
-    for(let i=items.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[items[i],items[j]]=[items[j],items[i]];}
+function renderToday(){
+  var seed=new Date().toDateString(),h=0;
+  for(var i=0;i<seed.length;i++)h=seed.charCodeAt(i)+(h<<5)-h;
+  var pool=DATA.filter(function(x){return(x.movie.vote_average||0)>=6.5&&(x.video.view_count||0)>5000});
+  var a=pool.slice();
+  for(var i=a.length-1;i>0;i--){var j=Math.abs((h*31+i*17)%(i+1));var t=a[i];a[i]=a[j];a[j]=t;}
+  var seen={},picks=[];
+  for(var i=0;i<a.length&&picks.length<10;i++){
+    if(!seen[a[i].movie.tmdb_id]){seen[a[i].movie.tmdb_id]=1;picks.push(a[i]);}
   }
-
-  filteredItems=items;
-  displayedCount=0;
-  const countEl=document.getElementById('feed-count');
-  const listEl=document.getElementById('feed-list');
-  if(countEl)countEl.textContent=items.length+'개 영상';
-  if(listEl)listEl.innerHTML='';
-  console.log('applyFilters:',items.length,'items, first:',items[0]?.movie?.title_ko,'sort:',sortMode);
-  loadMore();
+  var el=document.getElementById('today-list');
+  el.innerHTML='<div style="padding:0 16px 12px"><div style="font-size:14px;font-weight:800">🎲 오늘의 추천 10편</div><div style="font-size:12px;color:#666;margin-top:4px">매일 새로운 영화를 추천해드려요</div></div>'+
+    picks.map(function(x,i){
+      var m=x.movie,v=x.video;
+      return '<div class="card" data-ti="'+i+'" style="margin:0 16px 12px">'+
+        '<div class="card-bd"><div class="card-row">'+
+        (m.poster_url?'<div class="card-poster"><img src="'+m.poster_url+'" loading="lazy"></div>':'')+
+        '<div class="card-info"><div style="font-size:11px;font-weight:900;color:#E50914">#'+(i+1)+'</div>'+
+        '<div class="card-title">'+(m.title_ko||m.title_en)+'</div>'+
+        '<div class="card-meta">'+(m.vote_average?'<span class="star">⭐ '+m.vote_average.toFixed(1)+'</span>':'')+
+        (m.year?'<span>'+m.year+'</span>':'')+'</div>'+
+        '<div style="font-size:11px;color:#666;margin-top:4px">▶ '+v.channel+' · '+(v.duration_label||'')+'</div>'+
+        '</div></div></div></div>';
+    }).join('');
+  // 클릭 이벤트
+  el.querySelectorAll('[data-ti]').forEach(function(c){
+    c.addEventListener('click',function(){openPlayer(picks[parseInt(c.dataset.ti)]);});
+  });
 }
 
-function loadMore(){
-  const items=filteredItems.slice(displayedCount,displayedCount+PAGE_SIZE);
-  if(!items.length&&displayedCount===0){
-    document.getElementById('feed-list').innerHTML='<div class="loading">조건에 맞는 영상이 없습니다.</div>';
-    document.getElementById('load-more').style.display='none';
-    return;
-  }
-  const html=items.map(item=>{
-    const idx=filteredItems.indexOf(item);
-    return renderCard(item,idx);
+function buildGenres(){
+  var counts={};
+  DATA.forEach(function(x){(x.movie.genres||[]).forEach(function(g){
+    if(['TV 영화','음악','역사','가족','서부'].indexOf(g)<0)counts[g]=(counts[g]||0)+1;
+  })});
+  var sorted=Object.keys(counts).sort(function(a,b){return counts[b]-counts[a]}).slice(0,12);
+  var el=document.getElementById('genres');
+  el.innerHTML='<span class="on" data-g="전체">전체</span>'+sorted.map(function(g){
+    return '<span data-g="'+g+'">'+g+'</span>';
   }).join('');
-  document.getElementById('feed-list').insertAdjacentHTML('beforeend',html);
-  displayedCount+=items.length;
-  document.getElementById('load-more').style.display=displayedCount<filteredItems.length?'':'none';
+  el.addEventListener('click',function(e){
+    var t=e.target;if(!t.dataset.g)return;
+    el.querySelectorAll('span').forEach(function(s){s.className=''});
+    t.className='on';
+    GENRE=t.dataset.g;
+    render();
+  });
 }
 
-function renderCard(item,idx){
-  const v=item.video,m=item.movie;
-  const thumb=`https://img.youtube.com/vi/${v.id}/mqdefault.jpg`;
-  const rating=m.vote_average?m.vote_average.toFixed(1):'';
-  const genres=cleanGenres(m.genres).slice(0,2).join(' · ');
-  const views=fmt(v.view_count||0);
-  const watched=isWatched(v.id)?' watched':'';
-  const ottHtml=(m.watch_providers||[]).slice(0,3).map(p=>`<span class="ott-tag">${p.name}</span>`).join('');
-  const otherCount=allItems.filter(i=>i.movie.tmdb_id===m.tmdb_id&&i.video.id!==v.id).length;
-  return `<div class="card${watched}" onclick="openPlayer(${idx})">
-    <div class="card-thumb">
-      <img src="${thumb}" alt="" loading="lazy">
-      ${v.duration_label?`<span class="card-duration">${v.duration_label}</span>`:''}
-      ${v.has_spoiler?'<span class="card-spoiler">결말 포함</span>':''}
-    </div>
-    <div class="card-body">
-      <div class="card-movie-row">
-        ${m.poster_url?`<div class="card-poster"><img src="${m.poster_url}" alt="" loading="lazy"></div>`:''}
-        <div class="card-movie-info">
-          <div class="card-movie-title">${m.title_ko||m.title_en||'제목 미상'}</div>
-          <div class="card-movie-meta">
-            ${rating?`<span class="rating">⭐ ${rating}</span>`:''}
-            ${m.year?`<span>${m.year}</span>`:''}
-            ${genres?`<span>${genres}</span>`:''}
-          </div>
-          <div class="card-ratings">
-            ${rating?`<span class="rt rt-tmdb">TMDB ${rating}</span>`:''}
-            ${m.imdb_rating?`<span class="rt rt-imdb">IMDb ${m.imdb_rating}</span>`:''}
-            ${m.rotten_tomatoes?`<span class="rt rt-rotten">🍅 ${m.rotten_tomatoes}%</span>`:''}
-          </div>
-        </div>
-      </div>
-      ${ottHtml?`<div class="card-ott">${ottHtml}</div>`:''}
-      <div class="card-video-title">${v.title}</div>
-      <div class="card-stats">
-        <span>${v.channel}</span><span>조회수 ${views}</span>
-        ${otherCount?`<span>📺 +${otherCount}개 해설</span>`:''}
-      </div>
-    </div>
-  </div>`;
-}
-
-function openPlayer(idx){
-  const items=filteredItems.length?filteredItems:allItems;
-  const item=items[idx]||allItems[idx];
-  if(!item)return;
-  const v=item.video,m=item.movie;
-  currentPlayerVideoId=v.id;
-  currentPlayerItem=item;
-  document.getElementById('player-iframe').src=`${v.embed_url}?autoplay=1`;
-  document.getElementById('player-title').textContent=m.title_ko||m.title_en||'';
-  document.getElementById('player-channel').textContent=v.channel;
-  const ratings=[`TMDB ⭐${(m.vote_average||0).toFixed(1)}`];
-  if(m.imdb_rating)ratings.push(`IMDb ${m.imdb_rating}`);
-  if(m.rotten_tomatoes)ratings.push(`🍅 ${m.rotten_tomatoes}%`);
-  document.getElementById('player-meta').textContent=
-    `${m.year||''} · ${cleanGenres(m.genres).join(' · ')} · ${m.director||''}\n${ratings.join(' · ')}`;
-  // OTT
-  const ott=(m.watch_providers||[]);
-  document.getElementById('player-ott').innerHTML=ott.length?
-    `<span style="font-size:11px;color:var(--text3);margin-right:4px;">시청 가능:</span>`+
-    ott.map(p=>`<span class="ott-tag">${p.name}</span>`).join(''):'';
-  // Watched
-  const wb=document.getElementById('player-watched');
-  if(isWatched(v.id)){wb.textContent='✓ 시청 완료';wb.classList.add('done');}
-  else{wb.textContent='👁 시청 완료';wb.classList.remove('done');}
-  // Same movie other videos
-  const others=getOtherVideos(item);
-  const nextLabel=document.getElementById('player-next-label');
-  const nextEl=document.getElementById('player-next');
-  if(others.length){
-    nextLabel.textContent=`이 영화의 다른 해설 (${others.length}개)`;
-    nextEl.innerHTML=others.slice(0,5).map(o=>{
-      const oi=allItems.indexOf(o);
-      const ov=o.video;
-      return `<div class="player-next-item" onclick="openPlayer(${oi})">
-        <img src="https://img.youtube.com/vi/${ov.id}/mqdefault.jpg" loading="lazy">
-        <div class="pn-info"><div class="pn-title">${ov.title}</div><div class="pn-ch">${ov.channel} · ${fmtDur(ov.duration_sec)}</div></div>
-      </div>`;
-    }).join('');
-  }else{
-    // 같은 장르 추천
-    const sameGenre=shuffle(items.filter(i=>i.video.id!==v.id&&cleanGenres(i.movie.genres).some(g=>cleanGenres(m.genres).includes(g)))).slice(0,5);
-    nextLabel.textContent='비슷한 영화';
-    nextEl.innerHTML=sameGenre.map(o=>{
-      const oi=items.indexOf(o);
-      return `<div class="player-next-item" onclick="openPlayer(${oi})">
-        <img src="https://img.youtube.com/vi/${o.video.id}/mqdefault.jpg" loading="lazy">
-        <div class="pn-info"><div class="pn-title">${o.movie.title_ko||o.movie.title_en} — ${o.video.title}</div><div class="pn-ch">${o.video.channel} · ${fmtDur(o.video.duration_sec)}</div></div>
-      </div>`;
-    }).join('');
-  }
-  document.getElementById('player-overlay').classList.add('active');
+function openPlayer(item){
+  var v=item.video,m=item.movie;
+  document.getElementById('p-if').src='https://www.youtube.com/embed/'+v.id+'?autoplay=1';
+  document.getElementById('p-t').textContent=m.title_ko||m.title_en||'';
+  document.getElementById('p-ch').textContent=v.channel;
+  document.getElementById('p-m').textContent=(m.year||'')+' · '+(m.director||'')+' · TMDB ⭐'+(m.vote_average||0).toFixed(1);
+  document.getElementById('player').className='player on';
   document.body.style.overflow='hidden';
 }
 
-function toggleWatched(){
-  if(!currentPlayerVideoId)return;
-  const wb=document.getElementById('player-watched');
-  if(isWatched(currentPlayerVideoId)){removeWatchedId(currentPlayerVideoId);wb.textContent='👁 시청 완료';wb.classList.remove('done');}
-  else{setWatchedId(currentPlayerVideoId);wb.textContent='✓ 시청 완료';wb.classList.add('done');}
-}
-
-function closePlayer(){
-  document.getElementById('player-overlay').classList.remove('active');
-  document.getElementById('player-iframe').src='';
+// 이벤트
+document.getElementById('p-close').addEventListener('click',function(){
+  document.getElementById('player').className='player';
+  document.getElementById('p-if').src='';
   document.body.style.overflow='';
-  currentPlayerVideoId=null;currentPlayerItem=null;
-  applyFilters();
-}
+});
 
-function shareItem(idx){
-  const items=filteredItems.length?filteredItems:allItems;
-  const item=items[idx]||allItems[idx];
-  if(!item)return;
-  const url=item.video.url;
-  if(navigator.share){navigator.share({title:item.movie.title_ko||item.video.title,url});}
-  else{navigator.clipboard.writeText(url);alert('링크가 복사되었습니다!');}
-}
-function shareVideo(){
-  if(!currentPlayerItem)return;
-  shareItem(allItems.indexOf(currentPlayerItem));
-}
+document.getElementById('list').addEventListener('click',function(e){
+  var card=e.target.closest('.card');
+  if(!card||!card.dataset.i)return;
+  openPlayer(CUR[parseInt(card.dataset.i)]);
+});
 
-function switchTab(tab){
-  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
-  document.getElementById('tab-today').style.display='none';
-  document.getElementById('tab-feed').style.display='none';
-  document.getElementById('tab-search').style.display='none';
-  if(tab==='feed'){document.querySelectorAll('.tab')[0].classList.add('active');document.getElementById('tab-feed').style.display='';applyFilters();}
-  else if(tab==='today'){document.querySelectorAll('.tab')[1].classList.add('active');document.getElementById('tab-today').style.display='';}
-  else{document.querySelectorAll('.tab')[2].classList.add('active');document.getElementById('tab-search').style.display='';document.getElementById('searchInput').focus();}
-}
+// 탭
+document.getElementById('tabs').addEventListener('click',function(e){
+  var btn=e.target.closest('button');
+  if(!btn)return;
+  var tab=btn.dataset.tab;
+  document.querySelectorAll('#tabs button').forEach(function(b){b.className=''});
+  btn.className='on';
+  document.getElementById('v-feed').style.display=tab==='feed'?'':'none';
+  document.getElementById('v-today').style.display=tab==='today'?'':'none';
+  document.getElementById('v-search').style.display=tab==='search'?'':'none';
+  if(tab==='feed')render();
+  if(tab==='search')document.getElementById('q').focus();
+});
 
-document.addEventListener('DOMContentLoaded',()=>{
-  const input=document.getElementById('searchInput');
-  let debounce;
-  input.addEventListener('input',()=>{
-    clearTimeout(debounce);
-    debounce=setTimeout(()=>{
-      const q=input.value.trim().toLowerCase();
-      const el=document.getElementById('search-results');
-      if(!q){el.innerHTML='<div class="search-empty">🔍 영화 제목으로 요약 영상을 찾아보세요</div>';return;}
-      const results=allItems.filter(i=>(i.movie.title_ko||'').toLowerCase().includes(q)||(i.movie.title_en||'').toLowerCase().includes(q));
-      if(!results.length){el.innerHTML='<div class="search-empty">검색 결과가 없습니다</div>';return;}
-      const grouped={};
-      results.forEach(i=>{const k=i.movie.tmdb_id;if(!grouped[k])grouped[k]={movie:i.movie,videos:[]};grouped[k].videos.push(i.video);});
-      el.innerHTML=Object.values(grouped).map(g=>{
-        const m=g.movie,genres=cleanGenres(m.genres).slice(0,3).join(' · ');
-        const ott=(m.watch_providers||[]).slice(0,3).map(p=>`<span class="ott-tag">${p.name}</span>`).join('');
-        return `<div style="background:var(--surface);border-radius:var(--radius);padding:14px;margin-bottom:10px;">
-          <div style="display:flex;gap:10px;margin-bottom:10px;">
-            ${m.poster_url?`<img src="${m.poster_url}" style="width:60px;border-radius:8px;">`:''}
-            <div>
-              <div style="font-size:16px;font-weight:800;">${m.title_ko||m.title_en}</div>
-              <div style="font-size:12px;color:var(--text2);margin-top:2px;">
-                ${m.year||''} · ${genres} · TMDB ⭐${(m.vote_average||0).toFixed(1)}
-                ${m.imdb_rating?' · IMDb '+m.imdb_rating:''}
-              </div>
-              ${ott?`<div style="margin-top:4px;display:flex;gap:4px;">${ott}</div>`:''}
-            </div>
-          </div>
-          <div style="font-size:12px;font-weight:700;color:var(--text2);margin-bottom:6px;">요약 영상 ${g.videos.length}개</div>
-          ${g.videos.map(v=>{
-            const vidx=allItems.findIndex(i=>i.video.id===v.id);
-            const w=isWatched(v.id);
-            return `<div onclick="switchTab('feed');setTimeout(()=>openPlayer(${vidx}),100)" style="display:flex;gap:8px;padding:8px;background:var(--surface2);border-radius:8px;margin-bottom:4px;cursor:pointer;${w?'opacity:0.5':''}">
-              <img src="https://img.youtube.com/vi/${v.id}/default.jpg" style="width:80px;height:45px;object-fit:cover;border-radius:4px;">
-              <div style="flex:1;min-width:0;">
-                <div style="font-size:12px;line-height:1.4;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${w?'✓ ':''}${v.title}</div>
-                <div style="font-size:11px;color:var(--text3);margin-top:2px;">${v.channel} · ${v.duration_label||''}</div>
-              </div>
-            </div>`;
-          }).join('')}
-        </div>`;
-      }).join('');
-    },300);
+// 검색
+document.getElementById('q').addEventListener('input',function(){
+  var q=this.value.trim().toLowerCase();
+  var el=document.getElementById('slist');
+  if(!q){el.innerHTML='<div class="empty">🔍 영화 제목으로 검색하세요</div>';return;}
+  var res=DATA.filter(function(x){
+    return((x.movie.title_ko||'').toLowerCase().indexOf(q)>=0)||((x.movie.title_en||'').toLowerCase().indexOf(q)>=0);
   });
-  loadFeed();
+  if(!res.length){el.innerHTML='<div class="empty">검색 결과가 없습니다</div>';return;}
+  el.innerHTML=res.slice(0,30).map(function(x,i){
+    var v=x.video,m=x.movie;
+    return '<div class="card" style="cursor:pointer" onclick="openPlayer(DATA['+DATA.indexOf(x)+'])">'+
+      '<div class="card-bd"><div class="card-row">'+
+      (m.poster_url?'<div class="card-poster"><img src="'+m.poster_url+'" loading="lazy"></div>':'')+
+      '<div class="card-info"><div class="card-title">'+(m.title_ko||m.title_en)+'</div>'+
+      '<div class="card-meta">'+(m.vote_average?'<span class="star">⭐ '+m.vote_average.toFixed(1)+'</span>':'')+
+      (m.year?'<span>'+m.year+'</span>':'')+'</div></div></div>'+
+      '<div class="card-vt">'+v.title+'</div>'+
+      '<div class="card-st"><span>'+v.channel+'</span></div></div></div>';
+  }).join('');
+});
+
+// 로드
+fetch('data/feed.json').then(function(r){return r.json()}).then(function(d){
+  DATA=d.items||[];
+  buildGenres();
+  render();
+  renderToday();
+}).catch(function(){
+  document.getElementById('list').innerHTML='<div class="empty">데이터를 불러올 수 없습니다</div>';
 });
 </script>
 </body>
