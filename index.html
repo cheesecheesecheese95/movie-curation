@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>Don't Watch It All — 오늘 뭐 볼까?</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
@@ -329,7 +332,10 @@ function applyFilters(){
   if(sortMode==='latest')items.sort((a,b)=>(b.video.published_at||'').localeCompare(a.video.published_at||''));
   else if(sortMode==='views')items.sort((a,b)=>(b.video.view_count||0)-(a.video.view_count||0));
   else if(sortMode==='rating')items.sort((a,b)=>(b.movie.vote_average||0)-(a.movie.vote_average||0));
-  else{items.sort(()=>Math.random()-0.5);} // 매번 진짜 랜덤
+  else{
+    // Fisher-Yates 셔플 — 매 호출 시 완전히 새로운 순서
+    for(let i=items.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[items[i],items[j]]=[items[j],items[i]];}
+  }
 
   filteredItems=items;
   displayedCount=0;
