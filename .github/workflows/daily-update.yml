@@ -1,0 +1,94 @@
+name: Daily Update (매일 아침 9시 KST)
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # UTC 00:00 = KST 09:00
+  workflow_dispatch:  # 수동 실행도 가능
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install google-api-python-client anthropic requests
+
+      - name: Fetch new videos
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: python fetch_by_search.py
+
+      - name: Match movies
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+        run: python match_movies.py
+
+      - name: Classify content
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python -c "
+          import json, time, anthropic, sqlite3
+          conn = sqlite3.connect('data/curation.db')
+          rows = conn.execute('SELECT video_id, title, description FROM videos WHERE tmdb_id IS NOT NULL AND content_type IS NULL LIMIT 200').fetchall()
+          if not rows: exit()
+          client = anthropic.Anthropic()
+          SYS = 'YouTube 영상을 summary(줄거리 요약/해설), review(감상/평가), other(기타)로 분류. JSON 배열: [{\"video_id\":\"...\",\"type\":\"summary\"}]'
+          for i in range(0, len(rows), 20):
+              batch = rows[i:i+20]
+              vlist = chr(10).join(f'[{r[0]}] {r[1]}' for r in batch)
+              try:
+                  resp = client.messages.create(model='claude-haiku-4-5-20251001', max_tokens=2000, system=SYS, messages=[{'role':'user','content':vlist}])
+                  text = resp.content[0].text
+                  if '\`\`\`' in text: text = text.split('\`\`\`')[1]; text = text[4:] if text.startswith('json') else text
+                  for r in json.loads(text.strip()):
+                      conn.execute('UPDATE videos SET content_type=? WHERE video_id=?', (r.get('type','other'), r['video_id']))
+                  conn.commit()
+              except: pass
+              time.sleep(0.3)
+          conn.close()
+          "
+
+      - name: Enrich with TMDB
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+        run: python enrich.py
+
+      - name: Update OMDb ratings
+        run: |
+          python -c "
+          import requests, time, sqlite3
+          conn = sqlite3.connect('data/curation.db')
+          rows = conn.execute('SELECT tmdb_id, title_en, year FROM movies WHERE imdb_rating IS NULL AND title_en IS NOT NULL LIMIT 100').fetchall()
+          for r in rows:
+              try:
+                  resp = requests.get('http://www.omdbapi.com/', params={'apikey':'e8aad6a4','t':r[1],'y':r[2]}, timeout=5).json()
+                  if resp.get('Response')=='True':
+                      imdb = resp.get('imdbRating','N/A')
+                      rt = next((x['Value'].replace('%','') for x in resp.get('Ratings',[]) if 'Rotten' in x['Source']), None)
+                      conn.execute('UPDATE movies SET imdb_rating=?, rotten_tomatoes=? WHERE tmdb_id=?', (imdb if imdb!='N/A' else None, rt, r[0]))
+              except: pass
+              time.sleep(0.1)
+          conn.commit(); conn.close()
+          "
+
+      - name: Export feed
+        run: python export.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add data/feed.json data/curation.db
+          git diff --staged --quiet || (git commit -m "Daily update: $(date +%Y-%m-%d)" && git push)
+
+      - name: Deploy to Vercel
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: npx vercel --yes --prod --token=$VERCEL_TOKEN

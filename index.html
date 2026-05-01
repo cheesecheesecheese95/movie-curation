@@ -212,6 +212,9 @@ function isWatched(v){return!!getWatched()[v];}
 const HIDDEN_GENRES=new Set(['TV 영화','음악','역사','가족','서부']);
 function cleanGenres(g){return(g||[]).filter(x=>!HIDDEN_GENRES.has(x));}
 function shuffle(a){const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]];}return b;}
+// 페이지 로드마다 새로운 랜덤 순서 보장
+let shuffledOrder=null;
+function getShuffled(items){shuffledOrder=shuffle(items);return shuffledOrder;}
 function fmt(n){if(n>10000)return Math.round(n/10000)+'만';if(n>1000)return Math.round(n/1000)+'천';return n+'';}
 function fmtDur(s){if(!s)return'';const h=Math.floor(s/3600),m=Math.floor((s%3600)/60);return h?h+'시간 '+m+'분':m+'분';}
 
@@ -224,7 +227,7 @@ async function loadFeed(){
   try{
     const r=await fetch('data/feed.json?t='+Date.now());
     const data=await r.json();
-    allItems=data.items||[];
+    allItems=shuffle(data.items||[]);  // 로드할 때마다 랜덤 순서
     buildFilters();
     renderDailyPick();
     renderGems();
@@ -266,13 +269,13 @@ function renderDailyPick(){
   const seen=new Set();
   todayPicks=[];
   for(const item of seeded){
-    if(todayPicks.length>=5)break;
+    if(todayPicks.length>=10)break;
     if(seen.has(item.movie.tmdb_id))continue;
     seen.add(item.movie.tmdb_id);
     todayPicks.push(item);
   }
   const el=document.getElementById('today-feed');
-  el.innerHTML=`<div style="padding:16px 0 8px;"><div class="section-label">🎲 오늘의 추천 5편</div><div style="font-size:12px;color:var(--text3);margin-bottom:12px;">매일 새로운 영화를 추천해드려요</div></div>`+
+  el.innerHTML=`<div style="padding:16px 0 8px;"><div class="section-label">🎲 오늘의 추천 10편</div><div style="font-size:12px;color:var(--text3);margin-bottom:12px;">매일 새로운 영화를 추천해드려요</div></div>`+
     todayPicks.map((item,i)=>{
       const m=item.movie,v=item.video;
       const ratings=[];
@@ -329,7 +332,10 @@ function applyFilters(){
   if(sortMode==='latest')items.sort((a,b)=>(b.video.published_at||'').localeCompare(a.video.published_at||''));
   else if(sortMode==='views')items.sort((a,b)=>(b.video.view_count||0)-(a.video.view_count||0));
   else if(sortMode==='rating')items.sort((a,b)=>(b.movie.vote_average||0)-(a.movie.vote_average||0));
-  else if(sortMode==='shuffle')items=shuffle(items);
+  else if(sortMode==='shuffle'){
+    // 필터 변경 없이 리프레시면 새로운 랜덤, 필터 변경이면 재셔플
+    items=shuffle(items);
+  }
 
   filteredItems=items;
   displayedCount=0;
