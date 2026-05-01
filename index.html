@@ -55,6 +55,8 @@ body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;colo
 .search-box input{width:100%;padding:12px 16px;border-radius:12px;border:1.5px solid #242424;background:#1A1A1A;color:#F0F0F0;font-size:15px;font-family:inherit;outline:none}
 .search-box input:focus{border-color:#E50914}
 .empty{text-align:center;padding:60px 0;color:#666;font-size:13px}
+.sbtn{padding:5px 10px;border-radius:8px;font-size:11px;font-weight:600;cursor:pointer;border:1px solid #242424;background:#1A1A1A;color:#666;font-family:inherit}
+.sbtn.on{background:#2E2E2E;color:#F0F0F0;border-color:#666}
 </style>
 </head>
 <body>
@@ -70,6 +72,17 @@ body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;colo
 
   <div id="v-feed">
     <div class="chips" id="genres"></div>
+    <div style="display:flex;align-items:center;justify-content:space-between;padding:6px 16px 8px">
+      <label style="display:flex;align-items:center;gap:6px;font-size:12px;color:#999;cursor:pointer">
+        <input type="checkbox" id="chk-spoiler" style="accent-color:#E50914"> 🔴 결말포함만
+      </label>
+      <div id="sort-btns" style="display:flex;gap:4px">
+        <button class="sbtn on" data-sort="shuffle">🔀</button>
+        <button class="sbtn" data-sort="views">조회수</button>
+        <button class="sbtn" data-sort="rating">평점</button>
+        <button class="sbtn" data-sort="latest">최신순</button>
+      </div>
+    </div>
     <div class="info" id="info"></div>
     <div class="list" id="list"></div>
   </div>
@@ -97,7 +110,7 @@ body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;colo
 </div>
 
 <script>
-var DATA=[], CUR=[], GENRE='전체', TAB='feed';
+var DATA=[], CUR=[], GENRE='전체', TAB='feed', SORT='shuffle', SPOILER=false;
 
 function fmt(n){return n>=10000?Math.round(n/10000)+'만':n>=1000?Math.round(n/1000)+'천':n+''}
 
@@ -109,7 +122,11 @@ function shuffle(arr){
 
 function render(){
   var items=GENRE==='전체'?DATA.slice():DATA.filter(function(x){return(x.movie.genres||[]).indexOf(GENRE)>=0});
-  items=shuffle(items);
+  if(SPOILER)items=items.filter(function(x){return x.video.has_spoiler});
+  if(SORT==='shuffle')items=shuffle(items);
+  else if(SORT==='views')items.sort(function(a,b){return(b.video.view_count||0)-(a.video.view_count||0)});
+  else if(SORT==='rating')items.sort(function(a,b){return(b.movie.vote_average||0)-(a.movie.vote_average||0)});
+  else if(SORT==='latest')items.sort(function(a,b){return(b.video.published_at||'').localeCompare(a.video.published_at||'')});
   CUR=items;
   document.getElementById('info').textContent=items.length+'개 영상';
   var el=document.getElementById('list');
@@ -251,6 +268,22 @@ document.getElementById('q').addEventListener('input',function(){
       '<div class="card-vt">'+v.title+'</div>'+
       '<div class="card-st"><span>'+v.channel+'</span></div></div></div>';
   }).join('');
+});
+
+// 결말포함 체크
+document.getElementById('chk-spoiler').addEventListener('change',function(){
+  SPOILER=this.checked;
+  render();
+});
+
+// 정렬 버튼
+document.getElementById('sort-btns').addEventListener('click',function(e){
+  var btn=e.target.closest('.sbtn');
+  if(!btn)return;
+  document.querySelectorAll('.sbtn').forEach(function(b){b.className='sbtn'});
+  btn.className='sbtn on';
+  SORT=btn.dataset.sort;
+  render();
 });
 
 // 로드
