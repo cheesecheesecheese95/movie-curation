@@ -152,7 +152,7 @@ function render(){
   else if(SORT==='latest')items.sort(function(a,b){return(b.video.published_at||'').localeCompare(a.video.published_at||'')});
   CUR=items;
   SHOWN=0;
-  document.getElementById('info').textContent=items.length+'개 영상';
+  document.getElementById('info').textContent='';
   document.getElementById('list').innerHTML='';
   loadMore();
 }
