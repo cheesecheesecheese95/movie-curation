@@ -18,7 +18,7 @@
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;color:#F0F0F0;-webkit-font-smoothing:antialiased}
 .app{max-width:480px;margin:0 auto;min-height:100vh}
-.hd{position:sticky;top:0;z-index:100;background:rgba(13,13,13,.92);backdrop-filter:blur(12px);padding:14px 16px 0}
+.hd{position:sticky;top:0;z-index:100;background:rgba(13,13,13,.92);backdrop-filter:blur(12px);padding:14px 16px 0;padding-top:max(14px,env(safe-area-inset-top))}
 .logo{font-size:15px;font-weight:900;margin-bottom:14px}
 .logo em{font-style:normal;color:#E50914}
 .tabs{display:flex;border-bottom:2px solid #242424}
