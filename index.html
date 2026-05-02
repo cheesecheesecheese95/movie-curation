@@ -303,6 +303,7 @@ function openPlayer(item){
   document.getElementById('p-t').textContent=m.title_ko||m.title_en||'';
   document.getElementById('p-ch').textContent=v.channel;
   document.getElementById('p-m').textContent=(m.year||'')+' · '+(m.director||'')+' · TMDB ⭐'+(m.vote_average||0).toFixed(1);
+  savedScroll=window.scrollY;
   document.getElementById('player').className='player on';
   document.body.style.overflow='hidden';
   gtag('event','video_play',{movie:m.title_ko||m.title_en,channel:v.channel,video_id:v.id});
@@ -310,10 +311,12 @@ function openPlayer(item){
 
 // 이벤트
 document.getElementById('p-close').addEventListener('click',closePlayer);
+var savedScroll=0;
 function closePlayer(){
   document.getElementById('player').className='player';
   document.getElementById('p-if').src='';
   document.body.style.overflow='';
+  window.scrollTo(0,savedScroll);
 }
 
 // 스와이프로 플레이어 닫기
