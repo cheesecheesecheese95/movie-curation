@@ -276,7 +276,8 @@ function buildGenres(){
   var sorted=Object.keys(counts).sort(function(a,b){return counts[b]-counts[a]}).slice(0,11);
   var el=document.getElementById('genres');
   el.innerHTML='<span class="on" data-g="전체">전체</span>'+sorted.map(function(g){
-    return '<span data-g="'+g+'">'+g+'</span>';
+    var label=g==='애니메이션'?'ANI':g;
+    return '<span data-g="'+g+'">'+label+'</span>';
   }).join('');
   el.addEventListener('click',function(e){
     var t=e.target;if(!t.dataset.g)return;
