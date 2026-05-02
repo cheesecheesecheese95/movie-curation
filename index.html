@@ -24,8 +24,9 @@ body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;colo
 .tabs{display:flex;border-bottom:2px solid #242424}
 .tabs button{flex:1;padding:12px 0;text-align:center;font-size:13px;font-weight:700;color:#666;cursor:pointer;border:none;background:none;font-family:inherit}
 .tabs button.on{color:#F0F0F0}
-.top-sticky{position:sticky;top:0;z-index:100;background:#0D0D0D}
+.top-sticky{position:fixed;top:0;left:0;right:0;z-index:100;background:#0D0D0D;max-width:480px;margin:0 auto}
 .sticky-filter{padding-bottom:6px;background:#0D0D0D}
+.content-area{padding-top:280px}
 .chips{display:flex;flex-wrap:wrap;gap:5px;padding:10px 16px 6px}
 .chips span{padding:6px 12px;border-radius:16px;font-size:11px;font-weight:600;white-space:nowrap;cursor:pointer;border:1px solid #242424;background:#1A1A1A;color:#999}
 .chips span.on{background:#F0F0F0;color:#0D0D0D;border-color:#F0F0F0}
@@ -108,16 +109,16 @@ body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;colo
     </div>
   </div><!-- /top-sticky -->
 
-  <div id="v-feed">
+  <div id="v-feed" class="content-area">
     <div class="info" id="info"></div>
     <div class="list" id="list"></div>
   </div>
 
-  <div id="v-today" style="display:none">
+  <div id="v-today" class="content-area" style="display:none">
     <div class="list" id="today-list" style="padding-top:16px"></div>
   </div>
 
-  <div id="v-search" style="display:none">
+  <div id="v-search" class="content-area" style="display:none">
     <div class="search-box"><input id="q" placeholder="영화 제목을 검색하세요..." autocomplete="off"></div>
     <div class="list" id="slist"></div>
   </div>
@@ -347,6 +348,22 @@ document.getElementById('q').addEventListener('input',function(){
       '<div class="card-vt">'+v.title+'</div>'+
       '<div class="card-st"><span>'+v.channel+'</span></div></div></div>';
   }).join('');
+});
+
+// 콘텐츠 영역 padding을 고정 헤더 높이에 맞춤
+setTimeout(function(){
+  var ts=document.querySelector('.top-sticky');
+  if(ts){
+    var h=ts.offsetHeight+'px';
+    document.querySelectorAll('.content-area').forEach(function(el){el.style.paddingTop=h;});
+  }
+},300);
+window.addEventListener('resize',function(){
+  var ts=document.querySelector('.top-sticky');
+  if(ts){
+    var h=ts.offsetHeight+'px';
+    document.querySelectorAll('.content-area').forEach(function(el){el.style.paddingTop=h;});
+  }
 });
 
 // PWA 설치
