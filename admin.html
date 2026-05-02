@@ -132,6 +132,15 @@ function showMore(){
           '<input placeholder="영화 제목 수정" value="'+(m.title_ko||'')+'" id="edit-'+idx+'">'+
           '<button class="btn btn-save" onclick="saveTitle('+idx+')">저장</button>'+
         '</div>'+
+        '<div class="edit-row">'+
+          '<select id="genre-'+idx+'" style="padding:4px 8px;border:1px solid #ddd;border-radius:4px;font-size:11px">'+
+            ['드라마','스릴러','액션','SF','코미디','공포','범죄','미스터리','로맨스','판타지','애니메이션','전쟁','다큐멘터리'].map(function(g){
+              var sel=(m.genres||[]).indexOf(g)>=0?' selected':'';
+              return '<option value="'+g+'"'+sel+'>'+g+'</option>';
+            }).join('')+
+          '</select>'+
+          '<button class="btn btn-save" onclick="saveGenre('+idx+')">장르변경</button>'+
+        '</div>'+
       '</div>'+
       '<div class="item-actions">'+
         '<button class="btn btn-del" onclick="deleteItem('+idx+')">삭제</button>'+
@@ -178,6 +187,17 @@ function saveTitle(idx){
   CHANGES[item.video.id].title=newTitle;
   document.getElementById('item-'+idx).querySelector('.movie').textContent=newTitle;
   toast('제목 저장: '+newTitle);
+  savePending();
+}
+
+function saveGenre(idx){
+  var item=FILTERED[idx];
+  var sel=document.getElementById('genre-'+idx);
+  var newGenre=sel.value;
+  item.movie.genres=[newGenre];
+  CHANGES[item.video.id]=CHANGES[item.video.id]||{};
+  CHANGES[item.video.id].genre=newGenre;
+  toast('장르 변경: '+newGenre);
   savePending();
 }
 
