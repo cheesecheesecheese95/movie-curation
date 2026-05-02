@@ -136,6 +136,7 @@ body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;colo
       <div style="background:#1A1A1A;border-radius:14px;padding:16px;margin-top:16px;text-align:center;min-height:250px;display:flex;align-items:center;justify-content:center;border:1px solid #242424">
         <div style="width:100%"><span style="font-size:11px;color:#333">AD</span></div>
       </div>
+      <button onclick="closePlayer()" style="width:100%;margin-top:16px;padding:14px;border-radius:12px;background:#1A1A1A;border:1px solid #242424;color:#999;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit">← 뒤로가기</button>
     </div>
   </div>
 
@@ -306,11 +307,24 @@ function openPlayer(item){
 }
 
 // 이벤트
-document.getElementById('p-close').addEventListener('click',function(){
+document.getElementById('p-close').addEventListener('click',closePlayer);
+function closePlayer(){
   document.getElementById('player').className='player';
   document.getElementById('p-if').src='';
   document.body.style.overflow='';
-});
+}
+
+// 스와이프로 플레이어 닫기
+(function(){
+  var startX=0,startY=0;
+  var pl=document.getElementById('player');
+  pl.addEventListener('touchstart',function(e){startX=e.touches[0].clientX;startY=e.touches[0].clientY;},{passive:true});
+  pl.addEventListener('touchend',function(e){
+    var dx=e.changedTouches[0].clientX-startX;
+    var dy=e.changedTouches[0].clientY-startY;
+    if(dx>80&&Math.abs(dy)<100) closePlayer(); // 오른쪽 스와이프
+  },{passive:true});
+})();
 
 document.getElementById('list').addEventListener('click',function(e){
   var card=e.target.closest('.card');
