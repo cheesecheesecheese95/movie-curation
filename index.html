@@ -292,6 +292,7 @@ function buildGenres(){
     el.querySelectorAll('span').forEach(function(s){s.className=''});
     t.className='on';
     GENRE=t.dataset.g;
+    gtag('event','genre_click',{genre:GENRE});
     render();
   });
 }
@@ -304,6 +305,7 @@ function openPlayer(item){
   document.getElementById('p-m').textContent=(m.year||'')+' · '+(m.director||'')+' · TMDB ⭐'+(m.vote_average||0).toFixed(1);
   document.getElementById('player').className='player on';
   document.body.style.overflow='hidden';
+  gtag('event','video_play',{movie:m.title_ko||m.title_en,channel:v.channel,video_id:v.id});
 }
 
 // 이벤트
@@ -337,6 +339,8 @@ document.getElementById('tabs').addEventListener('click',function(e){
   var btn=e.target.closest('button');
   if(!btn)return;
   var tab=btn.dataset.tab;
+  TAB=tab;
+  gtag('event','tab_click',{tab:tab});
   document.querySelectorAll('#tabs button').forEach(function(b){b.className=''});
   btn.className='on';
   document.getElementById('v-feed').style.display=tab==='feed'?'':'none';
@@ -355,6 +359,7 @@ document.getElementById('q').addEventListener('input',function(){
     return((x.movie.title_ko||'').toLowerCase().indexOf(q)>=0)||((x.movie.title_en||'').toLowerCase().indexOf(q)>=0);
   });
   if(!res.length){el.innerHTML='<div class="empty">검색 결과가 없습니다</div>';return;}
+  gtag('event','search',{query:q,results:res.length});
   el.innerHTML=res.slice(0,30).map(function(x,i){
     var v=x.video,m=x.movie;
     return '<div class="card" style="cursor:pointer" onclick="openPlayer(DATA['+DATA.indexOf(x)+'])">'+
@@ -391,6 +396,7 @@ window.addEventListener('beforeinstallprompt',function(e){
   deferredPrompt=e;
 });
 function installApp(){
+  gtag('event','install_click');
   if(deferredPrompt){
     deferredPrompt.prompt();
     deferredPrompt.userChoice.then(function(){deferredPrompt=null;});
@@ -410,12 +416,13 @@ window.addEventListener('scroll',function(){
 // 결말포함 체크
 document.getElementById('chk-spoiler').addEventListener('change',function(){
   SPOILER=this.checked;
+  gtag('event','filter_spoiler',{enabled:this.checked});
   render();
 });
 
-// 안 본 것만 체크
 document.getElementById('chk-unwatched').addEventListener('change',function(){
   UNWATCHED=this.checked;
+  gtag('event','filter_unwatched',{enabled:this.checked});
   render();
 });
 
@@ -426,6 +433,7 @@ document.getElementById('sort-btns').addEventListener('click',function(e){
   document.querySelectorAll('.sbtn').forEach(function(b){b.className='sbtn'});
   btn.className='sbtn on';
   SORT=btn.dataset.sort;
+  gtag('event','sort_click',{sort:SORT});
   render();
 });
 
