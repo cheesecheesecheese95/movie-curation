@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Don't Watch It All</title>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6740102719021736" crossorigin="anonymous"></script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -225,6 +228,11 @@ function renderToday(){
 }
 
 function buildGenres(){
+  // 장르 인덱스 로드
+  fetch('data/genres.json').then(function(r){return r.json()}).then(function(idx){
+    window.GENRE_INDEX=idx;
+  }).catch(function(){window.GENRE_INDEX={};});
+
   var counts={};
   DATA.forEach(function(x){(x.movie.genres||[]).forEach(function(g){
     if(['TV 영화','음악','역사','가족','서부'].indexOf(g)<0)counts[g]=(counts[g]||0)+1;

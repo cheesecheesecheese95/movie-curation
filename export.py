@@ -1,12 +1,14 @@
-"""Step 4: JSON 피드 생성"""
-import json
-from config import FEED_PATH
-from db import get_conn, init_db
+"""피드 JSON 생성 — 장르별 분할 + 메인 피드"""
+import json, os, sqlite3
 
+DB_PATH = os.path.join(os.path.dirname(__file__), "data", "curation.db")
+DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
+
+HIDDEN_GENRES = {'TV 영화', '음악', '역사', '가족', '서부'}
 
 def export_feed():
-    init_db()
-    conn = get_conn()
+    conn = sqlite3.connect(DB_PATH)
+    conn.row_factory = sqlite3.Row
 
     rows = conn.execute("""
         SELECT v.video_id, v.channel_id, v.channel_name, v.title AS video_title,
@@ -26,7 +28,7 @@ def export_feed():
 
     items = []
     for r in rows:
-        items.append({
+        item = {
             "video": {
                 "id": r["video_id"],
                 "title": r["video_title"],
@@ -59,27 +61,52 @@ def export_feed():
                 "watch_providers": json.loads(r["watch_providers"]) if r["watch_providers"] else [],
                 "naver_rating": r["naver_rating"],
             },
-        })
+        }
+        items.append(item)
 
     conn.close()
 
-    feed = {
-        "total": len(items),
-        "items": items,
-    }
+    # 1. 메인 피드 (전체)
+    feed = {"total": len(items), "items": items}
+    with open(os.path.join(DATA_DIR, "feed.json"), "w", encoding="utf-8") as f:
+        json.dump(feed, f, ensure_ascii=False)
 
-    with open(FEED_PATH, "w", encoding="utf-8") as f:
-        json.dump(feed, f, ensure_ascii=False, indent=2)
+    # 2. 장르별 분할
+    genre_items = {}
+    for item in items:
+        for g in item["movie"]["genres"]:
+            if g in HIDDEN_GENRES:
+                continue
+            if g not in genre_items:
+                genre_items[g] = []
+            genre_items[g].append(item)
 
-    print(f"✅ 피드 생성 완료: {len(items)}개 항목 → {FEED_PATH}")
+    genre_dir = os.path.join(DATA_DIR, "genres")
+    os.makedirs(genre_dir, exist_ok=True)
 
-    # 요약 통계
-    if items:
-        genres_all = [g for i in items for g in i["movie"]["genres"]]
-        from collections import Counter
-        top_genres = Counter(genres_all).most_common(5)
-        channels = set(i["video"]["channel"] for i in items)
-        print(f"📊 채널 {len(channels)}개 | 장르 TOP: {', '.join(f'{g}({c})' for g,c in top_genres)}")
+    genre_index = {}
+    for genre, gitems in genre_items.items():
+        safe_name = genre.replace(" ", "_").replace("/", "_")
+        filename = f"{safe_name}.json"
+        with open(os.path.join(genre_dir, filename), "w", encoding="utf-8") as f:
+            json.dump({"genre": genre, "total": len(gitems), "items": gitems}, f, ensure_ascii=False)
+        genre_index[genre] = {"file": f"genres/{filename}", "count": len(gitems)}
+
+    # 3. 장르 인덱스
+    with open(os.path.join(DATA_DIR, "genres.json"), "w", encoding="utf-8") as f:
+        json.dump(genre_index, f, ensure_ascii=False, indent=2)
+
+    print(f"✅ 피드 생성 완료: {len(items)}개 항목 → {os.path.join(DATA_DIR, 'feed.json')}")
+
+    channels = set(i["video"]["channel"] for i in items)
+    genre_counts = {}
+    for i in items:
+        for g in i["movie"]["genres"]:
+            if g not in HIDDEN_GENRES:
+                genre_counts[g] = genre_counts.get(g, 0) + 1
+    top_genres = sorted(genre_counts.items(), key=lambda x: -x[1])[:5]
+    print(f"📊 채널 {len(channels)}개 | 장르 TOP: {', '.join(f'{g}({c})' for g,c in top_genres)}")
+    print(f"📂 장르별 분할: {len(genre_items)}개 파일")
 
 
 def fmt_duration(sec):
