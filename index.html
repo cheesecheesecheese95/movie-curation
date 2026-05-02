@@ -76,7 +76,7 @@ body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;colo
     <div style="display:flex;align-items:center;justify-content:space-between">
       <img src="/logo.svg" alt="Don't Watch It All" style="height:36px">
       <div style="display:flex;gap:10px;align-items:center">
-        <a href="#" onclick="document.getElementById('install-modal').style.display='flex';return false" style="font-size:11px;color:#F0F0F0;text-decoration:none;font-weight:600">📲 홈화면추가</a>
+        <a href="#" id="install-btn" onclick="installApp();return false" style="font-size:11px;color:#F0F0F0;text-decoration:none;font-weight:600">📲 홈화면추가</a>
         <a href="#" onclick="document.getElementById('settings-modal').style.display='flex';return false" style="font-size:11px;color:#666;text-decoration:none">⚙️ 설정</a>
       </div>
     </div>
@@ -346,6 +346,21 @@ document.getElementById('q').addEventListener('input',function(){
       '<div class="card-st"><span>'+v.channel+'</span></div></div></div>';
   }).join('');
 });
+
+// PWA 설치
+var deferredPrompt=null;
+window.addEventListener('beforeinstallprompt',function(e){
+  e.preventDefault();
+  deferredPrompt=e;
+});
+function installApp(){
+  if(deferredPrompt){
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then(function(){deferredPrompt=null;});
+  } else {
+    document.getElementById('install-modal').style.display='flex';
+  }
+}
 
 // 무한 스크롤
 window.addEventListener('scroll',function(){
