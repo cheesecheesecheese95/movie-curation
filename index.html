@@ -25,7 +25,7 @@ body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;colo
 .tabs button{flex:1;padding:12px 0;text-align:center;font-size:13px;font-weight:700;color:#666;cursor:pointer;border:none;background:none;font-family:inherit}
 .tabs button.on{color:#F0F0F0}
 .top-sticky{position:sticky;top:0;z-index:100;background:#0D0D0D}
-.sticky-filter{padding-bottom:6px}
+.sticky-filter{padding-bottom:6px;background:#0D0D0D}
 .chips{display:flex;flex-wrap:wrap;gap:5px;padding:10px 16px 6px}
 .chips span{padding:6px 12px;border-radius:16px;font-size:11px;font-weight:600;white-space:nowrap;cursor:pointer;border:1px solid #242424;background:#1A1A1A;color:#999}
 .chips span.on{background:#F0F0F0;color:#0D0D0D;border-color:#F0F0F0}
@@ -87,9 +87,6 @@ body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;colo
       <button data-tab="today">오늘 이거 어때</button>
       <button data-tab="search">영화 찾아줘</button>
     </div>
-  </div>
-
-  <div id="v-feed">
     <div class="sticky-filter">
       <div class="chips" id="genres"></div>
       <div style="display:flex;align-items:center;justify-content:space-between;padding:4px 16px 0">
@@ -109,7 +106,9 @@ body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;colo
         </div>
       </div>
     </div>
-    </div><!-- /top-sticky -->
+  </div><!-- /top-sticky -->
+
+  <div id="v-feed">
     <div class="info" id="info"></div>
     <div class="list" id="list"></div>
   </div>
