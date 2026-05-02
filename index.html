@@ -140,6 +140,8 @@ body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;colo
       <div style="background:#1A1A1A;border-radius:14px;padding:16px;margin-top:16px;text-align:center;min-height:250px;display:flex;align-items:center;justify-content:center;border:1px solid #242424">
         <div style="width:100%"><span style="font-size:11px;color:#333">AD</span></div>
       </div>
+      <div style="margin-top:16px;font-size:13px;font-weight:700;color:#999;margin-bottom:8px">이 영화 좋아했다면</div>
+      <div id="p-similar"></div>
       <button onclick="closePlayer()" style="width:100%;margin-top:16px;padding:14px;border-radius:12px;background:#1A1A1A;border:1px solid #242424;color:#999;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit">← 뒤로가기</button>
     </div>
   </div>
@@ -311,6 +313,36 @@ function openPlayer(item){
   document.getElementById('player').className='player on';
   document.body.style.overflow='hidden';
   gtag('event','video_play',{movie:m.title_ko||m.title_en,channel:v.channel,video_id:v.id});
+
+  // 비슷한 영화 추천 (같은 장르 + 비슷한 평점)
+  var myGenres=m.genres||[];
+  var myRating=m.vote_average||0;
+  var similar=DATA.filter(function(x){
+    if(x.movie.tmdb_id===m.tmdb_id)return false;
+    var xg=x.movie.genres||[];
+    var overlap=myGenres.filter(function(g){return xg.indexOf(g)>=0}).length;
+    return overlap>=1;
+  });
+  // 장르 겹침 많고 + 평점 비슷한 순
+  similar.sort(function(a,b){
+    var ag=(a.movie.genres||[]).filter(function(g){return myGenres.indexOf(g)>=0}).length;
+    var bg=(b.movie.genres||[]).filter(function(g){return myGenres.indexOf(g)>=0}).length;
+    if(bg!==ag)return bg-ag;
+    return Math.abs((a.movie.vote_average||0)-myRating)-Math.abs((b.movie.vote_average||0)-myRating);
+  });
+  // 같은 영화 중복 제거
+  var seenTmdb={};
+  var uniqueSimilar=[];
+  similar.forEach(function(x){if(!seenTmdb[x.movie.tmdb_id]){seenTmdb[x.movie.tmdb_id]=1;uniqueSimilar.push(x);}});
+  var simEl=document.getElementById('p-similar');
+  simEl.innerHTML=uniqueSimilar.slice(0,5).map(function(x){
+    var sm=x.movie,sv=x.video;
+    return '<div style="display:flex;gap:10px;padding:8px;background:#1A1A1A;border-radius:10px;margin-bottom:6px;cursor:pointer" onclick="openPlayer(DATA['+DATA.indexOf(x)+'])">'+
+      (sm.poster_url?'<img src="'+sm.poster_url+'" style="width:40px;height:60px;object-fit:cover;border-radius:6px;flex-shrink:0">':'')+
+      '<div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">'+(sm.title_ko||sm.title_en)+'</div>'+
+      '<div style="font-size:10px;color:#999;margin-top:2px">'+(sm.year||'')+' · ⭐'+(sm.vote_average?sm.vote_average.toFixed(1):'-')+'</div>'+
+      '<div style="font-size:10px;color:#666;margin-top:2px">'+sv.channel+'</div></div></div>';
+  }).join('');
 }
 
 // 이벤트
