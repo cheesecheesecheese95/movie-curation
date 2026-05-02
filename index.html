@@ -167,9 +167,9 @@ function loadMore(){
     // 5개마다 광고 슬롯 삽입
     var adSlot='';
     if(idx>0&&idx%5===0){
-      adSlot='<div class="ad-slot" style="background:#1A1A1A;border-radius:14px;padding:20px;margin-bottom:14px;text-align:center;min-height:100px;display:flex;align-items:center;justify-content:center;border:1px dashed #333">'+
-        '<div class="adfit-container" id="ad-slot-'+idx+'">'+
-        '<span style="font-size:11px;color:#444">AD</span>'+
+      adSlot='<div class="ad-slot" style="background:#1A1A1A;border-radius:14px;padding:16px;margin-bottom:14px;text-align:center;min-height:250px;display:flex;align-items:center;justify-content:center;border:1px solid #242424">'+
+        '<div class="adfit-container" id="ad-slot-'+idx+'" style="width:100%">'+
+        '<span style="font-size:11px;color:#333">AD</span>'+
         '</div></div>';
     }
     var v=x.video,m=x.movie;
