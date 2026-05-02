@@ -24,7 +24,7 @@ body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;colo
 .tabs{display:flex;border-bottom:2px solid #242424}
 .tabs button{flex:1;padding:12px 0;text-align:center;font-size:13px;font-weight:700;color:#666;cursor:pointer;border:none;background:none;font-family:inherit}
 .tabs button.on{color:#F0F0F0}
-.sticky-filter{position:sticky;top:calc(88px + env(safe-area-inset-top, 0px));z-index:99;background:#0D0D0D;padding-bottom:6px}
+.sticky-filter{position:sticky;top:0;z-index:99;background:#0D0D0D;padding-bottom:6px}
 .chips{display:flex;flex-wrap:wrap;gap:5px;padding:10px 16px 6px}
 .chips span{padding:6px 12px;border-radius:16px;font-size:11px;font-weight:600;white-space:nowrap;cursor:pointer;border:1px solid #242424;background:#1A1A1A;color:#999}
 .chips span.on{background:#F0F0F0;color:#0D0D0D;border-color:#F0F0F0}
@@ -346,6 +346,15 @@ document.getElementById('q').addEventListener('input',function(){
       '<div class="card-st"><span>'+v.channel+'</span></div></div></div>';
   }).join('');
 });
+
+// sticky-filter 위치를 헤더 높이에 맞춤
+function fixStickyTop(){
+  var hd=document.querySelector('.hd');
+  var sf=document.querySelector('.sticky-filter');
+  if(hd&&sf) sf.style.top=hd.offsetHeight+'px';
+}
+fixStickyTop();
+window.addEventListener('resize',fixStickyTop);
 
 // PWA 설치
 var deferredPrompt=null;
