@@ -1,11 +1,11 @@
 {
   "모험": {
     "file": "genres/모험.json",
-    "count": 191
+    "count": 188
   },
   "판타지": {
     "file": "genres/판타지.json",
-    "count": 94
+    "count": 90
   },
   "액션": {
     "file": "genres/액션.json",
@@ -29,7 +29,7 @@
   },
   "SF": {
     "file": "genres/SF.json",
-    "count": 231
+    "count": 230
   },
   "스릴러": {
     "file": "genres/스릴러.json",
@@ -41,7 +41,7 @@
   },
   "코미디": {
     "file": "genres/코미디.json",
-    "count": 236
+    "count": 234
   },
   "미스터리": {
     "file": "genres/미스터리.json",
@@ -53,6 +53,6 @@
   },
   "애니메이션": {
     "file": "genres/애니메이션.json",
-    "count": 63
+    "count": 58
   }
 }
