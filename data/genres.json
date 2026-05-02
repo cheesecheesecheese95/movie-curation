@@ -1,19 +1,19 @@
 {
   "모험": {
     "file": "genres/모험.json",
-    "count": 194
+    "count": 192
   },
   "판타지": {
     "file": "genres/판타지.json",
-    "count": 99
+    "count": 96
   },
   "액션": {
     "file": "genres/액션.json",
-    "count": 402
+    "count": 403
   },
   "범죄": {
     "file": "genres/범죄.json",
-    "count": 221
+    "count": 220
   },
   "로맨스": {
     "file": "genres/로맨스.json",
@@ -25,23 +25,23 @@
   },
   "드라마": {
     "file": "genres/드라마.json",
-    "count": 556
+    "count": 555
   },
   "SF": {
     "file": "genres/SF.json",
-    "count": 233
+    "count": 232
   },
   "스릴러": {
     "file": "genres/스릴러.json",
-    "count": 521
+    "count": 523
   },
   "공포": {
     "file": "genres/공포.json",
-    "count": 261
+    "count": 260
   },
   "코미디": {
     "file": "genres/코미디.json",
-    "count": 242
+    "count": 237
   },
   "미스터리": {
     "file": "genres/미스터리.json",
@@ -53,6 +53,6 @@
   },
   "애니메이션": {
     "file": "genres/애니메이션.json",
-    "count": 75
+    "count": 67
   }
 }
