@@ -45,10 +45,11 @@ h1{font-size:18px;margin-bottom:16px}
     <option value="null">미분류</option>
   </select>
   <select id="f-conf">
-    <option value="">신뢰도</option>
-    <option value="low">0.7 이하 (의심)</option>
-    <option value="mid">0.7~0.9</option>
-    <option value="high">0.9+</option>
+    <option value="">전체 신뢰도</option>
+    <option value="low">❌ 불확실 (0.5~0.7) — 43개</option>
+    <option value="mid">⚠️ 대체로 맞음 (0.7~0.9) — 305개</option>
+    <option value="high">✅ 확실 (0.9+)</option>
+    <option value="check">🔍 검수 필요 (0.9 미만)</option>
   </select>
   <input id="f-search" placeholder="영화명 또는 영상 제목 검색...">
 </div>
@@ -92,9 +93,10 @@ function applyFilter(){
     if(genre&&(x.movie.genres||[]).indexOf(genre)<0)return false;
     if(type==='null'&&x.video.content_type)return false;
     if(type&&type!=='null'&&x.video.content_type!==type)return false;
-    if(conf==='low'&&(x.video.match_confidence||0)>0.7)return false;
-    if(conf==='mid'&&((x.video.match_confidence||0)<=0.7||(x.video.match_confidence||0)>0.9))return false;
-    if(conf==='high'&&(x.video.match_confidence||0)<=0.9)return false;
+    if(conf==='low'&&((x.video.match_confidence||0)<0.5||(x.video.match_confidence||0)>=0.7))return false;
+    if(conf==='mid'&&((x.video.match_confidence||0)<0.7||(x.video.match_confidence||0)>=0.9))return false;
+    if(conf==='high'&&(x.video.match_confidence||0)<0.9)return false;
+    if(conf==='check'&&(x.video.match_confidence||0)>=0.9)return false;
     if(q){
       var title=(x.movie.title_ko||'').toLowerCase();
       var titleEn=(x.movie.title_en||'').toLowerCase();
@@ -104,6 +106,10 @@ function applyFilter(){
     return true;
   });
 
+  // 검수 필요 모드에서는 신뢰도 낮은 순 정렬
+  if(conf==='check'||conf==='low'||conf==='mid'){
+    FILTERED.sort(function(a,b){return(a.video.match_confidence||0)-(b.video.match_confidence||0)});
+  }
   document.getElementById('stats').textContent='총 '+FILTERED.length+'개 (전체 '+DATA.length+'개)';
   SHOWN=0;
   document.getElementById('list').innerHTML='';
