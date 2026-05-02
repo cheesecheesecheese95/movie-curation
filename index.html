@@ -298,6 +298,7 @@ function buildGenres(){
     el.querySelectorAll('span').forEach(function(s){s.className=''});
     t.className='on';
     GENRE=t.dataset.g;
+    location.hash=GENRE==='전체'?'':GENRE;
     gtag('event','genre_click',{genre:GENRE});
     render();
   });
@@ -486,6 +487,15 @@ function installApp(){
   }
 }
 
+// 해시 변경 감지 (뒤로가기 등)
+window.addEventListener('hashchange',function(){
+  var hash=decodeURIComponent(location.hash.replace('#',''));
+  GENRE=hash||'전체';
+  var chips=document.getElementById('genres').querySelectorAll('span');
+  chips.forEach(function(s){s.className=s.dataset.g===GENRE?'on':'';});
+  render();
+});
+
 // 무한 스크롤
 window.addEventListener('scroll',function(){
   if(TAB!=='feed')return;
@@ -522,6 +532,13 @@ document.getElementById('sort-btns').addEventListener('click',function(e){
 fetch('data/feed.json').then(function(r){return r.json()}).then(function(d){
   DATA=d.items||[];
   buildGenres();
+  // URL 해시에서 장르 복원
+  var hash=decodeURIComponent(location.hash.replace('#',''));
+  if(hash){
+    GENRE=hash;
+    var chips=document.getElementById('genres').querySelectorAll('span');
+    chips.forEach(function(s){s.className=s.dataset.g===hash?'on':'';});
+  }
   render();
   renderToday();
 }).catch(function(){
