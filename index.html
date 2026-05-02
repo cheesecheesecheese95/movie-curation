@@ -75,7 +75,10 @@ body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;colo
   <div class="hd">
     <div style="display:flex;align-items:center;justify-content:space-between">
       <img src="/logo.svg" alt="Don't Watch It All" style="height:36px">
-      <a href="#" onclick="document.getElementById('settings-modal').style.display='flex';return false" style="font-size:11px;color:#666;text-decoration:none">⚙️ 설정</a>
+      <div style="display:flex;gap:10px;align-items:center">
+        <a href="#" onclick="document.getElementById('install-modal').style.display='flex';return false" style="font-size:11px;color:#E50914;text-decoration:none;font-weight:600">📲 홈화면추가</a>
+        <a href="#" onclick="document.getElementById('settings-modal').style.display='flex';return false" style="font-size:11px;color:#666;text-decoration:none">⚙️ 설정</a>
+      </div>
     </div>
     <div class="tabs" id="tabs">
       <button class="on" data-tab="feed">오늘 뭐볼까</button>
@@ -126,6 +129,25 @@ body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;colo
     <div class="p-info">
       <div class="p-title" id="p-t"></div>
       <div class="p-meta" id="p-m"></div>
+    </div>
+  </div>
+
+  <!-- 홈화면추가 모달 -->
+  <div id="install-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:600;align-items:center;justify-content:center" onclick="if(event.target===this)this.style.display='none'">
+    <div style="background:#1A1A1A;border-radius:16px;padding:24px;width:90%;max-width:360px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+        <span style="font-size:16px;font-weight:800">📲 홈 화면에 추가</span>
+        <button onclick="document.getElementById('install-modal').style.display='none'" style="background:none;border:none;color:#999;font-size:20px;cursor:pointer">✕</button>
+      </div>
+      <div style="font-size:13px;color:#ccc;line-height:1.8">
+        <div style="font-weight:700;color:#F0F0F0;margin-bottom:8px">iPhone (Safari)</div>
+        <div>1. 하단 공유 버튼 <span style="font-size:16px">↑</span> 탭</div>
+        <div>2. <strong>홈 화면에 추가</strong> 선택</div>
+        <div style="font-weight:700;color:#F0F0F0;margin:12px 0 8px">Android (Chrome)</div>
+        <div>1. 우측 상단 메뉴 <span style="font-size:16px">⋮</span> 탭</div>
+        <div>2. <strong>홈 화면에 추가</strong> 선택</div>
+      </div>
+      <div style="margin-top:16px;font-size:11px;color:#666;text-align:center">앱 설치 없이 앱처럼 사용할 수 있어요!</div>
     </div>
   </div>
 
