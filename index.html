@@ -57,7 +57,7 @@ body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;colo
 .card-st{display:flex;gap:10px;font-size:11px;color:#666}
 .player{position:fixed;inset:0;background:rgba(0,0,0,.95);z-index:500;display:none;flex-direction:column}
 .player.on{display:flex}
-.p-top{display:flex;justify-content:space-between;padding:12px 16px}
+.p-top{display:flex;justify-content:space-between;padding:12px 16px;padding-top:max(12px,env(safe-area-inset-top))}
 .p-close{background:none;border:none;color:#fff;font-size:24px;cursor:pointer}
 .p-frame{display:flex;align-items:center;justify-content:center}
 .p-frame iframe{width:100%;max-width:480px;aspect-ratio:16/9;border:none;border-radius:8px}
@@ -133,6 +133,9 @@ body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;colo
     <div class="p-info">
       <div class="p-title" id="p-t"></div>
       <div class="p-meta" id="p-m"></div>
+      <div style="background:#1A1A1A;border-radius:14px;padding:16px;margin-top:16px;text-align:center;min-height:250px;display:flex;align-items:center;justify-content:center;border:1px solid #242424">
+        <div style="width:100%"><span style="font-size:11px;color:#333">AD</span></div>
+      </div>
     </div>
   </div>
 
