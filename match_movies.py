@@ -74,30 +74,82 @@ def extract_movies_batch(videos, batch_size=10):
     return all_results
 
 
-def search_tmdb(title, year=None):
-    """TMDB에서 영화 검색"""
-    params = {"api_key": TMDB_API_KEY, "query": title, "language": "ko-KR"}
-    if year:
-        params["year"] = year
-    try:
-        r = requests.get(TMDB_SEARCH, params=params, timeout=10)
-        data = r.json()
-        results = data.get("results", [])
-        if results:
-            return results[0]  # 가장 관련성 높은 결과
-    except:
-        pass
-    # 한국어로 못 찾으면 영어로 재시도
-    params["language"] = "en-US"
-    try:
-        r = requests.get(TMDB_SEARCH, params=params, timeout=10)
-        data = r.json()
-        results = data.get("results", [])
-        if results:
-            return results[0]
-    except:
-        pass
-    return None
+def search_tmdb(title, year=None, video_title=""):
+    """TMDB에서 영화 검색 + 교차 검증"""
+    candidates = []
+
+    for lang in ["ko-KR", "en-US"]:
+        params = {"api_key": TMDB_API_KEY, "query": title, "language": lang}
+        if year:
+            params["year"] = year
+        try:
+            r = requests.get(TMDB_SEARCH, params=params, timeout=10)
+            data = r.json()
+            candidates.extend(data.get("results", [])[:5])
+        except:
+            pass
+
+    if not candidates:
+        return None
+
+    # 교차 검증: 후보들 중 가장 적합한 것 선택
+    best = None
+    best_score = -1
+
+    vt_lower = (video_title + " " + title).lower()
+
+    for c in candidates:
+        score = 0
+        c_title_ko = (c.get("title") or "").lower()
+        c_title_en = (c.get("original_title") or "").lower()
+        c_year = (c.get("release_date") or "")[:4]
+
+        # 1. 제목 일치도
+        if title.lower() in c_title_ko or title.lower() in c_title_en:
+            score += 30
+        elif c_title_ko in vt_lower or c_title_en in vt_lower:
+            score += 20
+
+        # 2. 연도 일치
+        if year and c_year == str(year):
+            score += 20
+        elif year and c_year and abs(int(c_year) - int(year)) <= 1:
+            score += 10
+
+        # 3. 인기도 (vote_count가 높을수록 유명한 영화)
+        vote_count = c.get("vote_count", 0)
+        if vote_count > 1000: score += 15
+        elif vote_count > 100: score += 10
+        elif vote_count > 10: score += 5
+
+        # 4. 평점 존재 (평점 있는 영화가 더 신뢰)
+        if c.get("vote_average", 0) > 0:
+            score += 5
+
+        # 5. 포스터 존재
+        if c.get("poster_path"):
+            score += 5
+
+        # 6. 장르 키워드 매칭 (영상 제목에 장르 힌트)
+        genre_ids = c.get("genre_ids", [])
+        genre_hints = {
+            27: ["공포","호러","무서운","소름"],
+            28: ["액션","격투","전투"],
+            35: ["코미디","웃긴","개그"],
+            18: ["드라마","감동"],
+            878: ["SF","우주","외계"],
+            53: ["스릴러","서스펜스","긴장"],
+        }
+        for gid, hints in genre_hints.items():
+            if gid in genre_ids and any(h in vt_lower for h in hints):
+                score += 5
+                break
+
+        if score > best_score:
+            best_score = score
+            best = c
+
+    return best
 
 
 def match_all():
@@ -131,8 +183,9 @@ def match_all():
             """, (vid,))
             continue
 
-        # TMDB 검색
-        tmdb = search_tmdb(title, year) or (search_tmdb(title_en, year) if title_en else None)
+        # TMDB 검색 (교차 검증 포함)
+        video_title = next((v["title"] for v in videos if v["video_id"] == vid), "")
+        tmdb = search_tmdb(title, year, video_title) or (search_tmdb(title_en, year, video_title) if title_en else None)
         tmdb_id = tmdb["id"] if tmdb else None
 
         conn.execute("""
