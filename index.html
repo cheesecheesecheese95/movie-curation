@@ -82,9 +82,14 @@ body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;colo
     <div class="sticky-filter">
       <div class="chips" id="genres"></div>
       <div style="display:flex;align-items:center;justify-content:space-between;padding:4px 16px 0">
-        <label style="display:flex;align-items:center;gap:6px;font-size:11px;color:#999;cursor:pointer">
-          <input type="checkbox" id="chk-spoiler" style="accent-color:#E50914"> 🔴 결말포함만
-        </label>
+        <div style="display:flex;align-items:center;gap:12px">
+          <label style="display:flex;align-items:center;gap:5px;font-size:11px;color:#999;cursor:pointer">
+            <input type="checkbox" id="chk-spoiler" style="accent-color:#E50914"> 🔴 결말포함만
+          </label>
+          <label style="display:flex;align-items:center;gap:5px;font-size:11px;color:#999;cursor:pointer">
+            <input type="checkbox" id="chk-unwatched" style="accent-color:#30D158"> 🙈 안 본 것만
+          </label>
+        </div>
         <div id="sort-btns" style="display:flex;gap:4px">
           <button class="sbtn on" data-sort="shuffle">🔀</button>
           <button class="sbtn" data-sort="views">조회수</button>
@@ -133,7 +138,7 @@ body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;colo
 </div>
 
 <script>
-var DATA=[], CUR=[], GENRE='전체', TAB='feed', SORT='shuffle', SPOILER=false, SHOWN=0, PAGE=20, LOADING=false;
+var DATA=[], CUR=[], GENRE='전체', TAB='feed', SORT='shuffle', SPOILER=false, UNWATCHED=false, SHOWN=0, PAGE=20, LOADING=false;
 
 function fmt(n){return n>=10000?Math.round(n/10000)+'만':n>=1000?Math.round(n/1000)+'천':n+''}
 
@@ -146,6 +151,7 @@ function shuffle(arr){
 function render(){
   var items=GENRE==='전체'?DATA.slice():DATA.filter(function(x){return(x.movie.genres||[]).indexOf(GENRE)>=0});
   if(SPOILER)items=items.filter(function(x){return x.video.has_spoiler});
+  if(UNWATCHED)items=items.filter(function(x){return!isWatched(x.video.id)});
   if(SORT==='shuffle')items=shuffle(items);
   else if(SORT==='views')items.sort(function(a,b){return(b.video.view_count||0)-(a.video.view_count||0)});
   else if(SORT==='rating')items.sort(function(a,b){return(b.movie.vote_average||0)-(a.movie.vote_average||0)});
@@ -323,6 +329,12 @@ window.addEventListener('scroll',function(){
 // 결말포함 체크
 document.getElementById('chk-spoiler').addEventListener('change',function(){
   SPOILER=this.checked;
+  render();
+});
+
+// 안 본 것만 체크
+document.getElementById('chk-unwatched').addEventListener('change',function(){
+  UNWATCHED=this.checked;
   render();
 });
 
