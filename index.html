@@ -78,7 +78,7 @@ body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;colo
   <div class="top-sticky">
   <div class="hd">
     <div style="display:flex;align-items:center;justify-content:space-between">
-      <img src="/logo.svg" alt="Don't Watch It All" style="height:36px">
+      <a href="/" onclick="location.hash='';GENRE='전체';render();window.scrollTo(0,0);return false"><img src="/logo.svg" alt="Don't Watch It All" style="height:36px"></a>
       <div style="display:flex;gap:10px;align-items:center">
         <a href="#" id="install-btn" onclick="installApp();return false" style="font-size:11px;color:#F0F0F0;text-decoration:none;font-weight:600">📲 홈화면추가</a>
         <a href="#" onclick="document.getElementById('settings-modal').style.display='flex';return false" style="font-size:11px;color:#666;text-decoration:none">⚙️ 설정</a>
