@@ -29,7 +29,7 @@
   },
   "드라마": {
     "file": "genres/드라마.json",
-    "count": 733
+    "count": 732
   },
   "SF": {
     "file": "genres/SF.json",
@@ -45,7 +45,7 @@
   },
   "미스터리": {
     "file": "genres/미스터리.json",
-    "count": 244
+    "count": 245
   },
   "다큐멘터리": {
     "file": "genres/다큐멘터리.json",
