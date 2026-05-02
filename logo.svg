@@ -22,5 +22,5 @@
   <!-- Text -->
   <text x="42" y="22" font-family="-apple-system,Arial,sans-serif" font-size="15" font-weight="900" fill="#F0F0F0" letter-spacing="-0.5">Don't</text>
   <text x="82" y="22" font-family="-apple-system,Arial,sans-serif" font-size="15" font-weight="900" fill="url(#accent)" letter-spacing="-0.5">Watch It All</text>
-  <text x="42" y="38" font-family="-apple-system,Arial,sans-serif" font-size="10" font-weight="500" fill="#666" letter-spacing="0.5">영화, 다 볼 필요 없잖아</text>
+  <text x="42" y="38" font-family="-apple-system,Arial,sans-serif" font-size="10" font-weight="500" fill="#666" letter-spacing="0.5">세상에는 볼 영화가 너무 많다구.</text>
 </svg>
