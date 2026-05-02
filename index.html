@@ -121,7 +121,10 @@ body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;colo
   </div>
 
   <div id="v-search" class="content-area" style="display:none">
-    <div class="search-box"><input id="q" placeholder="영화 제목을 검색하세요..." autocomplete="off"></div>
+    <div class="search-box" style="position:relative">
+      <input id="q" placeholder="영화 제목을 검색하세요..." autocomplete="off">
+      <div id="q-suggest" style="display:none;position:absolute;top:100%;left:16px;right:16px;background:#1A1A1A;border:1px solid #333;border-radius:0 0 12px 12px;max-height:200px;overflow-y:auto;z-index:10"></div>
+    </div>
     <div class="list" id="slist"></div>
   </div>
 
@@ -354,10 +357,50 @@ document.getElementById('tabs').addEventListener('click',function(e){
   if(tab==='search')document.getElementById('q').focus();
 });
 
-// 검색
-document.getElementById('q').addEventListener('input',function(){
+// 검색 자동완성
+var qInput=document.getElementById('q');
+var qSuggest=document.getElementById('q-suggest');
+var suggestTimer;
+
+qInput.addEventListener('input',function(){
   var q=this.value.trim().toLowerCase();
+  clearTimeout(suggestTimer);
+
+  // 자동완성 드롭다운
+  if(q.length>=2){
+    suggestTimer=setTimeout(function(){
+      var seen={};
+      var suggestions=[];
+      DATA.forEach(function(x){
+        var tk=(x.movie.title_ko||'').toLowerCase();
+        var te=(x.movie.title_en||'').toLowerCase();
+        if((tk.indexOf(q)>=0||te.indexOf(q)>=0)&&!seen[x.movie.tmdb_id]){
+          seen[x.movie.tmdb_id]=1;
+          suggestions.push({title:x.movie.title_ko||x.movie.title_en,year:x.movie.year,rating:x.movie.vote_average});
+        }
+      });
+      if(suggestions.length>0){
+        qSuggest.style.display='';
+        qSuggest.innerHTML=suggestions.slice(0,8).map(function(s){
+          return '<div style="padding:10px 14px;cursor:pointer;border-bottom:1px solid #242424;font-size:13px;display:flex;justify-content:space-between" onclick="document.getElementById(\'q\').value=\''+s.title.replace(/'/g,"\\'")+'\';document.getElementById(\'q\').dispatchEvent(new Event(\'search\'));document.getElementById(\'q-suggest\').style.display=\'none\'">'+
+            '<span>'+s.title+'</span>'+
+            '<span style="color:#666;font-size:11px">'+(s.year||'')+' ⭐'+(s.rating?s.rating.toFixed(1):'')+'</span></div>';
+        }).join('');
+      }else{qSuggest.style.display='none';}
+    },150);
+  }else{qSuggest.style.display='none';}
+});
+
+// 자동완성 외부 클릭 시 닫기
+document.addEventListener('click',function(e){
+  if(!e.target.closest('.search-box'))qSuggest.style.display='none';
+});
+
+// 검색 실행
+function doSearch(){
+  var q=qInput.value.trim().toLowerCase();
   var el=document.getElementById('slist');
+  qSuggest.style.display='none';
   if(!q){el.innerHTML='<div class="empty">🔍 영화 제목으로 검색하세요</div>';return;}
   var res=DATA.filter(function(x){
     return((x.movie.title_ko||'').toLowerCase().indexOf(q)>=0)||((x.movie.title_en||'').toLowerCase().indexOf(q)>=0);
@@ -375,7 +418,9 @@ document.getElementById('q').addEventListener('input',function(){
       '<div class="card-vt">'+v.title+'</div>'+
       '<div class="card-st"><span>'+v.channel+'</span></div></div></div>';
   }).join('');
-});
+}
+qInput.addEventListener('input',doSearch);
+qInput.addEventListener('search',doSearch);
 
 // 콘텐츠 영역 padding을 고정 헤더 높이에 맞춤
 setTimeout(function(){
