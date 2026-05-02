@@ -118,7 +118,7 @@ function showMore(){
     var conf=v.match_confidence?v.match_confidence.toFixed(2):'?';
     var confClass=parseFloat(conf)>=0.9?'color:#090':parseFloat(conf)>=0.7?'color:#960':'color:#c00';
     return '<div class="item" id="item-'+idx+'">'+
-      '<img src="https://img.youtube.com/vi/'+v.id+'/default.jpg">'+
+      '<a href="https://www.youtube.com/watch?v='+v.id+'" target="_blank"><img src="https://img.youtube.com/vi/'+v.id+'/default.jpg" style="cursor:pointer"></a>'+
       '<div class="item-info">'+
         '<div class="item-title" title="'+v.title+'">'+v.title+'</div>'+
         '<div class="item-meta">'+v.channel+' · '+(v.duration_label||'')+'</div>'+
