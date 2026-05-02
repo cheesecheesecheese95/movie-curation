@@ -1,58 +1,58 @@
 {
-  "모험": {
-    "file": "genres/모험.json",
-    "count": 188
-  },
-  "판타지": {
-    "file": "genres/판타지.json",
-    "count": 88
+  "스릴러": {
+    "file": "genres/스릴러.json",
+    "count": 808
   },
   "액션": {
     "file": "genres/액션.json",
-    "count": 404
+    "count": 634
+  },
+  "모험": {
+    "file": "genres/모험.json",
+    "count": 276
+  },
+  "판타지": {
+    "file": "genres/판타지.json",
+    "count": 116
   },
   "범죄": {
     "file": "genres/범죄.json",
-    "count": 220
+    "count": 355
   },
   "로맨스": {
     "file": "genres/로맨스.json",
-    "count": 162
+    "count": 207
   },
   "전쟁": {
     "file": "genres/전쟁.json",
-    "count": 50
+    "count": 68
   },
   "드라마": {
     "file": "genres/드라마.json",
-    "count": 553
+    "count": 788
   },
   "SF": {
     "file": "genres/SF.json",
-    "count": 230
-  },
-  "스릴러": {
-    "file": "genres/스릴러.json",
-    "count": 524
+    "count": 349
   },
   "공포": {
     "file": "genres/공포.json",
-    "count": 259
+    "count": 405
   },
   "코미디": {
     "file": "genres/코미디.json",
-    "count": 232
+    "count": 313
   },
   "미스터리": {
     "file": "genres/미스터리.json",
-    "count": 178
+    "count": 253
   },
   "다큐멘터리": {
     "file": "genres/다큐멘터리.json",
-    "count": 12
+    "count": 20
   },
   "애니메이션": {
     "file": "genres/애니메이션.json",
-    "count": 56
+    "count": 64
   }
 }
