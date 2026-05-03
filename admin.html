@@ -141,6 +141,11 @@ function showMore(){
           '<button class="btn btn-save" onclick="saveTitle('+idx+')">저장</button>'+
         '</div>'+
         '<div class="edit-row">'+
+          '<input placeholder="TMDB ID 수정" value="'+(m.tmdb_id||'')+'" id="tmdb-'+idx+'" style="width:100px">'+
+          '<a href="https://www.themoviedb.org/movie/'+m.tmdb_id+'" target="_blank" style="font-size:10px;color:#09f;padding:4px">TMDB확인</a>'+
+          '<button class="btn btn-save" onclick="saveTmdb('+idx+')">TMDB변경</button>'+
+        '</div>'+
+        '<div class="edit-row">'+
           '<select id="genre-'+idx+'" style="padding:4px 8px;border:1px solid #ddd;border-radius:4px;font-size:11px">'+
             ['드라마','스릴러','액션','SF','코미디','공포','범죄','미스터리','로맨스','판타지','애니메이션','전쟁','다큐멘터리'].map(function(g){
               var sel=(m.genres||[]).indexOf(g)>=0?' selected':'';
@@ -212,6 +217,16 @@ function confirmItem(idx){
   var el=document.getElementById('stats');
   var remaining=document.querySelectorAll('.item').length;
   el.textContent=el.textContent.replace(/총 \d+개/,'총 '+remaining+'개');
+}
+
+function saveTmdb(idx){
+  var item=FILTERED[idx];
+  var newTmdb=document.getElementById('tmdb-'+idx).value.trim();
+  if(!newTmdb||isNaN(newTmdb))return toast('유효한 TMDB ID를 입력하세요');
+  CHANGES[item.video.id]=CHANGES[item.video.id]||{};
+  CHANGES[item.video.id].tmdb_id=parseInt(newTmdb);
+  toast('TMDB 변경: '+newTmdb);
+  savePending();
 }
 
 function saveGenre(idx){
