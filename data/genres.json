@@ -33,11 +33,11 @@
   },
   "로맨스": {
     "file": "genres/로맨스.json",
-    "count": 200
+    "count": 199
   },
   "전쟁": {
     "file": "genres/전쟁.json",
-    "count": 64
+    "count": 63
   },
   "판타지": {
     "file": "genres/판타지.json",
