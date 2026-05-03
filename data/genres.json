@@ -41,11 +41,11 @@
   },
   "판타지": {
     "file": "genres/판타지.json",
-    "count": 109
+    "count": 108
   },
   "모험": {
     "file": "genres/모험.json",
-    "count": 218
+    "count": 217
   },
   "다큐멘터리": {
     "file": "genres/다큐멘터리.json",
@@ -53,6 +53,6 @@
   },
   "애니메이션": {
     "file": "genres/애니메이션.json",
-    "count": 66
+    "count": 64
   }
 }
