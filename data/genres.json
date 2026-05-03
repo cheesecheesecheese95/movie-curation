@@ -33,7 +33,7 @@
   },
   "로맨스": {
     "file": "genres/로맨스.json",
-    "count": 201
+    "count": 200
   },
   "전쟁": {
     "file": "genres/전쟁.json",
@@ -53,6 +53,6 @@
   },
   "애니메이션": {
     "file": "genres/애니메이션.json",
-    "count": 67
+    "count": 66
   }
 }
