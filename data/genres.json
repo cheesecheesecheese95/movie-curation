@@ -13,7 +13,7 @@
   },
   "SF": {
     "file": "genres/SF.json",
-    "count": 263
+    "count": 265
   },
   "범죄": {
     "file": "genres/범죄.json",
@@ -53,6 +53,6 @@
   },
   "애니메이션": {
     "file": "genres/애니메이션.json",
-    "count": 64
+    "count": 62
   }
 }
