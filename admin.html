@@ -103,6 +103,8 @@ function applyFilter(){
       var vTitle=x.video.title.toLowerCase();
       if(title.indexOf(q)<0&&titleEn.indexOf(q)<0&&vTitle.indexOf(q)<0)return false;
     }
+    // 확정된 항목 제외
+    if(CONFIRMED[x.video.id])return false;
     return true;
   });
 
@@ -151,6 +153,7 @@ function showMore(){
       '<div class="item-actions">'+
         '<button class="btn btn-del" onclick="deleteItem('+idx+')">삭제</button>'+
         '<button class="btn btn-type" onclick="toggleType('+idx+')">타입변경</button>'+
+        '<button class="btn" style="background:#efe;color:#060" onclick="confirmItem('+idx+')">✓ 확정</button>'+
       '</div>'+
     '</div>';
   }).join('');
@@ -194,6 +197,21 @@ function saveTitle(idx){
   document.getElementById('item-'+idx).querySelector('.movie').textContent=newTitle;
   toast('제목 저장: '+newTitle);
   savePending();
+}
+
+// 확정 목록
+var CONFIRMED=JSON.parse(localStorage.getItem('dwia_confirmed')||'{}');
+
+function confirmItem(idx){
+  var item=FILTERED[idx];
+  CONFIRMED[item.video.id]=true;
+  localStorage.setItem('dwia_confirmed',JSON.stringify(CONFIRMED));
+  document.getElementById('item-'+idx).remove();
+  toast('확정: '+item.movie.title_ko);
+  // 카운트 업데이트
+  var el=document.getElementById('stats');
+  var remaining=document.querySelectorAll('.item').length;
+  el.textContent=el.textContent.replace(/총 \d+개/,'총 '+remaining+'개');
 }
 
 function saveGenre(idx){
