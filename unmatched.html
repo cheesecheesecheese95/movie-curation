@@ -58,7 +58,7 @@ fetch('data/unmatched.json').then(function(r){return r.json()}).then(function(d)
 function applyFilter(){
   var q=document.getElementById('search').value.trim().toLowerCase();
   FILTERED=DATA.filter(function(x){
-    if(CHANGES[x.id]) return false;
+    if(CHANGES[x.id]==='delete') return false;
     if(q&&x.title.toLowerCase().indexOf(q)<0) return false;
     return true;
   });
@@ -124,7 +124,7 @@ function save(idx){
   if(memo) change.memo=memo;
   CHANGES[item.id]=change;
   localStorage.setItem('dwia_unmatched',JSON.stringify(CHANGES));
-  document.getElementById('item-'+idx).style.display='none';
+  document.getElementById('item-'+idx).classList.add('saved');
   toast('저장: '+(title||item.title.substring(0,30)));
 }
 
