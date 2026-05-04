@@ -10,6 +10,7 @@ def export_feed():
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
 
+    # 1) TMDB 매칭된 영상
     rows = conn.execute("""
         SELECT v.video_id, v.channel_id, v.channel_name, v.title AS video_title,
                v.published_at, v.view_count, v.duration_sec, v.match_confidence,
@@ -61,6 +62,56 @@ def export_feed():
                 "watch_providers": json.loads(r["watch_providers"]) if r["watch_providers"] else [],
                 "naver_rating": r["naver_rating"],
                 "ai_review": r["ai_review"],
+            },
+        }
+        items.append(item)
+
+    # 2) TMDB 미매칭 + 결말포함 키워드 영상 (영화 정보 없이 노출)
+    unmatched = conn.execute("""
+        SELECT video_id, channel_id, channel_name, title AS video_title,
+               published_at, view_count, duration_sec, has_spoiler,
+               movie_title_extracted
+        FROM videos
+        WHERE tmdb_id IS NULL
+              AND (title LIKE '%결말포함%' OR title LIKE '%결말 포함%' OR title LIKE '%결말주의%')
+              AND duration_sec >= 180 AND duration_sec <= 3600
+        ORDER BY view_count DESC
+    """).fetchall()
+
+    for r in unmatched:
+        item = {
+            "video": {
+                "id": r["video_id"],
+                "title": r["video_title"],
+                "url": f"https://www.youtube.com/watch?v={r['video_id']}",
+                "embed_url": f"https://www.youtube.com/embed/{r['video_id']}",
+                "channel": r["channel_name"],
+                "channel_id": r["channel_id"],
+                "published_at": r["published_at"],
+                "view_count": r["view_count"],
+                "duration_sec": r["duration_sec"],
+                "duration_label": fmt_duration(r["duration_sec"]),
+                "has_spoiler": True,
+                "match_confidence": 0,
+            },
+            "movie": {
+                "tmdb_id": None,
+                "title_ko": r["movie_title_extracted"] or "",
+                "title_en": None,
+                "year": None,
+                "genres": [],
+                "poster_url": None,
+                "vote_average": None,
+                "vote_count": None,
+                "overview": None,
+                "director": None,
+                "runtime": None,
+                "imdb_rating": None,
+                "rotten_tomatoes": None,
+                "metacritic": None,
+                "watch_providers": [],
+                "naver_rating": None,
+                "ai_review": None,
             },
         }
         items.append(item)
