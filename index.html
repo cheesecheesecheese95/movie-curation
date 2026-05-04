@@ -187,30 +187,46 @@ var DATA=[], CUR=[], GENRE='전체', TAB='feed', SORT='shuffle', SPOILER=false, 
 function fmt(n){return n>=10000?Math.round(n/10000)+'만':n>=1000?Math.round(n/1000)+'천':n+''}
 
 function isRecommended(m){
-  return m.naver_rating||(m.vote_count||0)>=500||(m.vote_average||0)>=7.5;
+  return m.naver_rating&&(m.vote_count||0)>=500;
 }
 
-function getPickComment(m){
-  var r=m.vote_average||0,g=(m.genres||[])[0]||'',y=m.year||2020,n=m.naver_rating,rt=m.rotten_tomatoes;
-  var comments=[];
-  if(r>=8.0) comments.push('평점 '+r.toFixed(1)+'점, 누구에게나 추천할 수 있는 작품');
-  else if(r>=7.0) comments.push('평점 '+r.toFixed(1)+'점, 기대 이상의 몰입감');
-  if(n&&parseFloat(n)>=8.0) comments.push('네이버 '+n+'점의 검증된 재미');
-  if(rt&&parseInt(rt)>=90) comments.push('로튼토마토 '+rt+'% 신선도');
-  if(g==='스릴러') comments.push('숨 멈추는 전개가 일품');
-  else if(g==='액션') comments.push('속도감 있는 전개로 지루할 틈 없음');
-  else if(g==='드라마') comments.push('깊은 여운이 남는 이야기');
-  else if(g==='SF') comments.push('상상력을 자극하는 세계관');
-  else if(g==='코미디') comments.push('웃음이 필요한 날 딱 좋은 영화');
-  else if(g==='공포') comments.push('밤에 보면 잠 못 이루는 공포');
-  else if(g==='범죄') comments.push('반전에 반전, 끝까지 긴장감 유지');
-  else if(g==='미스터리') comments.push('퍼즐 맞추듯 빠져드는 전개');
-  else if(g==='로맨스') comments.push('보고 나면 마음이 따뜻해지는 영화');
-  else if(g==='판타지') comments.push('현실을 잊게 하는 판타지');
-  else if(g==='애니메이션') comments.push('연령 무관, 감동이 있는 애니');
-  if(y<=2005) comments.push((2026-y)+'년 전 작품이지만 지금 봐도 좋음');
-  else if(y>=2024) comments.push('최신작, 놓치면 아쉬운 영화');
-  return comments.slice(0,2).join(' · ')||'오늘의 추천작';
+function getPickComment(m,idx){
+  var r=m.vote_average||0,gs=m.genres||[],g=gs[0]||'',g2=gs[1]||'',y=m.year||2020,n=m.naver_rating,rt=m.rotten_tomatoes,imdb=m.imdb_rating,vc=m.vote_count||0;
+  var age=2026-y,pool=[];
+  // 평점 조합형
+  if(n&&imdb) pool.push('네이버 '+n+', IMDb '+imdb+' — 국내외 모두 인정한 작품');
+  if(rt&&parseInt(rt)>=90) pool.push('로튼토마토 '+rt+'%, 비평가들이 극찬한 영화');
+  if(rt&&parseInt(rt)>=80&&parseInt(rt)<90) pool.push('로튼토마토 '+rt+'%, 평단의 호평을 받은 수작');
+  if(r>=8.5) pool.push('TMDB '+r.toFixed(1)+'점, 봐야 할 이유가 충분한 명작');
+  if(r>=7.5&&r<8.5&&vc>=1000) pool.push('TMDB '+r.toFixed(1)+'점에 '+fmt(vc)+' 평가, 대중성과 작품성 겸비');
+  // 장르 × 분위기 (각 장르당 3개씩)
+  var gm={
+    '스릴러':['긴장감이 끝까지 놓아주지 않는 영화','예측 불가능한 전개, 한시도 눈을 뗄 수 없음','심장 쫄깃한 밤을 원한다면 이 영화'],
+    '액션':['화끈한 액션이 스트레스를 날려줄 영화','쉴 틈 없는 전개, 보고 나면 시원해짐','몸으로 부딪히는 장면들이 압도적'],
+    '드라마':['조용하지만 깊은 울림이 있는 영화','보고 나면 한동안 여운이 남는 이야기','감정선이 섬세하게 살아있는 작품'],
+    'SF':['상상 그 이상의 세계가 펼쳐지는 영화','SF 팬이라면 반드시 봐야 할 작품','현실과 상상의 경계를 넘나드는 전개'],
+    '코미디':['기분 전환이 필요한 날 딱 맞는 영화','웃다 보면 어느새 끝나있는 런타임','가볍게 보기 좋지만 웃음 보장'],
+    '공포':['혼자 보면 후회할 수 있는 공포','분위기만으로 소름 돋는 연출','공포 장르의 정석을 보여주는 작품'],
+    '범죄':['치밀한 범죄와 반전의 쾌감','누가 진짜 악인인지 끝까지 모르는 영화','어두운 세계를 들여다보는 몰입감'],
+    '미스터리':['단서를 따라가다 보면 빠져드는 영화','마지막 장면에서 모든 게 뒤집히는 쾌감','머리 쓰는 재미가 있는 영화'],
+    '로맨스':['마음이 따뜻해지는 순간들이 가득','설렘이 그리운 날 보기 좋은 영화','사랑이 어렵고도 아름다운 이유를 보여줌'],
+    '판타지':['현실에서 벗어나고 싶을 때 최고의 선택','눈이 즐거운 비주얼과 탄탄한 이야기','상상 속 세계가 이렇게 생생할 수 있다니'],
+    '애니메이션':['어른이 봐도 감동적인 애니메이션','그림체 하나하나에 진심이 담긴 작품','아이와 함께 봐도, 혼자 봐도 좋은 영화']
+  };
+  if(gm[g]){var gi=(idx||0)%3;pool.push(gm[g][gi]);}
+  if(g2&&gm[g2]){pool.push(gm[g2][((idx||0)+1)%3]);}
+  // 연도 맥락
+  if(age>=20) pool.push(age+'년 전 영화인데 아직도 회자되는 이유가 있음');
+  else if(age>=10&&age<20) pool.push('세월이 지나도 빛바래지 않는 작품');
+  else if(age<=1) pool.push('올해 화제작, 지금 안 보면 대화에 끼기 어려움');
+  else if(age<=3) pool.push('비교적 최근작, 아직 안 봤다면 지금이 적기');
+  // 조회수 맥락
+  if((m.vote_count||0)>=5000) pool.push('전 세계 '+fmt(vc)+'명이 평가한 화제작');
+  // 중복 제거 후 2개 선택 (idx로 다양화)
+  var pick1=pool.length>0?pool[(idx||0)%pool.length]:'오늘의 추천작';
+  var rest=pool.filter(function(p){return p!==pick1});
+  var pick2=rest.length>0?rest[((idx||0)+2)%rest.length]:'';
+  return pick2?pick1+' · '+pick2:pick1;
 }
 
 function shuffle(arr){
@@ -292,7 +308,7 @@ function renderToday(){
   var el=document.getElementById('today-list');
   el.innerHTML='<div style="padding:0 16px 12px"><div style="font-size:14px;font-weight:800">🎲 오늘의 추천 10편</div><div style="font-size:12px;color:#666;margin-top:4px">매일 새로운 영화를 추천해드려요</div></div>'+
     picks.map(function(x,i){
-      var m=x.movie,v=x.video,comment=getPickComment(m);
+      var m=x.movie,v=x.video,comment=getPickComment(m,i);
       return '<div class="card" data-ti="'+i+'" style="margin:0 16px 12px">'+
         '<div class="card-bd"><div class="card-row">'+
         (m.poster_url?'<div class="card-poster"><img src="'+m.poster_url+'" loading="lazy"></div>':'')+
