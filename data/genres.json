@@ -9,7 +9,7 @@
   },
   "드라마": {
     "file": "genres/드라마.json",
-    "count": 672
+    "count": 671
   },
   "SF": {
     "file": "genres/SF.json",
@@ -33,7 +33,7 @@
   },
   "로맨스": {
     "file": "genres/로맨스.json",
-    "count": 202
+    "count": 201
   },
   "전쟁": {
     "file": "genres/전쟁.json",
