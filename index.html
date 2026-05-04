@@ -371,19 +371,53 @@ function renderToday(){
     if(!seen[a[i].movie.tmdb_id]){seen[a[i].movie.tmdb_id]=1;picks.push(a[i]);}
   }
   var el=document.getElementById('today-list');
-  el.innerHTML='<div style="padding:0 16px 12px"><div style="font-size:14px;font-weight:800">🎲 오늘의 추천 10편</div><div style="font-size:12px;color:#666;margin-top:4px">매일 새로운 영화를 추천해드려요</div></div>'+
-    picks.map(function(x,i){
-      var m=x.movie,v=x.video,comment=getPickComment(m,i);
-      return '<div class="card" data-ti="'+i+'" style="margin:0 16px 12px">'+
-        '<div class="card-bd"><div class="card-row">'+
-        (m.poster_url?'<div class="card-poster"><img src="'+m.poster_url+'" loading="lazy"></div>':'')+
-        '<div class="card-info"><div style="font-size:11px;font-weight:900;color:#E50914">#'+(i+1)+'</div>'+
-        '<div class="card-title">'+(m.title_ko||m.title_en)+'</div>'+
-        '<div class="card-meta">'+(m.vote_average?'<span class="star">⭐ '+m.vote_average.toFixed(1)+'</span>':'')+
-        (m.year?'<span>'+m.year+'</span>':'')+'</div>'+
-        '<div style="font-size:11px;color:#666;margin-top:4px">▶ '+v.channel+' · '+(v.duration_label||'')+'</div>'+
-        '<div style="font-size:11px;color:#FFB400;margin-top:6px;line-height:1.5">💡 '+comment+'</div>'+
-        '</div></div></div></div>';
+  var dateStr=new Date().toLocaleDateString('ko-KR',{month:'long',day:'numeric'});
+  // 첫 번째 = 히어로 카드, 나머지 = 리스트
+  var hero=picks[0],rest=picks.slice(1);
+  var hm=hero.movie,hv=hero.video,hc=getPickComment(hm,0);
+  var heroGenres=(hm.genres||[]).filter(function(g){return['TV 영화','음악','역사','가족','서부','전쟁','다큐멘터리'].indexOf(g)<0}).slice(0,2).join(' · ');
+  el.innerHTML=
+    '<div style="padding:0 16px 16px">'+
+      '<div style="font-size:18px;font-weight:900;letter-spacing:-0.02em">오늘 이거 어때</div>'+
+      '<div style="font-size:12px;color:#666;margin-top:4px">'+dateStr+' · 매일 새로운 10편</div>'+
+    '</div>'+
+    // 히어로 카드
+    '<div data-ti="0" style="margin:0 16px 20px;cursor:pointer">'+
+      '<div style="position:relative;border-radius:16px;overflow:hidden;aspect-ratio:16/9;background:#000">'+
+        '<img src="https://img.youtube.com/vi/'+hv.id+'/maxresdefault.jpg" style="width:100%;height:100%;object-fit:cover;opacity:0.7" loading="lazy">'+
+        '<div style="position:absolute;inset:0;background:linear-gradient(transparent 30%,rgba(0,0,0,.85))"></div>'+
+        '<div style="position:absolute;top:12px;left:12px;background:#E50914;color:#fff;font-size:10px;font-weight:800;padding:4px 10px;border-radius:6px;letter-spacing:0.05em">TODAY\'S PICK</div>'+
+        '<div style="position:absolute;bottom:0;left:0;right:0;padding:16px">'+
+          '<div style="font-size:20px;font-weight:900;line-height:1.3;margin-bottom:4px">'+(hm.title_ko||hm.title_en)+'</div>'+
+          '<div style="font-size:12px;color:rgba(255,255,255,.7);display:flex;gap:8px;align-items:center">'+
+            (hm.vote_average?'<span style="color:#F1C40F;font-weight:700">⭐ '+hm.vote_average.toFixed(1)+'</span>':'')+
+            (hm.year?'<span>'+hm.year+'</span>':'')+(heroGenres?'<span>'+heroGenres+'</span>':'')+
+          '</div>'+
+        '</div>'+
+      '</div>'+
+      '<div style="background:#1A1A1A;border-radius:0 0 16px 16px;padding:14px 16px;margin-top:-8px;position:relative;z-index:1;border:1px solid #242424;border-top:none">'+
+        '<div style="font-size:12px;color:#ccc;line-height:1.7">'+hc+'</div>'+
+        '<div style="font-size:11px;color:#555;margin-top:8px">▶ '+hv.channel+' · '+(hv.duration_label||'')+'</div>'+
+      '</div>'+
+    '</div>'+
+    // 나머지 9편 리스트
+    rest.map(function(x,i){
+      var m=x.movie,v=x.video,comment=getPickComment(m,i+1);
+      var genres=(m.genres||[]).filter(function(g){return['TV 영화','음악','역사','가족','서부','전쟁','다큐멘터리'].indexOf(g)<0}).slice(0,2).join(' · ');
+      return '<div data-ti="'+(i+1)+'" style="margin:0 16px 2px;cursor:pointer;background:#1A1A1A;border-radius:14px;padding:14px 16px;border:1px solid #242424">'+
+        '<div style="display:flex;gap:12px;align-items:flex-start">'+
+          '<div style="font-size:16px;font-weight:900;color:#333;min-width:20px;padding-top:2px">'+(i+2)+'</div>'+
+          (m.poster_url?'<img src="'+m.poster_url+'" style="width:48px;height:72px;object-fit:cover;border-radius:8px;flex-shrink:0" loading="lazy">':'')+
+          '<div style="flex:1;min-width:0">'+
+            '<div style="font-size:14px;font-weight:800;line-height:1.3;margin-bottom:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">'+(m.title_ko||m.title_en)+'</div>'+
+            '<div style="font-size:11px;color:#888;display:flex;gap:6px;flex-wrap:wrap">'+
+              (m.vote_average?'<span style="color:#F1C40F;font-weight:600">⭐ '+m.vote_average.toFixed(1)+'</span>':'')+
+              (m.year?'<span>'+m.year+'</span>':'')+(genres?'<span>'+genres+'</span>':'')+
+            '</div>'+
+            '<div style="font-size:11px;color:#aaa;margin-top:6px;line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">'+comment+'</div>'+
+          '</div>'+
+        '</div>'+
+      '</div>';
     }).join('');
   // 클릭 이벤트
   el.querySelectorAll('[data-ti]').forEach(function(c){
