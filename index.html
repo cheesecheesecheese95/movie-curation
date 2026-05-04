@@ -223,7 +223,7 @@ function loadMore(){
     }
     var v=x.video,m=x.movie;
     var rating=m.vote_average?m.vote_average.toFixed(1):'';
-    var genres=(m.genres||[]).filter(function(g){return['TV 영화','음악','역사','가족','서부'].indexOf(g)<0}).slice(0,2).join(' · ');
+    var genres=(m.genres||[]).filter(function(g){return['TV 영화','음악','역사','가족','서부','전쟁'].indexOf(g)<0}).slice(0,2).join(' · ');
     var ott=(m.watch_providers||[]).slice(0,3).map(function(p){return'<span class="ott">'+p.name+'</span>'}).join('');
     return adSlot+'<div class="card" data-i="'+idx+'">'+
       '<div class="card-img"><img src="https://img.youtube.com/vi/'+v.id+'/mqdefault.jpg" loading="lazy">'+
@@ -288,7 +288,7 @@ function buildGenres(){
 
   var counts={};
   DATA.forEach(function(x){(x.movie.genres||[]).forEach(function(g){
-    if(['TV 영화','음악','역사','가족','서부','모험'].indexOf(g)<0)counts[g]=(counts[g]||0)+1;
+    if(['TV 영화','음악','역사','가족','서부','모험','전쟁'].indexOf(g)<0)counts[g]=(counts[g]||0)+1;
   })});
   var sorted=Object.keys(counts).sort(function(a,b){return counts[b]-counts[a]}).slice(0,12);
   var el=document.getElementById('genres');
