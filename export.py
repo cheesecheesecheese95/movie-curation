@@ -18,7 +18,7 @@ def export_feed():
                m.poster_url, m.vote_average, m.vote_count, m.overview,
                m.director, m.runtime,
                m.imdb_rating, m.rotten_tomatoes, m.metacritic, m.watch_providers,
-               m.naver_rating
+               m.naver_rating, m.ai_review
         FROM videos v
         JOIN movies m ON v.tmdb_id = m.tmdb_id
         WHERE v.tmdb_id IS NOT NULL AND v.match_confidence >= 0.5
@@ -60,6 +60,7 @@ def export_feed():
                 "metacritic": r["metacritic"],
                 "watch_providers": json.loads(r["watch_providers"]) if r["watch_providers"] else [],
                 "naver_rating": r["naver_rating"],
+                "ai_review": r["ai_review"],
             },
         }
         items.append(item)

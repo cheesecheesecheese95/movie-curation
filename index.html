@@ -138,8 +138,15 @@ body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;colo
     <div class="p-info">
       <div class="p-title" id="p-t"></div>
       <div class="p-meta" id="p-m"></div>
-      <div style="background:#1A1A1A;border-radius:14px;padding:16px;margin-top:16px;text-align:center;min-height:250px;display:flex;align-items:center;justify-content:center;border:1px solid #242424">
-        <div style="width:100%"><span style="font-size:11px;color:#333">AD</span></div>
+      <!-- AI 추천평 -->
+      <div id="p-review" style="display:none;margin-top:16px;background:#1A1A1A;border-radius:14px;padding:16px 18px;border:1px solid #242424">
+        <div style="display:flex;align-items:center;gap:6px;margin-bottom:12px"><span style="font-size:14px">📝</span><span style="font-size:13px;font-weight:800;color:#F0F0F0">큐레이터 한줄평</span></div>
+        <div id="p-review-text" style="font-size:13px;color:#ccc;line-height:1.8"></div>
+        <div style="margin-top:12px;font-size:10px;color:#444">AI가 영화 정보를 기반으로 작성한 추천평입니다</div>
+      </div>
+      <!-- 광고 -->
+      <div style="background:#1A1A1A;border-radius:14px;padding:16px;margin-top:12px;text-align:center;min-height:250px;display:flex;align-items:center;justify-content:center;border:1px solid #242424">
+        <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-7Y9BgxI6hsrk3IUC" data-ad-width="300" data-ad-height="250"></ins>
       </div>
       <div style="margin-top:16px;font-size:13px;font-weight:700;color:#999;margin-bottom:8px">이 영화가 좋았다면</div>
       <div id="p-similar"></div>
@@ -458,6 +465,16 @@ function openPlayer(item){
   document.getElementById('p-t').textContent=m.title_ko||m.title_en||'';
   document.getElementById('p-ch').textContent=v.channel;
   document.getElementById('p-m').textContent=(m.year||'')+' · '+(m.director||'')+' · TMDB ⭐'+(m.vote_average||0).toFixed(1);
+  // 리뷰 표시
+  var reviewEl=document.getElementById('p-review'),reviewText=document.getElementById('p-review-text');
+  if(m.ai_review){
+    reviewEl.style.display='';
+    reviewText.innerHTML=m.ai_review.replace(/\n/g,'<br>');
+  } else {
+    reviewEl.style.display='none';
+  }
+  // 광고 렌더
+  if(window.kakaoAdFit){try{kakaoAdFit.render();}catch(e){}}
   savedScroll=window.scrollY;
   document.getElementById('player').className='player on';
   document.body.style.overflow='hidden';
