@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>미매칭 영상 관리</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#f5f5f5;color:#333;padding:16px;max-width:900px;margin:0 auto}
+h1{font-size:18px;margin-bottom:16px}
+.top-bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.top-bar input{flex:1;min-width:200px;padding:8px 12px;border:1px solid #ddd;border-radius:8px;font-size:13px;font-family:inherit}
+.stats{font-size:12px;color:#999;margin-bottom:12px}
+.item{background:#fff;border:1px solid #eee;border-radius:10px;padding:12px;margin-bottom:8px;display:flex;gap:12px;align-items:flex-start}
+.item img{width:120px;height:68px;object-fit:cover;border-radius:6px;flex-shrink:0;cursor:pointer}
+.item-info{flex:1;min-width:0}
+.item-title{font-size:13px;font-weight:600;margin-bottom:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.item-meta{font-size:11px;color:#999;margin-bottom:6px}
+.edit-row{display:flex;gap:6px;margin-top:6px}
+.edit-row input,.edit-row select{padding:4px 8px;border:1px solid #ddd;border-radius:4px;font-size:11px;font-family:inherit}
+.edit-row input{flex:1}
+.btn{padding:6px 12px;border-radius:6px;font-size:11px;font-weight:600;cursor:pointer;border:none;font-family:inherit}
+.btn-save{background:#efe;color:#060}
+.btn-save:hover{background:#cfc}
+.btn-del{background:#fee;color:#c00}
+.btn-del:hover{background:#fcc}
+.btn-blue{background:#eef;color:#009}
+.btn-blue:hover{background:#ccf}
+.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#333;color:#fff;padding:10px 20px;border-radius:8px;font-size:13px;display:none;z-index:999}
+.saved{border-left:3px solid #090 !important}
+.deleted{opacity:0.3}
+</style>
+</head>
+<body>
+<h1>🔍 미매칭 영상 관리 <button class="btn btn-save" onclick="exportChanges()" style="margin-left:12px;padding:8px 16px;font-size:12px">📥 변경사항 다운로드</button></h1>
+<div class="top-bar">
+  <input id="search" placeholder="영상 제목 검색...">
+</div>
+<div class="stats" id="stats"></div>
+<div id="list"></div>
+<div id="load-more" style="text-align:center;padding:20px;display:none">
+  <button class="btn btn-save" onclick="showMore()" style="padding:10px 24px">더 보기</button>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+var DATA=[],FILTERED=[],SHOWN=0,PAGE=30;
+var CHANGES=JSON.parse(localStorage.getItem('dwia_unmatched')||'{}');
+
+function toast(msg){var t=document.getElementById('toast');t.textContent=msg;t.style.display='';setTimeout(function(){t.style.display='none'},2000)}
+
+fetch('data/unmatched.json').then(function(r){return r.json()}).then(function(d){
+  DATA=d.items||[];
+  applyFilter();
+});
+
+function applyFilter(){
+  var q=document.getElementById('search').value.trim().toLowerCase();
+  FILTERED=DATA.filter(function(x){
+    if(CHANGES[x.id]==='delete') return false;
+    if(q&&x.title.toLowerCase().indexOf(q)<0) return false;
+    return true;
+  });
+  document.getElementById('stats').textContent='미매칭 '+FILTERED.length+'개 (전체 '+DATA.length+'개)'+(Object.keys(CHANGES).length?' · 변경 '+Object.keys(CHANGES).length+'건':'');
+  SHOWN=0;
+  document.getElementById('list').innerHTML='';
+  showMore();
+}
+
+function showMore(){
+  var items=FILTERED.slice(SHOWN,SHOWN+PAGE);
+  var html=items.map(function(x,i){
+    var idx=SHOWN+i;
+    var dur=x.duration?Math.floor(x.duration/60)+'분':'';
+    var views=x.views>=10000?Math.round(x.views/10000)+'만':x.views>=1000?Math.round(x.views/1000)+'천':x.views;
+    var saved=CHANGES[x.id];
+    var cls=saved&&saved!=='delete'?' saved':'';
+    return '<div class="item'+cls+'" id="item-'+idx+'">'+
+      '<a href="https://www.youtube.com/watch?v='+x.id+'" target="_blank"><img src="https://img.youtube.com/vi/'+x.id+'/default.jpg"></a>'+
+      '<div class="item-info">'+
+        '<div class="item-title" title="'+x.title+'">'+x.title+'</div>'+
+        '<div class="item-meta">'+x.channel+' · '+dur+' · 조회수 '+views+'</div>'+
+        '<div class="edit-row">'+
+          '<input placeholder="영화 제목" id="t-'+idx+'" value="'+(saved&&saved.title||'')+'">'+
+          '<input placeholder="TMDB ID" id="tmdb-'+idx+'" value="'+(saved&&saved.tmdb_id||'')+'" style="width:80px">'+
+          '<a href="https://www.themoviedb.org/search?query='+encodeURIComponent(x.title.replace(/[\[\(].*/g,'').replace(/결말.*/g,'').trim())+'" target="_blank" class="btn btn-blue" style="white-space:nowrap">TMDB검색</a>'+
+        '</div>'+
+        '<div class="edit-row">'+
+          '<select id="genre-'+idx+'">'+
+            '<option value="">장르</option>'+
+            ['드라마','스릴러','액션','SF','코미디','공포','범죄','미스터리','로맨스','판타지','애니메이션'].map(function(g){
+              var sel=saved&&saved.genre===g?' selected':'';
+              return '<option value="'+g+'"'+sel+'>'+g+'</option>';
+            }).join('')+
+          '</select>'+
+          '<input placeholder="메모" id="memo-'+idx+'" value="'+(saved&&saved.memo||'')+'" style="flex:2">'+
+          '<button class="btn btn-save" onclick="save('+idx+')">저장</button>'+
+          '<button class="btn btn-del" onclick="del('+idx+')">삭제</button>'+
+        '</div>'+
+      '</div>'+
+    '</div>';
+  }).join('');
+  document.getElementById('list').insertAdjacentHTML('beforeend',html);
+  SHOWN+=items.length;
+  document.getElementById('load-more').style.display=SHOWN<FILTERED.length?'':'none';
+}
+
+function save(idx){
+  var item=FILTERED[idx];
+  var title=document.getElementById('t-'+idx).value.trim();
+  var tmdb=document.getElementById('tmdb-'+idx).value.trim();
+  var genre=document.getElementById('genre-'+idx).value;
+  var memo=document.getElementById('memo-'+idx).value.trim();
+  if(!title&&!tmdb&&!memo) return toast('제목 또는 TMDB ID를 입력하세요');
+  var change={};
+  if(title) change.title=title;
+  if(tmdb&&!isNaN(tmdb)) change.tmdb_id=parseInt(tmdb);
+  if(genre) change.genre=genre;
+  if(memo) change.memo=memo;
+  CHANGES[item.id]=change;
+  localStorage.setItem('dwia_unmatched',JSON.stringify(CHANGES));
+  document.getElementById('item-'+idx).classList.add('saved');
+  toast('저장: '+(title||item.title.substring(0,30)));
+}
+
+function del(idx){
+  var item=FILTERED[idx];
+  if(!confirm('삭제할까요?')) return;
+  CHANGES[item.id]='delete';
+  localStorage.setItem('dwia_unmatched',JSON.stringify(CHANGES));
+  document.getElementById('item-'+idx).classList.add('deleted');
+  toast('삭제 표시됨');
+}
+
+function exportChanges(){
+  var blob=new Blob([JSON.stringify(CHANGES,null,2)],{type:'application/json'});
+  var a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download='unmatched_changes_'+new Date().toISOString().slice(0,10)+'.json';
+  a.click();
+  toast(Object.keys(CHANGES).length+'건 다운로드됨');
+}
+
+var timer;
+document.getElementById('search').addEventListener('input',function(){
+  clearTimeout(timer);timer=setTimeout(applyFilter,300);
+});
+</script>
+</body>
+</html>
