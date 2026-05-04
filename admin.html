@@ -35,6 +35,11 @@ h1{font-size:18px;margin-bottom:16px}
 </head>
 <body>
 <h1>🎬 DWIA 관리자 <button class="btn btn-save" onclick="exportChanges()" style="margin-left:12px;padding:8px 16px;font-size:12px">📥 변경사항 다운로드</button></h1>
+<div style="display:flex;gap:8px;margin-bottom:16px;">
+  <button class="btn" id="tab-matched" onclick="switchTab('matched')" style="padding:8px 16px;background:#333;color:#fff">매칭된 영상</button>
+  <button class="btn" id="tab-unmatched" onclick="switchTab('unmatched')" style="padding:8px 16px;background:#eee;color:#333">🔍 미매칭 영상</button>
+</div>
+<div id="view-matched">
 <div class="filters">
   <select id="f-genre"><option value="">전체 장르</option></select>
   <select id="f-type">
@@ -59,6 +64,140 @@ h1{font-size:18px;margin-bottom:16px}
   <button class="btn btn-save" onclick="showMore()" style="padding:10px 24px">더 보기</button>
 </div>
 <div class="toast" id="toast"></div>
+</div><!-- /view-matched -->
+
+<!-- 미매칭 뷰 -->
+<div id="view-unmatched" style="display:none">
+  <div style="display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap;">
+    <input id="um-search" placeholder="영상 제목 검색..." style="flex:1;min-width:200px;padding:8px 12px;border:1px solid #ddd;border-radius:8px;font-size:13px;font-family:inherit">
+    <button class="btn btn-save" onclick="exportUnmatched()" style="padding:8px 16px">📥 변경사항 다운로드</button>
+  </div>
+  <div class="stats" id="um-stats"></div>
+  <div id="um-list"></div>
+  <div id="um-load-more" style="text-align:center;padding:20px;display:none">
+    <button class="btn btn-save" onclick="showMoreUM()" style="padding:10px 24px">더 보기</button>
+  </div>
+</div>
+
+<script>
+// 탭 전환
+function switchTab(tab){
+  document.getElementById('view-matched').style.display=tab==='matched'?'':'none';
+  document.getElementById('view-unmatched').style.display=tab==='unmatched'?'':'none';
+  document.getElementById('tab-matched').style.background=tab==='matched'?'#333':'#eee';
+  document.getElementById('tab-matched').style.color=tab==='matched'?'#fff':'#333';
+  document.getElementById('tab-unmatched').style.background=tab==='unmatched'?'#333':'#eee';
+  document.getElementById('tab-unmatched').style.color=tab==='unmatched'?'#fff':'#333';
+  if(tab==='unmatched'&&!UM_LOADED) loadUnmatched();
+}
+
+// 미매칭 관리
+var UM_DATA=[],UM_FILTERED=[],UM_SHOWN=0,UM_PAGE=30,UM_LOADED=false;
+var UM_CHANGES={};
+
+function loadUnmatched(){
+  UM_LOADED=true;
+  fetch('data/unmatched.json').then(function(r){return r.json()}).then(function(d){
+    UM_DATA=d.items||[];
+    applyUMFilter();
+  });
+}
+
+function applyUMFilter(){
+  var q=document.getElementById('um-search').value.trim().toLowerCase();
+  UM_FILTERED=UM_DATA.filter(function(x){
+    if(q&&x.title.toLowerCase().indexOf(q)<0&&(x.extracted||'').toLowerCase().indexOf(q)<0) return false;
+    return true;
+  });
+  document.getElementById('um-stats').textContent='미매칭 '+UM_FILTERED.length+'개 (전체 '+UM_DATA.length+'개)';
+  UM_SHOWN=0;
+  document.getElementById('um-list').innerHTML='';
+  showMoreUM();
+}
+
+function showMoreUM(){
+  var items=UM_FILTERED.slice(UM_SHOWN,UM_SHOWN+UM_PAGE);
+  var html=items.map(function(x,i){
+    var idx=UM_SHOWN+i;
+    var dur=x.duration?Math.floor(x.duration/60)+'분':'';
+    var views=x.views>=10000?Math.round(x.views/10000)+'만':x.views>=1000?Math.round(x.views/1000)+'천':x.views;
+    var saved=UM_CHANGES[x.id];
+    var savedClass=saved?' style="border-left:3px solid #090"':'';
+    return '<div class="item" id="um-'+idx+'"'+savedClass+'>'+
+      '<a href="https://www.youtube.com/watch?v='+x.id+'" target="_blank"><img src="https://img.youtube.com/vi/'+x.id+'/default.jpg" style="cursor:pointer"></a>'+
+      '<div class="item-info">'+
+        '<div class="item-title" title="'+x.title+'">'+x.title+'</div>'+
+        '<div class="item-meta">'+x.channel+' · '+dur+' · 조회수 '+views+'</div>'+
+        '<div class="item-match"><span class="movie">'+(x.extracted||'추출 실패')+'</span></div>'+
+        '<div class="edit-row">'+
+          '<input placeholder="영화 제목" value="'+(x.extracted||'')+'" id="um-title-'+idx+'">'+
+          '<input placeholder="TMDB ID" value="" id="um-tmdb-'+idx+'" style="width:80px">'+
+          '<a href="https://www.themoviedb.org/search?query='+encodeURIComponent(x.extracted||'')+'" target="_blank" style="font-size:10px;color:#09f;padding:4px;white-space:nowrap">TMDB검색</a>'+
+        '</div>'+
+        '<div class="edit-row">'+
+          '<input placeholder="메모" value="'+(saved&&saved.memo||'')+'" id="um-memo-'+idx+'">'+
+          '<select id="um-genre-'+idx+'" style="padding:4px 8px;border:1px solid #ddd;border-radius:4px;font-size:11px">'+
+            '<option value="">장르</option>'+
+            ['드라마','스릴러','액션','SF','코미디','공포','범죄','미스터리','로맨스','판타지','애니메이션'].map(function(g){
+              return '<option value="'+g+'">'+g+'</option>';
+            }).join('')+
+          '</select>'+
+          '<button class="btn btn-save" onclick="saveUM('+idx+')">저장</button>'+
+          '<button class="btn btn-del" onclick="deleteUM('+idx+')">삭제</button>'+
+        '</div>'+
+      '</div>'+
+    '</div>';
+  }).join('');
+  document.getElementById('um-list').insertAdjacentHTML('beforeend',html);
+  UM_SHOWN+=items.length;
+  document.getElementById('um-load-more').style.display=UM_SHOWN<UM_FILTERED.length?'':'none';
+}
+
+function saveUM(idx){
+  var item=UM_FILTERED[idx];
+  var title=document.getElementById('um-title-'+idx).value.trim();
+  var tmdb=document.getElementById('um-tmdb-'+idx).value.trim();
+  var genre=document.getElementById('um-genre-'+idx).value;
+  var memo=document.getElementById('um-memo-'+idx).value.trim();
+  if(!title&&!tmdb&&!memo) return toast('제목 또는 TMDB ID를 입력하세요');
+  var change={};
+  if(title) change.title=title;
+  if(tmdb&&!isNaN(tmdb)) change.tmdb_id=parseInt(tmdb);
+  if(genre) change.genre=genre;
+  if(memo) change.memo=memo;
+  UM_CHANGES[item.id]=change;
+  localStorage.setItem('dwia_um_changes',JSON.stringify(UM_CHANGES));
+  document.getElementById('um-'+idx).style.borderLeft='3px solid #090';
+  toast('저장: '+(title||item.extracted||item.id));
+}
+
+function deleteUM(idx){
+  var item=UM_FILTERED[idx];
+  if(!confirm('이 영상을 삭제할까요?')) return;
+  UM_CHANGES[item.id]='delete';
+  localStorage.setItem('dwia_um_changes',JSON.stringify(UM_CHANGES));
+  document.getElementById('um-'+idx).style.opacity='0.3';
+  toast('삭제 표시: '+item.title.substring(0,30));
+}
+
+function exportUnmatched(){
+  var blob=new Blob([JSON.stringify(UM_CHANGES,null,2)],{type:'application/json'});
+  var a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download='unmatched_changes_'+new Date().toISOString().slice(0,10)+'.json';
+  a.click();
+  toast('변경사항 '+Object.keys(UM_CHANGES).length+'건 다운로드됨');
+}
+
+// 미매칭 검색
+var umTimer;
+document.getElementById('um-search').addEventListener('input',function(){
+  clearTimeout(umTimer);umTimer=setTimeout(applyUMFilter,300);
+});
+
+// localStorage 복원
+try{UM_CHANGES=JSON.parse(localStorage.getItem('dwia_um_changes')||'{}');}catch(e){UM_CHANGES={};}
+</script>
 
 <script>
 var DATA=[],FILTERED=[],SHOWN=0,PAGE=30;
