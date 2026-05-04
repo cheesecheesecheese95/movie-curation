@@ -5,11 +5,11 @@
   },
   "액션": {
     "file": "genres/액션.json",
-    "count": 519
+    "count": 521
   },
   "드라마": {
     "file": "genres/드라마.json",
-    "count": 671
+    "count": 670
   },
   "SF": {
     "file": "genres/SF.json",
@@ -37,7 +37,7 @@
   },
   "전쟁": {
     "file": "genres/전쟁.json",
-    "count": 64
+    "count": 63
   },
   "판타지": {
     "file": "genres/판타지.json",
