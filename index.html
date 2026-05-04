@@ -358,6 +358,7 @@ function loadMore(){
       '</div></div></div>'+(ott?'<div class="card-ott">'+ott+'</div>':'')+
       '<div class="card-vt">'+v.title+'</div>'+
       '<div class="card-st"><span>'+v.channel+'</span><span>조회수 '+fmt(v.view_count||0)+'</span></div>'+
+      (m.ai_review?'<div style="padding:10px 14px 12px;font-size:11px;color:#999;line-height:1.6;border-top:1px solid #242424">💡 '+m.ai_review.split('.').slice(0,2).join('.')+'.</div>':'')+
       '</div></div>';
   }).join('');
   document.getElementById('list').insertAdjacentHTML('beforeend',html);
@@ -710,5 +711,20 @@ fetch('data/feed.json').then(function(r){return r.json()}).then(function(d){
   document.getElementById('list').innerHTML='<div class="empty">데이터를 불러올 수 없습니다</div>';
 });
 </script>
+
+<!-- 정적 광고 + 푸터 -->
+<div style="max-width:480px;margin:0 auto;padding:0 16px 20px;">
+  <div style="text-align:center;padding:16px;background:#1A1A1A;border-radius:14px;border:1px solid #242424;margin-bottom:12px;">
+    <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-7Y9BgxI6hsrk3IUC" data-ad-width="320" data-ad-height="100"></ins>
+  </div>
+  <footer style="text-align:center;padding:20px 0;font-size:11px;color:#444;line-height:1.8;">
+    <div style="font-weight:700;color:#555;margin-bottom:4px;">Don't Watch It All</div>
+    <div>운영: 삼십칠점이 · 대표 김현애</div>
+    <div>사업자등록번호: 506-45-00305</div>
+    <div>이메일: ourmovie@naver.com</div>
+    <div style="margin-top:8px;"><a href="/about.html" style="color:#666;text-decoration:none;">서비스 소개</a> · <a href="/privacy.html" style="color:#666;text-decoration:none;">개인정보처리방침</a></div>
+    <div style="margin-top:4px;">© 2025 삼십칠점이. All rights reserved.</div>
+  </footer>
+</div>
 </body>
 </html>
