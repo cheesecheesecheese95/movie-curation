@@ -288,7 +288,7 @@ function buildGenres(){
 
   var counts={};
   DATA.forEach(function(x){(x.movie.genres||[]).forEach(function(g){
-    if(['TV 영화','음악','역사','가족','서부','모험','전쟁'].indexOf(g)<0)counts[g]=(counts[g]||0)+1;
+    if(['TV 영화','음악','역사','가족','서부','모험','전쟁','다큐멘터리'].indexOf(g)<0)counts[g]=(counts[g]||0)+1;
   })});
   var sorted=Object.keys(counts).sort(function(a,b){return counts[b]-counts[a]}).slice(0,12);
   var el=document.getElementById('genres');
