@@ -1,7 +1,7 @@
 {
   "드라마": {
     "file": "genres/드라마.json",
-    "count": 1149
+    "count": 1148
   },
   "액션": {
     "file": "genres/액션.json",
@@ -19,17 +19,17 @@
     "file": "genres/SF.json",
     "count": 425
   },
-  "범죄": {
-    "file": "genres/범죄.json",
-    "count": 495
-  },
-  "애니메이션": {
-    "file": "genres/애니메이션.json",
-    "count": 137
+  "로맨스": {
+    "file": "genres/로맨스.json",
+    "count": 340
   },
   "모험": {
     "file": "genres/모험.json",
     "count": 363
+  },
+  "범죄": {
+    "file": "genres/범죄.json",
+    "count": 494
   },
   "미스터리": {
     "file": "genres/미스터리.json",
@@ -43,10 +43,6 @@
     "file": "genres/판타지.json",
     "count": 226
   },
-  "로맨스": {
-    "file": "genres/로맨스.json",
-    "count": 339
-  },
   "전쟁": {
     "file": "genres/전쟁.json",
     "count": 107
@@ -54,5 +50,9 @@
   "다큐멘터리": {
     "file": "genres/다큐멘터리.json",
     "count": 14
+  },
+  "애니메이션": {
+    "file": "genres/애니메이션.json",
+    "count": 136
   }
 }
