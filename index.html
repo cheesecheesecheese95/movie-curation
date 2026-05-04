@@ -556,7 +556,10 @@ document.getElementById('tabs').addEventListener('click',function(e){
   document.getElementById('v-today').style.display=tab==='today'?'':'none';
   document.getElementById('v-search').style.display=tab==='search'?'':'none';
   if(tab==='feed')render();
-  if(tab==='search')document.getElementById('q').focus();
+  if(tab==='search'){
+    window.scrollTo(0,0);
+    setTimeout(function(){document.getElementById('q').focus();},100);
+  }
 });
 
 // 검색 자동완성
