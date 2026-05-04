@@ -341,21 +341,24 @@ function loadMore(){
     var rating=m.vote_average?m.vote_average.toFixed(1):'';
     var genres=(m.genres||[]).filter(function(g){return['TV 영화','음악','역사','가족','서부','전쟁'].indexOf(g)<0}).slice(0,2).join(' · ');
     var ott=(m.watch_providers||[]).slice(0,3).map(function(p){return'<span class="ott">'+p.name+'</span>'}).join('');
+    var hasMovie=m.tmdb_id&&(m.title_ko||m.title_en);
     return adSlot+'<div class="card" data-i="'+idx+'">'+
       '<div class="card-img"><img src="https://img.youtube.com/vi/'+v.id+'/mqdefault.jpg" loading="lazy">'+
       (v.duration_label?'<span class="card-dur">'+v.duration_label+'</span>':'')+
       (v.has_spoiler?'<span class="card-sp">결말 포함</span>':'')+
-      (isRecommended(m)?'<span class="card-rec">추천</span>':'')+
-      '</div><div class="card-bd"><div class="card-row">'+
-      (m.poster_url?'<div class="card-poster"><img src="'+m.poster_url+'" loading="lazy"></div>':'')+
-      '<div class="card-info"><div class="card-title">'+(m.title_ko||m.title_en||'')+'</div>'+
-      '<div class="card-meta">'+(rating?'<span class="star">⭐ '+rating+'</span>':'')+
-      (m.year?'<span>'+m.year+'</span>':'')+(genres?'<span>'+genres+'</span>':'')+'</div>'+
-      '<div class="card-rt">'+(rating?'<span class="rt rt-t">TMDB '+rating+'</span>':'')+
-      (m.imdb_rating?'<span class="rt rt-i">IMDb '+m.imdb_rating+'</span>':'')+
-      (m.rotten_tomatoes?'<span class="rt rt-r">🍅 '+m.rotten_tomatoes+'%</span>':'')+
-      (m.naver_rating?'<span class="rt rt-n">네이버 '+m.naver_rating+'</span>':'')+
-      '</div></div></div>'+(ott?'<div class="card-ott">'+ott+'</div>':'')+
+      (hasMovie&&isRecommended(m)?'<span class="card-rec">추천</span>':'')+
+      '</div><div class="card-bd">'+
+      (hasMovie?'<div class="card-row">'+
+        (m.poster_url?'<div class="card-poster"><img src="'+m.poster_url+'" loading="lazy"></div>':'')+
+        '<div class="card-info"><div class="card-title">'+(m.title_ko||m.title_en)+'</div>'+
+        '<div class="card-meta">'+(rating?'<span class="star">⭐ '+rating+'</span>':'')+
+        (m.year?'<span>'+m.year+'</span>':'')+(genres?'<span>'+genres+'</span>':'')+'</div>'+
+        '<div class="card-rt">'+(rating?'<span class="rt rt-t">TMDB '+rating+'</span>':'')+
+        (m.imdb_rating?'<span class="rt rt-i">IMDb '+m.imdb_rating+'</span>':'')+
+        (m.rotten_tomatoes?'<span class="rt rt-r">🍅 '+m.rotten_tomatoes+'%</span>':'')+
+        (m.naver_rating?'<span class="rt rt-n">네이버 '+m.naver_rating+'</span>':'')+
+        '</div></div></div>':'')+
+      (hasMovie&&ott?'<div class="card-ott">'+ott+'</div>':'')+
       '<div class="card-vt">'+v.title+'</div>'+
       '<div class="card-st"><span>'+v.channel+'</span><span>조회수 '+fmt(v.view_count||0)+'</span></div>'+
       (m.ai_review?'<div style="padding:10px 14px 12px;font-size:11px;color:#999;line-height:1.6;border-top:1px solid #242424">💡 '+m.ai_review.split('.').slice(0,2).join('.')+'.</div>':'')+
