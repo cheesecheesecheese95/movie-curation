@@ -45,7 +45,8 @@ h1{font-size:18px;margin-bottom:16px}
 
 <script>
 var DATA=[],FILTERED=[],SHOWN=0,PAGE=30;
-var CHANGES=JSON.parse(localStorage.getItem('dwia_unmatched')||'{}');
+var CHANGES={};
+try{CHANGES=JSON.parse(localStorage.getItem('dwia_unmatched'))||{};}catch(e){CHANGES={};}
 
 function toast(msg){var t=document.getElementById('toast');t.textContent=msg;t.style.display='';setTimeout(function(){t.style.display='none'},2000)}
 
@@ -73,27 +74,31 @@ function showMore(){
     var idx=SHOWN+i;
     var dur=x.duration?Math.floor(x.duration/60)+'분':'';
     var views=x.views>=10000?Math.round(x.views/10000)+'만':x.views>=1000?Math.round(x.views/1000)+'천':x.views;
-    var saved=CHANGES[x.id];
-    var cls=saved&&saved!=='delete'?' saved':'';
+    var saved=CHANGES[x.id]||{};
+    var sTitle=saved.title||'';
+    var sTmdb=saved.tmdb_id!=null?saved.tmdb_id:'';
+    var sMemo=saved.memo||'';
+    var sGenre=saved.genre||'';
+    var cls=saved.title||saved.tmdb_id||saved.memo?' saved':'';
     return '<div class="item'+cls+'" id="item-'+idx+'">'+
       '<a href="https://www.youtube.com/watch?v='+x.id+'" target="_blank"><img src="https://img.youtube.com/vi/'+x.id+'/default.jpg"></a>'+
       '<div class="item-info">'+
         '<div class="item-title" title="'+x.title+'">'+x.title+'</div>'+
         '<div class="item-meta">'+x.channel+' · '+dur+' · 조회수 '+views+'</div>'+
         '<div class="edit-row">'+
-          '<input placeholder="영화 제목" id="t-'+idx+'" value="'+(saved&&saved.title||'')+'">'+
-          '<input placeholder="TMDB ID" id="tmdb-'+idx+'" value="'+(saved&&saved.tmdb_id||'')+'" style="width:80px">'+
+          '<input placeholder="영화 제목" id="t-'+idx+'" value="'+sTitle+'">'+
+          '<input placeholder="TMDB ID" id="tmdb-'+idx+'" value="'+sTmdb+'" style="width:80px">'+
           '<a href="https://www.themoviedb.org/search?query='+encodeURIComponent(x.title.replace(/[\[\(].*/g,'').replace(/결말.*/g,'').trim())+'" target="_blank" class="btn btn-blue" style="white-space:nowrap">TMDB검색</a>'+
         '</div>'+
         '<div class="edit-row">'+
           '<select id="genre-'+idx+'">'+
             '<option value="">장르</option>'+
             ['드라마','스릴러','액션','SF','코미디','공포','범죄','미스터리','로맨스','판타지','애니메이션'].map(function(g){
-              var sel=saved&&saved.genre===g?' selected':'';
+              var sel=sGenre===g?' selected':'';
               return '<option value="'+g+'"'+sel+'>'+g+'</option>';
             }).join('')+
           '</select>'+
-          '<input placeholder="메모" id="memo-'+idx+'" value="'+(saved&&saved.memo||'')+'" style="flex:2">'+
+          '<input placeholder="메모" id="memo-'+idx+'" value="'+sMemo+'" style="flex:2">'+
           '<button class="btn btn-save" onclick="save('+idx+')">저장</button>'+
           '<button class="btn btn-del" onclick="del('+idx+')">삭제</button>'+
         '</div>'+
