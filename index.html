@@ -113,6 +113,9 @@ body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;colo
 
   <div id="v-feed" class="content-area">
     <div class="info" id="info"></div>
+    <div style="text-align:center;padding:0 16px 14px;">
+      <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-7Y9BgxI6hsrk3IUC" data-ad-width="320" data-ad-height="100"></ins>
+    </div>
     <div class="list" id="list"></div>
   </div>
 
@@ -245,6 +248,8 @@ function loadMore(){
   document.getElementById('list').insertAdjacentHTML('beforeend',html);
   SHOWN+=items.length;
   LOADING=false;
+  // 동적 삽입된 AdFit 광고 렌더링
+  if(window.kakaoAdFit){try{kakaoAdFit.render();}catch(e){}}
 }
 
 function renderToday(){
