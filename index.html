@@ -38,6 +38,7 @@ body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;colo
 .card-img img{width:100%;height:100%;object-fit:cover}
 .card-dur{position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,.8);color:#fff;font-size:11px;font-weight:700;padding:2px 6px;border-radius:4px}
 .card-sp{position:absolute;top:8px;left:8px;background:#E50914;color:#fff;font-size:10px;font-weight:700;padding:3px 8px;border-radius:4px}
+.card-rec{position:absolute;top:8px;right:8px;background:rgba(255,180,0,.92);color:#1A1A1A;font-size:10px;font-weight:800;padding:3px 8px;border-radius:4px}
 .card-bd{padding:12px 14px}
 .card-row{display:flex;gap:10px;margin-bottom:8px}
 .card-poster{width:44px;height:66px;border-radius:6px;overflow:hidden;flex-shrink:0;background:#242424}
@@ -185,6 +186,33 @@ var DATA=[], CUR=[], GENRE='전체', TAB='feed', SORT='shuffle', SPOILER=false, 
 
 function fmt(n){return n>=10000?Math.round(n/10000)+'만':n>=1000?Math.round(n/1000)+'천':n+''}
 
+function isRecommended(m){
+  return m.naver_rating||(m.vote_count||0)>=500||(m.vote_average||0)>=7.5;
+}
+
+function getPickComment(m){
+  var r=m.vote_average||0,g=(m.genres||[])[0]||'',y=m.year||2020,n=m.naver_rating,rt=m.rotten_tomatoes;
+  var comments=[];
+  if(r>=8.0) comments.push('평점 '+r.toFixed(1)+'점, 누구에게나 추천할 수 있는 작품');
+  else if(r>=7.0) comments.push('평점 '+r.toFixed(1)+'점, 기대 이상의 몰입감');
+  if(n&&parseFloat(n)>=8.0) comments.push('네이버 '+n+'점의 검증된 재미');
+  if(rt&&parseInt(rt)>=90) comments.push('로튼토마토 '+rt+'% 신선도');
+  if(g==='스릴러') comments.push('숨 멈추는 전개가 일품');
+  else if(g==='액션') comments.push('속도감 있는 전개로 지루할 틈 없음');
+  else if(g==='드라마') comments.push('깊은 여운이 남는 이야기');
+  else if(g==='SF') comments.push('상상력을 자극하는 세계관');
+  else if(g==='코미디') comments.push('웃음이 필요한 날 딱 좋은 영화');
+  else if(g==='공포') comments.push('밤에 보면 잠 못 이루는 공포');
+  else if(g==='범죄') comments.push('반전에 반전, 끝까지 긴장감 유지');
+  else if(g==='미스터리') comments.push('퍼즐 맞추듯 빠져드는 전개');
+  else if(g==='로맨스') comments.push('보고 나면 마음이 따뜻해지는 영화');
+  else if(g==='판타지') comments.push('현실을 잊게 하는 판타지');
+  else if(g==='애니메이션') comments.push('연령 무관, 감동이 있는 애니');
+  if(y<=2005) comments.push((2026-y)+'년 전 작품이지만 지금 봐도 좋음');
+  else if(y>=2024) comments.push('최신작, 놓치면 아쉬운 영화');
+  return comments.slice(0,2).join(' · ')||'오늘의 추천작';
+}
+
 function shuffle(arr){
   var a=arr.slice(),i=a.length,j,t;
   while(i>1){j=Math.floor(Math.random()*(i--));t=a[i];a[i]=a[j];a[j]=t;}
@@ -229,6 +257,7 @@ function loadMore(){
       '<div class="card-img"><img src="https://img.youtube.com/vi/'+v.id+'/mqdefault.jpg" loading="lazy">'+
       (v.duration_label?'<span class="card-dur">'+v.duration_label+'</span>':'')+
       (v.has_spoiler?'<span class="card-sp">결말 포함</span>':'')+
+      (isRecommended(m)?'<span class="card-rec">추천</span>':'')+
       '</div><div class="card-bd"><div class="card-row">'+
       (m.poster_url?'<div class="card-poster"><img src="'+m.poster_url+'" loading="lazy"></div>':'')+
       '<div class="card-info"><div class="card-title">'+(m.title_ko||m.title_en||'')+'</div>'+
@@ -263,7 +292,7 @@ function renderToday(){
   var el=document.getElementById('today-list');
   el.innerHTML='<div style="padding:0 16px 12px"><div style="font-size:14px;font-weight:800">🎲 오늘의 추천 10편</div><div style="font-size:12px;color:#666;margin-top:4px">매일 새로운 영화를 추천해드려요</div></div>'+
     picks.map(function(x,i){
-      var m=x.movie,v=x.video;
+      var m=x.movie,v=x.video,comment=getPickComment(m);
       return '<div class="card" data-ti="'+i+'" style="margin:0 16px 12px">'+
         '<div class="card-bd"><div class="card-row">'+
         (m.poster_url?'<div class="card-poster"><img src="'+m.poster_url+'" loading="lazy"></div>':'')+
@@ -272,6 +301,7 @@ function renderToday(){
         '<div class="card-meta">'+(m.vote_average?'<span class="star">⭐ '+m.vote_average.toFixed(1)+'</span>':'')+
         (m.year?'<span>'+m.year+'</span>':'')+'</div>'+
         '<div style="font-size:11px;color:#666;margin-top:4px">▶ '+v.channel+' · '+(v.duration_label||'')+'</div>'+
+        '<div style="font-size:11px;color:#FFB400;margin-top:6px;line-height:1.5">💡 '+comment+'</div>'+
         '</div></div></div></div>';
     }).join('');
   // 클릭 이벤트
