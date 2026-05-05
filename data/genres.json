@@ -17,7 +17,7 @@
   },
   "코미디": {
     "file": "genres/코미디.json",
-    "count": 447
+    "count": 446
   },
   "SF": {
     "file": "genres/SF.json",
@@ -25,7 +25,7 @@
   },
   "모험": {
     "file": "genres/모험.json",
-    "count": 302
+    "count": 301
   },
   "범죄": {
     "file": "genres/범죄.json",
@@ -53,6 +53,6 @@
   },
   "애니메이션": {
     "file": "genres/애니메이션.json",
-    "count": 89
+    "count": 88
   }
 }
