@@ -541,6 +541,8 @@ document.getElementById('tabs').addEventListener('click',function(e){
   document.getElementById('v-feed').style.display=tab==='feed'?'':'none';
   document.getElementById('v-today').style.display=tab==='today'?'':'none';
   document.getElementById('v-search').style.display=tab==='search'?'':'none';
+  document.querySelector('.sticky-filter').style.display=tab==='feed'?'':'none';
+  setTimeout(function(){var ts=document.querySelector('.top-sticky');if(ts){var h=ts.offsetHeight+'px';document.querySelectorAll('.content-area').forEach(function(el){el.style.paddingTop=h;});}},10);
   if(tab==='feed')render();
   if(tab==='search'){
     window.scrollTo(0,0);
