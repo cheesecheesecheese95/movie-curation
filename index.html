@@ -559,29 +559,7 @@ qInput.addEventListener('input',function(){
   var q=this.value.trim().toLowerCase();
   clearTimeout(suggestTimer);
 
-  // 자동완성 드롭다운
-  if(q.length>=2){
-    suggestTimer=setTimeout(function(){
-      var seen={};
-      var suggestions=[];
-      DATA.forEach(function(x){
-        var tk=(x.movie.title_ko||'').toLowerCase();
-        var te=(x.movie.title_en||'').toLowerCase();
-        if((tk.indexOf(q)>=0||te.indexOf(q)>=0)&&!seen[x.movie.tmdb_id]){
-          seen[x.movie.tmdb_id]=1;
-          suggestions.push({title:x.movie.title_ko||x.movie.title_en,year:x.movie.year,rating:x.movie.vote_average});
-        }
-      });
-      if(suggestions.length>0){
-        qSuggest.style.display='';
-        qSuggest.innerHTML=suggestions.slice(0,8).map(function(s){
-          return '<div style="padding:10px 14px;cursor:pointer;border-bottom:1px solid #242424;font-size:13px;display:flex;justify-content:space-between" onclick="document.getElementById(\'q\').value=\''+s.title.replace(/'/g,"\\'")+'\';document.getElementById(\'q\').dispatchEvent(new Event(\'search\'));document.getElementById(\'q-suggest\').style.display=\'none\'">'+
-            '<span>'+s.title+'</span>'+
-            '<span style="color:#666;font-size:11px">'+(s.year||'')+' ⭐'+(s.rating?s.rating.toFixed(1):'')+'</span></div>';
-        }).join('');
-      }else{qSuggest.style.display='none';}
-    },150);
-  }else{qSuggest.style.display='none';}
+  qSuggest.style.display='none';
 });
 
 // 자동완성 외부 클릭 시 닫기
