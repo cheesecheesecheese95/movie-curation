@@ -34,7 +34,7 @@ h1{font-size:18px;margin-bottom:16px}
 </style>
 </head>
 <body>
-<h1>🎬 DWIA 관리자 <button class="btn btn-save" onclick="exportChanges()" style="margin-left:12px;padding:8px 16px;font-size:12px">📥 변경사항 다운로드</button></h1>
+<h1>🎬 DWIA 관리자 <button class="btn btn-save" onclick="exportChanges()" style="margin-left:12px;padding:8px 16px;font-size:12px">📥 변경사항 다운로드</button> <button class="btn btn-del" onclick="resetLocal()" style="padding:8px 16px;font-size:12px">🗑 캐시 초기화</button></h1>
 <div style="display:flex;gap:8px;margin-bottom:16px;">
   <button class="btn" id="tab-matched" onclick="switchTab('matched')" style="padding:8px 16px;background:#333;color:#fff">매칭된 영상</button>
   <button class="btn" id="tab-unmatched" onclick="switchTab('unmatched')" style="padding:8px 16px;background:#eee;color:#333">🔍 미매칭 영상</button>
@@ -403,6 +403,16 @@ function exportChanges(){
   a.download='admin_changes_'+new Date().toISOString().slice(0,10)+'.json';
   a.click();
   toast('변경사항 '+Object.keys(CHANGES).length+'건 다운로드됨');
+}
+
+function resetLocal(){
+  if(!confirm('저장된 변경사항과 확정 목록을 모두 초기화할까요?'))return;
+  localStorage.removeItem('dwia_admin_changes');
+  localStorage.removeItem('dwia_um_changes');
+  localStorage.removeItem('dwia_confirmed');
+  CHANGES={};UM_CHANGES={};CONFIRMED={};
+  toast('캐시 초기화 완료');
+  setTimeout(function(){location.reload();},500);
 }
 
 loadData();
