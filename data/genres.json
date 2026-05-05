@@ -5,7 +5,7 @@
   },
   "스릴러": {
     "file": "genres/스릴러.json",
-    "count": 923
+    "count": 924
   },
   "드라마": {
     "file": "genres/드라마.json",
@@ -33,7 +33,7 @@
   },
   "공포": {
     "file": "genres/공포.json",
-    "count": 449
+    "count": 450
   },
   "미스터리": {
     "file": "genres/미스터리.json",

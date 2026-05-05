@@ -14,7 +14,7 @@ def export_feed():
     rows = conn.execute("""
         SELECT v.video_id, v.channel_id, v.channel_name, v.title AS video_title,
                v.published_at, v.view_count, v.duration_sec, v.match_confidence,
-               v.has_spoiler,
+               v.has_spoiler, v.content_type,
                m.tmdb_id, m.title_ko, m.title_en, m.year, m.genres,
                m.poster_url, m.vote_average, m.vote_count, m.overview,
                m.director, m.runtime,
@@ -43,6 +43,7 @@ def export_feed():
                 "duration_label": fmt_duration(r["duration_sec"]),
                 "has_spoiler": bool(r["has_spoiler"]),
                 "match_confidence": r["match_confidence"],
+                "content_type": r["content_type"] if "content_type" in r.keys() else None,
             },
             "movie": {
                 "tmdb_id": r["tmdb_id"],
