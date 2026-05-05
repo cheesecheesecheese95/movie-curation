@@ -14,7 +14,6 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VB1S7NCKTC"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-VB1S7NCKTC');</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6740102719021736" crossorigin="anonymous"></script>
-<script type="text/javascript" src="//t1.kakaocdn.net/kas/static/ba.min.js" async></script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;color:#F0F0F0;-webkit-font-smoothing:antialiased}
@@ -143,10 +142,6 @@ body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;colo
         <div style="display:flex;align-items:center;gap:6px;margin-bottom:12px"><span style="font-size:14px">📝</span><span style="font-size:13px;font-weight:800;color:#F0F0F0">큐레이터 한줄평</span></div>
         <div id="p-review-text" style="font-size:13px;color:#ccc;line-height:1.8"></div>
         <div style="margin-top:12px;font-size:10px;color:#444">AI가 영화 정보를 기반으로 작성한 추천평입니다</div>
-      </div>
-      <!-- 광고 -->
-      <div style="background:#1A1A1A;border-radius:14px;padding:16px;margin-top:12px;text-align:center;min-height:250px;display:flex;align-items:center;justify-content:center;border:1px solid #242424">
-        <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-7Y9BgxI6hsrk3IUC" data-ad-width="300" data-ad-height="250"></ins>
       </div>
       <div style="margin-top:16px;font-size:13px;font-weight:700;color:#999;margin-bottom:8px">이 영화가 좋았다면</div>
       <div id="p-similar"></div>
@@ -329,14 +324,7 @@ function loadMore(){
   var startIdx=SHOWN;
   var html=items.map(function(x,i){
     var idx=startIdx+i;
-    // 5개마다 광고 슬롯 삽입
     var adSlot='';
-    if(idx>0&&idx%5===0){
-      adSlot='<div class="ad-slot" style="background:#1A1A1A;border-radius:14px;padding:16px;margin-bottom:14px;text-align:center;min-height:250px;display:flex;align-items:center;justify-content:center;border:1px solid #242424">'+
-        '<div class="adfit-container" id="ad-slot-'+idx+'" style="width:100%">'+
-        '<ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-7Y9BgxI6hsrk3IUC" data-ad-width="300" data-ad-height="250"></ins>'+
-        '</div></div>';
-    }
     var v=x.video,m=x.movie;
     var rating=m.vote_average?m.vote_average.toFixed(1):'';
     var genres=(m.genres||[]).filter(function(g){return['TV 영화','음악','역사','가족','서부','전쟁'].indexOf(g)<0}).slice(0,2).join(' · ');
@@ -368,7 +356,6 @@ function loadMore(){
   SHOWN+=items.length;
   LOADING=false;
   // 동적 삽입된 AdFit 광고 렌더링
-  if(window.kakaoAdFit){try{kakaoAdFit.render();}catch(e){}}
 }
 
 function renderToday(){
@@ -478,7 +465,6 @@ function openPlayer(item){
     reviewEl.style.display='none';
   }
   // 광고 렌더
-  if(window.kakaoAdFit){try{kakaoAdFit.render();}catch(e){}}
   savedScroll=window.scrollY;
   document.getElementById('player').className='player on';
   document.body.style.overflow='hidden';
@@ -720,9 +706,6 @@ fetch('data/feed.json').then(function(r){return r.json()}).then(function(d){
 
 <!-- 정적 광고 + 푸터 -->
 <div style="max-width:480px;margin:0 auto;padding:0 16px 20px;">
-  <div style="text-align:center;padding:16px;background:#1A1A1A;border-radius:14px;border:1px solid #242424;margin-bottom:12px;">
-    <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-7Y9BgxI6hsrk3IUC" data-ad-width="320" data-ad-height="100"></ins>
-  </div>
   <footer style="text-align:center;padding:20px 0;font-size:11px;color:#444;line-height:1.8;">
     <div style="font-weight:700;color:#555;margin-bottom:4px;">Don't Watch It All</div>
     <div>운영: 삼십칠점이 · 대표 김현애</div>
