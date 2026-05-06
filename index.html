@@ -71,6 +71,7 @@ body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;colo
 .empty{text-align:center;padding:60px 0;color:#666;font-size:13px}
 .sbtn{padding:4px 8px;border-radius:8px;font-size:10px;font-weight:600;cursor:pointer;border:1px solid #242424;background:#1A1A1A;color:#666;font-family:inherit}
 .sbtn.on{background:#2E2E2E;color:#F0F0F0;border-color:#666}
+.ad-slot{min-height:0!important}.ad-slot:empty,.ad-slot ins[data-ad-status="unfilled"]{display:none}
 </style>
 </head>
 <body>
@@ -143,6 +144,7 @@ body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;colo
         <div id="p-review-text" style="font-size:13px;color:#ccc;line-height:1.8"></div>
         <div style="margin-top:12px;font-size:10px;color:#444">AI가 영화 정보를 기반으로 작성한 추천평입니다</div>
       </div>
+      <div id="p-ad" class="ad-slot" style="margin-top:16px;min-height:0;overflow:hidden;"></div>
       <div style="margin-top:16px;font-size:13px;font-weight:700;color:#999;margin-bottom:8px">이 영화가 좋았다면</div>
       <div id="p-similar"></div>
       <button onclick="closePlayer()" style="width:100%;margin-top:16px;padding:14px;border-radius:12px;background:#1A1A1A;border:1px solid #242424;color:#999;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit">← 뒤로가기</button>
@@ -325,6 +327,9 @@ function loadMore(){
   var html=items.map(function(x,i){
     var idx=startIdx+i;
     var adSlot='';
+    if(idx>0 && idx%5===0){
+      adSlot='<div class="ad-slot" style="margin-bottom:14px;min-height:0;overflow:hidden;"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6740102719021736" data-ad-slot="FEED_AD_SLOT" data-ad-format="fluid" data-full-width-responsive="true"></ins></div>';
+    }
     var v=x.video,m=x.movie;
     var rating=m.vote_average?m.vote_average.toFixed(1):'';
     var genres=(m.genres||[]).filter(function(g){return['TV 영화','음악','역사','가족','서부','전쟁'].indexOf(g)<0}).slice(0,2).join(' · ');
@@ -355,7 +360,10 @@ function loadMore(){
   document.getElementById('list').insertAdjacentHTML('beforeend',html);
   SHOWN+=items.length;
   LOADING=false;
-  // 동적 삽입된 AdFit 광고 렌더링
+  // 동적 삽입된 애드센스 광고 렌더링
+  document.querySelectorAll('.ad-slot ins.adsbygoogle:not([data-ad-status])').forEach(function(el){
+    try{(adsbygoogle=window.adsbygoogle||[]).push({});}catch(e){}
+  });
 }
 
 function renderToday(){
@@ -464,7 +472,12 @@ function openPlayer(item){
   } else {
     reviewEl.style.display='none';
   }
-  // 광고 렌더
+  // 플레이어 광고 렌더
+  var pAd=document.getElementById('p-ad');
+  if(pAd){
+    pAd.innerHTML='<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6740102719021736" data-ad-slot="PLAYER_AD_SLOT" data-ad-format="rectangle" data-full-width-responsive="true"></ins>';
+    try{(adsbygoogle=window.adsbygoogle||[]).push({});}catch(e){}
+  }
   savedScroll=window.scrollY;
   document.getElementById('player').className='player on';
   document.body.style.overflow='hidden';
