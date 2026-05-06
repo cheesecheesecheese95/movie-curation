@@ -145,6 +145,30 @@ body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;colo
         <div style="margin-top:12px;font-size:10px;color:#444">AI가 영화 정보를 기반으로 작성한 추천평입니다</div>
       </div>
       <div id="p-ad" class="ad-slot" style="margin-top:16px;min-height:0;overflow:hidden;"></div>
+      <!-- 쿠팡 파트너스 -->
+      <div id="p-coupang" style="margin-top:16px;background:#1A1A1A;border-radius:14px;padding:16px;border:1px solid #242424">
+        <div style="font-size:13px;font-weight:800;color:#F0F0F0;margin-bottom:10px">🛒 이 영화 관련 상품</div>
+        <a id="cp-movie" href="#" target="_blank" rel="noopener" style="display:block;background:#242424;border-radius:10px;padding:12px 14px;text-decoration:none;margin-bottom:8px">
+          <div style="font-size:12px;font-weight:700;color:#F0F0F0" id="cp-movie-label">DVD / 블루레이 검색</div>
+          <div style="font-size:10px;color:#666;margin-top:2px">쿠팡에서 찾아보기 →</div>
+        </a>
+        <div style="font-size:11px;font-weight:700;color:#999;margin:12px 0 8px">🎬 OTT 이용권</div>
+        <div style="display:flex;gap:6px;flex-wrap:wrap">
+          <a href="https://link.coupang.com/a/cmAs4f" target="_blank" rel="noopener" style="flex:1;min-width:0;background:#242424;border-radius:8px;padding:10px;text-decoration:none;text-align:center">
+            <div style="font-size:11px;font-weight:700;color:#E50914">넷플릭스</div>
+            <div style="font-size:9px;color:#666;margin-top:2px">이용권</div>
+          </a>
+          <a href="https://link.coupang.com/a/cmAs8V" target="_blank" rel="noopener" style="flex:1;min-width:0;background:#242424;border-radius:8px;padding:10px;text-decoration:none;text-align:center">
+            <div style="font-size:11px;font-weight:700;color:#4B9CDB">왓챠</div>
+            <div style="font-size:9px;color:#666;margin-top:2px">이용권</div>
+          </a>
+          <a href="https://link.coupang.com/a/cmAtbh" target="_blank" rel="noopener" style="flex:1;min-width:0;background:#242424;border-radius:8px;padding:10px;text-decoration:none;text-align:center">
+            <div style="font-size:11px;font-weight:700;color:#1CE783">웨이브</div>
+            <div style="font-size:9px;color:#666;margin-top:2px">이용권</div>
+          </a>
+        </div>
+        <div style="margin-top:8px;font-size:9px;color:#444;text-align:center">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다</div>
+      </div>
       <div style="margin-top:16px;font-size:13px;font-weight:700;color:#999;margin-bottom:8px">이 영화가 좋았다면</div>
       <div id="p-similar"></div>
       <button onclick="closePlayer()" style="width:100%;margin-top:16px;padding:14px;border-radius:12px;background:#1A1A1A;border:1px solid #242424;color:#999;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit">← 뒤로가기</button>
@@ -471,6 +495,14 @@ function openPlayer(item){
     reviewText.innerHTML=m.ai_review.replace(/\n/g,'<br>');
   } else {
     reviewEl.style.display='none';
+  }
+  // 쿠팡 파트너스 영화 검색 링크
+  var movieTitle=m.title_ko||m.title_en||'';
+  var cpLink=document.getElementById('cp-movie');
+  var cpLabel=document.getElementById('cp-movie-label');
+  if(cpLink&&movieTitle){
+    cpLink.href='https://www.coupang.com/np/search?component=&q='+encodeURIComponent(movieTitle)+'+DVD&channel=user&component=&eventCategory=SRP&traid=tr_AF5263435&subid=dwia';
+    cpLabel.textContent=movieTitle+' DVD / 블루레이';
   }
   // 플레이어 광고 렌더
   var pAd=document.getElementById('p-ad');
