@@ -327,9 +327,10 @@ function loadMore(){
   var html=items.map(function(x,i){
     var idx=startIdx+i;
     var adSlot='';
-    if(idx>0 && idx%5===0){
-      adSlot='<div class="ad-slot" style="margin-bottom:14px;min-height:0;overflow:hidden;"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6740102719021736" data-ad-slot="FEED_AD_SLOT" data-ad-format="fluid" data-full-width-responsive="true"></ins></div>';
-    }
+    // [광고 승인 후 활성화] 피드 인피드 광고
+    // if(idx>0 && idx%5===0){
+    //   adSlot='<div class="ad-slot" style="margin-bottom:14px;min-height:0;overflow:hidden;"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6740102719021736" data-ad-slot="FEED_AD_SLOT" data-ad-format="fluid" data-full-width-responsive="true"></ins></div>';
+    // }
     var v=x.video,m=x.movie;
     var rating=m.vote_average?m.vote_average.toFixed(1):'';
     var genres=(m.genres||[]).filter(function(g){return['TV 영화','음악','역사','가족','서부','전쟁'].indexOf(g)<0}).slice(0,2).join(' · ');
@@ -472,12 +473,12 @@ function openPlayer(item){
   } else {
     reviewEl.style.display='none';
   }
-  // 플레이어 광고 렌더
-  var pAd=document.getElementById('p-ad');
-  if(pAd){
-    pAd.innerHTML='<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6740102719021736" data-ad-slot="PLAYER_AD_SLOT" data-ad-format="rectangle" data-full-width-responsive="true"></ins>';
-    try{(adsbygoogle=window.adsbygoogle||[]).push({});}catch(e){}
-  }
+  // [광고 승인 후 활성화] 플레이어 광고
+  // var pAd=document.getElementById('p-ad');
+  // if(pAd){
+  //   pAd.innerHTML='<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6740102719021736" data-ad-slot="PLAYER_AD_SLOT" data-ad-format="rectangle" data-full-width-responsive="true"></ins>';
+  //   try{(adsbygoogle=window.adsbygoogle||[]).push({});}catch(e){}
+  // }
   savedScroll=window.scrollY;
   document.getElementById('player').className='player on';
   document.body.style.overflow='hidden';
