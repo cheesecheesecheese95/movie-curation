@@ -1,0 +1,31 @@
+name: Auto Tweet Movie
+on:
+  schedule:
+    # 한국시간 09:00, 13:00, 20:00 (UTC 00:00, 04:00, 11:00)
+    - cron: '0 0 * * *'
+    - cron: '0 4 * * *'
+    - cron: '0 11 * * *'
+  workflow_dispatch: # 수동 실행
+
+jobs:
+  tweet:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install tweepy
+      - run: python scripts/tweet_movie.py
+        env:
+          X_CONSUMER_KEY: ${{ secrets.X_CONSUMER_KEY }}
+          X_CONSUMER_SECRET: ${{ secrets.X_CONSUMER_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+      - name: Commit tweeted.json
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add data/tweeted.json
+          git diff --cached --quiet || git commit -m "트윗 기록 업데이트"
+          git push
