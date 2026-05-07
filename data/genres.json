@@ -5,11 +5,11 @@
   },
   "스릴러": {
     "file": "genres/스릴러.json",
-    "count": 974
+    "count": 973
   },
   "드라마": {
     "file": "genres/드라마.json",
-    "count": 1097
+    "count": 1096
   },
   "로맨스": {
     "file": "genres/로맨스.json",
@@ -29,7 +29,7 @@
   },
   "범죄": {
     "file": "genres/범죄.json",
-    "count": 484
+    "count": 483
   },
   "공포": {
     "file": "genres/공포.json",
