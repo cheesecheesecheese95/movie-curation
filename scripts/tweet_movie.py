@@ -89,7 +89,6 @@ def format_tweet(m):
         tweet += f"\n{badge_line}"
     if intro:
         tweet += intro
-    tweet += f"\n\n▶ 영상으로 보기: https://www.youtube.com/watch?v={m['video_id']}"
     tweet += f"\n\n#영화추천 #결말포함 #{title.replace(' ', '').replace(':', '')}"
 
     # 280자 제한 (한글은 2자로 계산되므로 여유있게)
