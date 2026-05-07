@@ -482,6 +482,7 @@ function openPlayer(item){
   savedScroll=window.scrollY;
   document.getElementById('player').className='player on';
   document.body.style.overflow='hidden';
+  if(m.tmdb_id) history.replaceState(null,'','#movie/'+m.tmdb_id);
   gtag('event','video_play',{movie:m.title_ko||m.title_en,channel:v.channel,video_id:v.id});
 
   // 비슷한 영화 추천 (같은 장르 + 비슷한 평점)
@@ -523,6 +524,7 @@ function closePlayer(){
   document.getElementById('p-if').src='';
   document.body.style.overflow='';
   window.scrollTo(0,savedScroll);
+  history.replaceState(null,'',GENRE&&GENRE!=='전체'?'#'+GENRE:location.pathname);
 }
 
 // 스와이프로 플레이어 닫기
@@ -684,9 +686,16 @@ document.getElementById('sort-btns').addEventListener('click',function(e){
 fetch('data/feed.json').then(function(r){return r.json()}).then(function(d){
   DATA=d.items||[];
   buildGenres();
-  // URL 해시에서 장르 복원
+  // URL 해시에서 장르 또는 영화 복원
   var hash=decodeURIComponent(location.hash.replace('#',''));
-  if(hash){
+  if(hash && hash.indexOf('movie/')=== 0){
+    // 개별 영화 링크: #movie/{tmdb_id}
+    var tmdbId=parseInt(hash.replace('movie/',''));
+    var found=DATA.filter(function(x){return x.movie.tmdb_id===tmdbId});
+    if(found.length>0){
+      setTimeout(function(){openPlayer(found[0]);},300);
+    }
+  } else if(hash){
     GENRE=hash;
     var chips=document.getElementById('genres').querySelectorAll('span');
     chips.forEach(function(s){s.className=s.dataset.g===hash?'on':'';});
