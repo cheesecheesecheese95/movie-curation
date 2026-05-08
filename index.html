@@ -72,6 +72,13 @@ body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;colo
 .sbtn{padding:4px 8px;border-radius:8px;font-size:10px;font-weight:600;cursor:pointer;border:1px solid #242424;background:#1A1A1A;color:#666;font-family:inherit}
 .sbtn.on{background:#2E2E2E;color:#F0F0F0;border-color:#666}
 .ad-slot{min-height:0!important}.ad-slot:empty,.ad-slot ins[data-ad-status="unfilled"]{display:none}
+.hd-hide .sticky-filter{max-height:0;overflow:hidden;padding:0;transition:max-height 0.3s ease,padding 0.3s ease}
+.sticky-filter{max-height:200px;transition:max-height 0.3s ease,padding 0.3s ease}
+.p-actions{display:flex;gap:8px;margin-top:12px}
+.p-btn{flex:1;padding:10px;border-radius:10px;border:1px solid #242424;background:#1A1A1A;color:#999;font-size:12px;font-weight:600;cursor:pointer;font-family:inherit;text-align:center}
+.p-btn:active{background:#242424}
+.p-btn.watched{background:#1A3D1A;color:#30D158;border-color:#30D158}
+.new-dot{width:6px;height:6px;background:#E50914;border-radius:50%;display:inline-block;margin-left:4px;vertical-align:middle}
 </style>
 </head>
 <body>
@@ -87,7 +94,7 @@ body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;colo
     </div>
     <div class="tabs" id="tabs">
       <button class="on" data-tab="feed">오늘 뭐볼까</button>
-      <button data-tab="today">오늘 이거 어때</button>
+      <button data-tab="today" id="tab-today">오늘 이거 어때</button>
       <button data-tab="search">영화 찾아줘</button>
     </div>
     <div class="sticky-filter">
@@ -144,6 +151,10 @@ body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;colo
         <div id="p-review-text" style="font-size:13px;color:#ccc;line-height:1.8"></div>
         <div style="margin-top:12px;font-size:10px;color:#444">AI가 영화 정보를 기반으로 작성한 추천평입니다</div>
       </div>
+      <div class="p-actions">
+        <button class="p-btn" id="p-watched" onclick="toggleWatchedPlayer()">✓ 봤어요</button>
+        <button class="p-btn" onclick="shareMovie()">↗ 공유</button>
+      </div>
       <div id="p-ad" class="ad-slot" style="margin-top:16px;min-height:0;overflow:hidden;"></div>
       <div style="margin-top:16px;font-size:13px;font-weight:700;color:#999;margin-bottom:8px">이 영화가 좋았다면</div>
       <div id="p-similar"></div>
@@ -187,6 +198,10 @@ body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;colo
 
 <script>
 var DATA=[], CUR=[], GENRE='전체', TAB='feed', SORT='shuffle', SPOILER=false, UNWATCHED=false, SHOWN=0, PAGE=20, LOADING=false;
+var WATCHED=JSON.parse(localStorage.getItem('dwia_watched')||'{}');
+function isWatched(vid){return!!WATCHED[vid]}
+function markWatched(vid){WATCHED[vid]=Date.now();localStorage.setItem('dwia_watched',JSON.stringify(WATCHED));}
+function toggleWatched(vid){if(WATCHED[vid])delete WATCHED[vid];else WATCHED[vid]=Date.now();localStorage.setItem('dwia_watched',JSON.stringify(WATCHED));}
 
 function fmt(n){return n>=10000?Math.round(n/10000)+'만':n>=1000?Math.round(n/1000)+'천':n+''}
 
@@ -312,7 +327,14 @@ function render(){
   else if(SORT==='views')items.sort(function(a,b){return(b.video.view_count||0)-(a.video.view_count||0)});
   else if(SORT==='rating')items.sort(function(a,b){return(b.movie.vote_average||0)-(a.movie.vote_average||0)});
   else if(SORT==='latest')items.sort(function(a,b){return(b.video.published_at||'').localeCompare(a.video.published_at||'')});
-  CUR=items;
+  // 같은 영화 연속 방지
+  var deduped=[],lastTmdb=null;
+  items.forEach(function(x){
+    if(x.movie.tmdb_id&&x.movie.tmdb_id===lastTmdb){deduped.splice(Math.min(deduped.length,deduped.length-3+Math.floor(Math.random()*3)),0,x);}
+    else{deduped.push(x);}
+    lastTmdb=x.movie.tmdb_id;
+  });
+  CUR=deduped;
   SHOWN=0;
   document.getElementById('info').textContent='';
   document.getElementById('list').innerHTML='';
@@ -479,6 +501,11 @@ function openPlayer(item){
   //   pAd.innerHTML='<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6740102719021736" data-ad-slot="PLAYER_AD_SLOT" data-ad-format="rectangle" data-full-width-responsive="true"></ins>';
   //   try{(adsbygoogle=window.adsbygoogle||[]).push({});}catch(e){}
   // }
+  // 시청 기록 + 버튼 상태
+  markWatched(v.id);
+  window._currentItem=item;
+  var wb=document.getElementById('p-watched');
+  wb.className='p-btn watched';wb.textContent='✓ 봤어요';
   savedScroll=window.scrollY;
   document.getElementById('player').className='player on';
   document.body.style.overflow='hidden';
@@ -514,6 +541,27 @@ function openPlayer(item){
       '<div style="font-size:10px;color:#999;margin-top:2px">'+(sm.year||'')+' · ⭐'+(sm.vote_average?sm.vote_average.toFixed(1):'-')+'</div>'+
       '<div style="font-size:10px;color:#666;margin-top:2px">'+sv.channel+'</div></div></div>';
   }).join('');
+}
+
+function toggleWatchedPlayer(){
+  if(!window._currentItem)return;
+  var vid=window._currentItem.video.id;
+  toggleWatched(vid);
+  var wb=document.getElementById('p-watched');
+  if(isWatched(vid)){wb.className='p-btn watched';wb.textContent='✓ 봤어요';}
+  else{wb.className='p-btn';wb.textContent='봤어요';}
+}
+function shareMovie(){
+  if(!window._currentItem)return;
+  var m=window._currentItem.movie;
+  var url='https://dontwatchall.com/#movie/'+m.tmdb_id;
+  var text=(m.title_ko||m.title_en)+' - 결말포함 영화 리뷰';
+  if(navigator.share){
+    navigator.share({title:text,url:url}).catch(function(){});
+  }else{
+    navigator.clipboard.writeText(url).then(function(){alert('링크가 복사되었습니다!');});
+  }
+  gtag('event','share',{movie:m.title_ko||m.title_en});
 }
 
 // 이벤트
@@ -560,6 +608,11 @@ document.getElementById('tabs').addEventListener('click',function(e){
   document.querySelector('.sticky-filter').style.display=tab==='feed'?'':'none';
   setTimeout(function(){var ts=document.querySelector('.top-sticky');if(ts){var h=ts.offsetHeight+'px';document.querySelectorAll('.content-area').forEach(function(el){el.style.paddingTop=h;});}},10);
   if(tab==='feed')render();
+  if(tab==='today'){
+    localStorage.setItem('dwia_today_seen',new Date().toDateString());
+    var tb=document.getElementById('tab-today');
+    if(tb)tb.textContent='오늘 이거 어때';
+  }
   if(tab==='search'){
     window.scrollTo(0,0);
     setTimeout(function(){document.getElementById('q').focus();},100);
@@ -596,14 +649,21 @@ function doSearch(){
   gtag('event','search',{query:q,results:res.length});
   el.innerHTML=res.slice(0,30).map(function(x,i){
     var v=x.video,m=x.movie;
+    var genres=(m.genres||[]).filter(function(g){return['TV 영화','음악','역사','가족','서부','전쟁'].indexOf(g)<0}).slice(0,2).join(' · ');
     return '<div class="card" style="cursor:pointer" onclick="openPlayer(DATA['+DATA.indexOf(x)+'])">'+
-      '<div class="card-bd"><div class="card-row">'+
+      '<div class="card-img"><img src="https://img.youtube.com/vi/'+v.id+'/mqdefault.jpg" loading="lazy">'+
+      (v.duration_label?'<span class="card-dur">'+v.duration_label+'</span>':'')+
+      '</div><div class="card-bd"><div class="card-row">'+
       (m.poster_url?'<div class="card-poster"><img src="'+m.poster_url+'" loading="lazy"></div>':'')+
       '<div class="card-info"><div class="card-title">'+(m.title_ko||m.title_en)+'</div>'+
       '<div class="card-meta">'+(m.vote_average?'<span class="star">⭐ '+m.vote_average.toFixed(1)+'</span>':'')+
-      (m.year?'<span>'+m.year+'</span>':'')+'</div></div></div>'+
+      (m.year?'<span>'+m.year+'</span>':'')+(genres?'<span>'+genres+'</span>':'')+'</div>'+
+      '<div class="card-rt">'+(m.vote_average?'<span class="rt rt-t">TMDB '+m.vote_average.toFixed(1)+'</span>':'')+
+      (m.imdb_rating?'<span class="rt rt-i">IMDb '+m.imdb_rating+'</span>':'')+
+      (m.rotten_tomatoes?'<span class="rt rt-r">🍅 '+m.rotten_tomatoes+'%</span>':'')+
+      '</div></div></div>'+
       '<div class="card-vt">'+v.title+'</div>'+
-      '<div class="card-st"><span>'+v.channel+'</span></div></div></div>';
+      '<div class="card-st"><span>'+v.channel+'</span><span>조회수 '+fmt(v.view_count||0)+'</span></div></div></div>';
   }).join('');
 }
 qInput.addEventListener('input',doSearch);
@@ -650,11 +710,20 @@ window.addEventListener('hashchange',function(){
   render();
 });
 
-// 무한 스크롤
+// 무한 스크롤 + 헤더 축소
+var lastScrollY=0;
 window.addEventListener('scroll',function(){
   if(TAB!=='feed')return;
   if(window.innerHeight+window.scrollY>=document.body.offsetHeight-500){
     loadMore();
+  }
+  // 스크롤 내리면 필터 숨김, 올리면 표시
+  var ts=document.querySelector('.top-sticky');
+  if(ts){
+    if(window.scrollY>150&&window.scrollY>lastScrollY){ts.classList.add('hd-hide');}
+    else if(window.scrollY<lastScrollY){ts.classList.remove('hd-hide');}
+    lastScrollY=window.scrollY;
+    setTimeout(function(){var h=ts.offsetHeight+'px';document.querySelectorAll('.content-area').forEach(function(el){el.style.paddingTop=h;});},350);
   }
 });
 
@@ -702,6 +771,13 @@ fetch('data/feed.json').then(function(r){return r.json()}).then(function(d){
   }
   render();
   renderToday();
+  // "오늘 이거 어때" NEW 뱃지
+  var lastVisit=localStorage.getItem('dwia_today_seen');
+  var todaySeed=new Date().toDateString();
+  if(lastVisit!==todaySeed){
+    var tb=document.getElementById('tab-today');
+    if(tb)tb.innerHTML='오늘 이거 어때 <span class="new-dot"></span>';
+  }
 }).catch(function(){
   document.getElementById('list').innerHTML='<div class="empty">데이터를 불러올 수 없습니다</div>';
 });
