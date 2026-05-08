@@ -72,8 +72,12 @@ body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;colo
 .sbtn{padding:4px 8px;border-radius:8px;font-size:10px;font-weight:600;cursor:pointer;border:1px solid #242424;background:#1A1A1A;color:#666;font-family:inherit}
 .sbtn.on{background:#2E2E2E;color:#F0F0F0;border-color:#666}
 .ad-slot{min-height:0!important}.ad-slot:empty,.ad-slot ins[data-ad-status="unfilled"]{display:none}
-.hd-hide .sticky-filter{max-height:0;overflow:hidden;padding:0;transition:max-height 0.3s ease,padding 0.3s ease}
-.sticky-filter{max-height:200px;transition:max-height 0.3s ease,padding 0.3s ease}
+.filter-bar{display:flex;align-items:center;gap:8px;padding:8px 16px;background:#0D0D0D;border-bottom:1px solid #1A1A1A}
+.fbtn{display:flex;align-items:center;gap:4px;padding:6px 12px;border-radius:20px;font-size:11px;font-weight:600;cursor:pointer;border:1px solid #333;background:#1A1A1A;color:#999;font-family:inherit;white-space:nowrap}
+.fbtn:active{background:#242424}
+.fbtn.on{background:#F0F0F0;color:#0D0D0D;border-color:#F0F0F0}
+.fbtn.genre-active{background:rgba(229,9,20,.15);color:#E50914;border-color:#E50914}
+.fbtn-shuffle{width:36px;height:36px;padding:0;display:flex;align-items:center;justify-content:center;border-radius:50%;font-size:16px;margin-left:auto}
 .p-actions{display:flex;gap:8px;margin-top:12px}
 .p-btn{flex:1;padding:10px;border-radius:10px;border:1px solid #242424;background:#1A1A1A;color:#999;font-size:12px;font-weight:600;cursor:pointer;font-family:inherit;text-align:center}
 .p-btn:active{background:#242424}
@@ -98,25 +102,20 @@ body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;colo
       <button data-tab="search">영화 찾아줘</button>
     </div>
     <div class="sticky-filter">
-      <div style="display:flex;align-items:center;justify-content:space-between;padding:6px 16px 4px">
-        <div style="display:flex;align-items:center;gap:6px">
-          <div style="position:relative;display:inline-block">
-            <button class="sbtn" id="genre-btn" onclick="toggleGenreDropdown()" style="padding:5px 10px">🎬 장르 ▾</button>
-            <div id="genre-dropdown" style="display:none;position:absolute;top:100%;left:0;margin-top:4px;background:#1A1A1A;border:1px solid #333;border-radius:12px;padding:8px;z-index:200;width:220px;flex-wrap:wrap;gap:4px;box-shadow:0 8px 24px rgba(0,0,0,.5)">
-              <div class="chips" id="genres" style="padding:0"></div>
-            </div>
+      <div class="filter-bar">
+        <div style="position:relative">
+          <button class="fbtn" id="genre-btn" onclick="toggleGenreDropdown()">🎬 장르 ▾</button>
+          <div id="genre-dropdown" style="display:none;position:absolute;top:calc(100% + 6px);left:0;background:#1A1A1A;border:1px solid #333;border-radius:12px;padding:10px;z-index:200;width:240px;flex-wrap:wrap;gap:4px;box-shadow:0 8px 24px rgba(0,0,0,.6)">
+            <div class="chips" id="genres" style="padding:0"></div>
           </div>
-          <label style="display:flex;align-items:center;gap:4px;font-size:10px;color:#999;cursor:pointer">
-            <input type="checkbox" id="chk-spoiler" style="accent-color:#E50914;width:14px;height:14px"> 결말포함
-          </label>
-          <label style="display:flex;align-items:center;gap:4px;font-size:10px;color:#999;cursor:pointer">
-            <input type="checkbox" id="chk-unwatched" style="accent-color:#30D158;width:14px;height:14px"> 본영상제외
-          </label>
         </div>
-        <button class="sbtn on" id="shuffle-btn" data-sort="shuffle" onclick="reshuffleAndRender()">🔀</button>
+        <button class="fbtn" id="btn-spoiler" onclick="toggleSpoiler()">결말포함</button>
+        <button class="fbtn" id="btn-unwatched" onclick="toggleUnwatched()">본 영상 제외</button>
+        <button class="fbtn fbtn-shuffle" onclick="reshuffleAndRender()">🔀</button>
+        <input type="checkbox" id="chk-spoiler" style="display:none">
+        <input type="checkbox" id="chk-unwatched" style="display:none">
       </div>
-      <div id="sort-btns" style="display:none">
-      </div>
+      <div id="sort-btns" style="display:none"></div>
     </div>
   </div>
   </div><!-- /top-sticky -->
@@ -481,6 +480,7 @@ function buildGenres(){
     // 장르 버튼 텍스트 업데이트 + 드롭다운 닫기
     var gb=document.getElementById('genre-btn');
     gb.textContent=GENRE==='전체'?'🎬 장르 ▾':'🎬 '+GENRE+' ▾';
+    gb.className=GENRE==='전체'?'fbtn':'fbtn genre-active';
     document.getElementById('genre-dropdown').style.display='none';
     gtag('event','genre_click',{genre:GENRE});
     render();
@@ -563,6 +563,20 @@ function reshuffleAndRender(){
   SORT='shuffle';
   render();
   window.scrollTo(0,0);
+}
+function toggleSpoiler(){
+  SPOILER=!SPOILER;
+  document.getElementById('chk-spoiler').checked=SPOILER;
+  document.getElementById('btn-spoiler').className='fbtn'+(SPOILER?' on':'');
+  gtag('event','filter_spoiler',{enabled:SPOILER});
+  render();
+}
+function toggleUnwatched(){
+  UNWATCHED=!UNWATCHED;
+  document.getElementById('chk-unwatched').checked=UNWATCHED;
+  document.getElementById('btn-unwatched').className='fbtn'+(UNWATCHED?' on':'');
+  gtag('event','filter_unwatched',{enabled:UNWATCHED});
+  render();
 }
 
 function toggleWatchedPlayer(){
@@ -739,14 +753,7 @@ window.addEventListener('scroll',function(){
   if(window.innerHeight+window.scrollY>=document.body.offsetHeight-500){
     loadMore();
   }
-  // 스크롤 내리면 필터 숨김, 올리면 표시
-  var ts=document.querySelector('.top-sticky');
-  if(ts){
-    if(window.scrollY>150&&window.scrollY>lastScrollY){ts.classList.add('hd-hide');}
-    else if(window.scrollY<lastScrollY){ts.classList.remove('hd-hide');}
-    lastScrollY=window.scrollY;
-    setTimeout(function(){var h=ts.offsetHeight+'px';document.querySelectorAll('.content-area').forEach(function(el){el.style.paddingTop=h;});},350);
-  }
+  lastScrollY=window.scrollY;
 });
 
 // 결말포함 체크
