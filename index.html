@@ -103,15 +103,15 @@ body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;colo
     </div>
     <div class="sticky-filter">
       <div class="filter-bar">
-        <div style="position:relative">
+        <button class="fbtn" onclick="reshuffleAndRender()">🔀 랜덤</button>
+        <button class="fbtn" id="btn-spoiler" onclick="toggleSpoiler()">결말포함</button>
+        <button class="fbtn" id="btn-unwatched" onclick="toggleUnwatched()">본 영상 제외</button>
+        <div style="position:relative;margin-left:auto">
           <button class="fbtn" id="genre-btn" onclick="toggleGenreDropdown()">🎬 장르 ▾</button>
-          <div id="genre-dropdown" style="display:none;position:absolute;top:calc(100% + 6px);left:0;background:#1A1A1A;border:1px solid #333;border-radius:12px;padding:10px;z-index:200;width:240px;flex-wrap:wrap;gap:4px;box-shadow:0 8px 24px rgba(0,0,0,.6)">
+          <div id="genre-dropdown" style="display:none;position:absolute;top:calc(100% + 6px);right:0;background:#1A1A1A;border:1px solid #333;border-radius:12px;padding:10px;z-index:200;width:240px;flex-wrap:wrap;gap:4px;box-shadow:0 8px 24px rgba(0,0,0,.6)">
             <div class="chips" id="genres" style="padding:0"></div>
           </div>
         </div>
-        <button class="fbtn" id="btn-spoiler" onclick="toggleSpoiler()">결말포함</button>
-        <button class="fbtn" id="btn-unwatched" onclick="toggleUnwatched()">본 영상 제외</button>
-        <button class="fbtn" onclick="reshuffleAndRender()" style="margin-left:auto">🔀 랜덤</button>
         <input type="checkbox" id="chk-spoiler" style="display:none">
         <input type="checkbox" id="chk-unwatched" style="display:none">
       </div>
