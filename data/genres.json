@@ -1,11 +1,11 @@
 {
   "액션": {
     "file": "genres/액션.json",
-    "count": 794
+    "count": 795
   },
   "스릴러": {
     "file": "genres/스릴러.json",
-    "count": 973
+    "count": 974
   },
   "드라마": {
     "file": "genres/드라마.json",
@@ -13,7 +13,7 @@
   },
   "로맨스": {
     "file": "genres/로맨스.json",
-    "count": 336
+    "count": 337
   },
   "코미디": {
     "file": "genres/코미디.json",
