@@ -507,11 +507,11 @@ function openPlayer(item){
   //   pAd.innerHTML='<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6740102719021736" data-ad-slot="PLAYER_AD_SLOT" data-ad-format="rectangle" data-full-width-responsive="true"></ins>';
   //   try{(adsbygoogle=window.adsbygoogle||[]).push({});}catch(e){}
   // }
-  // 시청 기록 + 버튼 상태
-  markWatched(v.id);
+  // 버튼 상태 (자동 기록 안 함, 유저 직접 클릭 시에만)
   window._currentItem=item;
   var wb=document.getElementById('p-watched');
-  wb.className='p-btn watched';wb.textContent='✓ 봤어요';
+  if(isWatched(v.id)){wb.className='p-btn watched';wb.textContent='✓ 봤어요';}
+  else{wb.className='p-btn';wb.textContent='봤어요';}
   savedScroll=window.scrollY;
   document.getElementById('player').className='player on';
   document.body.style.overflow='hidden';
