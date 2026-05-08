@@ -18,14 +18,14 @@
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;color:#F0F0F0;-webkit-font-smoothing:antialiased}
 .app{max-width:480px;margin:0 auto;min-height:100vh}
-.hd{position:relative;top:0;z-index:100;background:#0D0D0D;padding:14px 16px 0;padding-top:max(14px,env(safe-area-inset-top))}
+.hd{position:relative;top:0;z-index:100;background:#0D0D0D;padding:10px 16px 0;padding-top:max(10px,env(safe-area-inset-top))}
 .logo{font-size:15px;font-weight:900;margin-bottom:14px}
 .logo em{font-style:normal;color:#E50914}
-.tabs{display:flex;border-bottom:2px solid #242424}
-.tabs button{flex:1;padding:12px 0;text-align:center;font-size:13px;font-weight:700;color:#666;cursor:pointer;border:none;background:none;font-family:inherit}
+.tabs{display:flex;border-bottom:1px solid #242424}
+.tabs button{flex:1;padding:8px 0;text-align:center;font-size:12px;font-weight:700;color:#666;cursor:pointer;border:none;background:none;font-family:inherit}
 .tabs button.on{color:#F0F0F0}
 .top-sticky{position:fixed;top:0;left:0;right:0;z-index:100;background:#0D0D0D;max-width:480px;margin:0 auto}
-.sticky-filter{padding-bottom:6px;background:#0D0D0D}
+.sticky-filter{padding-bottom:0;background:#0D0D0D}
 .content-area{padding-top:280px}
 .chips{display:flex;flex-wrap:wrap;gap:4px;padding:8px 16px 4px}
 .chips span{padding:5px 10px;border-radius:14px;font-size:10px;font-weight:600;white-space:nowrap;cursor:pointer;border:1px solid #242424;background:#1A1A1A;color:#999}
@@ -72,8 +72,8 @@ body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;colo
 .sbtn{padding:4px 8px;border-radius:8px;font-size:10px;font-weight:600;cursor:pointer;border:1px solid #242424;background:#1A1A1A;color:#666;font-family:inherit}
 .sbtn.on{background:#2E2E2E;color:#F0F0F0;border-color:#666}
 .ad-slot{min-height:0!important}.ad-slot:empty,.ad-slot ins[data-ad-status="unfilled"]{display:none}
-.filter-bar{display:flex;align-items:center;gap:8px;padding:8px 16px;background:#0D0D0D;border-bottom:1px solid #1A1A1A}
-.fbtn{display:flex;align-items:center;gap:4px;padding:6px 12px;border-radius:20px;font-size:11px;font-weight:600;cursor:pointer;border:1px solid #333;background:#1A1A1A;color:#999;font-family:inherit;white-space:nowrap}
+.filter-bar{display:flex;align-items:center;gap:6px;padding:6px 16px;background:#0D0D0D;border-bottom:1px solid #1A1A1A}
+.fbtn{display:flex;align-items:center;gap:3px;padding:4px 10px;border-radius:16px;font-size:10px;font-weight:600;cursor:pointer;border:1px solid #333;background:#1A1A1A;color:#999;font-family:inherit;white-space:nowrap}
 .fbtn:active{background:#242424}
 .fbtn.on{background:#F0F0F0;color:#0D0D0D;border-color:#F0F0F0}
 .fbtn.genre-active{background:rgba(229,9,20,.15);color:#E50914;border-color:#E50914}
@@ -90,7 +90,7 @@ body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#0D0D0D;colo
   <div class="top-sticky">
   <div class="hd">
     <div style="display:flex;align-items:center;justify-content:space-between">
-      <a href="/" onclick="location.hash='';GENRE='전체';render();window.scrollTo(0,0);return false"><img src="/logo.svg" alt="Don't Watch It All" style="height:36px"></a>
+      <a href="/" onclick="location.hash='';GENRE='전체';render();window.scrollTo(0,0);return false"><img src="/logo.svg" alt="Don't Watch It All" style="height:30px"></a>
       <div style="display:flex;gap:10px;align-items:center">
         <a href="#" id="install-btn" onclick="installApp();return false" style="font-size:11px;color:#F0F0F0;text-decoration:none;font-weight:600">📲 홈화면추가</a>
         <a href="#" onclick="document.getElementById('settings-modal').style.display='flex';return false" style="font-size:11px;color:#666;text-decoration:none">⚙️ 설정</a>
