@@ -135,26 +135,11 @@ def main():
         except Exception as e:
             print(f"⚠️ 포스터 업로드 실패: {e}")
 
-    try:
-        kwargs = {'text': tweet_text}
-        if media_id:
-            kwargs['media_ids'] = [media_id]
-        resp = client.create_tweet(**kwargs)
-        print(f"✅ 트윗 성공! ID: {resp.data['id']}")
-    except Exception as e:
-        if '403' in str(e) and 'dontwatchall' in tweet_text:
-            # URL 차단 시 URL 제거 후 재시도
-            tweet_no_url = tweet_text.replace(
-                f"🎞 결말포함 리뷰로 보기 → https://dontwatchall.com/#movie/{movie['tmdb_id']}",
-                '🎞 결말포함 리뷰 → 프로필 링크'
-            )
-            kwargs = {'text': tweet_no_url}
-            if media_id:
-                kwargs['media_ids'] = [media_id]
-            resp = client.create_tweet(**kwargs)
-            print(f"✅ 트윗 성공 (URL 제외)! ID: {resp.data['id']}")
-        else:
-            raise
+    kwargs = {'text': tweet_text}
+    if media_id:
+        kwargs['media_ids'] = [media_id]
+    resp = client.create_tweet(**kwargs)
+    print(f"✅ 트윗 성공! ID: {resp.data['id']}")
 
     posted.add(movie['video_id'])
     save_posted(posted)

@@ -28,6 +28,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
+          git pull --rebase origin main || true
           git add data/tweeted.json
           git diff --cached --quiet || git commit -m "트윗 기록 업데이트"
-          git push
+          git push || true
