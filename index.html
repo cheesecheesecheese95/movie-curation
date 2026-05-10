@@ -12,7 +12,13 @@
 <link rel="apple-touch-icon" href="/icon-192.png">
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VB1S7NCKTC"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-VB1S7NCKTC');</script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());
+var _isStandalone=window.matchMedia('(display-mode:standalone)').matches||window.navigator.standalone===true;
+gtag('config','G-VB1S7NCKTC');
+gtag('set','user_properties',{pwa_mode:_isStandalone?'standalone':'browser'});
+if(_isStandalone) gtag('event','launched_as_app');
+</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6740102719021736" crossorigin="anonymous"></script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -385,6 +391,10 @@ function loadMore(){
       '</div></div>';
   }).join('');
   document.getElementById('list').insertAdjacentHTML('beforeend',html);
+  // 카드 impression 트래킹 (첫 카드만 대표로)
+  if(items.length>0&&items[0].movie.tmdb_id){
+    gtag('event','card_impression',{movie_id:items[0].movie.tmdb_id,position:startIdx,count:items.length,genre:(items[0].movie.genres||[])[0]||''});
+  }
   SHOWN+=items.length;
   LOADING=false;
   // 동적 삽입된 애드센스 광고 렌더링
@@ -523,7 +533,16 @@ function openPlayer(item){
   document.getElementById('player').className='player on';
   document.body.style.overflow='hidden';
   if(m.tmdb_id) history.replaceState(null,'','#movie/'+m.tmdb_id);
-  gtag('event','video_play',{movie:m.title_ko||m.title_en,channel:v.channel,video_id:v.id});
+  gtag('event','video_play',{
+    movie:m.title_ko||m.title_en,
+    movie_id:m.tmdb_id,
+    channel:v.channel,
+    video_id:v.id,
+    genre:(m.genres||[])[0]||'',
+    rating:m.vote_average||0,
+    source_tab:TAB,
+    source_genre:GENRE
+  });
 
   // 비슷한 영화 추천 (같은 장르 + 비슷한 평점)
   var myGenres=m.genres||[];
@@ -633,7 +652,10 @@ function closePlayer(){
 document.getElementById('list').addEventListener('click',function(e){
   var card=e.target.closest('.card');
   if(!card||!card.dataset.i)return;
-  openPlayer(CUR[parseInt(card.dataset.i)]);
+  var idx=parseInt(card.dataset.i);
+  var item=CUR[idx];
+  gtag('event','card_click',{movie_id:item.movie.tmdb_id,position:idx,genre:(item.movie.genres||[])[0]||''});
+  openPlayer(item);
 });
 
 // 탭
@@ -689,7 +711,7 @@ function doSearch(){
     return((x.movie.title_ko||'').toLowerCase().indexOf(q)>=0)||((x.movie.title_en||'').toLowerCase().indexOf(q)>=0);
   });
   if(!res.length){el.innerHTML='<div class="empty">검색 결과가 없습니다</div>';return;}
-  gtag('event','search',{query:q,results:res.length});
+  gtag('event','search',{search_term:q,query:q,results:res.length});
   el.innerHTML=res.slice(0,30).map(function(x,i){
     var v=x.video,m=x.movie;
     var genres=(m.genres||[]).filter(function(g){return['TV 영화','음악','역사','가족','서부','전쟁'].indexOf(g)<0}).slice(0,2).join(' · ');
