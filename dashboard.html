@@ -22,18 +22,11 @@
   .stat{background:var(--gray-100);border-radius:12px;padding:14px 12px;text-align:center}
   .stat-num{font-size:26px;font-weight:800;color:var(--primary);line-height:1}
   .stat-label{font-size:11px;color:var(--gray-400);margin-top:4px}
-
-  .bar-row{margin-bottom:14px}
-  .bar-top{display:flex;justify-content:space-between;font-size:12px;margin-bottom:4px}
-  .bar-label{font-weight:600;color:var(--gray-800)}
-  .bar-info{color:var(--gray-400)}
-  .bar-track{background:var(--gray-200);border-radius:99px;height:8px;overflow:hidden}
-  .bar-fill{height:100%;border-radius:99px;transition:width 0.6s ease;background:var(--primary)}
-
   .badge{display:inline-block;font-size:10px;font-weight:700;padding:2px 8px;border-radius:99px;margin-left:6px}
-  .badge-data{background:var(--primary-bg);color:var(--primary)}
+  .badge-live{background:#E8F5EE;color:var(--green)}
+  .refresh-btn{display:block;margin:8px auto 0;background:none;border:1px solid var(--gray-200);border-radius:10px;padding:7px 20px;font-size:12px;color:var(--gray-600);cursor:pointer;font-family:inherit}
+  .refresh-btn:hover{background:var(--gray-100)}
 
-  /* 비밀번호 화면 */
   #gate{position:fixed;inset:0;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;z-index:999}
   #gate h2{font-size:17px;font-weight:700;color:var(--navy)}
   #gate p{font-size:12px;color:var(--gray-400)}
@@ -42,33 +35,36 @@
   #gate button{background:var(--primary);color:#fff;border:none;border-radius:12px;padding:12px 32px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
   #gate .err{font-size:12px;color:var(--red);min-height:16px}
 
+  .dbtn{padding:6px 14px;border-radius:8px;font-size:11px;font-weight:600;cursor:pointer;border:1px solid var(--gray-200);background:#fff;color:var(--gray-600);font-family:inherit}
+  .dbtn.on{background:var(--primary);color:#fff;border-color:var(--primary)}
+  .daily-bar{display:flex;align-items:end;gap:4px;height:120px;padding:0 4px}
+  .daily-col{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px}
+  .daily-col .bar{width:100%;border-radius:4px 4px 0 0;min-height:2px;transition:height 0.4s ease}
+  .daily-col .lbl{font-size:9px;color:var(--gray-400);white-space:nowrap}
+  .daily-col .val{font-size:9px;font-weight:700;color:var(--gray-800)}
+  .cmp-card{background:var(--gray-100);border-radius:12px;padding:12px;text-align:center}
+  .cmp-val{font-size:20px;font-weight:800;line-height:1}
+  .cmp-label{font-size:10px;color:var(--gray-400);margin-top:4px}
+  .cmp-diff{font-size:11px;font-weight:700;margin-top:4px}
+  .cmp-up{color:var(--green)}.cmp-down{color:var(--red)}.cmp-flat{color:var(--gray-400)}
   .dtable{width:100%;border-collapse:collapse;font-size:11px}
   .dtable th{text-align:left;padding:6px 4px;border-bottom:2px solid var(--gray-200);color:var(--gray-400);font-weight:600}
   .dtable td{padding:6px 4px;border-bottom:1px solid var(--gray-200);color:var(--gray-800)}
   .dtable tr:hover td{background:var(--gray-100)}
   .dtable .r{text-align:right}
-
-  .chip{display:inline-block;font-size:10px;font-weight:600;padding:3px 8px;border-radius:20px;margin:2px}
-  .chip-genre{background:#F0F0F5;color:var(--gray-600)}
-  .chip-spoiler{background:#FFF3E0;color:#E65100}
-  .chip-clean{background:#E8F5EE;color:var(--green)}
-
-  .rank-row{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--gray-200)}
-  .rank-row:last-child{border-bottom:none}
-  .rank-num{font-size:14px;font-weight:800;color:var(--primary);width:24px;text-align:center;flex-shrink:0}
-  .rank-info{flex:1;min-width:0}
-  .rank-title{font-size:13px;font-weight:600;color:var(--gray-800);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .rank-sub{font-size:11px;color:var(--gray-400);margin-top:2px}
-  .rank-val{font-size:12px;font-weight:700;color:var(--gray-600);flex-shrink:0}
-
   .home-link{font-size:12px;color:var(--gray-400);text-decoration:none;display:block;text-align:center;margin-top:8px}
   .home-link:hover{color:var(--primary)}
-  .updated{font-size:11px;color:var(--gray-400);text-align:right;margin-top:12px}
+
+  .bar-row{margin-bottom:12px}
+  .bar-top{display:flex;justify-content:space-between;font-size:12px;margin-bottom:4px}
+  .bar-label{font-weight:600;color:var(--gray-800)}
+  .bar-info{color:var(--gray-400)}
+  .bar-track{background:var(--gray-200);border-radius:99px;height:6px;overflow:hidden}
+  .bar-fill{height:100%;border-radius:99px;transition:width 0.6s ease;background:var(--primary)}
 </style>
 </head>
 <body>
 
-<!-- 비밀번호 게이트 -->
 <div id="gate">
   <div style="font-size:32px">🎬</div>
   <h2>다봐줄순없잖아</h2>
@@ -78,7 +74,6 @@
   <div class="err" id="pw-err"></div>
 </div>
 
-<!-- 대시보드 본문 -->
 <div id="dashboard" style="display:none">
   <header>
     <div>🎬</div>
@@ -88,72 +83,82 @@
 
   <div class="container">
 
-    <!-- 콘텐츠 현황 -->
+    <!-- 오늘 요약 -->
     <div class="section">
-      <div class="section-title">📊 콘텐츠 현황 <span class="badge badge-data">FEED</span></div>
+      <div class="section-title">📊 오늘 요약 <span class="badge badge-live">LIVE</span></div>
       <div class="stat-grid">
-        <div class="stat"><div class="stat-num" id="s-total">—</div><div class="stat-label">총 영상</div></div>
-        <div class="stat"><div class="stat-num" id="s-movies">—</div><div class="stat-label">영화 수</div></div>
-        <div class="stat"><div class="stat-num" id="s-channels">—</div><div class="stat-label">채널 수</div></div>
+        <div class="stat"><div class="stat-num" id="s-today-visit">—</div><div class="stat-label">오늘 방문</div></div>
+        <div class="stat"><div class="stat-num" id="s-today-uv">—</div><div class="stat-label">순방문자</div></div>
+        <div class="stat"><div class="stat-num" id="s-today-new">—</div><div class="stat-label">신규 방문</div></div>
       </div>
       <div class="stat-grid">
-        <div class="stat"><div class="stat-num" id="s-views">—</div><div class="stat-label">총 조회수</div></div>
-        <div class="stat"><div class="stat-num" id="s-avg-views">—</div><div class="stat-label">평균 조회수</div></div>
-        <div class="stat"><div class="stat-num" id="s-avg-rating">—</div><div class="stat-label">평균 평점</div></div>
+        <div class="stat"><div class="stat-num" id="s-today-return">—</div><div class="stat-label">재방문</div></div>
+        <div class="stat"><div class="stat-num" id="s-today-pwa">—</div><div class="stat-label">PWA 방문</div></div>
+        <div class="stat"><div class="stat-num" id="s-today-install">—</div><div class="stat-label">홈설치 클릭</div></div>
       </div>
-      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:4px;">
-        <div id="spoiler-chips"></div>
+      <div id="today-return-rate" style="text-align:center;font-size:12px;color:var(--gray-600);margin-top:4px;"></div>
+    </div>
+
+    <!-- 누적 -->
+    <div class="section">
+      <div class="section-title">🏆 누적 현황</div>
+      <div class="stat-grid" style="grid-template-columns:repeat(2,1fr);">
+        <div class="stat"><div class="stat-num" id="s-total-visit">—</div><div class="stat-label">총 방문</div></div>
+        <div class="stat"><div class="stat-num" id="s-total-uv">—</div><div class="stat-label">총 순방문자</div></div>
       </div>
+      <div class="stat-grid">
+        <div class="stat"><div class="stat-num" id="s-total-new">—</div><div class="stat-label">신규 방문</div></div>
+        <div class="stat"><div class="stat-num" id="s-total-return">—</div><div class="stat-label">재방문</div></div>
+        <div class="stat"><div class="stat-num" id="s-total-install">—</div><div class="stat-label">홈설치 클릭</div></div>
+      </div>
+      <button class="refresh-btn" onclick="loadAll()">↻ 새로고침</button>
     </div>
 
-    <!-- 장르 분포 -->
+    <!-- 이벤트별 통계 -->
     <div class="section">
-      <div class="section-title">🎭 장르 분포</div>
-      <div id="genre-bars">불러오는 중…</div>
+      <div class="section-title">👆 이벤트별 통계</div>
+      <div id="event-bars">불러오는 중…</div>
     </div>
 
-    <!-- 조회수 TOP 10 -->
+    <!-- 일별 방문 차트 -->
     <div class="section">
-      <div class="section-title">🔥 조회수 TOP 10</div>
-      <div id="top-views">불러오는 중…</div>
+      <div class="section-title">📅 일별 방문 추이 <span class="badge badge-live">LIVE</span></div>
+      <div style="display:flex;gap:6px;margin-bottom:16px;">
+        <button class="dbtn on" data-days="7" onclick="switchDays(7)">7일</button>
+        <button class="dbtn" data-days="14" onclick="switchDays(14)">14일</button>
+        <button class="dbtn" data-days="30" onclick="switchDays(30)">30일</button>
+      </div>
+      <div id="daily-chart" style="margin-bottom:16px;">불러오는 중…</div>
+      <div id="daily-compare" style="margin-bottom:12px;"></div>
+      <button class="refresh-btn" onclick="loadDaily()">↻ 새로고침</button>
     </div>
 
-    <!-- 평점 TOP 10 -->
+    <!-- 일별 상세 테이블 -->
     <div class="section">
-      <div class="section-title">⭐ 평점 TOP 10 (투표 50+)</div>
-      <div id="top-rated">불러오는 중…</div>
+      <div class="section-title">📋 일별 상세</div>
+      <div id="daily-table"></div>
     </div>
 
-    <!-- 채널 TOP 15 -->
-    <div class="section">
-      <div class="section-title">📺 채널 TOP 15</div>
-      <div id="top-channels">불러오는 중…</div>
-    </div>
-
-    <!-- 연도별 분포 -->
-    <div class="section">
-      <div class="section-title">📅 개봉 연도 분포 (최근 10년)</div>
-      <div id="year-bars">불러오는 중…</div>
-    </div>
-
-    <!-- 최근 추가 영상 -->
-    <div class="section">
-      <div class="section-title">🆕 최근 추가 영상 (20건)</div>
-      <div id="recent-list">불러오는 중…</div>
+    <!-- Vercel Analytics -->
+    <div class="section" style="text-align:center;padding:16px;">
+      <div style="font-size:12px;color:var(--gray-400);margin-bottom:8px;">상세 방문자 분석 (디바이스·지역·경로)</div>
+      <a href="https://vercel.com/cheesecheesecheese95/movie-curation/analytics" target="_blank"
+         style="display:inline-block;background:var(--primary);color:#fff;border-radius:12px;padding:10px 24px;font-size:13px;font-weight:700;text-decoration:none;">
+        Vercel Analytics 보기 →
+      </a>
     </div>
 
     <a class="home-link" href="/">← 홈으로</a>
-    <div class="updated" id="footer-updated"></div>
   </div>
 </div>
 
 <script>
-const PW_KEY = 'dwia-dash-auth';
-const CORRECT = 'dwia2024';
+var PW_KEY='dwia-dash-auth', CORRECT='dwia2024';
+var DAILY_DATA={}, DAILY_DAYS=7;
 
 function checkPw(){
-  const v = document.getElementById('pw-input').value;
-  if(v === CORRECT){
+  var v=document.getElementById('pw-input').value;
+  if(v===CORRECT){
     sessionStorage.setItem(PW_KEY,'1');
     document.getElementById('gate').style.display='none';
     document.getElementById('dashboard').style.display='block';
@@ -163,161 +168,160 @@ function checkPw(){
     document.getElementById('pw-input').value='';
   }
 }
-
 if(sessionStorage.getItem(PW_KEY)==='1'){
   document.getElementById('gate').style.display='none';
   document.getElementById('dashboard').style.display='block';
 }
 
-function fmtNum(n){
-  if(n>=100000000) return (n/100000000).toFixed(1)+'억';
-  if(n>=10000) return (n/10000).toFixed(1)+'만';
-  if(n>=1000) return (n/1000).toFixed(1)+'천';
-  return n.toLocaleString();
+function fmt(n){ return n>=10000?(n/10000).toFixed(1)+'만':n.toLocaleString(); }
+
+// ── 오늘+누적 ──
+async function loadSummary(){
+  try{
+    var r=await fetch('/api/track');
+    var d=await r.json();
+    var t=d.total||{}, td=d.today||{};
+
+    document.getElementById('s-today-visit').textContent=fmt(td.visit||0);
+    document.getElementById('s-today-uv').textContent=fmt(td.unique_visit||0);
+    document.getElementById('s-today-new').textContent=fmt(td.new_visitor||0);
+    document.getElementById('s-today-return').textContent=fmt(td.returning_visitor||0);
+    document.getElementById('s-today-pwa').textContent=fmt(td.pwa_visit||0);
+    document.getElementById('s-today-install').textContent=fmt(td.install_click||0);
+
+    var todayTotal=(td.new_visitor||0)+(td.returning_visitor||0);
+    var returnRate=todayTotal>0?Math.round((td.returning_visitor||0)/todayTotal*100):0;
+    document.getElementById('today-return-rate').textContent='오늘 재방문율: '+returnRate+'%';
+
+    document.getElementById('s-total-visit').textContent=fmt(t.visit||0);
+    document.getElementById('s-total-uv').textContent=fmt(t.unique_visit||0);
+    document.getElementById('s-total-new').textContent=fmt(t.new_visitor||0);
+    document.getElementById('s-total-return').textContent=fmt(t.returning_visitor||0);
+    document.getElementById('s-total-install').textContent=fmt(t.install_click||0);
+
+    // 이벤트별 바 차트
+    var EVENTS=[
+      ['visit','방문'],['unique_visit','순방문자'],['new_visitor','신규'],['returning_visitor','재방문'],
+      ['pwa_visit','PWA 방문'],['install_click','홈설치 클릭'],
+      ['card_click','카드 클릭'],['video_play','영상 재생'],
+      ['tab:feed','탭:피드'],['tab:today','탭:오늘'],['tab:search','탭:검색'],
+    ];
+    var max=Math.max.apply(null,EVENTS.map(function(e){return t[e[0]]||0}).concat([1]));
+    var html=EVENTS.map(function(e){
+      var val=t[e[0]]||0;
+      var todayVal=td[e[0]]||0;
+      var pct=Math.round(val/max*100);
+      var todayBadge=todayVal>0?'<span style="font-size:10px;font-weight:700;color:var(--green);background:#E8F5EE;padding:1px 6px;border-radius:8px;margin-left:6px;">+'+todayVal+' 오늘</span>':'';
+      return '<div class="bar-row"><div class="bar-top"><span class="bar-label">'+e[1]+todayBadge+'</span><span class="bar-info">'+fmt(val)+'</span></div><div class="bar-track"><div class="bar-fill" style="width:'+pct+'%"></div></div></div>';
+    }).join('');
+    document.getElementById('event-bars').innerHTML=html;
+
+    var now=new Date().toLocaleTimeString('ko-KR');
+    document.getElementById('last-updated').textContent=now;
+  }catch(e){console.error(e);}
 }
 
-async function loadAll(){
-  try {
-    const r = await fetch('/data/feed.json');
-    const d = await r.json();
-    const items = d.items;
-    render(items);
-    const now = new Date().toLocaleTimeString('ko-KR');
-    document.getElementById('last-updated').textContent = now;
-    document.getElementById('footer-updated').textContent = '데이터 기준: feed.json · ' + now;
-  } catch(e){
-    console.error(e);
+// ── 일별 차트 ──
+function switchDays(n){
+  DAILY_DAYS=n;
+  document.querySelectorAll('.dbtn').forEach(function(b){b.className='dbtn'+(parseInt(b.dataset.days)===n?' on':'');});
+  loadDaily();
+}
+
+async function loadDaily(){
+  try{
+    var r=await fetch('/api/track?mode=daily&days='+DAILY_DAYS);
+    var d=await r.json();
+    DAILY_DATA=d.daily||{};
+    renderChart();
+    renderCompare();
+    renderTable();
+  }catch(e){
+    document.getElementById('daily-chart').innerHTML='<span style="color:var(--red)">불러오기 실패</span>';
   }
 }
 
-function render(items){
-  // ── 기본 통계 ──
-  const movieIds = new Set(items.map(it=>it.movie.tmdb_id));
-  const channels = new Set(items.map(it=>it.video.channel));
-  const views = items.map(it=>it.video.view_count||0);
-  const totalViews = views.reduce((a,b)=>a+b,0);
-  const ratings = items.filter(it=>it.movie.vote_average>0).map(it=>it.movie.vote_average);
-  const avgRating = ratings.length ? (ratings.reduce((a,b)=>a+b,0)/ratings.length) : 0;
-  const spoilerCount = items.filter(it=>it.video.has_spoiler).length;
+function fmtDate(s){var d=new Date(s+'T00:00:00');return(d.getMonth()+1)+'/'+d.getDate();}
+function fmtDay(s){return['일','월','화','수','목','금','토'][new Date(s+'T00:00:00').getDay()];}
+function getVal(date,key){return(DAILY_DATA[date]&&DAILY_DATA[date][key])||0;}
 
-  document.getElementById('s-total').textContent = items.length.toLocaleString();
-  document.getElementById('s-movies').textContent = movieIds.size.toLocaleString();
-  document.getElementById('s-channels').textContent = channels.size.toLocaleString();
-  document.getElementById('s-views').textContent = fmtNum(totalViews);
-  document.getElementById('s-avg-views').textContent = fmtNum(Math.round(totalViews/items.length));
-  document.getElementById('s-avg-rating').textContent = avgRating.toFixed(1);
+function renderChart(){
+  var dates=Object.keys(DAILY_DATA).sort();
+  if(!dates.length){document.getElementById('daily-chart').innerHTML='데이터 없음';return;}
+  var visits=dates.map(function(d){return getVal(d,'visit');});
+  var uvs=dates.map(function(d){return getVal(d,'unique_visit');});
+  var max=Math.max.apply(null,visits.concat([1]));
+  var today=new Date().toISOString().slice(0,10);
 
-  const cleanPct = Math.round((items.length-spoilerCount)/items.length*100);
-  document.getElementById('spoiler-chips').innerHTML =
-    `<span class="chip chip-spoiler">결말포함 ${spoilerCount}건 (${Math.round(spoilerCount/items.length*100)}%)</span>` +
-    `<span class="chip chip-clean">스포없음 ${items.length-spoilerCount}건 (${cleanPct}%)</span>`;
-
-  // ── 장르 분포 ──
-  const genres = {};
-  items.forEach(it => (it.movie.genres||[]).forEach(g => genres[g]=(genres[g]||0)+1));
-  const genreSorted = Object.entries(genres).sort((a,b)=>b[1]-a[1]);
-  const genreMax = genreSorted[0]?.[1]||1;
-  const colors = ['#E50914','#B20710','#831010','#FF5733','#C70039','#900C3F','#581845','#2C3E50','#1A6E3C','#B8860B','#4A148C','#0D47A1','#00695C','#E65100','#546E7A'];
-
-  document.getElementById('genre-bars').innerHTML = genreSorted.map(([g,c],i) => {
-    const pct = Math.round(c/genreMax*100);
-    return `<div class="bar-row">
-      <div class="bar-top"><span class="bar-label">${g}</span><span class="bar-info">${c}건</span></div>
-      <div class="bar-track"><div class="bar-fill" style="width:${pct}%;background:${colors[i%colors.length]}"></div></div>
-    </div>`;
-  }).join('');
-
-  // ── 조회수 TOP 10 ──
-  const topViews = [...items].sort((a,b)=>(b.video.view_count||0)-(a.video.view_count||0)).slice(0,10);
-  document.getElementById('top-views').innerHTML = topViews.map((it,i) => `
-    <div class="rank-row">
-      <div class="rank-num">${i+1}</div>
-      <div class="rank-info">
-        <div class="rank-title">${it.movie.title_ko} (${it.movie.year||''})</div>
-        <div class="rank-sub">${it.video.channel} · ${it.video.duration_label||''}</div>
-      </div>
-      <div class="rank-val">${fmtNum(it.video.view_count||0)}</div>
-    </div>
-  `).join('');
-
-  // ── 평점 TOP 10 (투표 50건 이상) ──
-  const rated = items.filter(it=>it.movie.vote_average>0 && it.movie.vote_count>=50);
-  // 영화 중복 제거 (tmdb_id 기준, 최고 평점)
-  const ratedMap = {};
-  rated.forEach(it => {
-    const id = it.movie.tmdb_id;
-    if(!ratedMap[id] || it.movie.vote_average > ratedMap[id].movie.vote_average) ratedMap[id]=it;
-  });
-  const topRated = Object.values(ratedMap).sort((a,b)=>b.movie.vote_average-a.movie.vote_average).slice(0,10);
-  document.getElementById('top-rated').innerHTML = topRated.map((it,i) => `
-    <div class="rank-row">
-      <div class="rank-num">${i+1}</div>
-      <div class="rank-info">
-        <div class="rank-title">${it.movie.title_ko} (${it.movie.year||''})</div>
-        <div class="rank-sub">${(it.movie.genres||[]).join(' · ')} · 투표 ${it.movie.vote_count}건</div>
-      </div>
-      <div class="rank-val" style="color:var(--primary);">★ ${it.movie.vote_average.toFixed(1)}</div>
-    </div>
-  `).join('');
-
-  // ── 채널 TOP 15 ──
-  const chMap = {};
-  items.forEach(it => {
-    const ch = it.video.channel;
-    if(!chMap[ch]) chMap[ch] = {count:0, totalViews:0};
-    chMap[ch].count++;
-    chMap[ch].totalViews += it.video.view_count||0;
-  });
-  const chSorted = Object.entries(chMap).sort((a,b)=>b[1].count-a[1].count).slice(0,15);
-  const chMax = chSorted[0]?.[1].count||1;
-
-  document.getElementById('top-channels').innerHTML = chSorted.map(([name,d]) => {
-    const pct = Math.round(d.count/chMax*100);
-    return `<div style="margin-bottom:12px;">
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
-        <span style="font-size:13px;font-weight:600;color:var(--gray-800);">${name}</span>
-        <span style="font-size:12px;color:var(--gray-400);">${d.count}건 · 총 ${fmtNum(d.totalViews)}회</span>
-      </div>
-      <div style="background:var(--gray-200);border-radius:99px;height:6px;overflow:hidden;">
-        <div style="width:${pct}%;height:100%;background:var(--primary);border-radius:99px;transition:width 0.6s ease;"></div>
-      </div>
-    </div>`;
-  }).join('');
-
-  // ── 연도별 분포 ──
-  const years = {};
-  items.forEach(it => { const y=it.movie.year; if(y && y>=2016) years[y]=(years[y]||0)+1; });
-  const yearSorted = Object.entries(years).sort((a,b)=>a[0]-b[0]);
-  const yearMax = Math.max(...yearSorted.map(([,c])=>c),1);
-
-  document.getElementById('year-bars').innerHTML = `
-    <div style="display:flex;align-items:end;gap:4px;height:120px;padding:0 4px;">
-      ${yearSorted.map(([y,c]) => {
-        const h = Math.round(c/yearMax*100);
-        const isThis = y==new Date().getFullYear();
-        return `<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;">
-          <div style="font-size:9px;font-weight:700;color:var(--gray-800);">${c}</div>
-          <div style="width:100%;border-radius:4px 4px 0 0;background:${isThis?'var(--primary)':'var(--navy)'};height:${h}px;min-height:2px;transition:height 0.4s ease;"></div>
-          <div style="font-size:9px;color:var(--gray-400);white-space:nowrap;">${String(y).slice(2)}</div>
-        </div>`;
-      }).join('')}
-    </div>`;
-
-  // ── 최근 추가 ──
-  const recent = [...items].sort((a,b)=>(b.video.published_at||'').localeCompare(a.video.published_at||'')).slice(0,20);
-  document.getElementById('recent-list').innerHTML = `<table class="dtable">
-    <tr><th>영화</th><th>채널</th><th class="r">조회수</th><th class="r">게시일</th></tr>
-    ${recent.map(it => {
-      const d = it.video.published_at ? it.video.published_at.slice(5,10).replace('-','/') : '';
-      return `<tr>
-        <td style="font-weight:600;max-width:140px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${it.movie.title_ko}</td>
-        <td style="max-width:100px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${it.video.channel}</td>
-        <td class="r">${fmtNum(it.video.view_count||0)}</td>
-        <td class="r">${d}</td>
-      </tr>`;
-    }).join('')}
-  </table>`;
+  var html='<div style="font-size:10px;color:var(--gray-400);margin-bottom:8px;display:flex;gap:12px;"><span><span style="display:inline-block;width:10px;height:10px;background:var(--primary);border-radius:2px;margin-right:4px;"></span>방문</span><span><span style="display:inline-block;width:10px;height:10px;background:var(--navy);border-radius:2px;margin-right:4px;opacity:0.4;"></span>순방문</span></div>';
+  html+='<div class="daily-bar">'+dates.map(function(d,i){
+    var v=visits[i],u=uvs[i];
+    var hv=Math.round(v/max*100),hu=Math.round(u/max*100);
+    var isToday=d===today;
+    return '<div class="daily-col">'+
+      '<div class="val">'+v+'</div>'+
+      '<div style="width:100%;position:relative;height:'+hv+'px;">'+
+        '<div style="position:absolute;bottom:0;left:0;right:0;height:'+hv+'px;background:'+(isToday?'var(--primary)':'var(--primary)')+';border-radius:4px 4px 0 0;opacity:0.3;"></div>'+
+        '<div style="position:absolute;bottom:0;left:0;right:0;height:'+hu+'px;background:'+(isToday?'var(--primary)':'var(--primary)')+';border-radius:4px 4px 0 0;"></div>'+
+      '</div>'+
+      '<div class="lbl">'+fmtDate(d)+'</div>'+
+      '<div class="lbl">'+fmtDay(d)+'</div>'+
+    '</div>';
+  }).join('')+'</div>';
+  document.getElementById('daily-chart').innerHTML=html;
 }
+
+function renderCompare(){
+  var today=new Date().toISOString().slice(0,10);
+  var yesterday=new Date(Date.now()-86400000).toISOString().slice(0,10);
+  var lastWeek=new Date(Date.now()-7*86400000).toISOString().slice(0,10);
+
+  function diff(cur,prev){
+    if(prev===0&&cur===0)return '<div class="cmp-diff cmp-flat">—</div>';
+    if(prev===0)return '<div class="cmp-diff cmp-up">NEW</div>';
+    var d=cur-prev,pct=Math.round(d/prev*100);
+    var cls=d>0?'cmp-up':d<0?'cmp-down':'cmp-flat';
+    var s=d>0?'+':'';
+    return '<div class="cmp-diff '+cls+'">'+s+d+' ('+s+pct+'%)</div>';
+  }
+
+  var tv=getVal(today,'visit'),yv=getVal(yesterday,'visit');
+  var tu=getVal(today,'unique_visit'),yu=getVal(yesterday,'unique_visit');
+  var tn=getVal(today,'new_visitor'),yn=getVal(yesterday,'new_visitor');
+  var tr=getVal(today,'returning_visitor'),yr=getVal(yesterday,'returning_visitor');
+
+  document.getElementById('daily-compare').innerHTML=
+    '<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-bottom:8px;">'+
+      '<div class="cmp-card"><div class="cmp-val">'+tv+'</div><div class="cmp-label">오늘 방문</div>'+diff(tv,yv)+'</div>'+
+      '<div class="cmp-card"><div class="cmp-val">'+tu+'</div><div class="cmp-label">오늘 순방문</div>'+diff(tu,yu)+'</div>'+
+    '</div>'+
+    '<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:8px;">'+
+      '<div class="cmp-card"><div class="cmp-val">'+tn+'</div><div class="cmp-label">오늘 신규</div>'+diff(tn,yn)+'</div>'+
+      '<div class="cmp-card"><div class="cmp-val">'+tr+'</div><div class="cmp-label">오늘 재방문</div>'+diff(tr,yr)+'</div>'+
+    '</div>'+
+    '<div style="font-size:10px;color:var(--gray-400);margin-top:6px;text-align:right;">vs 전일 비교</div>';
+}
+
+function renderTable(){
+  var dates=Object.keys(DAILY_DATA).sort().reverse();
+  if(!dates.length){document.getElementById('daily-table').innerHTML='';return;}
+
+  var html='<table class="dtable"><tr><th>날짜</th><th>요일</th><th class="r">방문</th><th class="r">순방문</th><th class="r">신규</th><th class="r">재방문</th><th class="r">재방문율</th><th class="r">PWA</th><th class="r">설치</th></tr>';
+  var today=new Date().toISOString().slice(0,10);
+  dates.forEach(function(d){
+    var dd=DAILY_DATA[d];
+    var v=dd.visit||0,u=dd.unique_visit||0,n=dd.new_visitor||0,r=dd.returning_visitor||0;
+    var total=n+r;
+    var rate=total>0?Math.round(r/total*100)+'%':'—';
+    var pwa=dd.pwa_visit||0,inst=dd.install_click||0;
+    var bold=d===today?'font-weight:700;':'';
+    html+='<tr style="'+bold+'"><td>'+fmtDate(d)+'</td><td>'+fmtDay(d)+'</td><td class="r">'+v+'</td><td class="r">'+u+'</td><td class="r">'+n+'</td><td class="r">'+r+'</td><td class="r">'+rate+'</td><td class="r">'+pwa+'</td><td class="r">'+inst+'</td></tr>';
+  });
+  html+='</table>';
+  document.getElementById('daily-table').innerHTML=html;
+}
+
+function loadAll(){loadSummary();loadDaily();}
 
 if(sessionStorage.getItem(PW_KEY)==='1') loadAll();
 </script>

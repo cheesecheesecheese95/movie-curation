@@ -547,6 +547,7 @@ function openPlayer(item){
   document.getElementById('player').className='player on';
   document.body.style.overflow='hidden';
   if(m.tmdb_id) history.replaceState(null,'','#movie/'+m.tmdb_id);
+  if(window._tk) window._tk('video_play');
   gtag('event','video_play',{
     movie:m.title_ko||m.title_en,
     movie_id:m.tmdb_id,
@@ -669,6 +670,7 @@ document.getElementById('list').addEventListener('click',function(e){
   var idx=parseInt(card.dataset.i);
   var item=CUR[idx];
   gtag('event','card_click',{movie_id:item.movie.tmdb_id,position:idx,genre:(item.movie.genres||[])[0]||''});
+  if(window._tk) window._tk('card_click');
   openPlayer(item);
 });
 
@@ -679,6 +681,7 @@ document.getElementById('tabs').addEventListener('click',function(e){
   var tab=btn.dataset.tab;
   TAB=tab;
   gtag('event','tab_click',{tab:tab});
+  if(window._tk) window._tk('tab:'+tab);
   document.querySelectorAll('#tabs button').forEach(function(b){b.className=''});
   btn.className='on';
   document.getElementById('v-feed').style.display=tab==='feed'?'':'none';
@@ -772,6 +775,7 @@ window.addEventListener('beforeinstallprompt',function(e){
 });
 function installApp(){
   gtag('event','install_click');
+  if(window._tk) window._tk('install_click');
   if(deferredPrompt){
     deferredPrompt.prompt();
     deferredPrompt.userChoice.then(function(){deferredPrompt=null;});
@@ -823,8 +827,24 @@ document.getElementById('sort-btns').addEventListener('click',function(e){
   render();
 });
 
-// 방문 카운트
-(function(){var k='dwia_visit_count',n=parseInt(localStorage.getItem(k)||'0',10);localStorage.setItem(k,n+1);})();
+// 방문 카운트 + 트래킹
+(function(){
+  var k='dwia_visit_count',n=parseInt(localStorage.getItem(k)||'0',10);
+  localStorage.setItem(k,n+1);
+  // 서버 트래킹
+  function tk(e){fetch('/api/track',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({event:e})}).catch(function(){});}
+  tk('visit');
+  // 순방문자 (일 1회)
+  var today=new Date().toISOString().slice(0,10);
+  if(localStorage.getItem('dwia_uv_date')!==today){localStorage.setItem('dwia_uv_date',today);tk('unique_visit');}
+  // 신규 vs 재방문
+  if(n===0) tk('new_visitor'); else tk('returning_visitor');
+  // PWA 모드
+  var _sa=window.matchMedia('(display-mode:standalone)').matches||window.navigator.standalone===true;
+  if(_sa) tk('pwa_visit');
+  // 트래킹 함수 전역 노출
+  window._tk=tk;
+})();
 
 // 로드
 fetch('data/feed.json').then(function(r){return r.json()}).then(function(d){
