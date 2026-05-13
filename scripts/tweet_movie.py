@@ -106,7 +106,7 @@ def format_tweet(m):
     }
     genres = json.loads(m['genres']) if m.get('genres') else []
     tags = [genre_tags[g] for g in genres if g in genre_tags][:2]
-    tags.extend(['#영화추천', '#다봐줄순없잖아'])
+    tags.extend(['#영화추천', '#영화결말요약'])
     hashtags = ' '.join(tags)
 
     lines = []
