@@ -97,12 +97,26 @@ def format_tweet(m):
         if picked:
             intro = '. '.join(picked) + '.'
 
+    # 해시태그 생성
+    genre_tags = {
+        '액션':'#액션영화','스릴러':'#스릴러영화','공포':'#공포영화','드라마':'#드라마영화',
+        '로맨스':'#로맨스영화','코미디':'#코미디영화','SF':'#SF영화','범죄':'#범죄영화',
+        '미스터리':'#미스터리','모험':'#모험영화','판타지':'#판타지영화','애니메이션':'#애니메이션',
+        '다큐멘터리':'#다큐멘터리','전쟁':'#전쟁영화',
+    }
+    genres = json.loads(m['genres']) if m.get('genres') else []
+    tags = [genre_tags[g] for g in genres if g in genre_tags][:2]
+    tags.extend(['#영화추천', '#다봐줄순없잖아'])
+    hashtags = ' '.join(tags)
+
     lines = []
     if intro:
         lines.append(intro)
     lines.append('')
     lines.append(f'🎬 {title} ({year})')
     lines.append(f'🎞 결말포함 리뷰로 보기 → {link}')
+    lines.append('')
+    lines.append(hashtags)
 
     tweet = '\n'.join(lines)
 
