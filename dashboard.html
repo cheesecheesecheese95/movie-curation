@@ -83,6 +83,25 @@
 
   <div class="container">
 
+    <!-- 일별 방문 차트 -->
+    <div class="section">
+      <div class="section-title">📅 일별 방문 추이 <span class="badge badge-live">LIVE</span></div>
+      <div style="display:flex;gap:6px;margin-bottom:16px;">
+        <button class="dbtn on" data-days="7" onclick="switchDays(7)">7일</button>
+        <button class="dbtn" data-days="14" onclick="switchDays(14)">14일</button>
+        <button class="dbtn" data-days="30" onclick="switchDays(30)">30일</button>
+      </div>
+      <div id="daily-chart" style="margin-bottom:16px;">불러오는 중…</div>
+      <div id="daily-compare" style="margin-bottom:12px;"></div>
+      <button class="refresh-btn" onclick="loadDaily()">↻ 새로고침</button>
+    </div>
+
+    <!-- 일별 상세 테이블 -->
+    <div class="section">
+      <div class="section-title">📋 일별 상세</div>
+      <div id="daily-table"></div>
+    </div>
+
     <!-- 오늘 요약 -->
     <div class="section">
       <div class="section-title">📊 오늘 요약 <span class="badge badge-live">LIVE</span></div>
@@ -118,25 +137,6 @@
     <div class="section">
       <div class="section-title">👆 이벤트별 통계</div>
       <div id="event-bars">불러오는 중…</div>
-    </div>
-
-    <!-- 일별 방문 차트 -->
-    <div class="section">
-      <div class="section-title">📅 일별 방문 추이 <span class="badge badge-live">LIVE</span></div>
-      <div style="display:flex;gap:6px;margin-bottom:16px;">
-        <button class="dbtn on" data-days="7" onclick="switchDays(7)">7일</button>
-        <button class="dbtn" data-days="14" onclick="switchDays(14)">14일</button>
-        <button class="dbtn" data-days="30" onclick="switchDays(30)">30일</button>
-      </div>
-      <div id="daily-chart" style="margin-bottom:16px;">불러오는 중…</div>
-      <div id="daily-compare" style="margin-bottom:12px;"></div>
-      <button class="refresh-btn" onclick="loadDaily()">↻ 새로고침</button>
-    </div>
-
-    <!-- 일별 상세 테이블 -->
-    <div class="section">
-      <div class="section-title">📋 일별 상세</div>
-      <div id="daily-table"></div>
     </div>
 
     <!-- Vercel Analytics -->
