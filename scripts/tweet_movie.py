@@ -56,10 +56,23 @@ def pick_movie():
     conn.close()
 
     posted = load_posted()
+    # 드라마·로맨스 우선 선택 (70%), 나머지 장르 (30%)
+    import random
+    prefer_genres = {'드라마', '로맨스'}
+    preferred = []
+    others = []
     for row in rows:
-        if row['video_id'] not in posted:
-            return dict(row), posted
-    posted.clear()
+        if row['video_id'] in posted:
+            continue
+        genres = json.loads(row['genres']) if row['genres'] else []
+        if prefer_genres & set(genres):
+            preferred.append(row)
+        else:
+            others.append(row)
+    pool = preferred if (preferred and random.random() < 0.7) else (others or preferred)
+    if pool:
+        pick = random.choice(pool)
+        return dict(pick), posted
     return (dict(rows[0]), posted) if rows else (None, posted)
 
 def upload_poster(poster_url):
