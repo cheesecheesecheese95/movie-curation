@@ -333,9 +333,9 @@ function render(){
   var items=GENRE==='전체'?DATA.slice():DATA.filter(function(x){return(x.movie.genres||[]).indexOf(GENRE)>=0});
   if(SPOILER)items=items.filter(function(x){return x.video.has_spoiler});
   if(UNWATCHED)items=items.filter(function(x){return!isWatched(x.video.id)});
-  // 신규 방문자(3회까지): 드라마·로맨스 우선 노출
+  // 신규 방문자(10회까지): 네이버 평점 높은 인기작 우선 노출
   var _nv=parseInt(localStorage.getItem('dwia_visit_count')||'0',10);
-  var _isNew=_nv<=3 && GENRE==='전체' && SORT==='shuffle';
+  var _isNew=_nv<=10 && GENRE==='전체' && SORT==='shuffle';
 
   if(SORT==='shuffle')items=shuffle(items);
   else if(SORT==='views')items.sort(function(a,b){return(b.video.view_count||0)-(a.video.view_count||0)});
@@ -343,13 +343,25 @@ function render(){
   else if(SORT==='latest')items.sort(function(a,b){return(b.video.published_at||'').localeCompare(a.video.published_at||'')});
 
   if(_isNew){
-    var _pri=[],_rest=[];
+    // 네이버 평점 8.5+ & 조회수 5만+ 인기작을 상단에 배치
+    var _top=[],_rest=[];
+    var _seen={};
     items.forEach(function(x){
-      var g=x.movie.genres||[];
-      if(g.indexOf('드라마')>=0||g.indexOf('로맨스')>=0) _pri.push(x);
-      else _rest.push(x);
+      var nr=parseFloat(x.movie.naver_rating)||0;
+      var vc=x.video.view_count||0;
+      var tid=x.movie.tmdb_id;
+      if(nr>=8.5 && vc>=50000 && !_seen[tid]){
+        _seen[tid]=true;
+        _top.push(x);
+      } else {
+        _rest.push(x);
+      }
     });
-    items=_pri.concat(_rest);
+    // 네이버 평점 높은 순으로 정렬 후 셔플 섞기 (약간의 랜덤성)
+    _top.sort(function(a,b){return(parseFloat(b.movie.naver_rating)||0)-(parseFloat(a.movie.naver_rating)||0)});
+    // 상위 30개 내에서 살짝 셔플 (매번 같은 순서 방지)
+    for(var i=Math.min(_top.length,30)-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=_top[i];_top[i]=_top[j];_top[j]=t;}
+    items=_top.concat(_rest);
   }
   // 같은 영화 연속 방지
   var deduped=[],lastTmdb=null;
