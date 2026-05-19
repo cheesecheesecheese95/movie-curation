@@ -1,8 +1,8 @@
 name: Auto Tweet Movie
 on:
   schedule:
-    # 한국시간 12:00 (UTC 03:00) — 하루 1회
-    - cron: '0 3 * * *'
+    # 한국시간 17:00 (UTC 08:00) — 하루 1회
+    - cron: '0 8 * * *'
   workflow_dispatch: # 수동 실행
 
 permissions:
