@@ -104,6 +104,21 @@ def fetch_by_search(max_per_query=100):
                     channel = sn.get("channelTitle", "")
                     channel_id = sn.get("channelId", "")
 
+                    # 비영화 콘텐츠 필터링 (드라마, 뉴스, 웹툰 등)
+                    _skip_keywords = ['드라마 리뷰', '웹툰', '만화리뷰', '패키지여행', 'ETF', '주식',
+                        '부동산', '재테크', '먹방', '뉴스', '시사', '선공개', '하이라이트',
+                        '예고', '티저', '메이킹', 'OST', '직캠', '쇼츠']
+                    _skip_channels = ['KBS News', 'MBC News', 'SBS 뉴스', 'JTBC News',
+                        '참좋은여행', '부티플']
+                    _title_lower = title.lower()
+                    if any(k in _title_lower or k.lower() in _title_lower for k in _skip_keywords):
+                        continue
+                    if channel in _skip_channels:
+                        continue
+                    # 드라마 회차 패턴 (1화~, 1회~, EP1 등)
+                    if re.search(r'(\d+화|\d+회|EP\s?\d+|최종화)', title):
+                        continue
+
                     # 결말포함 여부 자동 태깅
                     text = (title + " " + desc).lower()
                     has_spoiler = 1 if any(k in text for k in ["결말", "엔딩", "스포", "spoiler"]) else 0
