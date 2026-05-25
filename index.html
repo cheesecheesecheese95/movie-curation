@@ -559,7 +559,7 @@ function openPlayer(item){
   document.getElementById('player').className='player on';
   document.body.style.overflow='hidden';
   if(m.tmdb_id) history.replaceState(null,'','#movie/'+m.tmdb_id);
-  if(window._tk) window._tk('video_play');
+  if(window._tk) window._tk('video_play',{movie:m.title_ko||m.title_en||''});
   gtag('event','video_play',{
     movie:m.title_ko||m.title_en,
     movie_id:m.tmdb_id,
@@ -682,7 +682,7 @@ document.getElementById('list').addEventListener('click',function(e){
   var idx=parseInt(card.dataset.i);
   var item=CUR[idx];
   gtag('event','card_click',{movie_id:item.movie.tmdb_id,position:idx,genre:(item.movie.genres||[])[0]||''});
-  if(window._tk) window._tk('card_click');
+  if(window._tk) window._tk('card_click',{movie:item.movie.title_ko||item.movie.title_en||''});
   openPlayer(item);
 });
 
@@ -741,6 +741,7 @@ function doSearch(){
   });
   if(!res.length){el.innerHTML='<div class="empty">검색 결과가 없습니다</div>';return;}
   gtag('event','search',{search_term:q,query:q,results:res.length});
+  if(window._tk) window._tk('search',{query:q});
   el.innerHTML=res.slice(0,30).map(function(x,i){
     var v=x.video,m=x.movie;
     var genres=(m.genres||[]).filter(function(g){return['TV 영화','음악','역사','가족','서부','전쟁'].indexOf(g)<0}).slice(0,2).join(' · ');
@@ -844,7 +845,7 @@ document.getElementById('sort-btns').addEventListener('click',function(e){
   var k='dwia_visit_count',n=parseInt(localStorage.getItem(k)||'0',10);
   localStorage.setItem(k,n+1);
   // 서버 트래킹
-  function tk(e){fetch('/api/track',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({event:e})}).catch(function(){});}
+  function tk(e,extra){var body={event:e};if(extra)Object.assign(body,extra);fetch('/api/track',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)}).catch(function(){});}
   tk('visit');
   // 순방문자 (일 1회)
   var today=new Date().toISOString().slice(0,10);

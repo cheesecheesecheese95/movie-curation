@@ -42,6 +42,16 @@ export default async function handler(req, res) {
       return res.json({ daily });
     }
 
+    // 영화별 랭킹 조회
+    if (req.query.mode === 'ranking') {
+      const [clicks, plays, searches] = await Promise.all([
+        hgetall('dwia:movie:click'),
+        hgetall('dwia:movie:play'),
+        hgetall('dwia:search'),
+      ]);
+      return res.json({ clicks, plays, searches });
+    }
+
     const [total, todayData] = await Promise.all([
       hgetall('dwia:total'),
       hgetall(`dwia:daily:${today}`),
@@ -52,15 +62,32 @@ export default async function handler(req, res) {
   // ── POST: 이벤트 수집 ──
   if (req.method !== 'POST') return res.status(405).end();
 
-  const { event } = req.body || {};
+  const { event, movie, query } = req.body || {};
   if (!event || typeof event !== 'string' || event.length > 60) {
     return res.status(400).json({ error: 'invalid event' });
   }
 
-  await Promise.all([
+  const tasks = [
     redis(['HINCRBY', 'dwia:total', event, 1]),
     redis(['HINCRBY', `dwia:daily:${today}`, event, 1]),
-  ]);
+  ];
+
+  // 영화별 클릭/재생 카운트
+  if (movie && typeof movie === 'string' && movie.length <= 50) {
+    if (event === 'card_click') {
+      tasks.push(redis(['HINCRBY', 'dwia:movie:click', movie, 1]));
+    }
+    if (event === 'video_play') {
+      tasks.push(redis(['HINCRBY', 'dwia:movie:play', movie, 1]));
+    }
+  }
+
+  // 검색어 카운트
+  if (event === 'search' && query && typeof query === 'string' && query.length <= 30) {
+    tasks.push(redis(['HINCRBY', 'dwia:search', query, 1]));
+  }
+
+  await Promise.all(tasks);
 
   return res.json({ ok: true });
 }

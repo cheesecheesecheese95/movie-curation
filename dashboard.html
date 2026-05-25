@@ -139,6 +139,22 @@
       <div id="event-bars">불러오는 중…</div>
     </div>
 
+    <!-- 영화 랭킹 -->
+    <div class="section">
+      <div class="section-title">🎬 많이 클릭한 영화 TOP 10</div>
+      <div id="rank-clicks">불러오는 중…</div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">▶️ 많이 재생한 영화 TOP 10</div>
+      <div id="rank-plays">불러오는 중…</div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">🔍 인기 검색어 TOP 10</div>
+      <div id="rank-searches">불러오는 중…</div>
+    </div>
+
     <!-- Vercel Analytics -->
     <div class="section" style="text-align:center;padding:16px;">
       <div style="font-size:12px;color:var(--gray-400);margin-bottom:8px;">상세 방문자 분석 (디바이스·지역·경로)</div>
@@ -321,7 +337,30 @@ function renderTable(){
   document.getElementById('daily-table').innerHTML=html;
 }
 
-function loadAll(){loadSummary();loadDaily();}
+async function loadRanking(){
+  try{
+    var r=await fetch('/api/track?mode=ranking');
+    var d=await r.json();
+
+    function renderRank(elId, data, suffix){
+      var el=document.getElementById(elId);
+      var sorted=Object.entries(data).sort(function(a,b){return b[1]-a[1]}).slice(0,10);
+      if(!sorted.length){el.textContent='아직 데이터가 없습니다.';return;}
+      el.innerHTML=sorted.map(function(item,i){
+        var name=item[0],count=item[1];
+        var max=sorted[0][1]||1;
+        var pct=Math.round(count/max*100);
+        return '<div style="margin-bottom:10px;"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:3px;"><span style="font-size:13px;color:var(--gray-800);"><span style="font-weight:800;color:var(--primary);margin-right:6px;">'+(i+1)+'</span>'+name+'</span><span style="font-size:12px;color:var(--gray-400);">'+count+suffix+'</span></div><div style="background:var(--gray-200);border-radius:99px;height:6px;overflow:hidden;"><div style="width:'+pct+'%;height:100%;background:var(--primary);border-radius:99px;transition:width 0.6s;"></div></div></div>';
+      }).join('');
+    }
+
+    renderRank('rank-clicks', d.clicks||{}, '회');
+    renderRank('rank-plays', d.plays||{}, '회');
+    renderRank('rank-searches', d.searches||{}, '회');
+  }catch(e){console.error(e);}
+}
+
+function loadAll(){loadSummary();loadDaily();loadRanking();}
 
 if(sessionStorage.getItem(PW_KEY)==='1') loadAll();
 </script>
