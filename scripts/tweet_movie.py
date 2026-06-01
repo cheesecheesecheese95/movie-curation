@@ -162,11 +162,12 @@ def main():
         except Exception as e:
             print(f"⚠️ 포스터 업로드 실패: {e}")
 
-    kwargs = {'text': tweet_text}
+    # v1.1 API로 트윗 게시 (Free 플랜 호환)
+    kwargs = {'status': tweet_text}
     if media_id:
         kwargs['media_ids'] = [media_id]
-    resp = client.create_tweet(**kwargs)
-    print(f"✅ 트윗 성공! ID: {resp.data['id']}")
+    resp = api.update_status(**kwargs)
+    print(f"✅ 트윗 성공! ID: {resp.id}")
 
     posted.add(movie['video_id'])
     save_posted(posted)
