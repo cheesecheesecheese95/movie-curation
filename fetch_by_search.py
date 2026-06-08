@@ -95,8 +95,8 @@ def fetch_by_search(max_per_query=100):
                     stats = item.get("statistics", {})
                     dur = parse_duration(item.get("contentDetails", {}).get("duration", ""))
 
-                    # 최소 1분 이상인 영상만
-                    if dur < 60:
+                    # 최소 10분 이상인 영상만
+                    if dur < 600:
                         continue
 
                     title = sn.get("title", "")
