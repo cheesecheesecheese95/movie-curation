@@ -1,9 +1,9 @@
 name: Daily Update (매일 아침 9시 KST)
 
 on:
-  schedule:
-    - cron: '0 0 * * *'  # UTC 00:00 = KST 09:00
-  workflow_dispatch:  # 수동 실행도 가능
+  # schedule:
+  #   - cron: '0 0 * * *'  # UTC 00:00 = KST 09:00
+  workflow_dispatch:  # 수동 실행만 가능 (자동 스케줄 중단)
 
 permissions:
   contents: write
